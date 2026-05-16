@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "human-data-lib"
+version = "0.1.0"
+description = "Human-derived biodata analysis library and tool catalog."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "human-data-lib contributors" }
+]
+keywords = [
+  "bioinformatics",
+  "biodata",
+  "clinical-data",
+  "human-data",
+  "neurophysiology",
+  "omics"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+dependencies = []
+
+[project.scripts]
+human-data-lib = "human_data_lib.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/human_data_lib"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src",
+  "tests",
+  "docs",
+  "README.md",
+  "LICENSE"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

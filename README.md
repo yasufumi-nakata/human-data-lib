@@ -1,113 +1,153 @@
-# 人間由来データ解析ライブラリの情報整理
+# human-data-lib
 
-本リポジトリは、**人間から採取したデータ（生体信号、行動ログ、アンケート、観察記録など）を安全かつ再現可能に解析するためのライブラリ設計情報**をまとめるための土台です。
+人間由来バイオデータ解析のためのライブラリ、ツール、標準、ワークフローを横断的に整理するリポジトリです。
 
-## 1. 想定ユースケース
+公開ページ: <https://www.yasufumi.net/human-data-lib/>
 
-- 医療・ヘルスケア研究（例: 心拍、睡眠、活動量）
-- 行動科学・心理学（例: 実験課題ログ、質問紙）
-- HCI / UX（例: 操作ログ、インタラクション時系列）
-- 教育・労働分野（例: 学習行動、作業パフォーマンス）
+対象は OSS や公式の公開リポジトリで確認できるものに限定します。「人類が作った全部」を厳密に列挙することは公開情報だけでは不可能なので、本リポジトリでは **継続的に増やせる機械可読カタログ** と **検索できる Python/CLI 実装** として管理します。
 
-## 2. データモデル（推奨）
+## このページの目的
 
-ライブラリ設計時には、以下のように責務を分離すると拡張しやすくなります。
+このページは、人間由来データを扱う解析ソフトウェアを探すための入口です。ゲノムや single-cell のようなミクロなデータから、EHR、医用画像、ウェアラブル、疫学、環境曝露、人口規模データのようなマクロなデータまで、公開リポジトリで確認できる解析資産を同じ形式で並べています。
 
-- `subjects`: 対象者情報（匿名ID、属性、同意状態）
-- `sessions`: 測定・観測セッション（日時、装置、条件）
-- `signals`: 時系列データ（心拍、加速度、脳波など）
-- `events`: マーカー・行動イベント（刺激提示、応答、タスク状態）
-- `outcomes`: 目的変数（スコア、診断ラベル、パフォーマンス指標）
-- `metadata`: 前処理・計測環境情報（欠損処理、補正、サンプリング周波数）
+収録対象は「使える名前の一覧」ではなく、後から検証・検索・比較できる台帳です。各項目には、分野、データ種別、処理タスク、実行環境、解析スケール、公式 URL、公開 repo URL、日本語要約を持たせています。
 
-## 3. 推奨モジュール構成
+## まず見る場所
 
-- `ingest`: CSV/JSON/Parquet/センサ固有形式の読み込み
-- `quality`: 欠損率、アーチファクト、外れ値の品質チェック
-- `preprocess`: フィルタリング、正規化、再サンプリング
-- `features`: 統計量・周波数領域・時系列特徴量抽出
-- `modeling`: 回帰・分類・時系列予測
-- `evaluation`: 交差検証、群間比較、信頼区間
-- `reporting`: 再現可能レポート出力（Markdown/HTML）
+- 全カタログ: [`src/human_data_lib/data/libraries.json`](src/human_data_lib/data/libraries.json)
+- 分類と運用方針: [`docs/catalog-policy.md`](docs/catalog-policy.md)
+- スキーマ: [`docs/schema.md`](docs/schema.md)
+- 領域別の見取り図: [`docs/landscape.md`](docs/landscape.md)
+- 追加時の確認手順: [`docs/add-entry-checklist.md`](docs/add-entry-checklist.md)
 
-## 4. 解析フロー（最小）
+## 何が入っているか
 
-1. データ取り込み（`ingest`）
-2. 品質評価（`quality`）
-3. 前処理（`preprocess`）
-4. 特徴量抽出（`features`）
-5. モデル学習・推論（`modeling`）
-6. 妥当性評価（`evaluation`）
-7. 結果記録（`reporting`）
+- `src/human_data_lib/data/libraries.json`: 初期カタログ 343 件
+- `src/human_data_lib/catalog.py`: 読み込み、検証、検索、CSV/JSON/Markdown 出力
+- `src/human_data_lib/cli.py`: コマンドライン検索
+- `tests/`: カタログと CLI の回帰テスト
+- `docs/`: スコープ、分類、追加手順、運用方針
 
-## 5. 重要な非機能要件
+## 収録状況
 
-- **匿名化・仮名化**: 個人特定子は早期に分離
-- **同意・利用範囲管理**: データ利用目的を機械可読に保持
-- **監査可能性**: 前処理・学習条件・モデルバージョンを記録
-- **再現性**: 乱数種、依存ライブラリ、実行環境を固定
-- **セキュリティ**: 保存時暗号化、アクセス制御、最小権限
+2026-05-16 時点の初期カタログは 343 件です。代表的な収録軸は以下です。
 
-## 6. 実装時のチェックリスト
+- ミクロ: ゲノム、変異、RNA-seq、single-cell、spatial omics、プロテオミクス、メタボロミクス、マイクロバイオーム
+- 細胞・組織: cytometry、細胞画像、病理画像、空間トランスクリプトミクス
+- 臓器・個体: EEG/MEG/iEEG、MRI/fMRI/CT/DICOM、ECG/PPG、睡眠、ウェアラブル、生体信号
+- 臨床・集団: EHR、FHIR、OMOP、clinical NLP、コホート、疫学、公衆衛生、集団遺伝
+- 行動・環境: 心理統計、行動実験、移動データ、地理空間、環境曝露、建成環境
+- 基盤: workflow engine、データ標準、プライバシー保護、federated analysis、差分プライバシー
 
-- [ ] スキーマバリデーション（列名・型・単位）
-- [ ] 欠損・外れ値ルールの明文化
-- [ ] 学習/評価分割時のリーク防止
-- [ ] 被験者単位の分割（同一被験者の混在回避）
-- [ ] 解析設定のYAML/JSON管理
-- [ ] 実験結果の保存規約（命名・フォルダ構成）
+## 対象領域
 
-## 7. 今後の拡張候補
+初期カタログは、公式の公開リポジトリを確認できる代表的な公開エコシステムを中心に、ミクロからマクロまでの尺度を含みます。
 
-- マルチモーダル統合（生体信号 + テキスト + 動画）
-- フェデレーテッド学習対応
-- ドリフト監視と継続学習
-- 説明可能性（SHAP等）
-- 差分プライバシー・匿名化強化
+- `molecular`: ゲノム、変異、転写、タンパク質、代謝物、マイクロバイオーム
+- `cellular`: single-cell、cytometry、細胞画像、細胞状態
+- `tissue`: spatial omics、病理画像、組織画像
+- `organ-system`: EEG/MEG、MRI/CT、ECG/PPG、睡眠、生体信号
+- `whole-person`: 行動、心理、質問紙、個人単位アウトカム
+- `behavioral`: 実験課題、移動、反応時間、行動ログ
+- `clinical`: EHR、FHIR、OMOP、医用画像、clinical NLP
+- `population`: コホート、疫学、公衆衛生、集団遺伝
+- `environmental`: 地理空間、曝露、移動、建成環境
+- `infrastructure`: 標準、ワークフロー、データモデル、プライバシー基盤
 
-## 8. フェルミ推定: 「人類が作ったライブラリ」のざっくり規模感
+分野としては次を広く含みます。
 
-ご要望の「人類が作った全部ライブラリ」を厳密に列挙することは不可能なため、ここでは**フェルミ推定**で全体規模を見積もります。
+- ゲノミクス、変異解析、遺伝統計
+- RNA-seq、single-cell、spatial/multi-omics
+- プロテオミクス、メタボロミクス、マイクロバイオーム
+- EEG/MEG/iEEG、睡眠、生体信号、ウェアラブル
+- MRI/fMRI/CT/DICOM、病理画像、bioimaging
+- EHR、FHIR、OMOP、clinical NLP
+- 行動実験、心理統計、psychometrics
+- 匿名化、差分プライバシー、federated analysis
+- Nextflow、Snakemake、CWL、WDL、Galaxy などの workflow ecosystem
 
-### 8.1 推定対象の定義
+## 使い方
 
-- ライブラリ = 再利用可能なコード集合（公開/非公開、社内ライブラリ、研究用実装を含む）
-- 期間 = 1950年代以降のソフトウェア開発史を含む
-- 重複 = フォークやミラーは原則として別実体に含めない想定
+開発環境から直接実行できます。
 
-### 8.2 ざっくり計算
+```bash
+PYTHONPATH=src python3 -m human_data_lib.cli validate
+PYTHONPATH=src python3 -m human_data_lib.cli stats --facet domains
+PYTHONPATH=src python3 -m human_data_lib.cli stats --facet scales
+PYTHONPATH=src python3 -m human_data_lib.cli search single-cell --ecosystem Python
+PYTHONPATH=src python3 -m human_data_lib.cli list --scale population
+PYTHONPATH=src python3 -m human_data_lib.cli list --scale environmental
+PYTHONPATH=src python3 -m human_data_lib.cli list --domain clinical-data --format markdown
+PYTHONPATH=src python3 -m human_data_lib.cli show scanpy
+```
 
-1. ソフトウェア開発経験者（歴史累計）を **5,000万人** と仮定
-2. そのうちライブラリ（再利用可能コード）を1回以上作る人の割合を **30%** と仮定
-3. 1人あたり生涯で作るライブラリ数を **3個** と仮定
+検索例:
 
-計算:
+- `--scale molecular`: 分子・オミクス系の解析資産を見る
+- `--scale cellular`: single-cell や cytometry を見る
+- `--scale clinical`: EHR、FHIR、医用画像、clinical NLP を見る
+- `--scale population`: 疫学、公衆衛生、コホート、集団解析を見る
+- `--scale environmental`: 曝露、地理空間、移動、建成環境を見る
 
-- 5,000万人 × 0.30 × 3 = **4,500万ライブラリ**
+パッケージとして入れる場合:
 
-### 8.3 レンジ（不確実性込み）
+```bash
+python3 -m pip install -e .
+human-data-lib search EEG --domain neurophysiology
+```
 
-- 保守的ケース: 2,000万人 × 0.20 × 2 = **800万**
-- 中央ケース: 5,000万人 × 0.30 × 3 = **4,500万**
-- 強気ケース: 8,000万人 × 0.40 × 5 = **1億6,000万**
+Python から使う場合:
 
-したがって、**人類がこれまで作ってきたライブラリ総数は、おおむね「1,000万〜1億規模」**とみなすのが現実的です。
+```python
+from human_data_lib import load_catalog
 
-### 8.4 参考: 公開エコシステムとの関係
+catalog = load_catalog()
+entries = catalog.search("single-cell", ecosystem="Python")
+for entry in entries:
+    print(entry.id, entry.name, entry.official_url)
+```
 
-- 公開パッケージレジストリ（npm, PyPI, crates.io など）は全体の一部
-- 企業内・研究室内・個人プロジェクトの非公開ライブラリが多数存在
-- 定義次第で値は1桁以上変動し得るため、意思決定ではレンジで扱うのが安全
+## カタログの考え方
 
-### 8.5 このリポジトリでの実務的な扱い
+1 件の項目は、ライブラリだけではなく、ツール、標準仕様、ワークフロー、プラットフォーム、エコシステムも含みます。バイオデータ解析では、実務上「ライブラリ」だけを見ても再現性や運用が閉じないためです。
 
-「全部」を直接扱う代わりに、次の粒度で管理することを推奨します。
+必須項目:
 
-- 目的領域（医療/心理/HCI/教育）
-- データ種類（生体信号/行動ログ/テキスト等）
-- 処理段階（ingest〜reporting）
-- 品質要件（再現性・監査性・プライバシー）
+- `id`: 安定した小文字 ID
+- `name`: 表示名
+- `artifact_type`: `library`, `tool`, `workflow`, `standard`, `platform`, `ecosystem` など
+- `domains`: 分野
+- `modalities`: データ種別
+- `tasks`: 処理段階
+- `ecosystems`: 言語、実行環境、周辺エコシステム
+- `scales`: `molecular` から `environmental` までの解析尺度
+- `official_url`: 公式サイト、公式 docs、公式 GitHub のいずれか
+- `repo_url`: 公式または準公式の公開リポジトリ
+- `summary_ja`: 日本語 1 文要約
 
----
+詳しくは [docs/catalog-policy.md](docs/catalog-policy.md) と [docs/schema.md](docs/schema.md) を参照してください。
 
-必要であれば次のステップとして、上記構成に沿って **Python パッケージ雛形（`src/` 構成、型付きAPI、テスト雛形）** まで具体化できます。
+## 追加方針
+
+新しい項目を追加するときは、公式ページと公開リポジトリを確認し、不確かな最新バージョンや利用者数は書きません。ライセンスも確実に分かる場合だけ記入します。
+
+```bash
+make validate
+make test
+```
+
+上記が通る状態を保ってください。
+
+## スコープ外
+
+- 非公開の企業内・研究室内ライブラリの完全列挙
+- 公式の公開リポジトリを確認できない項目
+- 公式情報で確認できないバージョン番号、利用者数、性能値の断定
+- 個人情報や実データの保存
+- 医療判断そのものの自動化
+
+本リポジトリは、解析実装の選定、比較、監査、再現性確保を支援するための土台です。
+
+## 継続更新
+
+公開 OSS は常に増えるため、この一覧は固定版ではありません。平日 11 時に、新しく見落としている公開リポジトリがないかを確認する運用にします。追加候補が見つかった場合は、公式ページと公開 repo URL を確認したうえでカタログ、ドキュメント、検証結果を更新します。
