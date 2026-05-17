@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 import unittest
 
 from human_data_lib import CatalogError, load_catalog
+
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 class CatalogTests(unittest.TestCase):
@@ -54,6 +58,12 @@ class CatalogTests(unittest.TestCase):
     def test_unknown_facet_raises(self) -> None:
         with self.assertRaises(CatalogError):
             self.catalog.facet_counts("unknown")
+
+    def test_public_catalog_page_lists_every_entry(self) -> None:
+        page = (ROOT / "catalog.md").read_text(encoding="utf-8")
+        self.assertIn("# 全件カタログ", page)
+        for entry in self.catalog:
+            self.assertIn(f"`{entry.id}`", page)
 
 
 if __name__ == "__main__":

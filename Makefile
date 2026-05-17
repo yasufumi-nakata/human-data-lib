@@ -1,4 +1,7 @@
-.PHONY: validate test stats
+.PHONY: catalog-page validate test stats
+
+catalog-page:
+	PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 tools/render_catalog_page.py
 
 validate:
 	PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m human_data_lib.cli validate

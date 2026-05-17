@@ -14,7 +14,8 @@
 
 ## まず見る場所
 
-- 全カタログ: [`src/human_data_lib/data/libraries.json`](src/human_data_lib/data/libraries.json)
+- ページで見る全件カタログ: [`catalog.md`](catalog.md)
+- 機械可読データ: [`src/human_data_lib/data/libraries.json`](src/human_data_lib/data/libraries.json)
 - 分類と運用方針: [`docs/catalog-policy.md`](docs/catalog-policy.md)
 - スキーマ: [`docs/schema.md`](docs/schema.md)
 - 領域別の見取り図: [`docs/landscape.md`](docs/landscape.md)
@@ -23,6 +24,7 @@
 ## 何が入っているか
 
 - `src/human_data_lib/data/libraries.json`: 初期カタログ 343 件
+- `catalog.md`: 公開ページ上で読める全件カタログ
 - `src/human_data_lib/catalog.py`: 読み込み、検証、検索、CSV/JSON/Markdown 出力
 - `src/human_data_lib/cli.py`: コマンドライン検索
 - `tests/`: カタログと CLI の回帰テスト
