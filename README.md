@@ -4,7 +4,7 @@
 
 公開ページ: <https://www.yasufumi.net/human-data-lib/>
 
-対象は OSS や公式の公開リポジトリで確認できるものに限定します。「人類が作った全部」を厳密に列挙することは公開情報だけでは不可能なので、本リポジトリでは **継続的に増やせる機械可読カタログ** と **検索できる Python/CLI 実装** として管理します。
+対象は OSS や公式の公開リポジトリで確認できるものに限定します。「人類が作った全部」を厳密に列挙することは公開情報だけでは不可能なので、本リポジトリでは **公開ページで読めるカタログ** と **検索できる Python/CLI 実装** として管理します。
 
 ## このページの目的
 
@@ -14,21 +14,21 @@
 
 ## まず見る場所
 
-- ページで見る全件カタログ: [`catalog.md`](catalog.md)
-- 機械可読データ: [`src/human_data_lib/data/libraries.json`](src/human_data_lib/data/libraries.json)
-- 分類と運用方針: [`docs/catalog-policy.md`](docs/catalog-policy.md)
-- スキーマ: [`docs/schema.md`](docs/schema.md)
-- 領域別の見取り図: [`docs/landscape.md`](docs/landscape.md)
-- 追加時の確認手順: [`docs/add-entry-checklist.md`](docs/add-entry-checklist.md)
+- [全件カタログ](catalog.md): 収録している 343 件をページ上で一覧できます。
+- [分類と運用方針](docs/catalog-policy.md): 何を収録し、何を除外するかを確認できます。
+- [スキーマ説明](docs/schema.md): 各項目に入っている情報の意味を確認できます。
+- [領域別の見取り図](docs/landscape.md): ミクロからマクロまでの対象領域を俯瞰できます。
+- [追加時の確認手順](docs/add-entry-checklist.md): 新しい項目を追加するときの確認手順です。
 
-## 何が入っているか
+## このサイトで見られるもの
 
-- `src/human_data_lib/data/libraries.json`: 初期カタログ 343 件
-- `catalog.md`: 公開ページ上で読める全件カタログ
-- `src/human_data_lib/catalog.py`: 読み込み、検証、検索、CSV/JSON/Markdown 出力
-- `src/human_data_lib/cli.py`: コマンドライン検索
-- `tests/`: カタログと CLI の回帰テスト
-- `docs/`: スコープ、分類、追加手順、運用方針
+- 全 343 件の公開 OSS / 公開リポジトリ付きカタログ
+- 解析スケール別の件数と分類
+- 分野、データ種別、処理タスク、実行環境、公式ページ、repo へのリンク
+- 日本語の 1 文要約
+- 収録方針、除外方針、追加時の確認手順
+
+開発者向けには、同じ内容を元データと Python/CLI からも利用できます。
 
 ## 収録状況
 
