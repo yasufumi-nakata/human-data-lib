@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-05-16",
-  "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの初期カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
+  "generated_at": "2026-05-18",
+  "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
       "id": "biopython",
@@ -10794,6 +10794,3465 @@
       "license": "Apache-2.0",
       "maturity": "widely-used",
       "summary_ja": "集計・ノイズ付与・プライバシー会計など差分プライバシー機能を提供する Google の公開ライブラリ群です。"
+    },
+    {
+      "id": "genomicranges",
+      "name": "GenomicRanges",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "bioinformatics",
+        "data-model"
+      ],
+      "modalities": [
+        "genomic-intervals",
+        "annotation",
+        "BED"
+      ],
+      "tasks": [
+        "data-model",
+        "interval-operations",
+        "overlap",
+        "annotation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/GenomicRanges/",
+      "repo_url": "https://git.bioconductor.org/packages/GenomicRanges",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "ゲノム区間と注釈を R/Bioconductor で表現・検索・重なり解析する基盤ライブラリです。"
+    },
+    {
+      "id": "summarizedexperiment",
+      "name": "SummarizedExperiment",
+      "artifact_type": "library",
+      "domains": [
+        "bioinformatics",
+        "data-model",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "omics",
+        "assay-matrix",
+        "metadata"
+      ],
+      "tasks": [
+        "data-model",
+        "metadata",
+        "integration",
+        "io"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/SummarizedExperiment/",
+      "repo_url": "https://git.bioconductor.org/packages/SummarizedExperiment",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "assay 行列、特徴量、サンプルメタデータを一体で扱う Bioconductor の標準コンテナです。"
+    },
+    {
+      "id": "singlecellexperiment",
+      "name": "SingleCellExperiment",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "data-model"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "count-matrix",
+        "metadata"
+      ],
+      "tasks": [
+        "data-model",
+        "metadata",
+        "integration",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/SingleCellExperiment/",
+      "repo_url": "https://git.bioconductor.org/packages/SingleCellExperiment",
+      "license": "GPL-3",
+      "maturity": "widely-used",
+      "summary_ja": "single-cell データの発現行列、低次元表現、細胞メタデータを保持する Bioconductor の中核コンテナです。"
+    },
+    {
+      "id": "multiassayexperiment",
+      "name": "MultiAssayExperiment",
+      "artifact_type": "library",
+      "domains": [
+        "multiomics",
+        "clinical-data",
+        "data-model"
+      ],
+      "modalities": [
+        "multi-omics",
+        "assay-matrix",
+        "phenotypes"
+      ],
+      "tasks": [
+        "data-model",
+        "integration",
+        "metadata",
+        "cohort-analysis"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/MultiAssayExperiment/",
+      "repo_url": "https://git.bioconductor.org/packages/MultiAssayExperiment",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "複数 assay と患者・サンプル対応を統合して cohort multi-omics 解析を支援するコンテナです。"
+    },
+    {
+      "id": "variantannotation",
+      "name": "VariantAnnotation",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "annotation"
+      ],
+      "modalities": [
+        "VCF",
+        "variants",
+        "annotation"
+      ],
+      "tasks": [
+        "io",
+        "annotation",
+        "filtering",
+        "effect-prediction"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/VariantAnnotation/",
+      "repo_url": "https://git.bioconductor.org/packages/VariantAnnotation",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "VCF 変異の読み込み、フィルタリング、コーディング影響注釈を R で行う Bioconductor パッケージです。"
+    },
+    {
+      "id": "genomicalignments",
+      "name": "GenomicAlignments",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "BAM",
+        "alignments",
+        "RNA-seq"
+      ],
+      "tasks": [
+        "io",
+        "alignment",
+        "coverage",
+        "summarization"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/GenomicAlignments/",
+      "repo_url": "https://git.bioconductor.org/packages/GenomicAlignments",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "短鎖リードのアラインメントを R で読み込み、coverage や feature-level 集計を行うライブラリです。"
+    },
+    {
+      "id": "genomicfeatures",
+      "name": "GenomicFeatures",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "annotation"
+      ],
+      "modalities": [
+        "GFF",
+        "GTF",
+        "TxDb",
+        "annotation"
+      ],
+      "tasks": [
+        "annotation",
+        "data-model",
+        "parsing",
+        "query"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/GenomicFeatures/",
+      "repo_url": "https://git.bioconductor.org/packages/GenomicFeatures",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "遺伝子・転写産物モデルを TxDb などとして扱い、ゲノム注釈を検索・構築するライブラリです。"
+    },
+    {
+      "id": "rsamtools",
+      "name": "Rsamtools",
+      "artifact_type": "library",
+      "domains": [
+        "genomics"
+      ],
+      "modalities": [
+        "SAM",
+        "BAM",
+        "FASTA",
+        "Tabix"
+      ],
+      "tasks": [
+        "io",
+        "indexing",
+        "query",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "HTSlib"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/Rsamtools/",
+      "repo_url": "https://git.bioconductor.org/packages/Rsamtools",
+      "license": "Artistic-2.0 + file LICENSE",
+      "maturity": "widely-used",
+      "summary_ja": "SAM/BAM/FASTA/Tabix 形式を R から領域指定で読み書きする Bioconductor の低レベル I/O 基盤です。"
+    },
+    {
+      "id": "biostrings",
+      "name": "Biostrings",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "molecular-biology"
+      ],
+      "modalities": [
+        "sequence",
+        "DNA",
+        "RNA",
+        "protein"
+      ],
+      "tasks": [
+        "parsing",
+        "sequence-analysis",
+        "pattern-matching",
+        "io"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/Biostrings/",
+      "repo_url": "https://git.bioconductor.org/packages/Biostrings",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "DNA、RNA、アミノ酸配列の文字列表現、検索、変換を提供する Bioconductor の基盤です。"
+    },
+    {
+      "id": "rtracklayer",
+      "name": "rtracklayer",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "annotation"
+      ],
+      "modalities": [
+        "BED",
+        "GFF",
+        "bigWig",
+        "genome-browser"
+      ],
+      "tasks": [
+        "io",
+        "format-conversion",
+        "annotation",
+        "browser-integration"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/rtracklayer/",
+      "repo_url": "https://git.bioconductor.org/packages/rtracklayer",
+      "license": "Artistic-2.0 + file LICENSE",
+      "maturity": "widely-used",
+      "summary_ja": "BED、GFF、bigWig などのゲノムトラック入出力とブラウザ連携を行う R パッケージです。"
+    },
+    {
+      "id": "delayedarray",
+      "name": "DelayedArray",
+      "artifact_type": "library",
+      "domains": [
+        "bioinformatics",
+        "data-model"
+      ],
+      "modalities": [
+        "assay-matrix",
+        "large-matrix",
+        "omics"
+      ],
+      "tasks": [
+        "data-model",
+        "lazy-evaluation",
+        "scaling",
+        "io"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/DelayedArray/",
+      "repo_url": "https://git.bioconductor.org/packages/DelayedArray",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "大規模 omics 行列に対して遅延評価と block 処理を提供する Bioconductor の配列基盤です。"
+    },
+    {
+      "id": "hdf5array",
+      "name": "HDF5Array",
+      "artifact_type": "library",
+      "domains": [
+        "bioinformatics",
+        "data-model"
+      ],
+      "modalities": [
+        "HDF5",
+        "assay-matrix",
+        "single-cell RNA-seq"
+      ],
+      "tasks": [
+        "io",
+        "storage",
+        "lazy-evaluation",
+        "scaling"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "HDF5"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/HDF5Array/",
+      "repo_url": "https://git.bioconductor.org/packages/HDF5Array",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "HDF5 に保存した大規模 assay 行列を DelayedArray として扱うための Bioconductor パッケージです。"
+    },
+    {
+      "id": "annotationhub",
+      "name": "AnnotationHub",
+      "artifact_type": "platform",
+      "domains": [
+        "genomics",
+        "annotation",
+        "data-standard"
+      ],
+      "modalities": [
+        "annotation",
+        "FASTA",
+        "GFF",
+        "BED",
+        "VCF"
+      ],
+      "tasks": [
+        "data-access",
+        "annotation",
+        "metadata",
+        "query"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/AnnotationHub/",
+      "repo_url": "https://git.bioconductor.org/packages/AnnotationHub",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "ゲノム注釈・参照リソースを Bioconductor から検索・取得するための公式 hub クライアントです。"
+    },
+    {
+      "id": "biomart-r",
+      "name": "biomaRt",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "annotation"
+      ],
+      "modalities": [
+        "gene-annotation",
+        "BioMart",
+        "Ensembl"
+      ],
+      "tasks": [
+        "query",
+        "annotation",
+        "mapping",
+        "data-access"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "Ensembl"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/biomaRt/",
+      "repo_url": "https://git.bioconductor.org/packages/biomaRt",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "Ensembl などの BioMart サービスから遺伝子・転写産物注釈を R で取得するライブラリです。"
+    },
+    {
+      "id": "tximport",
+      "name": "tximport",
+      "artifact_type": "library",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "transcript-abundance",
+        "quantification"
+      ],
+      "tasks": [
+        "io",
+        "quantification",
+        "aggregation",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "Salmon",
+        "kallisto"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/tximport/",
+      "repo_url": "https://git.bioconductor.org/packages/tximport",
+      "license": "LGPL (>=2)",
+      "maturity": "widely-used",
+      "summary_ja": "Salmon、kallisto、RSEM などの transcript-level 推定値を gene-level 解析へ集約する R パッケージです。"
+    },
+    {
+      "id": "tximeta",
+      "name": "tximeta",
+      "artifact_type": "library",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq",
+        "reproducibility"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "transcript-abundance",
+        "metadata"
+      ],
+      "tasks": [
+        "io",
+        "metadata",
+        "provenance",
+        "annotation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "Salmon"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/tximeta/",
+      "repo_url": "https://git.bioconductor.org/packages/tximeta",
+      "license": "GPL-2",
+      "maturity": "active",
+      "summary_ja": "transcriptome checksum に基づいて RNA-seq 定量結果へ参照メタデータを自動付与する R パッケージです。"
+    },
+    {
+      "id": "sva",
+      "name": "sva",
+      "artifact_type": "library",
+      "domains": [
+        "transcriptomics",
+        "epigenomics",
+        "statistics"
+      ],
+      "modalities": [
+        "expression",
+        "methylation",
+        "omics"
+      ],
+      "tasks": [
+        "batch-correction",
+        "surrogate-variable-analysis",
+        "normalization",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/sva/",
+      "repo_url": "https://git.bioconductor.org/packages/sva",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "発現・メチル化などの omics データで潜在因子と batch effect を推定・補正する R パッケージです。"
+    },
+    {
+      "id": "gsva",
+      "name": "GSVA",
+      "artifact_type": "library",
+      "domains": [
+        "transcriptomics",
+        "systems-biology",
+        "statistics"
+      ],
+      "modalities": [
+        "expression",
+        "gene-sets",
+        "omics"
+      ],
+      "tasks": [
+        "pathway-activity",
+        "statistics",
+        "scoring",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/GSVA/",
+      "repo_url": "https://git.bioconductor.org/packages/GSVA",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "サンプル単位で遺伝子セット・パスウェイ活性を推定する Bioconductor パッケージです。"
+    },
+    {
+      "id": "complexheatmap",
+      "name": "ComplexHeatmap",
+      "artifact_type": "library",
+      "domains": [
+        "bioinformatics",
+        "visualization"
+      ],
+      "modalities": [
+        "omics",
+        "matrix",
+        "annotation"
+      ],
+      "tasks": [
+        "visualization",
+        "reporting",
+        "annotation",
+        "clustering"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://bioconductor.org/packages/ComplexHeatmap/",
+      "repo_url": "https://git.bioconductor.org/packages/ComplexHeatmap",
+      "license": "MIT + file LICENSE",
+      "maturity": "widely-used",
+      "summary_ja": "多層注釈付き heatmap を柔軟に描画する omics 可視化向け R パッケージです。"
+    },
+    {
+      "id": "scater",
+      "name": "scater",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "quality-control"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "count-matrix"
+      ],
+      "tasks": [
+        "quality-control",
+        "visualization",
+        "preprocessing",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/scater/",
+      "repo_url": "https://git.bioconductor.org/packages/scater",
+      "license": "GPL-3",
+      "maturity": "widely-used",
+      "summary_ja": "single-cell RNA-seq の QC、正規化前処理、可視化を SingleCellExperiment 上で行う R パッケージです。"
+    },
+    {
+      "id": "scran",
+      "name": "scran",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "statistics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "count-matrix"
+      ],
+      "tasks": [
+        "normalization",
+        "clustering",
+        "differential-expression",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/scran/",
+      "repo_url": "https://git.bioconductor.org/packages/scran",
+      "license": "GPL-3",
+      "maturity": "widely-used",
+      "summary_ja": "single-cell RNA-seq の正規化、分散分解、クラスタリング支援を行う Bioconductor パッケージです。"
+    },
+    {
+      "id": "scuttle",
+      "name": "scuttle",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "count-matrix"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "normalization",
+        "utilities"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/scuttle/",
+      "repo_url": "https://git.bioconductor.org/packages/scuttle",
+      "license": "GPL-3",
+      "maturity": "active",
+      "summary_ja": "SingleCellExperiment 周辺の QC 指標計算、正規化、補助関数をまとめた single-cell 基盤パッケージです。"
+    },
+    {
+      "id": "dropletutils",
+      "name": "DropletUtils",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "10x Genomics",
+        "UMI"
+      ],
+      "tasks": [
+        "io",
+        "quality-control",
+        "empty-droplet-detection",
+        "downsampling"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/DropletUtils/",
+      "repo_url": "https://git.bioconductor.org/packages/DropletUtils",
+      "license": "GPL-3",
+      "maturity": "widely-used",
+      "summary_ja": "10x など droplet-based single-cell RNA-seq の読み込み、空滴判定、downsampling を行う R パッケージです。"
+    },
+    {
+      "id": "batchelor",
+      "name": "batchelor",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "count-matrix"
+      ],
+      "tasks": [
+        "batch-correction",
+        "integration",
+        "normalization",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/batchelor/",
+      "repo_url": "https://git.bioconductor.org/packages/batchelor",
+      "license": "GPL-3",
+      "maturity": "active",
+      "summary_ja": "single-cell データセット間の batch correction と統合を行う Bioconductor パッケージです。"
+    },
+    {
+      "id": "singler",
+      "name": "SingleR",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "annotation"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "reference-expression"
+      ],
+      "tasks": [
+        "cell-type-annotation",
+        "classification",
+        "reference-mapping",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/SingleR/",
+      "repo_url": "https://git.bioconductor.org/packages/SingleR",
+      "license": "GPL-3",
+      "maturity": "widely-used",
+      "summary_ja": "参照発現データと照合して single-cell の細胞型注釈を行う Bioconductor パッケージです。"
+    },
+    {
+      "id": "scdblfinder",
+      "name": "scDblFinder",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "quality-control"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "count-matrix"
+      ],
+      "tasks": [
+        "doublet-detection",
+        "quality-control",
+        "classification"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/scDblFinder/",
+      "repo_url": "https://git.bioconductor.org/packages/scDblFinder",
+      "license": "GPL-3 + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "single-cell RNA-seq データから doublet を検出し、下流解析前の QC を支援する R パッケージです。"
+    },
+    {
+      "id": "mast",
+      "name": "MAST",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "statistics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "expression"
+      ],
+      "tasks": [
+        "differential-expression",
+        "modeling",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/MAST/",
+      "repo_url": "https://git.bioconductor.org/packages/MAST",
+      "license": "GPL (>=2)",
+      "maturity": "widely-used",
+      "summary_ja": "single-cell 発現データの検出率と発現量を考慮した differential expression 解析を行う R パッケージです。"
+    },
+    {
+      "id": "spatialexperiment",
+      "name": "SpatialExperiment",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "data-model",
+        "single-cell"
+      ],
+      "modalities": [
+        "spatial-transcriptomics",
+        "images",
+        "count-matrix"
+      ],
+      "tasks": [
+        "data-model",
+        "metadata",
+        "interoperability",
+        "io"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/SpatialExperiment/",
+      "repo_url": "https://git.bioconductor.org/packages/SpatialExperiment",
+      "license": "GPL-3",
+      "maturity": "active",
+      "summary_ja": "空間 transcriptomics のスポット・画像・発現行列を統合して扱う Bioconductor の標準コンテナです。"
+    },
+    {
+      "id": "bayesspace",
+      "name": "BayesSpace",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "statistics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics",
+        "Visium",
+        "count-matrix"
+      ],
+      "tasks": [
+        "clustering",
+        "spatial-analysis",
+        "modeling",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://bioconductor.org/packages/BayesSpace/",
+      "repo_url": "https://git.bioconductor.org/packages/BayesSpace",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "spatial transcriptomics の空間近傍を考慮したクラスタリングと解像度向上を行う R パッケージです。"
+    },
+    {
+      "id": "cytomapper",
+      "name": "cytomapper",
+      "artifact_type": "library",
+      "domains": [
+        "cytometry",
+        "bioimaging",
+        "immunology"
+      ],
+      "modalities": [
+        "imaging mass cytometry",
+        "cell-images",
+        "segmentation"
+      ],
+      "tasks": [
+        "visualization",
+        "single-cell-extraction",
+        "annotation",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://bioconductor.org/packages/cytomapper/",
+      "repo_url": "https://git.bioconductor.org/packages/cytomapper",
+      "license": "GPL (>=2)",
+      "maturity": "active",
+      "summary_ja": "imaging mass cytometry 画像と単一細胞特徴を連携して可視化・抽出する Bioconductor パッケージです。"
+    },
+    {
+      "id": "qfeatures",
+      "name": "QFeatures",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "data-model"
+      ],
+      "modalities": [
+        "mass-spectrometry",
+        "peptides",
+        "proteins"
+      ],
+      "tasks": [
+        "data-model",
+        "quantification",
+        "aggregation",
+        "metadata"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/QFeatures/",
+      "repo_url": "https://git.bioconductor.org/packages/QFeatures",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "PSM、peptide、protein など階層的な定量 proteomics feature を一貫して管理する R パッケージです。"
+    },
+    {
+      "id": "spectra",
+      "name": "Spectra",
+      "artifact_type": "library",
+      "domains": [
+        "mass-spectrometry",
+        "proteomics",
+        "metabolomics"
+      ],
+      "modalities": [
+        "spectra",
+        "MS/MS",
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "data-model",
+        "io",
+        "metadata",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/Spectra/",
+      "repo_url": "https://git.bioconductor.org/packages/Spectra",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "質量分析スペクトルとメタデータを統一的に扱う Bioconductor のデータ抽象化ライブラリです。"
+    },
+    {
+      "id": "mzr",
+      "name": "mzR",
+      "artifact_type": "library",
+      "domains": [
+        "mass-spectrometry",
+        "proteomics",
+        "metabolomics"
+      ],
+      "modalities": [
+        "mzML",
+        "mzXML",
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "io",
+        "parsing",
+        "metadata",
+        "format-support"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/mzR/",
+      "repo_url": "https://git.bioconductor.org/packages/mzR",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "mzML、mzXML などの質量分析ファイルを R で読み込むための Bioconductor I/O パッケージです。"
+    },
+    {
+      "id": "ancombc",
+      "name": "ANCOMBC",
+      "artifact_type": "library",
+      "domains": [
+        "microbiome",
+        "statistics"
+      ],
+      "modalities": [
+        "microbiome",
+        "composition",
+        "metagenomics"
+      ],
+      "tasks": [
+        "differential-abundance",
+        "bias-correction",
+        "statistics",
+        "modeling"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/ANCOMBC/",
+      "repo_url": "https://git.bioconductor.org/packages/ANCOMBC",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "マイクロバイオーム組成データの bias-corrected differential abundance 解析を行う R パッケージです。"
+    },
+    {
+      "id": "mia",
+      "name": "mia",
+      "artifact_type": "library",
+      "domains": [
+        "microbiome",
+        "multiomics",
+        "data-model"
+      ],
+      "modalities": [
+        "microbiome",
+        "multi-omics",
+        "composition"
+      ],
+      "tasks": [
+        "data-model",
+        "preprocessing",
+        "visualization",
+        "integration"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/mia/",
+      "repo_url": "https://git.bioconductor.org/packages/mia",
+      "license": "Artistic-2.0 + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "TreeSummarizedExperiment を用いて microbiome データの前処理、可視化、統合解析を行う R パッケージです。"
+    },
+    {
+      "id": "proteowizard",
+      "name": "ProteoWizard",
+      "artifact_type": "tool",
+      "domains": [
+        "proteomics",
+        "metabolomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry",
+        "mzML",
+        "vendor-raw"
+      ],
+      "tasks": [
+        "format-conversion",
+        "io",
+        "visualization",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "C++",
+        "C#",
+        "command-line",
+        "desktop"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://proteowizard.sourceforge.io/",
+      "repo_url": "https://github.com/ProteoWizard/pwiz",
+      "license": "Apache-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "質量分析 vendor raw 形式から mzML などへの変換と基礎処理を行う ProteoWizard ツール群です。"
+    },
+    {
+      "id": "bio-formats",
+      "name": "Bio-Formats",
+      "artifact_type": "library",
+      "domains": [
+        "bioimaging",
+        "data-standard"
+      ],
+      "modalities": [
+        "microscopy",
+        "whole-slide-imaging",
+        "image-formats"
+      ],
+      "tasks": [
+        "io",
+        "metadata",
+        "format-conversion",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Java",
+        "OME"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://www.openmicroscopy.org/bio-formats/",
+      "repo_url": "https://github.com/ome/bioformats",
+      "license": "GPL-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "顕微鏡・病理画像の多数の proprietary/open format を読み書きする OME の画像 I/O 基盤です。"
+    },
+    {
+      "id": "openslide",
+      "name": "OpenSlide",
+      "artifact_type": "library",
+      "domains": [
+        "digital-pathology",
+        "bioimaging"
+      ],
+      "modalities": [
+        "whole-slide-imaging",
+        "histopathology"
+      ],
+      "tasks": [
+        "io",
+        "tiling",
+        "metadata",
+        "visualization"
+      ],
+      "ecosystems": [
+        "C",
+        "Python",
+        "Java"
+      ],
+      "scales": [
+        "tissue",
+        "clinical"
+      ],
+      "official_url": "https://openslide.org/",
+      "repo_url": "https://github.com/openslide/openslide",
+      "license": "LGPL-2.1",
+      "maturity": "widely-used",
+      "summary_ja": "病理 whole-slide image を vendor 中立に読み込むための C ライブラリと周辺バインディングです。"
+    },
+    {
+      "id": "histomicstk",
+      "name": "HistomicsTK",
+      "artifact_type": "library",
+      "domains": [
+        "digital-pathology",
+        "bioimaging"
+      ],
+      "modalities": [
+        "whole-slide-imaging",
+        "histopathology",
+        "cell-images"
+      ],
+      "tasks": [
+        "segmentation",
+        "feature-extraction",
+        "color-normalization",
+        "annotation"
+      ],
+      "ecosystems": [
+        "Python",
+        "Digital Slide Archive"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "clinical"
+      ],
+      "official_url": "https://digitalslidearchive.github.io/HistomicsTK/",
+      "repo_url": "https://github.com/DigitalSlideArchive/HistomicsTK",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "病理画像の色正規化、核検出、特徴抽出などを行う Python 画像解析 toolkit です。"
+    },
+    {
+      "id": "digital-slide-archive",
+      "name": "Digital Slide Archive",
+      "artifact_type": "platform",
+      "domains": [
+        "digital-pathology",
+        "bioimaging"
+      ],
+      "modalities": [
+        "whole-slide-imaging",
+        "histopathology",
+        "annotations"
+      ],
+      "tasks": [
+        "data-management",
+        "visualization",
+        "annotation",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python",
+        "web",
+        "Docker"
+      ],
+      "scales": [
+        "tissue",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://digitalslidearchive.github.io/",
+      "repo_url": "https://github.com/DigitalSlideArchive/digital_slide_archive",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "whole-slide pathology 画像の管理、閲覧、注釈、解析を行う Web ベースの公開プラットフォームです。"
+    },
+    {
+      "id": "vitessce",
+      "name": "Vitessce",
+      "artifact_type": "platform",
+      "domains": [
+        "single-cell",
+        "spatial-omics",
+        "visualization"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "spatial-transcriptomics",
+        "imaging"
+      ],
+      "tasks": [
+        "visualization",
+        "interactive-analysis",
+        "data-exploration",
+        "integration"
+      ],
+      "ecosystems": [
+        "JavaScript",
+        "React",
+        "web"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://vitessce.io/",
+      "repo_url": "https://github.com/vitessce/vitessce",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "single-cell と spatial omics データをブラウザ上で多視点に探索するための可視化フレームワークです。"
+    },
+    {
+      "id": "cellxgene-census",
+      "name": "CELLxGENE Census",
+      "artifact_type": "platform",
+      "domains": [
+        "single-cell",
+        "data-access"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "h5ad",
+        "SOMA"
+      ],
+      "tasks": [
+        "data-access",
+        "query",
+        "metadata",
+        "integration"
+      ],
+      "ecosystems": [
+        "Python",
+        "R",
+        "TileDB-SOMA"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "population"
+      ],
+      "official_url": "https://chanzuckerberg.github.io/cellxgene-census/",
+      "repo_url": "https://github.com/chanzuckerberg/cellxgene-census",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "CELLxGENE の大規模 single-cell corpus を Python/R から検索・取得するための API とデータ入口です。"
+    },
+    {
+      "id": "tiledb-soma",
+      "name": "TileDB-SOMA",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "data-model"
+      ],
+      "modalities": [
+        "SOMA",
+        "single-cell RNA-seq",
+        "large-matrix"
+      ],
+      "tasks": [
+        "storage",
+        "io",
+        "query",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "R",
+        "TileDB"
+      ],
+      "scales": [
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://tiledbsoma.readthedocs.io/",
+      "repo_url": "https://github.com/single-cell-data/TileDB-SOMA",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "大規模 single-cell annotated matrix を SOMA 形式で保存・検索するための TileDB ベースのライブラリです。"
+    },
+    {
+      "id": "mudata",
+      "name": "MuData",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "multiomics",
+        "data-model"
+      ],
+      "modalities": [
+        "multiome",
+        "AnnData",
+        "h5mu"
+      ],
+      "tasks": [
+        "data-model",
+        "io",
+        "integration",
+        "metadata"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse",
+        "AnnData"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://mudata.readthedocs.io/",
+      "repo_url": "https://github.com/scverse/mudata",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "複数 AnnData modality を MuData/h5mu としてまとめる single-cell multi-omics 向けデータ構造です。"
+    },
+    {
+      "id": "brainstorm",
+      "name": "Brainstorm",
+      "artifact_type": "tool",
+      "domains": [
+        "neurophysiology",
+        "neuroimaging"
+      ],
+      "modalities": [
+        "MEG",
+        "EEG",
+        "ECoG",
+        "sEEG",
+        "fNIRS"
+      ],
+      "tasks": [
+        "preprocessing",
+        "source-localization",
+        "visualization",
+        "workflow"
+      ],
+      "ecosystems": [
+        "MATLAB",
+        "Java",
+        "desktop"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://neuroimage.usc.edu/brainstorm/",
+      "repo_url": "https://github.com/brainstorm-tools/brainstorm3",
+      "license": "GPL-3.0",
+      "maturity": "widely-used",
+      "summary_ja": "MEG、EEG、ECoG、sEEG、fNIRS の前処理、ソース推定、可視化を行う GUI 付き解析環境です。"
+    },
+    {
+      "id": "brainflow",
+      "name": "BrainFlow",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "physiology",
+        "wearables"
+      ],
+      "modalities": [
+        "EEG",
+        "EMG",
+        "ECG",
+        "biosensors"
+      ],
+      "tasks": [
+        "data-acquisition",
+        "signal-processing",
+        "streaming",
+        "device-integration"
+      ],
+      "ecosystems": [
+        "C++",
+        "Python",
+        "Java",
+        "R",
+        "C#",
+        "MATLAB",
+        "Julia"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person",
+        "infrastructure"
+      ],
+      "official_url": "https://brainflow.org/",
+      "repo_url": "https://github.com/brainflow-dev/brainflow",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "EEG、EMG、ECG などの biosensor データ取得と信号処理を統一 API で扱うマルチ言語 SDK です。"
+    },
+    {
+      "id": "wonambi",
+      "name": "Wonambi",
+      "artifact_type": "tool",
+      "domains": [
+        "neurophysiology",
+        "sleep"
+      ],
+      "modalities": [
+        "EEG",
+        "ECoG",
+        "iEEG",
+        "sleep"
+      ],
+      "tasks": [
+        "io",
+        "visualization",
+        "sleep-scoring",
+        "event-detection"
+      ],
+      "ecosystems": [
+        "Python",
+        "desktop"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://wonambi-python.github.io/",
+      "repo_url": "https://github.com/wonambi-python/wonambi",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "EEG/ECoG/iEEG の読み込み、閲覧、睡眠 scoring、spindle/slow wave 検出を行う Python ツールです。"
+    },
+    {
+      "id": "mne-connectivity",
+      "name": "MNE-Connectivity",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "statistics"
+      ],
+      "modalities": [
+        "MEG",
+        "EEG",
+        "iEEG"
+      ],
+      "tasks": [
+        "connectivity",
+        "statistics",
+        "visualization",
+        "postprocessing"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://mne.tools/mne-connectivity/",
+      "repo_url": "https://github.com/mne-tools/mne-connectivity",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "MNE-Python 上で MEG/EEG/iEEG の機能的結合指標を計算・可視化するライブラリです。"
+    },
+    {
+      "id": "autoreject",
+      "name": "autoreject",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "quality-control"
+      ],
+      "modalities": [
+        "MEG",
+        "EEG"
+      ],
+      "tasks": [
+        "artifact-rejection",
+        "quality-control",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE",
+        "scikit-learn"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://autoreject.github.io/",
+      "repo_url": "https://github.com/autoreject/autoreject",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "M/EEG データの bad trial や bad sensor を自動推定し、修復・除外する Python ライブラリです。"
+    },
+    {
+      "id": "mne-bids-pipeline",
+      "name": "MNE-BIDS-Pipeline",
+      "artifact_type": "workflow",
+      "domains": [
+        "neurophysiology",
+        "neuroimaging",
+        "workflow"
+      ],
+      "modalities": [
+        "MEG",
+        "EEG",
+        "BIDS"
+      ],
+      "tasks": [
+        "preprocessing",
+        "workflow",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE",
+        "BIDS"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://mne.tools/mne-bids-pipeline/",
+      "repo_url": "https://github.com/mne-tools/mne-bids-pipeline",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "BIDS 形式の MEG/EEG データを MNE-Python で前処理し、レポート化する設定駆動パイプラインです。"
+    },
+    {
+      "id": "clinica",
+      "name": "Clinica",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging",
+        "clinical-data",
+        "machine-learning"
+      ],
+      "modalities": [
+        "MRI",
+        "PET",
+        "BIDS",
+        "clinical-cognitive"
+      ],
+      "tasks": [
+        "preprocessing",
+        "dataset-conversion",
+        "feature-extraction",
+        "machine-learning"
+      ],
+      "ecosystems": [
+        "Python",
+        "Nipype",
+        "BIDS",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "whole-person",
+        "infrastructure"
+      ],
+      "official_url": "https://www.clinica.run/",
+      "repo_url": "https://github.com/aramis-lab/clinica",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "臨床神経科学研究向けに MRI/PET などを BIDS 化し、前処理・特徴抽出・機械学習へ接続する Python プラットフォームです。"
+    },
+    {
+      "id": "pynetdicom",
+      "name": "pynetdicom",
+      "artifact_type": "library",
+      "domains": [
+        "medical-imaging",
+        "interoperability"
+      ],
+      "modalities": [
+        "DICOM",
+        "DICOM networking"
+      ],
+      "tasks": [
+        "networking",
+        "io",
+        "query-retrieve",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "DICOM"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://pydicom.github.io/pynetdicom/",
+      "repo_url": "https://github.com/pydicom/pynetdicom",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "DICOM DIMSE ネットワーク通信を Python で実装し、PACS との送受信や query/retrieve を扱うライブラリです。"
+    },
+    {
+      "id": "bidscoin",
+      "name": "BIDScoin",
+      "artifact_type": "tool",
+      "domains": [
+        "neuroimaging",
+        "data-standard"
+      ],
+      "modalities": [
+        "DICOM",
+        "NIfTI",
+        "BIDS",
+        "physiology"
+      ],
+      "tasks": [
+        "format-conversion",
+        "metadata",
+        "data-standard",
+        "workflow"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "desktop",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person",
+        "infrastructure"
+      ],
+      "official_url": "https://bidscoin.readthedocs.io/",
+      "repo_url": "https://github.com/Donders-Institute/bidscoin",
+      "license": "GPL-3.0-or-later",
+      "maturity": "active",
+      "summary_ja": "DICOM、NIfTI、physiology などの source-level 神経画像データを BIDS へ変換する Python ツールです。"
+    },
+    {
+      "id": "hl7-fhir",
+      "name": "HL7 FHIR Specification",
+      "artifact_type": "standard",
+      "domains": [
+        "clinical-data",
+        "interoperability",
+        "data-standard"
+      ],
+      "modalities": [
+        "FHIR",
+        "EHR",
+        "clinical-records"
+      ],
+      "tasks": [
+        "data-standard",
+        "interoperability",
+        "validation",
+        "metadata"
+      ],
+      "ecosystems": [
+        "FHIR",
+        "JSON",
+        "XML",
+        "RDF"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://hl7.org/fhir/",
+      "repo_url": "https://github.com/HL7/fhir",
+      "license": "CC0-1.0",
+      "maturity": "widely-used",
+      "summary_ja": "医療データ交換のための HL7 FHIR 仕様本体とその公開ソースです。"
+    },
+    {
+      "id": "firely-net-sdk",
+      "name": "Firely .NET SDK",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "interoperability"
+      ],
+      "modalities": [
+        "FHIR",
+        "EHR"
+      ],
+      "tasks": [
+        "parsing",
+        "validation",
+        "client-sdk",
+        "interoperability"
+      ],
+      "ecosystems": [
+        ".NET",
+        "C#",
+        "FHIR"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://fire.ly/firely-net-sdk/",
+      "repo_url": "https://github.com/FirelyTeam/firely-net-sdk",
+      "license": "BSD-3-Clause",
+      "maturity": "widely-used",
+      "summary_ja": "FHIR リソースの読み書き、検証、クライアント実装を .NET/C# で行う SDK です。"
+    },
+    {
+      "id": "google-fhir",
+      "name": "Google FHIR",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "interoperability",
+        "data-standard"
+      ],
+      "modalities": [
+        "FHIR",
+        "Protocol Buffers",
+        "analytics"
+      ],
+      "tasks": [
+        "data-model",
+        "parsing",
+        "format-conversion",
+        "analytics"
+      ],
+      "ecosystems": [
+        "Protocol Buffers",
+        "Java",
+        "C++",
+        "FHIR"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/google/fhir",
+      "repo_url": "https://github.com/google/fhir",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "FHIR リソースの Protocol Buffers 表現、変換、分析処理を提供する Google の公開ライブラリ群です。"
+    },
+    {
+      "id": "ohdsi-webapi",
+      "name": "OHDSI WebAPI",
+      "artifact_type": "platform",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "interoperability"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "api",
+        "cohort-definition",
+        "concept-search",
+        "phenotyping"
+      ],
+      "ecosystems": [
+        "Java",
+        "OHDSI",
+        "web"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OHDSI/WebAPI",
+      "repo_url": "https://github.com/OHDSI/WebAPI",
+      "license": "Apache-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "OMOP CDM 上の概念検索、cohort 定義、解析設計を ATLAS などへ提供する OHDSI の REST API 層です。"
+    },
+    {
+      "id": "ohdsi-ares",
+      "name": "OHDSI Ares",
+      "artifact_type": "platform",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "quality-control"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "data-quality",
+        "dashboard",
+        "visualization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI",
+        "web"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://ohdsi.github.io/Ares/",
+      "repo_url": "https://github.com/OHDSI/Ares",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "OMOP CDM の Achilles/DataQualityDashboard 結果を探索・可視化する OHDSI の品質確認ダッシュボードです。"
+    },
+    {
+      "id": "ohdsi-strategus",
+      "name": "OHDSI Strategus",
+      "artifact_type": "workflow",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "federated-analysis"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "workflow",
+        "cohort-analysis",
+        "reproducibility",
+        "federated-analysis"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI",
+        "HADES"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://ohdsi.github.io/Strategus/",
+      "repo_url": "https://github.com/OHDSI/Strategus",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "OHDSI HADES モジュールを研究仕様として組み立て、OMOP ネットワーク解析を再現可能に実行する R パッケージです。"
+    },
+    {
+      "id": "cdmconnector",
+      "name": "CDMConnector",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health"
+      ],
+      "modalities": [
+        "OMOP",
+        "relational-data",
+        "EHR"
+      ],
+      "tasks": [
+        "database-access",
+        "cohort-analysis",
+        "query",
+        "data-model"
+      ],
+      "ecosystems": [
+        "R",
+        "dplyr",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://darwin-eu.github.io/CDMConnector/",
+      "repo_url": "https://github.com/darwin-eu/CDMConnector",
+      "license": "Apache License (>= 2)",
+      "maturity": "active",
+      "summary_ja": "OMOP CDM データベースを dplyr 風の R オブジェクトとして参照・解析する DARWIN EU 系パッケージです。"
+    },
+    {
+      "id": "ga4gh-vrs",
+      "name": "GA4GH Variation Representation Specification",
+      "artifact_type": "standard",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "data-standard"
+      ],
+      "modalities": [
+        "variants",
+        "JSON Schema",
+        "variation"
+      ],
+      "tasks": [
+        "data-standard",
+        "identifier-generation",
+        "validation",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "JSON Schema",
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://www.ga4gh.org/product/variation-representation/",
+      "repo_url": "https://github.com/ga4gh/vrs",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "生物学的変異を一貫して表現し、計算可能な識別子を与える GA4GH の標準仕様です。"
+    },
+    {
+      "id": "ga4gh-beacon-v2",
+      "name": "GA4GH Beacon v2",
+      "artifact_type": "standard",
+      "domains": [
+        "genomics",
+        "population-genetics",
+        "federated-learning"
+      ],
+      "modalities": [
+        "variants",
+        "phenotypes",
+        "metadata"
+      ],
+      "tasks": [
+        "federated-query",
+        "data-discovery",
+        "data-standard",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "JSON Schema",
+        "web"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://docs.genomebeacons.org/",
+      "repo_url": "https://github.com/ga4gh-beacon/beacon-v2",
+      "license": "CC0-1.0",
+      "maturity": "active",
+      "summary_ja": "ゲノム・表現型データセットに対する federated discovery を実現する GA4GH Beacon API v2 標準です。"
+    },
+    {
+      "id": "ga4gh-wes",
+      "name": "GA4GH Workflow Execution Service",
+      "artifact_type": "standard",
+      "domains": [
+        "workflow",
+        "bioinformatics",
+        "data-standard"
+      ],
+      "modalities": [
+        "workflow",
+        "WDL",
+        "CWL"
+      ],
+      "tasks": [
+        "workflow",
+        "api",
+        "orchestration",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "OpenAPI",
+        "WDL",
+        "CWL"
+      ],
+      "scales": [
+        "infrastructure",
+        "molecular"
+      ],
+      "official_url": "https://ga4gh.github.io/workflow-execution-service-schemas/docs/",
+      "repo_url": "https://github.com/ga4gh/workflow-execution-service-schemas",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "WDL/CWL などの解析ワークフローをサービス越しに投入・監視するための GA4GH API 仕様です。"
+    },
+    {
+      "id": "opensafely-cli",
+      "name": "OpenSAFELY CLI",
+      "artifact_type": "tool",
+      "domains": [
+        "clinical-data",
+        "public-health",
+        "governance"
+      ],
+      "modalities": [
+        "EHR",
+        "secure-analysis",
+        "tabular"
+      ],
+      "tasks": [
+        "workflow",
+        "secure-analysis",
+        "reproducibility",
+        "orchestration"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line",
+        "OpenSAFELY"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://docs.opensafely.org/",
+      "repo_url": "https://github.com/opensafely-core/opensafely-cli",
+      "license": "GPL-3.0-or-later",
+      "maturity": "active",
+      "summary_ja": "OpenSAFELY 研究プロジェクトをローカル・secure backend 上で実行管理するためのコマンドラインツールです。"
+    },
+    {
+      "id": "i2b2-core-server",
+      "name": "i2b2 Core Server",
+      "artifact_type": "platform",
+      "domains": [
+        "clinical-data",
+        "phenotyping",
+        "data-management"
+      ],
+      "modalities": [
+        "EHR",
+        "clinical-records",
+        "data-warehouse"
+      ],
+      "tasks": [
+        "cohort-discovery",
+        "phenotyping",
+        "query",
+        "data-management"
+      ],
+      "ecosystems": [
+        "Java",
+        "web",
+        "SQL"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://i2b2.github.io/",
+      "repo_url": "https://github.com/i2b2/i2b2-core-server",
+      "license": "MPL-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "臨床研究データウェアハウス上で cohort 探索や phenotyping を行う i2b2 の core server です。"
+    },
+    {
+      "id": "cbioportal",
+      "name": "cBioPortal",
+      "artifact_type": "platform",
+      "domains": [
+        "clinical-genomics",
+        "cancer",
+        "visualization"
+      ],
+      "modalities": [
+        "variants",
+        "copy-number",
+        "expression",
+        "clinical-data"
+      ],
+      "tasks": [
+        "visualization",
+        "query",
+        "cohort-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Java",
+        "JavaScript",
+        "web"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://www.cbioportal.org/",
+      "repo_url": "https://github.com/cBioPortal/cbioportal",
+      "license": "AGPL-3.0",
+      "maturity": "widely-used",
+      "summary_ja": "がんゲノム、発現、コピー数、臨床情報を統合して探索・可視化する公開 Web プラットフォームです。"
+    },
+    {
+      "id": "genesis",
+      "name": "GENESIS",
+      "artifact_type": "library",
+      "domains": [
+        "population-genetics",
+        "genomics",
+        "statistics"
+      ],
+      "modalities": [
+        "genotypes",
+        "phenotypes",
+        "variants"
+      ],
+      "tasks": [
+        "association-testing",
+        "mixed-model",
+        "quality-control",
+        "population-structure"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/GENESIS/",
+      "repo_url": "https://git.bioconductor.org/packages/GENESIS",
+      "license": "GPL-3",
+      "maturity": "widely-used",
+      "summary_ja": "血縁・集団構造を考慮した GWAS や sequencing variant association を行う Bioconductor パッケージです。"
+    },
+    {
+      "id": "snprelate",
+      "name": "SNPRelate",
+      "artifact_type": "library",
+      "domains": [
+        "population-genetics",
+        "genomics"
+      ],
+      "modalities": [
+        "SNP",
+        "genotypes",
+        "GDS"
+      ],
+      "tasks": [
+        "PCA",
+        "IBD",
+        "quality-control",
+        "population-structure"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "GDS"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/SNPRelate/",
+      "repo_url": "https://git.bioconductor.org/packages/SNPRelate",
+      "license": "GPL-3",
+      "maturity": "widely-used",
+      "summary_ja": "SNP genotype データを GDS 形式で扱い、PCA、IBD、関連構造解析を行う R パッケージです。"
+    },
+    {
+      "id": "admixtools2",
+      "name": "ADMIXTOOLS 2",
+      "artifact_type": "library",
+      "domains": [
+        "population-genetics",
+        "statistics"
+      ],
+      "modalities": [
+        "genotypes",
+        "allele-frequency",
+        "population-data"
+      ],
+      "tasks": [
+        "admixture-analysis",
+        "f-statistics",
+        "modeling",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://uqrmaie1.github.io/admixtools/",
+      "repo_url": "https://github.com/uqrmaie1/admixtools",
+      "license": "GPL-3",
+      "maturity": "active",
+      "summary_ja": "f-statistics、admixture graph、qpAdm 系の集団遺伝解析を R で行う ADMIXTOOLS の現行実装です。"
+    },
+    {
+      "id": "epicontacts",
+      "name": "epicontacts",
+      "artifact_type": "library",
+      "domains": [
+        "epidemiology",
+        "public-health"
+      ],
+      "modalities": [
+        "line-list",
+        "contact-network",
+        "outbreak-data"
+      ],
+      "tasks": [
+        "contact-tracing",
+        "network-analysis",
+        "visualization",
+        "data-model"
+      ],
+      "ecosystems": [
+        "R",
+        "RECON"
+      ],
+      "scales": [
+        "population"
+      ],
+      "official_url": "http://www.repidemicsconsortium.org/epicontacts/",
+      "repo_url": "https://github.com/reconhub/epicontacts",
+      "license": "GPL (>=2)",
+      "maturity": "active",
+      "summary_ja": "感染症 line list と接触ネットワークを統合して outbreak の接触構造を解析・可視化する R パッケージです。"
+    },
+    {
+      "id": "incidence2",
+      "name": "incidence2",
+      "artifact_type": "library",
+      "domains": [
+        "epidemiology",
+        "public-health"
+      ],
+      "modalities": [
+        "line-list",
+        "case-counts",
+        "time-series"
+      ],
+      "tasks": [
+        "incidence-estimation",
+        "aggregation",
+        "visualization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "RECON"
+      ],
+      "scales": [
+        "population"
+      ],
+      "official_url": "https://www.reconverse.org/incidence2/",
+      "repo_url": "https://github.com/reconverse/incidence2",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "症例発生日や報告日に基づく incidence 集計と可視化を行う outbreak 解析向け R パッケージです。"
+    },
+    {
+      "id": "sf-r",
+      "name": "sf",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "environmental-data"
+      ],
+      "modalities": [
+        "vector-geospatial",
+        "simple-features",
+        "GeoJSON"
+      ],
+      "tasks": [
+        "io",
+        "spatial-join",
+        "geometry-operations",
+        "mapping"
+      ],
+      "ecosystems": [
+        "R",
+        "GDAL",
+        "GEOS",
+        "PROJ"
+      ],
+      "scales": [
+        "environmental",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://r-spatial.github.io/sf/",
+      "repo_url": "https://github.com/r-spatial/sf",
+      "license": "GPL-2 | MIT + file LICENSE",
+      "maturity": "widely-used",
+      "summary_ja": "R で simple features 形式の地理空間ベクターデータを読み書き・演算する標準的ライブラリです。"
+    },
+    {
+      "id": "terra-r",
+      "name": "terra",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "environmental-data",
+        "remote-sensing"
+      ],
+      "modalities": [
+        "raster",
+        "vector-geospatial",
+        "gridded-data"
+      ],
+      "tasks": [
+        "raster-processing",
+        "spatial-analysis",
+        "io",
+        "mapping"
+      ],
+      "ecosystems": [
+        "R",
+        "GDAL",
+        "PROJ"
+      ],
+      "scales": [
+        "environmental",
+        "population"
+      ],
+      "official_url": "https://rspatial.github.io/terra/",
+      "repo_url": "https://github.com/rspatial/terra",
+      "license": "GPL-3.0",
+      "maturity": "widely-used",
+      "summary_ja": "R で raster と vector の地理空間データを処理し、環境曝露やリモートセンシング解析に使うライブラリです。"
+    },
+    {
+      "id": "stars-r",
+      "name": "stars",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "environmental-data",
+        "time-series"
+      ],
+      "modalities": [
+        "spatiotemporal-array",
+        "raster",
+        "data-cube"
+      ],
+      "tasks": [
+        "spatiotemporal-analysis",
+        "io",
+        "aggregation",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "GDAL",
+        "sf"
+      ],
+      "scales": [
+        "environmental",
+        "population"
+      ],
+      "official_url": "https://r-spatial.github.io/stars/",
+      "repo_url": "https://github.com/r-spatial/stars",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "時空間 raster や data cube を R で扱い、気象・曝露データの集計に使えるライブラリです。"
+    },
+    {
+      "id": "openair",
+      "name": "openair",
+      "artifact_type": "library",
+      "domains": [
+        "air-quality",
+        "environmental-data",
+        "public-health"
+      ],
+      "modalities": [
+        "air-pollution",
+        "meteorology",
+        "time-series"
+      ],
+      "tasks": [
+        "visualization",
+        "trend-analysis",
+        "source-apportionment",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "environmental",
+        "population"
+      ],
+      "official_url": "https://openair-project.github.io/openair/",
+      "repo_url": "https://github.com/openair-project/openair",
+      "license": "MIT + file LICENSE",
+      "maturity": "widely-used",
+      "summary_ja": "大気汚染・気象時系列の可視化、傾向解析、風向別解析を行う環境疫学向け R パッケージです。"
+    },
+    {
+      "id": "nasapower",
+      "name": "nasapower",
+      "artifact_type": "library",
+      "domains": [
+        "environmental-data",
+        "climate",
+        "geospatial"
+      ],
+      "modalities": [
+        "meteorology",
+        "solar-radiation",
+        "gridded-data"
+      ],
+      "tasks": [
+        "data-access",
+        "exposure-assessment",
+        "spatiotemporal-query",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "R",
+        "NASA POWER"
+      ],
+      "scales": [
+        "environmental",
+        "population"
+      ],
+      "official_url": "https://docs.ropensci.org/nasapower/",
+      "repo_url": "https://github.com/ropensci/nasapower",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "NASA POWER の気象・太陽放射データを R から取得し、地域曝露推定に使うパッケージです。"
+    },
+    {
+      "id": "toil",
+      "name": "Toil",
+      "artifact_type": "workflow-engine",
+      "domains": [
+        "workflow",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "workflow",
+        "WDL",
+        "CWL"
+      ],
+      "tasks": [
+        "workflow",
+        "orchestration",
+        "cloud-execution",
+        "reproducibility"
+      ],
+      "ecosystems": [
+        "Python",
+        "WDL",
+        "CWL",
+        "cloud"
+      ],
+      "scales": [
+        "infrastructure",
+        "molecular"
+      ],
+      "official_url": "https://toil.readthedocs.io/",
+      "repo_url": "https://github.com/DataBiosphere/toil",
+      "license": "Apache-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "WDL/CWL を含む解析ワークフローをローカル、HPC、クラウドで実行する Python ベースの engine です。"
+    },
+    {
+      "id": "miniwdl",
+      "name": "miniwdl",
+      "artifact_type": "workflow-engine",
+      "domains": [
+        "workflow",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "WDL",
+        "workflow"
+      ],
+      "tasks": [
+        "workflow",
+        "validation",
+        "local-execution",
+        "testing"
+      ],
+      "ecosystems": [
+        "Python",
+        "WDL",
+        "Docker"
+      ],
+      "scales": [
+        "infrastructure",
+        "molecular"
+      ],
+      "official_url": "https://miniwdl.readthedocs.io/",
+      "repo_url": "https://github.com/chanzuckerberg/miniwdl",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "WDL ワークフローをローカルで検証・実行する軽量な Python 製 workflow engine です。"
+    },
+    {
+      "id": "synthcity",
+      "name": "Synthcity",
+      "artifact_type": "library",
+      "domains": [
+        "privacy",
+        "machine-learning",
+        "clinical-data"
+      ],
+      "modalities": [
+        "tabular",
+        "time-series",
+        "sensitive-data"
+      ],
+      "tasks": [
+        "synthetic-data-generation",
+        "privacy-evaluation",
+        "benchmarking",
+        "modeling"
+      ],
+      "ecosystems": [
+        "Python",
+        "PyTorch"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://synthcity.readthedocs.io/",
+      "repo_url": "https://github.com/vanderschaarlab/synthcity",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "医療・表形式・時系列データ向けに合成データ生成と privacy/utility 評価を行う Python ライブラリです。"
+    },
+    {
+      "id": "substra",
+      "name": "Substra",
+      "artifact_type": "platform",
+      "domains": [
+        "federated-learning",
+        "privacy",
+        "clinical-data"
+      ],
+      "modalities": [
+        "sensitive-data",
+        "tabular",
+        "medical-imaging"
+      ],
+      "tasks": [
+        "federated-learning",
+        "governance",
+        "training",
+        "audit"
+      ],
+      "ecosystems": [
+        "Python",
+        "Kubernetes",
+        "web"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://docs.substra.org/",
+      "repo_url": "https://github.com/Substra/substra",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "医療機関間などの機微データを移動せずに federated learning 実験を管理する OSS プラットフォームです。"
+    },
+    {
+      "id": "lavaan",
+      "name": "lavaan",
+      "artifact_type": "library",
+      "domains": [
+        "psychometrics",
+        "statistics",
+        "behavior"
+      ],
+      "modalities": [
+        "questionnaire",
+        "latent-variables",
+        "tabular"
+      ],
+      "tasks": [
+        "structural-equation-modeling",
+        "factor-analysis",
+        "modeling",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral",
+        "population"
+      ],
+      "official_url": "https://lavaan.ugent.be/",
+      "repo_url": "https://github.com/yrosseel/lavaan",
+      "license": "GPL (>= 2)",
+      "maturity": "widely-used",
+      "summary_ja": "確認的因子分析、構造方程式モデリング、潜在成長モデルを R で推定する心理統計ライブラリです。"
+    },
+    {
+      "id": "openmx",
+      "name": "OpenMx",
+      "artifact_type": "library",
+      "domains": [
+        "psychometrics",
+        "statistics",
+        "behavior"
+      ],
+      "modalities": [
+        "questionnaire",
+        "latent-variables",
+        "tabular"
+      ],
+      "tasks": [
+        "structural-equation-modeling",
+        "optimization",
+        "modeling",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral",
+        "population"
+      ],
+      "official_url": "https://openmx.ssri.psu.edu/",
+      "repo_url": "https://github.com/OpenMx/OpenMx",
+      "license": "GPL (>= 3)",
+      "maturity": "widely-used",
+      "summary_ja": "行列代数とパス指定で柔軟な構造方程式モデルを構築・推定する R パッケージです。"
+    },
+    {
+      "id": "spm",
+      "name": "SPM",
+      "artifact_type": "platform",
+      "domains": [
+        "neuroimaging",
+        "medical-imaging",
+        "statistics"
+      ],
+      "modalities": [
+        "MRI",
+        "fMRI",
+        "PET",
+        "EEG",
+        "MEG",
+        "DICOM",
+        "NIfTI"
+      ],
+      "tasks": [
+        "preprocessing",
+        "statistical-modeling",
+        "segmentation",
+        "registration",
+        "analysis"
+      ],
+      "ecosystems": [
+        "MATLAB"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://www.fil.ion.ucl.ac.uk/spm/software/spm12/",
+      "repo_url": "https://github.com/spm/spm",
+      "license": "GPL-2.0-or-later",
+      "maturity": "widely-used",
+      "summary_ja": "MRI、fMRI、PET、EEG/MEG などの統計的脳画像解析を MATLAB で行う標準的な解析環境です。"
+    },
+    {
+      "id": "c-pac",
+      "name": "C-PAC",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging",
+        "workflow",
+        "quality-control"
+      ],
+      "modalities": [
+        "fMRI",
+        "BIDS",
+        "NIfTI"
+      ],
+      "tasks": [
+        "preprocessing",
+        "connectivity",
+        "quality-control",
+        "pipeline-orchestration"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://fcp-indi.github.io/",
+      "repo_url": "https://github.com/FCP-INDI/C-PAC",
+      "license": "LGPL-3.0-or-later",
+      "maturity": "widely-used",
+      "summary_ja": "安静時 fMRI の前処理、connectivity、品質管理を BIDS などの研究データ上で自動化するパイプラインです。"
+    },
+    {
+      "id": "pyprep",
+      "name": "PyPREP",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "quality-control"
+      ],
+      "modalities": [
+        "EEG"
+      ],
+      "tasks": [
+        "preprocessing",
+        "artifact-detection",
+        "referencing",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://pyprep.readthedocs.io/",
+      "repo_url": "https://github.com/sappelhoff/pyprep",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "EEG の PREP pipeline を Python/MNE で実装し、robust reference や bad channel 検出を行う前処理ライブラリです。"
+    },
+    {
+      "id": "mne-icalabel",
+      "name": "MNE-ICALabel",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "machine-learning",
+        "quality-control"
+      ],
+      "modalities": [
+        "EEG",
+        "MEG",
+        "ICA components"
+      ],
+      "tasks": [
+        "artifact-classification",
+        "quality-control",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://mne.tools/mne-icalabel/stable/index.html",
+      "repo_url": "https://github.com/mne-tools/mne-icalabel",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "MNE-Python 上で ICA component を自動分類し、EEG/MEG の artifact 処理を補助するライブラリです。"
+    },
+    {
+      "id": "mne-nirs",
+      "name": "MNE-NIRS",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "neuroimaging",
+        "statistics"
+      ],
+      "modalities": [
+        "fNIRS"
+      ],
+      "tasks": [
+        "preprocessing",
+        "glm",
+        "visualization",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://mne.tools/mne-nirs/",
+      "repo_url": "https://github.com/mne-tools/mne-nirs",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "fNIRS データの前処理、GLM、可視化を MNE ecosystem 上で扱う Python ライブラリです。"
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "artifact_type": "tool",
+      "domains": [
+        "sleep",
+        "neurophysiology",
+        "physiology"
+      ],
+      "modalities": [
+        "PSG",
+        "EEG",
+        "EDF"
+      ],
+      "tasks": [
+        "sleep-analysis",
+        "spectral-analysis",
+        "quality-control",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "C++",
+        "R"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://zzz.bwh.harvard.edu/luna/",
+      "repo_url": "https://github.com/remnrem/luna-base",
+      "license": "GPL-3.0",
+      "maturity": "active",
+      "summary_ja": "大規模 polysomnography や sleep EEG の EDF データを解析するためのコマンドライン中心の睡眠解析ツールです。"
+    },
+    {
+      "id": "systole",
+      "name": "Systole",
+      "artifact_type": "library",
+      "domains": [
+        "physiology",
+        "psychophysiology",
+        "behavior"
+      ],
+      "modalities": [
+        "ECG",
+        "PPG",
+        "heart-rate"
+      ],
+      "tasks": [
+        "peak-detection",
+        "hrv",
+        "artifact-correction",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "PsychoPy"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://legrandnico.github.io/systole/",
+      "repo_url": "https://github.com/LegrandNico/systole",
+      "license": "GPL-3.0",
+      "maturity": "active",
+      "summary_ja": "ECG/PPG から心拍ピークや HRV を推定し、心理生理実験の刺激同期にも使える Python ライブラリです。"
+    },
+    {
+      "id": "scikit-digital-health",
+      "name": "Scikit Digital Health",
+      "artifact_type": "library",
+      "domains": [
+        "wearables",
+        "physiology",
+        "digital-health"
+      ],
+      "modalities": [
+        "accelerometer",
+        "IMU",
+        "wearable"
+      ],
+      "tasks": [
+        "ingest",
+        "gait-analysis",
+        "sleep-analysis",
+        "activity-recognition",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://scikit-digital-health.readthedocs.io/",
+      "repo_url": "https://github.com/PfizerRD/scikit-digital-health",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "ウェアラブル IMU/加速度データの読み込み、gait、sleep、activity 解析を行う digital health 向け Python toolkit です。"
+    },
+    {
+      "id": "orthanc",
+      "name": "Orthanc",
+      "artifact_type": "platform",
+      "domains": [
+        "medical-imaging",
+        "clinical-data",
+        "infrastructure"
+      ],
+      "modalities": [
+        "DICOM",
+        "PACS"
+      ],
+      "tasks": [
+        "storage",
+        "server",
+        "ingest",
+        "workflow",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "C++",
+        "REST"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://www.orthanc-server.com/",
+      "repo_url": "https://orthanc.uclouvain.be/hg/orthanc/",
+      "license": "GPL-3.0-or-later",
+      "maturity": "widely-used",
+      "summary_ja": "研究・臨床ワークフローで DICOM 画像を保存、検索、連携する軽量 PACS / DICOM server です。",
+      "notes": "公式の公開 Mercurial repository を repo_url にしています。"
+    },
+    {
+      "id": "dcmtk",
+      "name": "DCMTK",
+      "artifact_type": "toolkit",
+      "domains": [
+        "medical-imaging",
+        "interoperability"
+      ],
+      "modalities": [
+        "DICOM"
+      ],
+      "tasks": [
+        "parsing",
+        "format-conversion",
+        "networking",
+        "validation"
+      ],
+      "ecosystems": [
+        "C++"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://dcmtk.org/en/dcmtk/dcmtk-software-development/",
+      "repo_url": "https://github.com/DCMTK/dcmtk",
+      "license": "BSD-3-Clause-style",
+      "maturity": "widely-used",
+      "summary_ja": "DICOM の読み書き、変換、ネットワーク通信を C++ で扱う医用画像向け基礎 toolkit です。"
+    },
+    {
+      "id": "dcm4che",
+      "name": "dcm4che",
+      "artifact_type": "toolkit",
+      "domains": [
+        "medical-imaging",
+        "clinical-data",
+        "interoperability"
+      ],
+      "modalities": [
+        "DICOM",
+        "PACS"
+      ],
+      "tasks": [
+        "parsing",
+        "networking",
+        "storage",
+        "workflow",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Java"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://www.dcm4che.org/",
+      "repo_url": "https://github.com/dcm4che/dcm4che",
+      "license": "MPL-1.1/GPL-2.0-or-later/LGPL-2.1-or-later",
+      "maturity": "widely-used",
+      "summary_ja": "Java ecosystem で DICOM/PACS の読み書き、通信、臨床画像ワークフローを実装する toolkit です。"
+    },
+    {
+      "id": "itk-snap",
+      "name": "ITK-SNAP",
+      "artifact_type": "application",
+      "domains": [
+        "medical-imaging",
+        "annotation"
+      ],
+      "modalities": [
+        "MRI",
+        "CT",
+        "3D image"
+      ],
+      "tasks": [
+        "segmentation",
+        "annotation",
+        "visualization",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "C++",
+        "ITK"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://www.itksnap.org/",
+      "repo_url": "https://github.com/pyushkevich/itksnap",
+      "license": "GPL-3.0",
+      "maturity": "widely-used",
+      "summary_ja": "MRI/CT などの 3D 医用画像を表示し、segmentation と annotation を行う GUI アプリケーションです。"
+    },
+    {
+      "id": "mitk",
+      "name": "MITK",
+      "artifact_type": "platform",
+      "domains": [
+        "medical-imaging",
+        "visualization",
+        "annotation"
+      ],
+      "modalities": [
+        "MRI",
+        "CT",
+        "PET",
+        "DICOM"
+      ],
+      "tasks": [
+        "visualization",
+        "segmentation",
+        "registration",
+        "application-framework"
+      ],
+      "ecosystems": [
+        "C++",
+        "ITK",
+        "VTK"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://www.mitk.org/",
+      "repo_url": "https://github.com/MITK/MITK",
+      "license": "BSD-3-Clause",
+      "maturity": "widely-used",
+      "summary_ja": "医用画像の可視化、segmentation、registration、研究用アプリケーション構築を支える C++ framework / workbench です。"
+    },
+    {
+      "id": "expyriment",
+      "name": "Expyriment",
+      "artifact_type": "library",
+      "domains": [
+        "behavior",
+        "psychology",
+        "experimental-control"
+      ],
+      "modalities": [
+        "stimulus",
+        "response",
+        "behavioral-task"
+      ],
+      "tasks": [
+        "experiment-design",
+        "stimulus-presentation",
+        "response-collection",
+        "timing-control"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "behavioral",
+        "whole-person"
+      ],
+      "official_url": "https://expyriment.org/",
+      "repo_url": "https://github.com/expyriment/expyriment",
+      "license": "GPL-3.0",
+      "maturity": "active",
+      "summary_ja": "タイミング制御が必要な心理物理・行動実験の刺激提示と反応収集を Python で実装するライブラリです。"
+    },
+    {
+      "id": "jatos",
+      "name": "JATOS",
+      "artifact_type": "platform",
+      "domains": [
+        "behavior",
+        "psychology",
+        "data-collection"
+      ],
+      "modalities": [
+        "online-study",
+        "browser-task",
+        "questionnaire"
+      ],
+      "tasks": [
+        "experiment-hosting",
+        "data-collection",
+        "study-management",
+        "participant-flow"
+      ],
+      "ecosystems": [
+        "Java",
+        "JavaScript"
+      ],
+      "scales": [
+        "behavioral",
+        "whole-person"
+      ],
+      "official_url": "https://www.jatos.org/",
+      "repo_url": "https://github.com/JATOS/JATOS",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "jsPsych、lab.js、OpenSesame などのオンライン行動実験を self-host し、実行とデータ管理を行う platform です。"
+    },
+    {
+      "id": "psychojs",
+      "name": "PsychoJS",
+      "artifact_type": "library",
+      "domains": [
+        "behavior",
+        "psychology",
+        "experimental-control"
+      ],
+      "modalities": [
+        "browser-task",
+        "stimulus",
+        "response"
+      ],
+      "tasks": [
+        "stimulus-presentation",
+        "response-collection",
+        "browser-runtime",
+        "experiment-design"
+      ],
+      "ecosystems": [
+        "JavaScript",
+        "PsychoPy"
+      ],
+      "scales": [
+        "behavioral",
+        "whole-person"
+      ],
+      "official_url": "https://psychopy.github.io/psychojs/",
+      "repo_url": "https://github.com/psychopy/psychojs",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "PsychoPy から出力されるブラウザ実験などを JavaScript で実行する心理実験ランタイムです。"
+    },
+    {
+      "id": "psychtoolbox-3",
+      "name": "Psychtoolbox-3",
+      "artifact_type": "library",
+      "domains": [
+        "behavior",
+        "psychology",
+        "experimental-control"
+      ],
+      "modalities": [
+        "stimulus",
+        "response",
+        "psychophysics"
+      ],
+      "tasks": [
+        "stimulus-presentation",
+        "response-collection",
+        "timing-control",
+        "experiment-design"
+      ],
+      "ecosystems": [
+        "MATLAB",
+        "Octave"
+      ],
+      "scales": [
+        "behavioral",
+        "whole-person"
+      ],
+      "official_url": "https://psychtoolbox.org/",
+      "repo_url": "https://github.com/Psychtoolbox-3/Psychtoolbox-3",
+      "maturity": "widely-used",
+      "summary_ja": "MATLAB/Octave で高精度な視覚・聴覚刺激提示と反応収集を行う心理物理実験 toolkit です。",
+      "notes": "公開 repository は確認済みですが、ライセンス表記は構成要素により混在するため license は固定していません。"
+    },
+    {
+      "id": "mirt",
+      "name": "mirt",
+      "artifact_type": "library",
+      "domains": [
+        "psychometrics",
+        "statistics",
+        "survey"
+      ],
+      "modalities": [
+        "questionnaire",
+        "scale",
+        "item-response"
+      ],
+      "tasks": [
+        "item-response-theory",
+        "latent-variable-modeling",
+        "differential-item-functioning",
+        "model-fitting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "behavioral",
+        "population"
+      ],
+      "official_url": "https://philchalmers.r-universe.dev/mirt/doc/manual.html",
+      "repo_url": "https://github.com/philchalmers/mirt",
+      "license": "GPL-3.0-or-later",
+      "maturity": "widely-used",
+      "summary_ja": "質問紙・尺度データの multidimensional item response theory、DIF、潜在特性モデルを扱う R package です。"
+    },
+    {
+      "id": "lead-dbs",
+      "name": "Lead-DBS",
+      "artifact_type": "platform",
+      "domains": [
+        "neuroimaging",
+        "medical-imaging",
+        "clinical-neuroscience"
+      ],
+      "modalities": [
+        "MRI",
+        "CT",
+        "DBS",
+        "connectome"
+      ],
+      "tasks": [
+        "electrode-localization",
+        "segmentation",
+        "registration",
+        "connectomics",
+        "visualization"
+      ],
+      "ecosystems": [
+        "MATLAB"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://netstim.gitbook.io/leaddbs",
+      "repo_url": "https://github.com/netstim/leaddbs",
+      "license": "GPL-3.0",
+      "maturity": "active",
+      "summary_ja": "DBS 電極位置推定、画像 registration、connectomic neuroimaging を扱う臨床神経画像向け toolkit です。"
     }
   ]
 }
