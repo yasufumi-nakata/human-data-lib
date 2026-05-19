@@ -6,11 +6,15 @@
 
 2026-05-18 の更新では、GenomicRanges、SummarizedExperiment、SingleCellExperiment、VariantAnnotation などの Bioconductor 基盤、ProteoWizard、GA4GH VRS/Beacon/WES を追加し、R/Bioconductor と標準 API 側の抜けを補いました。
 
+2026-05-19 の更新では、minfi、methylKit、bsseq、SeSAMe を追加し、DNA methylation array と bisulfite sequencing の公式 Bioconductor 実装を補いました。加えて VSEARCH、CellBender、slingshot、tradeSeq、cell2location を追加し、microbiome、single-cell QC、trajectory、spatial deconvolution の抜けを小さくしました。
+
 ## cellular and tissue
 
 single-cell、spatial omics、cytometry、細胞画像、病理画像は、分子特徴と細胞/組織構造を接続する中間尺度です。Scanpy、Seurat、SpatialData、Cellpose、StarDist、FlowKit、pycytominer などを同じ尺度タグで横断検索できるようにしています。
 
 SpatialExperiment、cytomapper、Bio-Formats、OpenSlide、HistomicsTK、Digital Slide Archive、Vitessce、TileDB-SOMA、CELLxGENE Census などを加え、single-cell/spatial data model と病理画像インフラの両側から検索できるようにしています。
+
+TIAToolbox も追加し、whole-slide pathology 画像の読み込み、前処理、特徴抽出、モデル適用を扱う Python toolkit まで tissue / clinical scale で拾えるようにしています。
 
 ## organ-system
 
@@ -18,11 +22,15 @@ EEG/MEG/iEEG は MNE-Python、EEGLAB、FieldTrip、Brainstorm のように言語
 
 Brainstorm、SPM、C-PAC、MNE-Connectivity、autoreject、PyPREP、MNE-ICALabel、MNE-NIRS、MNE-BIDS-Pipeline、BrainFlow、Luna、Wonambi、Clinica、BIDScoin、Orthanc、DCMTK、dcm4che、ITK-SNAP、MITK、Lead-DBS などを追加し、EEG/MEG/fNIRS、睡眠、DICOM/PACS、医用画像 annotation まで広げています。
 
+Neo、odML、Braindecode、Plastimatch、Connectome Workbench を追加し、神経電気生理の I/O/metadata、脳信号 deep learning、volumetric registration、HCP 系 connectome 可視化まで確認対象に含めています。
+
 ## whole-person and clinical
 
 臨床データは EHR そのもの、FHIR/OMOP の標準、phenotyping、clinical NLP、survival analysis が分かれます。生データを扱う前に、同意、匿名化、アクセス権、監査証跡を明確にする必要があります。
 
 HL7 FHIR specification、Firely .NET SDK、Google FHIR、OHDSI WebAPI/Ares/Strategus/CDMConnector、OpenSAFELY CLI、i2b2 Core Server、cBioPortal を追加し、標準仕様、SDK、OMOP 運用、secure analytics、がんゲノム臨床ポータルを分けて見られるようにしています。
+
+Inferno Framework と Archie も追加し、FHIR conformance testing と openEHR archetype/reference model 実装を clinical infrastructure 側から確認できるようにしました。
 
 ## behavior and psychometrics
 
@@ -35,6 +43,8 @@ Expyriment、JATOS、PsychoJS、Psychtoolbox-3、lavaan、OpenMx、mirt、Systol
 コホート、疫学、公衆衛生、地理空間、曝露、移動データはマクロ側の尺度です。EpiNow2、EpiEstim、GeoPandas、PySAL、rexposome、scikit-mobility などを入れ、個人単位データと集団・環境文脈の橋渡しを意識しています。
 
 GENESIS、SNPRelate、ADMIXTOOLS 2、epicontacts、incidence2、sf、terra、stars、openair、nasapower を追加し、集団遺伝、公衆衛生 transmission data、R の地理空間・大気環境データ処理を補っています。
+
+simulist、outbreaker2、trackintel を追加し、アウトブレイク line list simulation、伝播経路推定、人間移動軌跡解析を population / behavioral / environmental scale に接続しました。
 
 ## privacy and governance
 

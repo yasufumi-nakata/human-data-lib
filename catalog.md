@@ -2,24 +2,24 @@
 
 このページは `libraries.json` から生成した、人間由来バイオデータ解析カタログの全件表示です。JSON を直接読まなくても、公開ページ上で全項目を確認できます。
 
-- 項目数: 444
-- カタログ生成日: 2026-05-18
+- 項目数: 464
+- カタログ生成日: 2026-05-19
 - スキーマ: 0.1.0
 
 ## 解析スケール別件数
 
 | Scale | Count |
 | --- | ---: |
-| `molecular` | 177 |
-| `cellular` | 83 |
-| `tissue` | 31 |
-| `organ-system` | 87 |
-| `whole-person` | 82 |
-| `behavioral` | 20 |
-| `clinical` | 111 |
-| `population` | 118 |
-| `environmental` | 25 |
-| `infrastructure` | 127 |
+| `molecular` | 185 |
+| `cellular` | 87 |
+| `tissue` | 33 |
+| `organ-system` | 92 |
+| `whole-person` | 84 |
+| `behavioral` | 21 |
+| `clinical` | 115 |
+| `population` | 125 |
+| `environmental` | 26 |
+| `infrastructure` | 131 |
 
 ## 全項目
 
@@ -469,6 +469,26 @@
 | `psychtoolbox-3` | [Psychtoolbox-3](https://psychtoolbox.org/) | `library` | `behavioral`<br>`whole-person` | `behavior`<br>`psychology`<br>`experimental-control` | `stimulus`<br>`response`<br>`psychophysics` | `stimulus-presentation`<br>`response-collection`<br>`timing-control`<br>`experiment-design` | `MATLAB`<br>`Octave` | [公式](https://psychtoolbox.org/) | [repo](https://github.com/Psychtoolbox-3/Psychtoolbox-3) | MATLAB/Octave で高精度な視覚・聴覚刺激提示と反応収集を行う心理物理実験 toolkit です。 |
 | `mirt` | [mirt](https://philchalmers.r-universe.dev/mirt/doc/manual.html) | `library` | `behavioral`<br>`population` | `psychometrics`<br>`statistics`<br>`survey` | `questionnaire`<br>`scale`<br>`item-response` | `item-response-theory`<br>`latent-variable-modeling`<br>`differential-item-functioning`<br>`model-fitting` | `R` | [公式](https://philchalmers.r-universe.dev/mirt/doc/manual.html) | [repo](https://github.com/philchalmers/mirt) | 質問紙・尺度データの multidimensional item response theory、DIF、潜在特性モデルを扱う R package です。 |
 | `lead-dbs` | [Lead-DBS](https://netstim.gitbook.io/leaddbs) | `platform` | `organ-system`<br>`clinical` | `neuroimaging`<br>`medical-imaging`<br>`clinical-neuroscience` | `MRI`<br>`CT`<br>`DBS`<br>`connectome` | `electrode-localization`<br>`segmentation`<br>`registration`<br>`connectomics`<br>`visualization` | `MATLAB` | [公式](https://netstim.gitbook.io/leaddbs) | [repo](https://github.com/netstim/leaddbs) | DBS 電極位置推定、画像 registration、connectomic neuroimaging を扱う臨床神経画像向け toolkit です。 |
+| `minfi` | [minfi](https://bioconductor.org/packages/minfi/) | `library` | `molecular`<br>`population` | `epigenomics`<br>`methylation-array` | `DNA-methylation-array`<br>`IDAT`<br>`Infinium` | `preprocessing`<br>`quality-control`<br>`normalization`<br>`differential-methylation` | `R`<br>`Bioconductor` | [公式](https://bioconductor.org/packages/minfi/) | [repo](https://git.bioconductor.org/packages/minfi) | Illumina Infinium DNA methylation array の読み込み、前処理、QC、メチル化解析を行う Bioconductor パッケージです。 |
+| `methylkit` | [methylKit](https://bioconductor.org/packages/methylKit/) | `library` | `molecular`<br>`population` | `epigenomics`<br>`methylation` | `bisulfite-sequencing`<br>`cytosine-methylation` | `differential-methylation`<br>`annotation`<br>`visualization`<br>`statistics` | `R`<br>`Bioconductor` | [公式](https://bioconductor.org/packages/methylKit/) | [repo](https://git.bioconductor.org/packages/methylKit) | Bisulfite sequencing 由来の cytosine methylation データを統計解析し、差次的メチル化を調べる R パッケージです。 |
+| `bsseq` | [bsseq](https://bioconductor.org/packages/bsseq/) | `library` | `molecular`<br>`population` | `epigenomics`<br>`statistics` | `bisulfite-sequencing`<br>`DNA-methylation` | `smoothing`<br>`differential-methylation`<br>`visualization`<br>`statistics` | `R`<br>`Bioconductor` | [公式](https://bioconductor.org/packages/bsseq/) | [repo](https://git.bioconductor.org/packages/bsseq) | Bisulfite sequencing のメチル化率を平滑化し、領域単位の差次的メチル化解析を支援する Bioconductor パッケージです。 |
+| `sesame` | [SeSAMe](https://bioconductor.org/packages/sesame/) | `library` | `molecular`<br>`population` | `epigenomics`<br>`methylation-array` | `DNA-methylation-array`<br>`Infinium`<br>`IDAT` | `preprocessing`<br>`quality-control`<br>`visualization`<br>`inference` | `R`<br>`Bioconductor` | [公式](https://bioconductor.org/packages/sesame/) | [repo](https://git.bioconductor.org/packages/sesame) | 複数世代の Infinium DNA methylation BeadChip を前処理、QC、可視化、推論する Bioconductor パッケージです。 |
+| `slingshot` | [slingshot](https://bioconductor.org/packages/slingshot/) | `library` | `molecular`<br>`cellular` | `single-cell`<br>`trajectory` | `single-cell RNA-seq`<br>`reduced-dimensions` | `trajectory`<br>`pseudotime`<br>`lineage-inference`<br>`visualization` | `R`<br>`Bioconductor` | [公式](https://bioconductor.org/packages/slingshot/) | [repo](https://git.bioconductor.org/packages/slingshot) | 低次元表現とクラスタから single-cell データの分岐 lineage と pseudotime を推定する Bioconductor パッケージです。 |
+| `tradeseq` | [tradeSeq](https://bioconductor.org/packages/tradeSeq/) | `library` | `molecular`<br>`cellular` | `single-cell`<br>`trajectory`<br>`statistics` | `single-cell RNA-seq`<br>`pseudotime` | `trajectory-differential-expression`<br>`generalized-additive-model`<br>`association-testing`<br>`visualization` | `R`<br>`Bioconductor` | [公式](https://bioconductor.org/packages/tradeSeq/) | [repo](https://git.bioconductor.org/packages/tradeSeq) | single-cell trajectory や pseudotime に沿った遺伝子発現変化を GAM で検定する Bioconductor パッケージです。 |
+| `cellbender` | [CellBender](https://cellbender.readthedocs.io/) | `tool` | `molecular`<br>`cellular` | `single-cell`<br>`quality-control`<br>`machine-learning` | `single-cell RNA-seq`<br>`count-matrix` | `background-removal`<br>`denoising`<br>`quality-control`<br>`preprocessing` | `Python`<br>`PyTorch`<br>`command-line` | [公式](https://cellbender.readthedocs.io/) | [repo](https://github.com/broadinstitute/CellBender) | single-cell RNA-seq count matrix から ambient RNA などの技術的 background を推定・除去するツールです。 |
+| `cell2location` | [cell2location](https://cell2location.readthedocs.io/) | `library` | `cellular`<br>`tissue` | `spatial-omics`<br>`single-cell`<br>`machine-learning` | `spatial transcriptomics`<br>`single-cell RNA-seq` | `cell-type-mapping`<br>`deconvolution`<br>`spatial-analysis`<br>`modeling` | `Python`<br>`PyTorch`<br>`scverse` | [公式](https://cell2location.readthedocs.io/) | [repo](https://github.com/BayraktarLab/cell2location) | single-cell 参照から spatial transcriptomics spot 上の細胞型構成を推定する確率モデル系ライブラリです。 |
+| `vsearch` | [VSEARCH](https://torognes.github.io/vsearch/) | `tool` | `molecular` | `microbiome`<br>`metagenomics` | `amplicon`<br>`FASTA`<br>`FASTQ` | `clustering`<br>`chimera-detection`<br>`dereplication`<br>`taxonomic-classification` | `C++`<br>`command-line` | [公式](https://torognes.github.io/vsearch/) | [repo](https://github.com/torognes/vsearch) | アンプリコンやメタゲノム配列のクラスタリング、chimera 検出、dereplication、検索を行う OSS ツールです。 |
+| `tiatoolbox` | [TIAToolbox](https://tia-toolbox.readthedocs.io/) | `library` | `tissue`<br>`clinical` | `digital-pathology`<br>`bioimaging`<br>`machine-learning` | `whole-slide-imaging`<br>`histopathology` | `io`<br>`preprocessing`<br>`segmentation`<br>`feature-extraction`<br>`visualization` | `Python`<br>`PyTorch` | [公式](https://tia-toolbox.readthedocs.io/) | [repo](https://github.com/TissueImageAnalytics/tiatoolbox) | whole-slide pathology 画像の読み込み、前処理、モデル適用、特徴抽出を行う computational pathology toolkit です。 |
+| `neo` | [Neo](https://neo.readthedocs.io/) | `library` | `organ-system`<br>`infrastructure` | `neurophysiology`<br>`data-model` | `electrophysiology`<br>`spike-trains`<br>`LFP` | `io`<br>`data-model`<br>`format-conversion`<br>`metadata` | `Python`<br>`NeuralEnsemble` | [公式](https://neo.readthedocs.io/) | [repo](https://github.com/NeuralEnsemble/python-neo) | 多数の神経電気生理ファイル形式を Python の共通オブジェクトモデルへ読み書きする基盤ライブラリです。 |
+| `odml` | [odML](https://python-odml.readthedocs.io/) | `standard` | `organ-system`<br>`infrastructure` | `neurophysiology`<br>`data-standard` | `metadata`<br>`electrophysiology` | `metadata`<br>`data-standard`<br>`annotation`<br>`interoperability` | `Python` | [公式](https://python-odml.readthedocs.io/) | [repo](https://github.com/G-Node/python-odml) | 神経科学実験などの階層的メタデータを odML 形式で作成、読み書き、検証する Python 実装です。 |
+| `braindecode` | [Braindecode](https://braindecode.org/) | `library` | `organ-system`<br>`whole-person` | `neurophysiology`<br>`machine-learning` | `EEG`<br>`ECoG`<br>`MEG`<br>`ECG` | `deep-learning`<br>`classification`<br>`decoding`<br>`modeling` | `Python`<br>`PyTorch`<br>`MNE` | [公式](https://braindecode.org/) | [repo](https://github.com/braindecode/braindecode) | EEG、ECoG、MEG などの脳信号を深層学習で分類・回帰・デコードする PyTorch ベースのライブラリです。 |
+| `inferno-framework` | [Inferno Framework](https://inferno-framework.github.io/docs/) | `framework` | `clinical`<br>`infrastructure` | `clinical-data`<br>`interoperability`<br>`testing` | `FHIR`<br>`API` | `conformance-testing`<br>`validation`<br>`test-harness`<br>`reporting` | `Ruby`<br>`FHIR`<br>`web` | [公式](https://inferno-framework.github.io/docs/) | [repo](https://github.com/inferno-framework/inferno-core) | FHIR API の実装ガイド適合性テストを作成、実行、共有するための conformance testing framework です。 |
+| `archie` | [Archie](https://openehr.org/libraries/) | `library` | `clinical`<br>`infrastructure` | `clinical-data`<br>`interoperability`<br>`data-model` | `openEHR`<br>`archetypes`<br>`EHR` | `data-model`<br>`validation`<br>`serialization`<br>`template-processing` | `Java`<br>`openEHR` | [公式](https://openehr.org/libraries/) | [repo](https://github.com/openEHR/archie) | openEHR の archetype、reference model、template 処理を Java で実装する公式系ライブラリです。 |
+| `simulist` | [simulist](https://epiverse-trace.github.io/simulist/) | `library` | `population` | `epidemiology`<br>`public-health` | `line-list`<br>`contact-data` | `simulation`<br>`synthetic-data`<br>`data-generation`<br>`training` | `R`<br>`Epiverse-TRACE` | [公式](https://epiverse-trace.github.io/simulist/) | [repo](https://github.com/epiverse-trace/simulist) | 感染症アウトブレイクの line list と接触データをシミュレーションして解析訓練や検証に使う R パッケージです。 |
+| `outbreaker2` | [outbreaker2](https://www.repidemicsconsortium.org/outbreaker2/) | `library` | `population` | `epidemiology`<br>`public-health`<br>`genomic-epidemiology` | `line-list`<br>`contact-data`<br>`sequence` | `outbreak-reconstruction`<br>`transmission-inference`<br>`simulation`<br>`statistics` | `R`<br>`RECON` | [公式](https://www.repidemicsconsortium.org/outbreaker2/) | [repo](https://github.com/reconhub/outbreaker2) | 疫学データと遺伝データを組み合わせて感染症アウトブレイクの伝播経路を推定する R パッケージです。 |
+| `trackintel` | [trackintel](https://trackintel.readthedocs.io/) | `library` | `behavioral`<br>`population`<br>`environmental` | `mobility`<br>`geospatial`<br>`behavior` | `GPS`<br>`trajectory`<br>`spatiotemporal-data` | `preprocessing`<br>`mobility-analysis`<br>`trajectory-mining`<br>`visualization` | `Python`<br>`GeoPandas`<br>`PostGIS` | [公式](https://trackintel.readthedocs.io/) | [repo](https://github.com/mie-lab/trackintel) | 人間の移動軌跡データを品質改善、文脈付与、移動指標抽出、可視化まで処理する Python ライブラリです。 |
+| `plastimatch` | [Plastimatch](https://plastimatch.org/) | `tool` | `organ-system`<br>`clinical` | `medical-imaging`<br>`radiotherapy` | `CT`<br>`MRI`<br>`PET`<br>`DICOM` | `registration`<br>`segmentation`<br>`format-conversion`<br>`dose-analysis` | `C++`<br>`command-line` | [公式](https://plastimatch.org/) | [repo](https://gitlab.com/plastimatch/plastimatch) | CT、MRI、PET などの volumetric medical image に registration、segmentation、変換、放射線治療向け解析を行うツールです。 |
+| `connectome-workbench` | [Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench.html) | `tool` | `organ-system`<br>`whole-person` | `neuroimaging`<br>`connectomics`<br>`visualization` | `MRI`<br>`fMRI`<br>`dMRI`<br>`CIFTI`<br>`surface` | `visualization`<br>`connectome-analysis`<br>`surface-analysis`<br>`format-conversion` | `C++`<br>`desktop`<br>`command-line` | [公式](https://www.humanconnectome.org/software/connectome-workbench.html) | [repo](https://github.com/Washington-University/workbench) | Human Connectome Project 系の CIFTI、surface、volume neuroimaging data を可視化・解析するツールです。 |
 
 ## 更新方法
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-05-18",
+  "generated_at": "2026-05-19",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -14253,6 +14253,670 @@
       "license": "GPL-3.0",
       "maturity": "active",
       "summary_ja": "DBS 電極位置推定、画像 registration、connectomic neuroimaging を扱う臨床神経画像向け toolkit です。"
+    },
+    {
+      "id": "minfi",
+      "name": "minfi",
+      "artifact_type": "library",
+      "domains": [
+        "epigenomics",
+        "methylation-array"
+      ],
+      "modalities": [
+        "DNA-methylation-array",
+        "IDAT",
+        "Infinium"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "normalization",
+        "differential-methylation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/minfi/",
+      "repo_url": "https://git.bioconductor.org/packages/minfi",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "Illumina Infinium DNA methylation array の読み込み、前処理、QC、メチル化解析を行う Bioconductor パッケージです。"
+    },
+    {
+      "id": "methylkit",
+      "name": "methylKit",
+      "artifact_type": "library",
+      "domains": [
+        "epigenomics",
+        "methylation"
+      ],
+      "modalities": [
+        "bisulfite-sequencing",
+        "cytosine-methylation"
+      ],
+      "tasks": [
+        "differential-methylation",
+        "annotation",
+        "visualization",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/methylKit/",
+      "repo_url": "https://git.bioconductor.org/packages/methylKit",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "Bisulfite sequencing 由来の cytosine methylation データを統計解析し、差次的メチル化を調べる R パッケージです。"
+    },
+    {
+      "id": "bsseq",
+      "name": "bsseq",
+      "artifact_type": "library",
+      "domains": [
+        "epigenomics",
+        "statistics"
+      ],
+      "modalities": [
+        "bisulfite-sequencing",
+        "DNA-methylation"
+      ],
+      "tasks": [
+        "smoothing",
+        "differential-methylation",
+        "visualization",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/bsseq/",
+      "repo_url": "https://git.bioconductor.org/packages/bsseq",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "Bisulfite sequencing のメチル化率を平滑化し、領域単位の差次的メチル化解析を支援する Bioconductor パッケージです。"
+    },
+    {
+      "id": "sesame",
+      "name": "SeSAMe",
+      "artifact_type": "library",
+      "domains": [
+        "epigenomics",
+        "methylation-array"
+      ],
+      "modalities": [
+        "DNA-methylation-array",
+        "Infinium",
+        "IDAT"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "visualization",
+        "inference"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/sesame/",
+      "repo_url": "https://git.bioconductor.org/packages/sesame",
+      "maturity": "active",
+      "summary_ja": "複数世代の Infinium DNA methylation BeadChip を前処理、QC、可視化、推論する Bioconductor パッケージです。"
+    },
+    {
+      "id": "slingshot",
+      "name": "slingshot",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "trajectory"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "reduced-dimensions"
+      ],
+      "tasks": [
+        "trajectory",
+        "pseudotime",
+        "lineage-inference",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/slingshot/",
+      "repo_url": "https://git.bioconductor.org/packages/slingshot",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "低次元表現とクラスタから single-cell データの分岐 lineage と pseudotime を推定する Bioconductor パッケージです。"
+    },
+    {
+      "id": "tradeseq",
+      "name": "tradeSeq",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "trajectory",
+        "statistics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "pseudotime"
+      ],
+      "tasks": [
+        "trajectory-differential-expression",
+        "generalized-additive-model",
+        "association-testing",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/tradeSeq/",
+      "repo_url": "https://git.bioconductor.org/packages/tradeSeq",
+      "maturity": "active",
+      "summary_ja": "single-cell trajectory や pseudotime に沿った遺伝子発現変化を GAM で検定する Bioconductor パッケージです。"
+    },
+    {
+      "id": "cellbender",
+      "name": "CellBender",
+      "artifact_type": "tool",
+      "domains": [
+        "single-cell",
+        "quality-control",
+        "machine-learning"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "count-matrix"
+      ],
+      "tasks": [
+        "background-removal",
+        "denoising",
+        "quality-control",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "Python",
+        "PyTorch",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://cellbender.readthedocs.io/",
+      "repo_url": "https://github.com/broadinstitute/CellBender",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "single-cell RNA-seq count matrix から ambient RNA などの技術的 background を推定・除去するツールです。"
+    },
+    {
+      "id": "cell2location",
+      "name": "cell2location",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "single-cell",
+        "machine-learning"
+      ],
+      "modalities": [
+        "spatial transcriptomics",
+        "single-cell RNA-seq"
+      ],
+      "tasks": [
+        "cell-type-mapping",
+        "deconvolution",
+        "spatial-analysis",
+        "modeling"
+      ],
+      "ecosystems": [
+        "Python",
+        "PyTorch",
+        "scverse"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://cell2location.readthedocs.io/",
+      "repo_url": "https://github.com/BayraktarLab/cell2location",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "single-cell 参照から spatial transcriptomics spot 上の細胞型構成を推定する確率モデル系ライブラリです。"
+    },
+    {
+      "id": "vsearch",
+      "name": "VSEARCH",
+      "artifact_type": "tool",
+      "domains": [
+        "microbiome",
+        "metagenomics"
+      ],
+      "modalities": [
+        "amplicon",
+        "FASTA",
+        "FASTQ"
+      ],
+      "tasks": [
+        "clustering",
+        "chimera-detection",
+        "dereplication",
+        "taxonomic-classification"
+      ],
+      "ecosystems": [
+        "C++",
+        "command-line"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://torognes.github.io/vsearch/",
+      "repo_url": "https://github.com/torognes/vsearch",
+      "license": "GPL-3.0-or-later OR BSD-2-Clause",
+      "maturity": "established",
+      "summary_ja": "アンプリコンやメタゲノム配列のクラスタリング、chimera 検出、dereplication、検索を行う OSS ツールです。"
+    },
+    {
+      "id": "tiatoolbox",
+      "name": "TIAToolbox",
+      "artifact_type": "library",
+      "domains": [
+        "digital-pathology",
+        "bioimaging",
+        "machine-learning"
+      ],
+      "modalities": [
+        "whole-slide-imaging",
+        "histopathology"
+      ],
+      "tasks": [
+        "io",
+        "preprocessing",
+        "segmentation",
+        "feature-extraction",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "PyTorch"
+      ],
+      "scales": [
+        "tissue",
+        "clinical"
+      ],
+      "official_url": "https://tia-toolbox.readthedocs.io/",
+      "repo_url": "https://github.com/TissueImageAnalytics/tiatoolbox",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "whole-slide pathology 画像の読み込み、前処理、モデル適用、特徴抽出を行う computational pathology toolkit です。"
+    },
+    {
+      "id": "neo",
+      "name": "Neo",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "data-model"
+      ],
+      "modalities": [
+        "electrophysiology",
+        "spike-trains",
+        "LFP"
+      ],
+      "tasks": [
+        "io",
+        "data-model",
+        "format-conversion",
+        "metadata"
+      ],
+      "ecosystems": [
+        "Python",
+        "NeuralEnsemble"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://neo.readthedocs.io/",
+      "repo_url": "https://github.com/NeuralEnsemble/python-neo",
+      "license": "BSD-3-Clause",
+      "maturity": "established",
+      "summary_ja": "多数の神経電気生理ファイル形式を Python の共通オブジェクトモデルへ読み書きする基盤ライブラリです。"
+    },
+    {
+      "id": "odml",
+      "name": "odML",
+      "artifact_type": "standard",
+      "domains": [
+        "neurophysiology",
+        "data-standard"
+      ],
+      "modalities": [
+        "metadata",
+        "electrophysiology"
+      ],
+      "tasks": [
+        "metadata",
+        "data-standard",
+        "annotation",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://python-odml.readthedocs.io/",
+      "repo_url": "https://github.com/G-Node/python-odml",
+      "license": "BSD-4-Clause",
+      "maturity": "established",
+      "summary_ja": "神経科学実験などの階層的メタデータを odML 形式で作成、読み書き、検証する Python 実装です。"
+    },
+    {
+      "id": "braindecode",
+      "name": "Braindecode",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "machine-learning"
+      ],
+      "modalities": [
+        "EEG",
+        "ECoG",
+        "MEG",
+        "ECG"
+      ],
+      "tasks": [
+        "deep-learning",
+        "classification",
+        "decoding",
+        "modeling"
+      ],
+      "ecosystems": [
+        "Python",
+        "PyTorch",
+        "MNE"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://braindecode.org/",
+      "repo_url": "https://github.com/braindecode/braindecode",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "EEG、ECoG、MEG などの脳信号を深層学習で分類・回帰・デコードする PyTorch ベースのライブラリです。"
+    },
+    {
+      "id": "inferno-framework",
+      "name": "Inferno Framework",
+      "artifact_type": "framework",
+      "domains": [
+        "clinical-data",
+        "interoperability",
+        "testing"
+      ],
+      "modalities": [
+        "FHIR",
+        "API"
+      ],
+      "tasks": [
+        "conformance-testing",
+        "validation",
+        "test-harness",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Ruby",
+        "FHIR",
+        "web"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://inferno-framework.github.io/docs/",
+      "repo_url": "https://github.com/inferno-framework/inferno-core",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "FHIR API の実装ガイド適合性テストを作成、実行、共有するための conformance testing framework です。"
+    },
+    {
+      "id": "archie",
+      "name": "Archie",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "interoperability",
+        "data-model"
+      ],
+      "modalities": [
+        "openEHR",
+        "archetypes",
+        "EHR"
+      ],
+      "tasks": [
+        "data-model",
+        "validation",
+        "serialization",
+        "template-processing"
+      ],
+      "ecosystems": [
+        "Java",
+        "openEHR"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://openehr.org/libraries/",
+      "repo_url": "https://github.com/openEHR/archie",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "openEHR の archetype、reference model、template 処理を Java で実装する公式系ライブラリです。"
+    },
+    {
+      "id": "simulist",
+      "name": "simulist",
+      "artifact_type": "library",
+      "domains": [
+        "epidemiology",
+        "public-health"
+      ],
+      "modalities": [
+        "line-list",
+        "contact-data"
+      ],
+      "tasks": [
+        "simulation",
+        "synthetic-data",
+        "data-generation",
+        "training"
+      ],
+      "ecosystems": [
+        "R",
+        "Epiverse-TRACE"
+      ],
+      "scales": [
+        "population"
+      ],
+      "official_url": "https://epiverse-trace.github.io/simulist/",
+      "repo_url": "https://github.com/epiverse-trace/simulist",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "感染症アウトブレイクの line list と接触データをシミュレーションして解析訓練や検証に使う R パッケージです。"
+    },
+    {
+      "id": "outbreaker2",
+      "name": "outbreaker2",
+      "artifact_type": "library",
+      "domains": [
+        "epidemiology",
+        "public-health",
+        "genomic-epidemiology"
+      ],
+      "modalities": [
+        "line-list",
+        "contact-data",
+        "sequence"
+      ],
+      "tasks": [
+        "outbreak-reconstruction",
+        "transmission-inference",
+        "simulation",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R",
+        "RECON"
+      ],
+      "scales": [
+        "population"
+      ],
+      "official_url": "https://www.repidemicsconsortium.org/outbreaker2/",
+      "repo_url": "https://github.com/reconhub/outbreaker2",
+      "license": "MIT",
+      "maturity": "established",
+      "summary_ja": "疫学データと遺伝データを組み合わせて感染症アウトブレイクの伝播経路を推定する R パッケージです。"
+    },
+    {
+      "id": "trackintel",
+      "name": "trackintel",
+      "artifact_type": "library",
+      "domains": [
+        "mobility",
+        "geospatial",
+        "behavior"
+      ],
+      "modalities": [
+        "GPS",
+        "trajectory",
+        "spatiotemporal-data"
+      ],
+      "tasks": [
+        "preprocessing",
+        "mobility-analysis",
+        "trajectory-mining",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "GeoPandas",
+        "PostGIS"
+      ],
+      "scales": [
+        "behavioral",
+        "population",
+        "environmental"
+      ],
+      "official_url": "https://trackintel.readthedocs.io/",
+      "repo_url": "https://github.com/mie-lab/trackintel",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "人間の移動軌跡データを品質改善、文脈付与、移動指標抽出、可視化まで処理する Python ライブラリです。"
+    },
+    {
+      "id": "plastimatch",
+      "name": "Plastimatch",
+      "artifact_type": "tool",
+      "domains": [
+        "medical-imaging",
+        "radiotherapy"
+      ],
+      "modalities": [
+        "CT",
+        "MRI",
+        "PET",
+        "DICOM"
+      ],
+      "tasks": [
+        "registration",
+        "segmentation",
+        "format-conversion",
+        "dose-analysis"
+      ],
+      "ecosystems": [
+        "C++",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://plastimatch.org/",
+      "repo_url": "https://gitlab.com/plastimatch/plastimatch",
+      "maturity": "established",
+      "summary_ja": "CT、MRI、PET などの volumetric medical image に registration、segmentation、変換、放射線治療向け解析を行うツールです。"
+    },
+    {
+      "id": "connectome-workbench",
+      "name": "Connectome Workbench",
+      "artifact_type": "tool",
+      "domains": [
+        "neuroimaging",
+        "connectomics",
+        "visualization"
+      ],
+      "modalities": [
+        "MRI",
+        "fMRI",
+        "dMRI",
+        "CIFTI",
+        "surface"
+      ],
+      "tasks": [
+        "visualization",
+        "connectome-analysis",
+        "surface-analysis",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "C++",
+        "desktop",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://www.humanconnectome.org/software/connectome-workbench.html",
+      "repo_url": "https://github.com/Washington-University/workbench",
+      "license": "GPL-2.0-or-later",
+      "maturity": "established",
+      "summary_ja": "Human Connectome Project 系の CIFTI、surface、volume neuroimaging data を可視化・解析するツールです。"
     }
   ]
 }
