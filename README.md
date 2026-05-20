@@ -14,7 +14,7 @@
 
 ## まず見る場所
 
-- [全件カタログ](catalog.md): 収録している 464 件をページ上で一覧できます。
+- [全件カタログ](catalog.md): 収録している 549 件をページ上で一覧できます。
 - [分類と運用方針](docs/catalog-policy.md): 何を収録し、何を除外するかを確認できます。
 - [スキーマ説明](docs/schema.md): 各項目に入っている情報の意味を確認できます。
 - [領域別の見取り図](docs/landscape.md): ミクロからマクロまでの対象領域を俯瞰できます。
@@ -22,7 +22,7 @@
 
 ## このサイトで見られるもの
 
-- 全 464 件の公開 OSS / 公開リポジトリ付きカタログ
+- 全 549 件の公開 OSS / 公開リポジトリ付きカタログ
 - 解析スケール別の件数と分類
 - 分野、データ種別、処理タスク、実行環境、公式ページ、repo へのリンク
 - 日本語の 1 文要約
@@ -32,7 +32,7 @@
 
 ## 収録状況
 
-2026-05-19 時点の継続更新カタログは 464 件です。代表的な収録軸は以下です。
+2026-05-20 時点の継続更新カタログは 549 件です。代表的な収録軸は以下です。
 
 - ミクロ: ゲノム、変異、RNA-seq、single-cell、spatial omics、プロテオミクス、メタボロミクス、マイクロバイオーム
 - 細胞・組織: cytometry、細胞画像、病理画像、空間トランスクリプトミクス
@@ -40,6 +40,8 @@
 - 臨床・集団: EHR、FHIR、OMOP、clinical NLP、コホート、疫学、公衆衛生、集団遺伝
 - 行動・環境: 心理統計、行動実験、移動データ、地理空間、環境曝露、建成環境
 - 基盤: workflow engine、データ標準、プライバシー保護、federated analysis、差分プライバシー
+
+2026-05-20 の更新では、nf-core 個別 workflow、HTS/GA4GH/HL7/RO-Crate/CWL provenance などの標準、OME/OMERO と pathology/bioimaging、fNIRS/EEG/fMRI/DICOM/physiology、FHIR/OMOP 周辺 platform、population genetics、疫学、公衆衛生、mobility、built environment / thermal exposure の公開 repo を横断的に追加しました。
 
 ## 対象領域
 
