@@ -10,6 +10,8 @@
 
 2026-05-20 の更新では、HTS Specifications、VCFtools、GLnexus、GLIMPSE2、nf-core/rnaseq、sarek、scrnaseq、methylseq、atacseq、differentialabundance、ampliseq、mag、nf-core/modules、Bioconda recipes、BioContainers を追加し、形式仕様、variant 集団解析、個別 workflow、packaging/container ecosystem までを同じ molecular / infrastructure 軸で検索できるようにしました。
 
+2026-05-21 の更新では、DEXSeq、Arriba、Clair3、Sniffles2、MEGAHIT、ANGSD、GTDB-Tk、Percolator、seqr を追加し、RNA-seq exon usage / fusion、long-read small/SV calling、metagenome assembly / MAG taxonomy、proteomics FDR、rare disease variant review の公式公開 repo を補いました。
+
 ## cellular and tissue
 
 single-cell、spatial omics、cytometry、細胞画像、病理画像は、分子特徴と細胞/組織構造を接続する中間尺度です。Scanpy、Seurat、SpatialData、Cellpose、StarDist、FlowKit、pycytominer などを同じ尺度タグで横断検索できるようにしています。
@@ -19,6 +21,8 @@ SpatialExperiment、cytomapper、Bio-Formats、OpenSlide、HistomicsTK、Digital
 TIAToolbox も追加し、whole-slide pathology 画像の読み込み、前処理、特徴抽出、モデル適用を扱う Python toolkit まで tissue / clinical scale で拾えるようにしています。
 
 2026-05-20 の更新では、CELLxGENE explorer、Azimuth、miloR、Harmony、MCMICRO、ASHLAR、starfish、PathML、Slideflow、UCSC Cell Browser、OMERO、OME-NGFF を追加し、single-cell browser、reference mapping、差次的 abundance、multiplex tissue imaging、image-based transcriptomics、WSI deep learning、bioimaging storage / format standard の抜けを補いました。
+
+2026-05-21 の更新では、MOFA2、NicheNet/nichenetr、Baysor、large_image を追加し、multi-omics factor analysis、cell-cell communication、分子座標型 spatial transcriptomics segmentation、whole-slide image tiling / delivery を tissue / cellular / infrastructure で検索できるようにしました。
 
 ## organ-system
 
@@ -30,6 +34,8 @@ Neo、odML、Braindecode、Plastimatch、Connectome Workbench を追加し、神
 
 2026-05-20 の更新では、SNIRF、NeuroDOT_py、NeuroConv、MOABB、pyRiemann、tedana、Dcm2Bids、deid、MNE-LSL、MNE-CPP、Pycrostates、PhysioNet Cardiovascular Signal Toolbox、pyVHR、elastix、MONAI Label、Kaapana、TorchXRayVision、OpenBCI GUI を追加し、fNIRS 標準、NWB 変換、BCI benchmark、Riemannian EEG、multi-echo fMRI、BIDS 変換、DICOM de-identification、医用画像 annotation / platform、remote PPG まで広げています。
 
+2026-05-21 の更新では、pybv、MNE-HFO、osl-dynamics、NiMARE、TemplateFlow Client、SDCFlows、ASLPrep、QSIRecon、BIOBSS、SimNIBS を追加し、BrainVision/BIDS I/O、iEEG HFO、M/EEG dynamics、neuroimaging meta-analysis、template access、EPI distortion correction、ASL/dMRI workflow、biosignal pipeline、TMS/tES field modeling を補いました。
+
 ## whole-person and clinical
 
 臨床データは EHR そのもの、FHIR/OMOP の標準、phenotyping、clinical NLP、survival analysis が分かれます。生データを扱う前に、同意、匿名化、アクセス権、監査証跡を明確にする必要があります。
@@ -40,6 +46,8 @@ Inferno Framework と Archie も追加し、FHIR conformance testing と openEHR
 
 2026-05-20 の更新では、Medplum、LinuxForHealth FHIR Server、Blaze、OpenHIM Core、Open Concept Lab、OHDSI Broadsea、SMART App Launch、FHIRPath、CDS Hooks、Clinical Quality Language、DHIS2 Core、GNU Health HIS、Bahmni、openIMIS を追加し、FHIR server、HIE mediator、terminology service、OMOP deployment、HL7 app/CDS/quality 標準、public-health / hospital information platform を補いました。
 
+2026-05-21 の更新では、ResearchKit、Open mHealth Schemas、Human Phenotype Ontology、Data Use Ontology、OHDSI CohortGenerator、OpenCRVS Core、NextGen Connect、CommCare HQ、OpenSRP FHIR Core、SENAITE Core、HL7 FHIR IG Publisher、HL7 CDA Core 2.0、OpenFn Lightning を追加し、mobile health / consent、wearable schema、phenotype / consent ontology、OMOP cohort generation、civil registration、HL7/FHIR integration、field health platform、LIMS、FHIR IG publishing、clinical document standard、global health workflow automation まで広げています。
+
 ## behavior and psychometrics
 
 行動実験・心理統計では、PsychoPy や jsPsych のようなデータ取得基盤と、lavaan、psych、mirt、lme4、brms のような統計モデリング基盤を分けて整理します。
@@ -47,6 +55,8 @@ Inferno Framework と Archie も追加し、FHIR conformance testing と openEHR
 Expyriment、JATOS、PsychoJS、Psychtoolbox-3、lavaan、OpenMx、mirt、Systole を追加し、実験実行、オンライン研究、心理物理 timing、尺度・潜在変数解析、心理生理信号を同じ behavioral scale で扱えるようにしています。
 
 2026-05-20 の更新では、KoboToolbox と ActivitySim を追加し、フィールド調査・質問紙収集と activity-based travel modeling を behavioral / whole-person / population の接続点として扱えるようにしました。
+
+2026-05-21 の更新では、easystats、afex、psiTurk、PennController、ODK Collect、Enketo Web Forms を追加し、心理・臨床統計モデルの報告、factorial experiment 解析、オンライン行動実験、心理言語実験、フィールド調査の mobile/web collection を補いました。
 
 ## population and environmental
 
@@ -58,6 +68,8 @@ simulist、outbreaker2、trackintel を追加し、アウトブレイク line li
 
 2026-05-20 の更新では、tskit、msprime、stdpopsim、sgkit、UrbanSim、UrbanAccess、Pandana、pythermalcomfort、Ladybug Tools、epidemics、ggsurveillance を追加し、tree sequence / population genetics simulation、都市・交通 accessibility、built environment / thermal exposure、感染症 scenario modeling と surveillance visualization を補いました。
 
+2026-05-21 の更新では、r5py と City Energy Analyst を追加し、GTFS/OpenStreetMap に基づく travel time / accessibility と都市・地区スケールの building energy / environmental scenario analysis を補いました。
+
 ## privacy and governance
 
 匿名化、差分プライバシー、federated analysis は、解析後処理ではなく設計段階から関与する領域です。OpenDP、diffprivlib、Presidio、ARX、sdcMicro、DataSHIELD などを継続更新カタログに入れています。
@@ -65,3 +77,5 @@ simulist、outbreaker2、trackintel を追加し、アウトブレイク line li
 Synthcity、Substra、Toil、miniwdl を追加し、synthetic data、federated analysis、WDL/CWL 実行基盤の公開実装も同じ infrastructure scale で確認できるようにしています。
 
 2026-05-20 の更新では、vantage6、FeatureCloud、GA4GH DRS/TES/TRS/Phenopackets/Service Registry、cwltool、Sapporo Service、RO-Crate、BioCompute Object、CWLProv、DataLad を追加し、federated analysis、GA4GH API 群、workflow execution / provenance、research object packaging、dataset versioning の基盤を厚くしました。
+
+2026-05-21 の更新では、PipelineDP と FederatedScope を追加し、差分プライバシー付き大規模集計と federated learning benchmark / training framework を infrastructure / clinical / population の横断基盤として補いました。
