@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-05-21",
+  "generated_at": "2026-05-22",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -19361,6 +19361,660 @@
       "license": "AGPL-3.0",
       "maturity": "active",
       "summary_ja": "rare disease などの家系・表現型・ゲノム変異を統合し、候補変異の絞り込みと症例レビューを支援する web platform です。"
+    },
+    {
+      "id": "clusterprofiler",
+      "name": "clusterProfiler",
+      "artifact_type": "library",
+      "domains": [
+        "transcriptomics",
+        "pathway-analysis",
+        "annotation"
+      ],
+      "modalities": [
+        "gene-list",
+        "omics",
+        "annotation"
+      ],
+      "tasks": [
+        "enrichment-analysis",
+        "visualization",
+        "annotation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/clusterProfiler/",
+      "repo_url": "https://git.bioconductor.org/packages/clusterProfiler",
+      "license": "Artistic-2.0",
+      "maturity": "widely-used",
+      "summary_ja": "遺伝子リストや omics 結果に対して GO、KEGG などの機能エンリッチメント解析と可視化を行う Bioconductor package です。"
+    },
+    {
+      "id": "fgsea",
+      "name": "fgsea",
+      "artifact_type": "library",
+      "domains": [
+        "transcriptomics",
+        "pathway-analysis",
+        "statistics"
+      ],
+      "modalities": [
+        "ranked-gene-list",
+        "gene-sets",
+        "omics"
+      ],
+      "tasks": [
+        "gene-set-enrichment",
+        "statistics",
+        "multiple-testing"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/fgsea/",
+      "repo_url": "https://git.bioconductor.org/packages/fgsea",
+      "license": "MIT + file LICENCE",
+      "maturity": "widely-used",
+      "summary_ja": "ranked gene list に対して高速な gene set enrichment analysis を行い、omics 差次解析結果の経路解釈を支援する R package です。"
+    },
+    {
+      "id": "star-fusion",
+      "name": "STAR-Fusion",
+      "artifact_type": "tool",
+      "domains": [
+        "transcriptomics",
+        "cancer-genomics",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "fusion-transcripts",
+        "FASTQ"
+      ],
+      "tasks": [
+        "fusion-detection",
+        "annotation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Perl",
+        "command-line",
+        "WDL"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://github.com/STAR-Fusion/STAR-Fusion",
+      "repo_url": "https://github.com/STAR-Fusion/STAR-Fusion",
+      "license": "BSD-3-Clause",
+      "maturity": "established",
+      "summary_ja": "RNA-seq read から融合転写産物を検出し、がん transcriptome 解析の fusion candidate を出力する command-line tool です。"
+    },
+    {
+      "id": "nf-core-rnafusion",
+      "name": "nf-core/rnafusion",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "cancer-genomics",
+        "workflow"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "fusion-transcripts",
+        "workflow"
+      ],
+      "tasks": [
+        "fusion-detection",
+        "workflow",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/rnafusion",
+      "repo_url": "https://github.com/nf-core/rnafusion",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "複数の fusion caller を組み合わせ、RNA-seq から融合遺伝子候補と集約レポートを生成する nf-core Nextflow workflow です。"
+    },
+    {
+      "id": "airr-standards",
+      "name": "AIRR Community Data Standards",
+      "artifact_type": "standard",
+      "domains": [
+        "immunology",
+        "data-standard",
+        "interoperability"
+      ],
+      "modalities": [
+        "AIRR-seq",
+        "TCR",
+        "BCR",
+        "metadata"
+      ],
+      "tasks": [
+        "data-standard",
+        "metadata",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "YAML",
+        "JSON Schema",
+        "AIRR"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://docs.airr-community.org/",
+      "repo_url": "https://github.com/airr-community/airr-standards",
+      "license": "CC-BY-4.0",
+      "maturity": "established",
+      "summary_ja": "TCR/BCR などの adaptive immune receptor repertoire sequencing データとメタデータを共有・交換するための AIRR Community 標準です。"
+    },
+    {
+      "id": "changeo",
+      "name": "Change-O",
+      "artifact_type": "tool",
+      "domains": [
+        "immunology",
+        "repertoire-analysis",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "AIRR-seq",
+        "TCR",
+        "BCR",
+        "tabular"
+      ],
+      "tasks": [
+        "format-conversion",
+        "clonal-assignment",
+        "germline-reconstruction"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line",
+        "AIRR"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://changeo.readthedocs.io/",
+      "repo_url": "https://github.com/immcantation/changeo",
+      "license": "AGPL-3.0",
+      "maturity": "active",
+      "summary_ja": "V(D)J alignment 出力を処理し、AIRR/Change-O 形式のレパトアデータで clone assignment や germline reconstruction を行う Immcantation tool です。"
+    },
+    {
+      "id": "screpertoire",
+      "name": "scRepertoire",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "immunology",
+        "repertoire-analysis"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "TCR",
+        "BCR"
+      ],
+      "tasks": [
+        "clonotype-analysis",
+        "integration",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "Seurat"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/scRepertoire/",
+      "repo_url": "https://git.bioconductor.org/packages/scRepertoire",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "single-cell TCR/BCR repertoire を Seurat や SingleCellExperiment と統合し、clonotype 解析と可視化を行う Bioconductor package です。"
+    },
+    {
+      "id": "immunarch",
+      "name": "immunarch",
+      "artifact_type": "library",
+      "domains": [
+        "immunology",
+        "repertoire-analysis",
+        "statistics"
+      ],
+      "modalities": [
+        "AIRR-seq",
+        "TCR",
+        "BCR",
+        "tabular"
+      ],
+      "tasks": [
+        "repertoire-statistics",
+        "biomarker-discovery",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "population"
+      ],
+      "official_url": "https://immunarch.com/",
+      "repo_url": "https://github.com/immunomind/immunarch",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "bulk または single-cell の AIRR/TCR/BCR repertoire から多様性、clone overlap、特徴量、可視化を構成する R package です。"
+    },
+    {
+      "id": "immuneml",
+      "name": "immuneML",
+      "artifact_type": "platform",
+      "domains": [
+        "immunology",
+        "repertoire-analysis",
+        "machine-learning"
+      ],
+      "modalities": [
+        "AIRR-seq",
+        "TCR",
+        "BCR",
+        "sequence"
+      ],
+      "tasks": [
+        "machine-learning",
+        "classification",
+        "benchmarking",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "Docker",
+        "YAML"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "population"
+      ],
+      "official_url": "https://immuneml.uio.no/",
+      "repo_url": "https://github.com/uio-bmi/immuneML",
+      "license": "AGPL-3.0",
+      "maturity": "active",
+      "summary_ja": "AIRR repertoire データの分類、benchmark、clustering、simulation、レポート生成を YAML workflow で再現する machine-learning platform です。"
+    },
+    {
+      "id": "fragpipe",
+      "name": "FragPipe",
+      "artifact_type": "platform",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry",
+        "workflow"
+      ],
+      "modalities": [
+        "mass-spectrometry",
+        "MS/MS",
+        "proteomics"
+      ],
+      "tasks": [
+        "identification",
+        "quantification",
+        "workflow",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Java",
+        "Python",
+        "command-line",
+        "desktop"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://fragpipe.nesvilab.org/",
+      "repo_url": "https://github.com/Nesvilab/FragPipe",
+      "maturity": "active",
+      "summary_ja": "MSFragger、Percolator、Philosopher などを束ね、質量分析 proteomics の同定、定量、FDR、レポートを GUI/CLI で実行する解析 platform です。",
+      "notes": "連携・同梱される個別ツールには別ライセンスや利用条件があるため、利用時は公式 license notes を確認する必要があります。"
+    },
+    {
+      "id": "hcp-pipelines",
+      "name": "HCP Pipelines",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging",
+        "medical-imaging",
+        "connectomics"
+      ],
+      "modalities": [
+        "MRI",
+        "fMRI",
+        "dMRI",
+        "ASL"
+      ],
+      "tasks": [
+        "preprocessing",
+        "registration",
+        "surface-processing",
+        "workflow"
+      ],
+      "ecosystems": [
+        "Shell",
+        "MATLAB",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person"
+      ],
+      "official_url": "https://www.humanconnectome.org/software/hcp-mr-pipelines",
+      "repo_url": "https://github.com/Washington-University/HCPpipelines",
+      "maturity": "established",
+      "summary_ja": "Human Connectome Project の構造 MRI、fMRI、拡散 MRI、ASL などを前処理する公式 MRI processing workflow 群です。"
+    },
+    {
+      "id": "exploreasl",
+      "name": "ExploreASL",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging",
+        "medical-imaging",
+        "physiology"
+      ],
+      "modalities": [
+        "ASL",
+        "MRI",
+        "NIfTI",
+        "DICOM"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quantification",
+        "quality-control",
+        "statistics"
+      ],
+      "ecosystems": [
+        "MATLAB",
+        "Docker",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://www.exploreasl.org/",
+      "repo_url": "https://github.com/ExploreASL/ExploreASL",
+      "maturity": "active",
+      "summary_ja": "arterial spin labeling perfusion MRI の import、前処理、CBF 定量、QC、ROI/voxel-wise 解析を自動化する pipeline/toolbox です。"
+    },
+    {
+      "id": "brainspace",
+      "name": "BrainSpace",
+      "artifact_type": "library",
+      "domains": [
+        "neuroimaging",
+        "connectomics",
+        "statistics"
+      ],
+      "modalities": [
+        "connectivity-matrix",
+        "MRI",
+        "surface"
+      ],
+      "tasks": [
+        "gradient-mapping",
+        "embedding",
+        "visualization",
+        "statistics"
+      ],
+      "ecosystems": [
+        "Python",
+        "MATLAB"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://brainspace.readthedocs.io/",
+      "repo_url": "https://github.com/MICA-MNI/BrainSpace",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "脳 connectome や neuroimaging feature の spatial gradient、embedding、alignment、可視化を行う Python/MATLAB toolbox です。"
+    },
+    {
+      "id": "boutiques",
+      "name": "Boutiques",
+      "artifact_type": "standard",
+      "domains": [
+        "workflow",
+        "neuroimaging",
+        "data-standard"
+      ],
+      "modalities": [
+        "workflow",
+        "container",
+        "metadata"
+      ],
+      "tasks": [
+        "tool-description",
+        "validation",
+        "reproducibility",
+        "execution"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line",
+        "JSON"
+      ],
+      "scales": [
+        "infrastructure",
+        "organ-system"
+      ],
+      "official_url": "https://boutiques.github.io/",
+      "repo_url": "https://github.com/boutiques/boutiques",
+      "maturity": "established",
+      "summary_ja": "解析 command-line tool を JSON descriptor として記述し、validate、simulate、実行、共有を支援する FAIR-oriented framework です。"
+    },
+    {
+      "id": "microsoft-fhir-server",
+      "name": "FHIR Server for Azure",
+      "artifact_type": "platform",
+      "domains": [
+        "clinical-data",
+        "FHIR",
+        "interoperability"
+      ],
+      "modalities": [
+        "FHIR",
+        "EHR",
+        "clinical-data"
+      ],
+      "tasks": [
+        "FHIR-server",
+        "data-access",
+        "interoperability",
+        "deployment"
+      ],
+      "ecosystems": [
+        ".NET",
+        "FHIR",
+        "Azure"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/microsoft/fhir-server",
+      "repo_url": "https://github.com/microsoft/fhir-server",
+      "license": "MIT",
+      "maturity": "established",
+      "summary_ja": "Azure 環境で FHIR リソースの保存、検索、アクセス管理を実装する Microsoft の公開 FHIR server 実装です。"
+    },
+    {
+      "id": "opentripplanner",
+      "name": "OpenTripPlanner",
+      "artifact_type": "platform",
+      "domains": [
+        "mobility",
+        "geospatial",
+        "transportation"
+      ],
+      "modalities": [
+        "GTFS",
+        "OpenStreetMap",
+        "routing-network"
+      ],
+      "tasks": [
+        "routing",
+        "accessibility-analysis",
+        "travel-time-estimation"
+      ],
+      "ecosystems": [
+        "Java",
+        "web",
+        "API"
+      ],
+      "scales": [
+        "environmental",
+        "behavioral",
+        "population"
+      ],
+      "official_url": "https://www.opentripplanner.org/",
+      "repo_url": "https://github.com/opentripplanner/OpenTripPlanner",
+      "maturity": "established",
+      "summary_ja": "GTFS、NeTEx、OpenStreetMap などを用い、公共交通・徒歩・自転車・車の multimodal routing と accessibility analysis を行う platform です。"
+    },
+    {
+      "id": "mobilitydb",
+      "name": "MobilityDB",
+      "artifact_type": "platform",
+      "domains": [
+        "mobility",
+        "geospatial",
+        "database"
+      ],
+      "modalities": [
+        "GPS",
+        "trajectories",
+        "spatiotemporal-data"
+      ],
+      "tasks": [
+        "trajectory-analysis",
+        "query",
+        "database"
+      ],
+      "ecosystems": [
+        "PostgreSQL",
+        "PostGIS",
+        "SQL"
+      ],
+      "scales": [
+        "behavioral",
+        "environmental",
+        "infrastructure"
+      ],
+      "official_url": "https://mobilitydb.com/",
+      "repo_url": "https://github.com/MobilityDB/MobilityDB",
+      "license": "PostgreSQL License",
+      "maturity": "active",
+      "summary_ja": "GPS trace などの moving object trajectory を PostgreSQL/PostGIS 上で時空間型として保存・検索・解析する database platform です。"
+    },
+    {
+      "id": "secretflow",
+      "name": "SecretFlow",
+      "artifact_type": "framework",
+      "domains": [
+        "privacy",
+        "federated-learning",
+        "machine-learning"
+      ],
+      "modalities": [
+        "tabular",
+        "models",
+        "sensitive-data"
+      ],
+      "tasks": [
+        "privacy-preserving-computation",
+        "federated-learning",
+        "secure-multiparty-computation"
+      ],
+      "ecosystems": [
+        "Python",
+        "Docker"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://www.secretflow.org.cn/docs/secretflow/en/",
+      "repo_url": "https://github.com/secretflow/secretflow",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "複数機関に分散した sensitive data に対して federated learning、MPC、HE、TEE を組み合わせた privacy-preserving analysis を構成する framework です。"
+    },
+    {
+      "id": "tam",
+      "name": "TAM",
+      "artifact_type": "library",
+      "domains": [
+        "psychometrics",
+        "statistics",
+        "behavior"
+      ],
+      "modalities": [
+        "questionnaire",
+        "test-items",
+        "tabular"
+      ],
+      "tasks": [
+        "item-response-modeling",
+        "test-analysis",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R",
+        "CRAN"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral",
+        "population"
+      ],
+      "official_url": "https://cran.r-project.org/package=TAM",
+      "repo_url": "https://github.com/alexanderrobitzsch/TAM",
+      "license": "GPL-2.0-or-later",
+      "maturity": "active",
+      "summary_ja": "質問紙・テスト項目データに対して Rasch、2PL、多次元 IRT などの psychometric model を推定する R package です。"
     }
   ]
 }

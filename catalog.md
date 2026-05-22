@@ -2,24 +2,24 @@
 
 このページは `libraries.json` から生成した、人間由来バイオデータ解析カタログの全件表示です。JSON を直接読まなくても、公開ページ上で全項目を確認できます。
 
-- 項目数: 595
-- カタログ生成日: 2026-05-21
+- 項目数: 614
+- カタログ生成日: 2026-05-22
 - スキーマ: 0.1.0
 
 ## 解析スケール別件数
 
 | Scale | Count |
 | --- | ---: |
-| `molecular` | 223 |
-| `cellular` | 102 |
+| `molecular` | 233 |
+| `cellular` | 107 |
 | `tissue` | 46 |
-| `organ-system` | 121 |
-| `whole-person` | 107 |
-| `behavioral` | 31 |
-| `clinical` | 165 |
-| `population` | 171 |
-| `environmental` | 35 |
-| `infrastructure` | 191 |
+| `organ-system` | 125 |
+| `whole-person` | 109 |
+| `behavioral` | 34 |
+| `clinical` | 170 |
+| `population` | 176 |
+| `environmental` | 37 |
+| `infrastructure` | 198 |
 
 ## 全項目
 
@@ -620,6 +620,25 @@
 | `pipelinedp` | [PipelineDP](https://pipelinedp.io/) | `library` | `population`<br>`clinical`<br>`infrastructure` | `privacy`<br>`statistics`<br>`differential-privacy` | `tabular`<br>`sensitive-data`<br>`aggregates` | `differential-privacy`<br>`aggregation`<br>`privacy-accounting` | `Python`<br>`Apache Beam` | [公式](https://pipelinedp.io/) | [repo](https://github.com/OpenMined/PipelineDP) | 大規模集計処理に差分プライバシーを組み込み、集計値やヒストグラムを保護付きで計算する framework です。 |
 | `federatedscope` | [FederatedScope](https://www.federatedscope.io/) | `framework` | `clinical`<br>`population`<br>`infrastructure` | `federated-learning`<br>`privacy`<br>`machine-learning` | `tabular`<br>`images`<br>`graphs`<br>`models` | `federated-learning`<br>`benchmarking`<br>`training` | `Python`<br>`PyTorch` | [公式](https://www.federatedscope.io/) | [repo](https://github.com/alibaba/FederatedScope) | 医療・グラフ・表形式など複数領域の federated learning 実験と benchmark を構成する Python framework です。 |
 | `seqr` | [seqr](https://github.com/broadinstitute/seqr) | `platform` | `molecular`<br>`clinical`<br>`whole-person` | `clinical-genomics`<br>`variant-analysis`<br>`rare-disease` | `variants`<br>`phenotypes`<br>`pedigrees` | `variant-prioritization`<br>`annotation`<br>`case-review` | `Python`<br>`Django`<br>`web` | [公式](https://github.com/broadinstitute/seqr) | [repo](https://github.com/broadinstitute/seqr) | rare disease などの家系・表現型・ゲノム変異を統合し、候補変異の絞り込みと症例レビューを支援する web platform です。 |
+| `clusterprofiler` | [clusterProfiler](https://bioconductor.org/packages/clusterProfiler/) | `library` | `molecular` | `transcriptomics`<br>`pathway-analysis`<br>`annotation` | `gene-list`<br>`omics`<br>`annotation` | `enrichment-analysis`<br>`visualization`<br>`annotation` | `R`<br>`Bioconductor` | [公式](https://bioconductor.org/packages/clusterProfiler/) | [repo](https://git.bioconductor.org/packages/clusterProfiler) | 遺伝子リストや omics 結果に対して GO、KEGG などの機能エンリッチメント解析と可視化を行う Bioconductor package です。 |
+| `fgsea` | [fgsea](https://bioconductor.org/packages/fgsea/) | `library` | `molecular` | `transcriptomics`<br>`pathway-analysis`<br>`statistics` | `ranked-gene-list`<br>`gene-sets`<br>`omics` | `gene-set-enrichment`<br>`statistics`<br>`multiple-testing` | `R`<br>`Bioconductor` | [公式](https://bioconductor.org/packages/fgsea/) | [repo](https://git.bioconductor.org/packages/fgsea) | ranked gene list に対して高速な gene set enrichment analysis を行い、omics 差次解析結果の経路解釈を支援する R package です。 |
+| `star-fusion` | [STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion) | `tool` | `molecular`<br>`clinical` | `transcriptomics`<br>`cancer-genomics`<br>`variant-analysis` | `RNA-seq`<br>`fusion-transcripts`<br>`FASTQ` | `fusion-detection`<br>`annotation`<br>`reporting` | `Perl`<br>`command-line`<br>`WDL` | [公式](https://github.com/STAR-Fusion/STAR-Fusion) | [repo](https://github.com/STAR-Fusion/STAR-Fusion) | RNA-seq read から融合転写産物を検出し、がん transcriptome 解析の fusion candidate を出力する command-line tool です。 |
+| `nf-core-rnafusion` | [nf-core/rnafusion](https://nf-co.re/rnafusion) | `workflow` | `molecular`<br>`clinical`<br>`infrastructure` | `transcriptomics`<br>`cancer-genomics`<br>`workflow` | `RNA-seq`<br>`fusion-transcripts`<br>`workflow` | `fusion-detection`<br>`workflow`<br>`reporting` | `Nextflow`<br>`nf-core`<br>`Docker` | [公式](https://nf-co.re/rnafusion) | [repo](https://github.com/nf-core/rnafusion) | 複数の fusion caller を組み合わせ、RNA-seq から融合遺伝子候補と集約レポートを生成する nf-core Nextflow workflow です。 |
+| `airr-standards` | [AIRR Community Data Standards](https://docs.airr-community.org/) | `standard` | `molecular`<br>`cellular`<br>`infrastructure` | `immunology`<br>`data-standard`<br>`interoperability` | `AIRR-seq`<br>`TCR`<br>`BCR`<br>`metadata` | `data-standard`<br>`metadata`<br>`interoperability` | `YAML`<br>`JSON Schema`<br>`AIRR` | [公式](https://docs.airr-community.org/) | [repo](https://github.com/airr-community/airr-standards) | TCR/BCR などの adaptive immune receptor repertoire sequencing データとメタデータを共有・交換するための AIRR Community 標準です。 |
+| `changeo` | [Change-O](https://changeo.readthedocs.io/) | `tool` | `molecular`<br>`cellular` | `immunology`<br>`repertoire-analysis`<br>`bioinformatics` | `AIRR-seq`<br>`TCR`<br>`BCR`<br>`tabular` | `format-conversion`<br>`clonal-assignment`<br>`germline-reconstruction` | `Python`<br>`command-line`<br>`AIRR` | [公式](https://changeo.readthedocs.io/) | [repo](https://github.com/immcantation/changeo) | V(D)J alignment 出力を処理し、AIRR/Change-O 形式のレパトアデータで clone assignment や germline reconstruction を行う Immcantation tool です。 |
+| `screpertoire` | [scRepertoire](https://bioconductor.org/packages/scRepertoire/) | `library` | `cellular`<br>`molecular` | `single-cell`<br>`immunology`<br>`repertoire-analysis` | `single-cell RNA-seq`<br>`TCR`<br>`BCR` | `clonotype-analysis`<br>`integration`<br>`visualization` | `R`<br>`Bioconductor`<br>`Seurat` | [公式](https://bioconductor.org/packages/scRepertoire/) | [repo](https://git.bioconductor.org/packages/scRepertoire) | single-cell TCR/BCR repertoire を Seurat や SingleCellExperiment と統合し、clonotype 解析と可視化を行う Bioconductor package です。 |
+| `immunarch` | [immunarch](https://immunarch.com/) | `library` | `molecular`<br>`cellular`<br>`population` | `immunology`<br>`repertoire-analysis`<br>`statistics` | `AIRR-seq`<br>`TCR`<br>`BCR`<br>`tabular` | `repertoire-statistics`<br>`biomarker-discovery`<br>`visualization` | `R` | [公式](https://immunarch.com/) | [repo](https://github.com/immunomind/immunarch) | bulk または single-cell の AIRR/TCR/BCR repertoire から多様性、clone overlap、特徴量、可視化を構成する R package です。 |
+| `immuneml` | [immuneML](https://immuneml.uio.no/) | `platform` | `molecular`<br>`cellular`<br>`population` | `immunology`<br>`repertoire-analysis`<br>`machine-learning` | `AIRR-seq`<br>`TCR`<br>`BCR`<br>`sequence` | `machine-learning`<br>`classification`<br>`benchmarking`<br>`reporting` | `Python`<br>`Docker`<br>`YAML` | [公式](https://immuneml.uio.no/) | [repo](https://github.com/uio-bmi/immuneML) | AIRR repertoire データの分類、benchmark、clustering、simulation、レポート生成を YAML workflow で再現する machine-learning platform です。 |
+| `fragpipe` | [FragPipe](https://fragpipe.nesvilab.org/) | `platform` | `molecular`<br>`infrastructure` | `proteomics`<br>`mass-spectrometry`<br>`workflow` | `mass-spectrometry`<br>`MS/MS`<br>`proteomics` | `identification`<br>`quantification`<br>`workflow`<br>`reporting` | `Java`<br>`Python`<br>`command-line`<br>`desktop` | [公式](https://fragpipe.nesvilab.org/) | [repo](https://github.com/Nesvilab/FragPipe) | MSFragger、Percolator、Philosopher などを束ね、質量分析 proteomics の同定、定量、FDR、レポートを GUI/CLI で実行する解析 platform です。 |
+| `hcp-pipelines` | [HCP Pipelines](https://www.humanconnectome.org/software/hcp-mr-pipelines) | `workflow` | `organ-system`<br>`whole-person` | `neuroimaging`<br>`medical-imaging`<br>`connectomics` | `MRI`<br>`fMRI`<br>`dMRI`<br>`ASL` | `preprocessing`<br>`registration`<br>`surface-processing`<br>`workflow` | `Shell`<br>`MATLAB`<br>`command-line` | [公式](https://www.humanconnectome.org/software/hcp-mr-pipelines) | [repo](https://github.com/Washington-University/HCPpipelines) | Human Connectome Project の構造 MRI、fMRI、拡散 MRI、ASL などを前処理する公式 MRI processing workflow 群です。 |
+| `exploreasl` | [ExploreASL](https://www.exploreasl.org/) | `workflow` | `organ-system`<br>`clinical` | `neuroimaging`<br>`medical-imaging`<br>`physiology` | `ASL`<br>`MRI`<br>`NIfTI`<br>`DICOM` | `preprocessing`<br>`quantification`<br>`quality-control`<br>`statistics` | `MATLAB`<br>`Docker`<br>`command-line` | [公式](https://www.exploreasl.org/) | [repo](https://github.com/ExploreASL/ExploreASL) | arterial spin labeling perfusion MRI の import、前処理、CBF 定量、QC、ROI/voxel-wise 解析を自動化する pipeline/toolbox です。 |
+| `brainspace` | [BrainSpace](https://brainspace.readthedocs.io/) | `library` | `organ-system` | `neuroimaging`<br>`connectomics`<br>`statistics` | `connectivity-matrix`<br>`MRI`<br>`surface` | `gradient-mapping`<br>`embedding`<br>`visualization`<br>`statistics` | `Python`<br>`MATLAB` | [公式](https://brainspace.readthedocs.io/) | [repo](https://github.com/MICA-MNI/BrainSpace) | 脳 connectome や neuroimaging feature の spatial gradient、embedding、alignment、可視化を行う Python/MATLAB toolbox です。 |
+| `boutiques` | [Boutiques](https://boutiques.github.io/) | `standard` | `infrastructure`<br>`organ-system` | `workflow`<br>`neuroimaging`<br>`data-standard` | `workflow`<br>`container`<br>`metadata` | `tool-description`<br>`validation`<br>`reproducibility`<br>`execution` | `Python`<br>`command-line`<br>`JSON` | [公式](https://boutiques.github.io/) | [repo](https://github.com/boutiques/boutiques) | 解析 command-line tool を JSON descriptor として記述し、validate、simulate、実行、共有を支援する FAIR-oriented framework です。 |
+| `microsoft-fhir-server` | [FHIR Server for Azure](https://github.com/microsoft/fhir-server) | `platform` | `clinical`<br>`infrastructure` | `clinical-data`<br>`FHIR`<br>`interoperability` | `FHIR`<br>`EHR`<br>`clinical-data` | `FHIR-server`<br>`data-access`<br>`interoperability`<br>`deployment` | `.NET`<br>`FHIR`<br>`Azure` | [公式](https://github.com/microsoft/fhir-server) | [repo](https://github.com/microsoft/fhir-server) | Azure 環境で FHIR リソースの保存、検索、アクセス管理を実装する Microsoft の公開 FHIR server 実装です。 |
+| `opentripplanner` | [OpenTripPlanner](https://www.opentripplanner.org/) | `platform` | `environmental`<br>`behavioral`<br>`population` | `mobility`<br>`geospatial`<br>`transportation` | `GTFS`<br>`OpenStreetMap`<br>`routing-network` | `routing`<br>`accessibility-analysis`<br>`travel-time-estimation` | `Java`<br>`web`<br>`API` | [公式](https://www.opentripplanner.org/) | [repo](https://github.com/opentripplanner/OpenTripPlanner) | GTFS、NeTEx、OpenStreetMap などを用い、公共交通・徒歩・自転車・車の multimodal routing と accessibility analysis を行う platform です。 |
+| `mobilitydb` | [MobilityDB](https://mobilitydb.com/) | `platform` | `behavioral`<br>`environmental`<br>`infrastructure` | `mobility`<br>`geospatial`<br>`database` | `GPS`<br>`trajectories`<br>`spatiotemporal-data` | `trajectory-analysis`<br>`query`<br>`database` | `PostgreSQL`<br>`PostGIS`<br>`SQL` | [公式](https://mobilitydb.com/) | [repo](https://github.com/MobilityDB/MobilityDB) | GPS trace などの moving object trajectory を PostgreSQL/PostGIS 上で時空間型として保存・検索・解析する database platform です。 |
+| `secretflow` | [SecretFlow](https://www.secretflow.org.cn/docs/secretflow/en/) | `framework` | `clinical`<br>`population`<br>`infrastructure` | `privacy`<br>`federated-learning`<br>`machine-learning` | `tabular`<br>`models`<br>`sensitive-data` | `privacy-preserving-computation`<br>`federated-learning`<br>`secure-multiparty-computation` | `Python`<br>`Docker` | [公式](https://www.secretflow.org.cn/docs/secretflow/en/) | [repo](https://github.com/secretflow/secretflow) | 複数機関に分散した sensitive data に対して federated learning、MPC、HE、TEE を組み合わせた privacy-preserving analysis を構成する framework です。 |
+| `tam` | [TAM](https://cran.r-project.org/package=TAM) | `library` | `whole-person`<br>`behavioral`<br>`population` | `psychometrics`<br>`statistics`<br>`behavior` | `questionnaire`<br>`test-items`<br>`tabular` | `item-response-modeling`<br>`test-analysis`<br>`statistics` | `R`<br>`CRAN` | [公式](https://cran.r-project.org/package=TAM) | [repo](https://github.com/alexanderrobitzsch/TAM) | 質問紙・テスト項目データに対して Rasch、2PL、多次元 IRT などの psychometric model を推定する R package です。 |
 
 ## 更新方法
 
