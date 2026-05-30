@@ -2,24 +2,24 @@
 
 このページは `libraries.json` から生成した、人間由来バイオデータ解析カタログの全件表示です。JSON を直接読まなくても、公開ページ上で全項目を確認できます。
 
-- 項目数: 719
-- カタログ生成日: 2026-05-27
+- 項目数: 741
+- カタログ生成日: 2026-05-31
 - スキーマ: 0.1.0
 
 ## 解析スケール別件数
 
 | Scale | Count |
 | --- | ---: |
-| `molecular` | 259 |
-| `cellular` | 117 |
-| `tissue` | 54 |
-| `organ-system` | 150 |
-| `whole-person` | 131 |
-| `behavioral` | 51 |
-| `clinical` | 205 |
-| `population` | 215 |
-| `environmental` | 45 |
-| `infrastructure` | 242 |
+| `molecular` | 269 |
+| `cellular` | 118 |
+| `tissue` | 55 |
+| `organ-system` | 152 |
+| `whole-person` | 136 |
+| `behavioral` | 53 |
+| `clinical` | 215 |
+| `population` | 227 |
+| `environmental` | 48 |
+| `infrastructure` | 252 |
 
 ## 全項目
 
@@ -744,6 +744,28 @@
 | `dats` | [DATS JSON schemas](https://datatagsuite.github.io/docs/html/) | `standard` | `clinical`<br>`population`<br>`infrastructure` | `data-standard`<br>`metadata`<br>`biomedical-data` | `dataset-metadata`<br>`JSON-schema` | `metadata`<br>`data-discovery`<br>`interoperability` | `JSON Schema` | [公式](https://datatagsuite.github.io/docs/html/) | [repo](https://github.com/datatagsuite/schema) | biomedical dataset discovery 向け metadata を表す Data Tag Suite の JSON schema です。 |
 | `tenseal` | [TenSEAL](https://github.com/OpenMined/TenSEAL) | `library` | `infrastructure` | `privacy`<br>`machine-learning` | `encrypted-tensors` | `homomorphic-encryption`<br>`privacy-preserving-computation` | `Python`<br>`C++` | [公式](https://github.com/OpenMined/TenSEAL) | [repo](https://github.com/OpenMined/TenSEAL) | encrypted tensor 上で機械学習向け演算を行う homomorphic encryption library です。 |
 | `concrete-ml` | [Concrete ML](https://docs.zama.ai/concrete-ml) | `library` | `infrastructure` | `privacy`<br>`machine-learning` | `encrypted-features`<br>`models` | `FHE-inference`<br>`privacy-preserving-ML` | `Python` | [公式](https://docs.zama.ai/concrete-ml) | [repo](https://github.com/zama-ai/concrete-ml) | scikit-learn 風 API で fully homomorphic encryption による privacy-preserving ML inference を行う library です。 |
+| `nf-core-chipseq` | [nf-core/chipseq](https://nf-co.re/chipseq) | `workflow` | `molecular`<br>`infrastructure` | `epigenomics`<br>`genomics`<br>`workflow` | `ChIP-seq`<br>`FASTQ`<br>`peaks` | `quality-control`<br>`alignment`<br>`peak-calling`<br>`differential-analysis`<br>`reporting` | `Nextflow`<br>`nf-core`<br>`Docker` | [公式](https://nf-co.re/chipseq) | [repo](https://github.com/nf-core/chipseq) | ChIP-seq の QC、アラインメント、peak calling、差次的解析、レポートをまとめる nf-core 公式ワークフローです。 |
+| `nf-core-cutandrun` | [nf-core/cutandrun](https://nf-co.re/cutandrun) | `workflow` | `molecular`<br>`infrastructure` | `epigenomics`<br>`genomics`<br>`workflow` | `CUT&RUN`<br>`CUT&Tag`<br>`FASTQ`<br>`peaks` | `quality-control`<br>`alignment`<br>`peak-calling`<br>`spike-in-normalization`<br>`reporting` | `Nextflow`<br>`nf-core`<br>`Docker` | [公式](https://nf-co.re/cutandrun) | [repo](https://github.com/nf-core/cutandrun) | CUT&RUN / CUT&Tag の QC、アラインメント、peak calling、spike-in 正規化、レポートを扱う nf-core 公式ワークフローです。 |
+| `nf-core-smrnaseq` | [nf-core/smrnaseq](https://nf-co.re/smrnaseq) | `workflow` | `molecular` | `small-RNA`<br>`transcriptomics`<br>`genomics` | `small-RNA-seq`<br>`miRNA`<br>`FASTQ` | `quality-control`<br>`adapter-trimming`<br>`quantification`<br>`reporting` | `Nextflow`<br>`nf-core`<br>`Docker` | [公式](https://nf-co.re/smrnaseq) | [repo](https://github.com/nf-core/smrnaseq) | small RNA-seq / miRNA データの QC、adapter trimming、定量、レポートをまとめる nf-core 公式ワークフローです。 |
+| `nf-core-raredisease` | [nf-core/raredisease](https://nf-co.re/raredisease) | `workflow` | `molecular`<br>`clinical` | `clinical-genomics`<br>`variant-analysis`<br>`genomics` | `WGS`<br>`WES`<br>`VCF`<br>`phenotypes` | `variant-calling`<br>`variant-prioritization`<br>`annotation`<br>`reporting` | `Nextflow`<br>`nf-core`<br>`Docker` | [公式](https://nf-co.re/raredisease) | [repo](https://github.com/nf-core/raredisease) | 希少疾患ゲノム解析の variant calling、annotation、優先順位付け、レポートを扱う nf-core 公式ワークフローです。 |
+| `nf-core-hlatyping` | [nf-core/hlatyping](https://nf-co.re/hlatyping) | `workflow` | `molecular`<br>`clinical` | `immunogenetics`<br>`genomics`<br>`clinical-genomics` | `NGS`<br>`HLA`<br>`FASTQ`<br>`BAM` | `HLA-typing`<br>`quality-control`<br>`reporting` | `Nextflow`<br>`nf-core`<br>`Docker` | [公式](https://nf-co.re/hlatyping) | [repo](https://github.com/nf-core/hlatyping) | NGS データから HLA typing、QC、結果レポートを実行する nf-core 公式ワークフローです。 |
+| `nf-core-spatialvi` | [nf-core/spatialvi](https://nf-co.re/spatialvi) | `workflow` | `molecular`<br>`cellular`<br>`tissue`<br>`infrastructure` | `spatial-omics`<br>`transcriptomics`<br>`bioimaging` | `Visium`<br>`spatial-transcriptomics`<br>`tissue-image` | `preprocessing`<br>`quality-control`<br>`visualization`<br>`reporting` | `Nextflow`<br>`nf-core`<br>`Docker` | [公式](https://nf-co.re/spatialvi) | [repo](https://github.com/nf-core/spatialvi) | Visium などの空間トランスクリプトミクスと組織画像を前処理、QC、可視化、レポートへつなぐ nf-core 公式ワークフローです。 |
+| `trtools` | [TRTools](https://trtools.readthedocs.io/) | `tool` | `molecular`<br>`population` | `genomics`<br>`variant-analysis`<br>`population-genetics` | `tandem-repeats`<br>`VCF`<br>`genotypes` | `quality-control`<br>`association-testing`<br>`format-conversion`<br>`visualization` | `Python`<br>`command-line` | [公式](https://trtools.readthedocs.io/) | [repo](https://github.com/gymrek-lab/TRTools) | tandem repeat variant の VCF QC、変換、可視化、関連解析を支援する Python / CLI ツール群です。 |
+| `bioframe` | [bioframe](https://bioframe.readthedocs.io/) | `library` | `molecular`<br>`infrastructure` | `genomics`<br>`epigenomics`<br>`data-model` | `genomic-intervals`<br>`BED`<br>`tabular` | `interval-operations`<br>`annotation`<br>`overlap`<br>`statistics` | `Python`<br>`pandas` | [公式](https://bioframe.readthedocs.io/) | [repo](https://github.com/open2c/bioframe) | pandas DataFrame 上で genomic interval の overlap、annotation、統計処理を行う Python ライブラリです。 |
+| `pyranges` | [PyRanges](https://pyranges0.readthedocs.io/) | `library` | `molecular`<br>`infrastructure` | `genomics`<br>`epigenomics`<br>`data-model` | `genomic-intervals`<br>`BED`<br>`GTF` | `interval-operations`<br>`annotation`<br>`join`<br>`coverage` | `Python` | [公式](https://pyranges0.readthedocs.io/) | [repo](https://github.com/pyranges/pyranges0) | Python で genomic ranges の join、overlap、coverage、annotation を高速に扱うライブラリです。 |
+| `limix` | [LIMIX](https://github.com/limix/limix) | `library` | `molecular`<br>`population` | `genetics`<br>`statistics`<br>`population-genetics` | `genotypes`<br>`phenotypes`<br>`QTL` | `mixed-model`<br>`association-testing`<br>`variance-component-analysis` | `Python` | [公式](https://github.com/limix/limix) | [repo](https://github.com/limix/limix) | genotype と phenotype の関連を mixed model や variance component model で解析する Python ライブラリです。 |
+| `matchit` | [MatchIt](https://kosukeimai.github.io/MatchIt/) | `library` | `whole-person`<br>`clinical`<br>`population` | `epidemiology`<br>`statistics`<br>`causal-inference` | `tabular`<br>`covariates`<br>`outcomes` | `propensity-score-matching`<br>`balance-diagnostics`<br>`preprocessing` | `R` | [公式](https://kosukeimai.github.io/MatchIt/) | [repo](https://github.com/kosukeimai/MatchIt) | 観察研究データに対する propensity score matching と共変量バランス確認を支援する R パッケージです。 |
+| `weightit` | [WeightIt](https://ngreifer.github.io/WeightIt/) | `library` | `whole-person`<br>`clinical`<br>`population` | `epidemiology`<br>`statistics`<br>`causal-inference` | `tabular`<br>`covariates`<br>`treatments` | `propensity-score-weighting`<br>`balancing`<br>`causal-inference` | `R` | [公式](https://ngreifer.github.io/WeightIt/) | [repo](https://github.com/ngreifer/WeightIt) | 観察研究の因果推論で使う balancing weights と propensity score weighting を作成する R パッケージです。 |
+| `cobalt-r` | [cobalt](https://ngreifer.github.io/cobalt/) | `library` | `whole-person`<br>`clinical`<br>`population` | `epidemiology`<br>`statistics`<br>`causal-inference` | `tabular`<br>`covariates`<br>`treatments` | `covariate-balance`<br>`diagnostics`<br>`visualization` | `R` | [公式](https://ngreifer.github.io/cobalt/) | [repo](https://github.com/ngreifer/cobalt) | matching や weighting 後の共変量バランスを表・図で診断する R パッケージです。 |
+| `mice-r` | [mice](https://amices.org/mice/) | `library` | `whole-person`<br>`clinical`<br>`population` | `statistics`<br>`clinical-data`<br>`epidemiology` | `tabular`<br>`missing-data`<br>`covariates` | `multiple-imputation`<br>`preprocessing`<br>`modeling` | `R` | [公式](https://amices.org/mice/) | [repo](https://github.com/amices/mice) | 欠測を含む臨床・疫学テーブルデータに multiple imputation by chained equations を適用する R パッケージです。 |
+| `tmle3` | [tmle3](https://tlverse.org/tmle3) | `library` | `whole-person`<br>`clinical`<br>`population` | `epidemiology`<br>`statistics`<br>`causal-inference` | `tabular`<br>`outcomes`<br>`covariates` | `targeted-learning`<br>`causal-inference`<br>`estimation` | `R`<br>`tlverse` | [公式](https://tlverse.org/tmle3) | [repo](https://github.com/tlverse/tmle3) | targeted minimum loss-based estimation を用いた因果推論・疫学推定を構成する tlverse の R パッケージです。 |
+| `dcmjs` | [dcmjs](https://dcmjs.netlify.com/) | `library` | `organ-system`<br>`clinical`<br>`infrastructure` | `medical-imaging`<br>`DICOM`<br>`interoperability` | `DICOM`<br>`DICOM-SR`<br>`DICOMweb` | `parsing`<br>`format-conversion`<br>`structured-reporting`<br>`visualization-support` | `JavaScript` | [公式](https://dcmjs.netlify.com/) | [repo](https://github.com/dcmjs-org/dcmjs) | DICOM、DICOM Structured Report、DICOMweb 周辺の読み書きや変換を JavaScript で扱うライブラリです。 |
+| `fo-dicom` | [fo-dicom](https://fo-dicom.github.io/stable/v5/index.html) | `library` | `organ-system`<br>`clinical`<br>`infrastructure` | `medical-imaging`<br>`DICOM`<br>`interoperability` | `DICOM`<br>`DICOMweb`<br>`PACS` | `parsing`<br>`networking`<br>`storage`<br>`format-support` | `.NET`<br>`C#` | [公式](https://fo-dicom.github.io/stable/v5/index.html) | [repo](https://github.com/fo-dicom/fo-dicom) | .NET / C# で DICOM の読み書き、networking、storage、PACS 連携を扱うライブラリです。 |
+| `flamby` | [FLamby](https://owkin.github.io/FLamby/) | `library` | `clinical`<br>`population`<br>`infrastructure` | `federated-learning`<br>`privacy`<br>`clinical-data` | `medical-data`<br>`tabular`<br>`imaging`<br>`federated-datasets` | `federated-learning`<br>`benchmarking`<br>`model-evaluation` | `Python`<br>`PyTorch` | [公式](https://owkin.github.io/FLamby/) | [repo](https://github.com/owkin/FLamby) | 臨床・医用画像データを想定した federated learning benchmark と評価用 dataset loader を提供する Python ライブラリです。 |
+| `pydp` | [PyDP](https://github.com/OpenMined/PyDP) | `library` | `population`<br>`infrastructure` | `privacy`<br>`differential-privacy`<br>`statistics` | `tabular`<br>`aggregates` | `differential-privacy`<br>`aggregation`<br>`statistics` | `Python` | [公式](https://github.com/OpenMined/PyDP) | [repo](https://github.com/OpenMined/PyDP) | Python から差分プライバシー付き集計や統計処理を利用するための OpenMined のライブラリです。 |
+| `sfnetworks` | [sfnetworks](https://luukvdmeer.github.io/sfnetworks/) | `library` | `population`<br>`environmental`<br>`infrastructure` | `geospatial`<br>`mobility`<br>`built-environment` | `spatial-network`<br>`street-network`<br>`transport-network` | `network-analysis`<br>`routing`<br>`preprocessing`<br>`visualization` | `R`<br>`sf`<br>`tidygraph` | [公式](https://luukvdmeer.github.io/sfnetworks/) | [repo](https://github.com/luukvdmeer/sfnetworks) | sf と tidygraph を接続し、道路・交通などの空間ネットワーク解析を R で行うライブラリです。 |
+| `tidytransit` | [tidytransit](https://r-transit.github.io/tidytransit/) | `library` | `behavioral`<br>`population`<br>`environmental` | `mobility`<br>`geospatial`<br>`transportation` | `GTFS`<br>`transit-schedule` | `parsing`<br>`accessibility`<br>`transit-analysis`<br>`preprocessing` | `R` | [公式](https://r-transit.github.io/tidytransit/) | [repo](https://github.com/r-transit/tidytransit) | GTFS 形式の公共交通スケジュールを読み込み、前処理、分析、accessibility 評価につなげる R パッケージです。 |
+| `gtfs2gps` | [gtfs2gps](https://ipea.github.io/gtfs2gps/) | `library` | `behavioral`<br>`population`<br>`environmental` | `mobility`<br>`geospatial`<br>`transportation` | `GTFS`<br>`GPS-like-records`<br>`trajectory` | `format-conversion`<br>`preprocessing`<br>`trajectory-generation` | `R` | [公式](https://ipea.github.io/gtfs2gps/) | [repo](https://github.com/ipea/gtfs2gps) | GTFS の時刻表・経路情報から GPS 風の軌跡レコードを生成し、交通・移動解析へ接続する R パッケージです。 |
 
 ## 更新方法
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-05-27",
+  "generated_at": "2026-05-31",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -23454,6 +23454,748 @@
       "license": "BSD-3-Clause-Clear",
       "maturity": "active",
       "summary_ja": "scikit-learn 風 API で fully homomorphic encryption による privacy-preserving ML inference を行う library です。"
+    },
+    {
+      "id": "nf-core-chipseq",
+      "name": "nf-core/chipseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "epigenomics",
+        "genomics",
+        "workflow"
+      ],
+      "modalities": [
+        "ChIP-seq",
+        "FASTQ",
+        "peaks"
+      ],
+      "tasks": [
+        "quality-control",
+        "alignment",
+        "peak-calling",
+        "differential-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/chipseq",
+      "repo_url": "https://github.com/nf-core/chipseq",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "ChIP-seq の QC、アラインメント、peak calling、差次的解析、レポートをまとめる nf-core 公式ワークフローです。"
+    },
+    {
+      "id": "nf-core-cutandrun",
+      "name": "nf-core/cutandrun",
+      "artifact_type": "workflow",
+      "domains": [
+        "epigenomics",
+        "genomics",
+        "workflow"
+      ],
+      "modalities": [
+        "CUT&RUN",
+        "CUT&Tag",
+        "FASTQ",
+        "peaks"
+      ],
+      "tasks": [
+        "quality-control",
+        "alignment",
+        "peak-calling",
+        "spike-in-normalization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/cutandrun",
+      "repo_url": "https://github.com/nf-core/cutandrun",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "CUT&RUN / CUT&Tag の QC、アラインメント、peak calling、spike-in 正規化、レポートを扱う nf-core 公式ワークフローです。"
+    },
+    {
+      "id": "nf-core-smrnaseq",
+      "name": "nf-core/smrnaseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "small-RNA",
+        "transcriptomics",
+        "genomics"
+      ],
+      "modalities": [
+        "small-RNA-seq",
+        "miRNA",
+        "FASTQ"
+      ],
+      "tasks": [
+        "quality-control",
+        "adapter-trimming",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/smrnaseq",
+      "repo_url": "https://github.com/nf-core/smrnaseq",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "small RNA-seq / miRNA データの QC、adapter trimming、定量、レポートをまとめる nf-core 公式ワークフローです。"
+    },
+    {
+      "id": "nf-core-raredisease",
+      "name": "nf-core/raredisease",
+      "artifact_type": "workflow",
+      "domains": [
+        "clinical-genomics",
+        "variant-analysis",
+        "genomics"
+      ],
+      "modalities": [
+        "WGS",
+        "WES",
+        "VCF",
+        "phenotypes"
+      ],
+      "tasks": [
+        "variant-calling",
+        "variant-prioritization",
+        "annotation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/raredisease",
+      "repo_url": "https://github.com/nf-core/raredisease",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "希少疾患ゲノム解析の variant calling、annotation、優先順位付け、レポートを扱う nf-core 公式ワークフローです。"
+    },
+    {
+      "id": "nf-core-hlatyping",
+      "name": "nf-core/hlatyping",
+      "artifact_type": "workflow",
+      "domains": [
+        "immunogenetics",
+        "genomics",
+        "clinical-genomics"
+      ],
+      "modalities": [
+        "NGS",
+        "HLA",
+        "FASTQ",
+        "BAM"
+      ],
+      "tasks": [
+        "HLA-typing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/hlatyping",
+      "repo_url": "https://github.com/nf-core/hlatyping",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "NGS データから HLA typing、QC、結果レポートを実行する nf-core 公式ワークフローです。"
+    },
+    {
+      "id": "nf-core-spatialvi",
+      "name": "nf-core/spatialvi",
+      "artifact_type": "workflow",
+      "domains": [
+        "spatial-omics",
+        "transcriptomics",
+        "bioimaging"
+      ],
+      "modalities": [
+        "Visium",
+        "spatial-transcriptomics",
+        "tissue-image"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "visualization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/spatialvi",
+      "repo_url": "https://github.com/nf-core/spatialvi",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "Visium などの空間トランスクリプトミクスと組織画像を前処理、QC、可視化、レポートへつなぐ nf-core 公式ワークフローです。"
+    },
+    {
+      "id": "trtools",
+      "name": "TRTools",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "population-genetics"
+      ],
+      "modalities": [
+        "tandem-repeats",
+        "VCF",
+        "genotypes"
+      ],
+      "tasks": [
+        "quality-control",
+        "association-testing",
+        "format-conversion",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://trtools.readthedocs.io/",
+      "repo_url": "https://github.com/gymrek-lab/TRTools",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "tandem repeat variant の VCF QC、変換、可視化、関連解析を支援する Python / CLI ツール群です。"
+    },
+    {
+      "id": "bioframe",
+      "name": "bioframe",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "epigenomics",
+        "data-model"
+      ],
+      "modalities": [
+        "genomic-intervals",
+        "BED",
+        "tabular"
+      ],
+      "tasks": [
+        "interval-operations",
+        "annotation",
+        "overlap",
+        "statistics"
+      ],
+      "ecosystems": [
+        "Python",
+        "pandas"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioframe.readthedocs.io/",
+      "repo_url": "https://github.com/open2c/bioframe",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "pandas DataFrame 上で genomic interval の overlap、annotation、統計処理を行う Python ライブラリです。"
+    },
+    {
+      "id": "pyranges",
+      "name": "PyRanges",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "epigenomics",
+        "data-model"
+      ],
+      "modalities": [
+        "genomic-intervals",
+        "BED",
+        "GTF"
+      ],
+      "tasks": [
+        "interval-operations",
+        "annotation",
+        "join",
+        "coverage"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://pyranges0.readthedocs.io/",
+      "repo_url": "https://github.com/pyranges/pyranges0",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "Python で genomic ranges の join、overlap、coverage、annotation を高速に扱うライブラリです。"
+    },
+    {
+      "id": "limix",
+      "name": "LIMIX",
+      "artifact_type": "library",
+      "domains": [
+        "genetics",
+        "statistics",
+        "population-genetics"
+      ],
+      "modalities": [
+        "genotypes",
+        "phenotypes",
+        "QTL"
+      ],
+      "tasks": [
+        "mixed-model",
+        "association-testing",
+        "variance-component-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://github.com/limix/limix",
+      "repo_url": "https://github.com/limix/limix",
+      "maturity": "active",
+      "summary_ja": "genotype と phenotype の関連を mixed model や variance component model で解析する Python ライブラリです。"
+    },
+    {
+      "id": "matchit",
+      "name": "MatchIt",
+      "artifact_type": "library",
+      "domains": [
+        "epidemiology",
+        "statistics",
+        "causal-inference"
+      ],
+      "modalities": [
+        "tabular",
+        "covariates",
+        "outcomes"
+      ],
+      "tasks": [
+        "propensity-score-matching",
+        "balance-diagnostics",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "whole-person",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://kosukeimai.github.io/MatchIt/",
+      "repo_url": "https://github.com/kosukeimai/MatchIt",
+      "maturity": "active",
+      "summary_ja": "観察研究データに対する propensity score matching と共変量バランス確認を支援する R パッケージです。"
+    },
+    {
+      "id": "weightit",
+      "name": "WeightIt",
+      "artifact_type": "library",
+      "domains": [
+        "epidemiology",
+        "statistics",
+        "causal-inference"
+      ],
+      "modalities": [
+        "tabular",
+        "covariates",
+        "treatments"
+      ],
+      "tasks": [
+        "propensity-score-weighting",
+        "balancing",
+        "causal-inference"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "whole-person",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://ngreifer.github.io/WeightIt/",
+      "repo_url": "https://github.com/ngreifer/WeightIt",
+      "maturity": "active",
+      "summary_ja": "観察研究の因果推論で使う balancing weights と propensity score weighting を作成する R パッケージです。"
+    },
+    {
+      "id": "cobalt-r",
+      "name": "cobalt",
+      "artifact_type": "library",
+      "domains": [
+        "epidemiology",
+        "statistics",
+        "causal-inference"
+      ],
+      "modalities": [
+        "tabular",
+        "covariates",
+        "treatments"
+      ],
+      "tasks": [
+        "covariate-balance",
+        "diagnostics",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "whole-person",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://ngreifer.github.io/cobalt/",
+      "repo_url": "https://github.com/ngreifer/cobalt",
+      "maturity": "active",
+      "summary_ja": "matching や weighting 後の共変量バランスを表・図で診断する R パッケージです。"
+    },
+    {
+      "id": "mice-r",
+      "name": "mice",
+      "artifact_type": "library",
+      "domains": [
+        "statistics",
+        "clinical-data",
+        "epidemiology"
+      ],
+      "modalities": [
+        "tabular",
+        "missing-data",
+        "covariates"
+      ],
+      "tasks": [
+        "multiple-imputation",
+        "preprocessing",
+        "modeling"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "whole-person",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://amices.org/mice/",
+      "repo_url": "https://github.com/amices/mice",
+      "license": "GPL-2.0",
+      "maturity": "active",
+      "summary_ja": "欠測を含む臨床・疫学テーブルデータに multiple imputation by chained equations を適用する R パッケージです。"
+    },
+    {
+      "id": "tmle3",
+      "name": "tmle3",
+      "artifact_type": "library",
+      "domains": [
+        "epidemiology",
+        "statistics",
+        "causal-inference"
+      ],
+      "modalities": [
+        "tabular",
+        "outcomes",
+        "covariates"
+      ],
+      "tasks": [
+        "targeted-learning",
+        "causal-inference",
+        "estimation"
+      ],
+      "ecosystems": [
+        "R",
+        "tlverse"
+      ],
+      "scales": [
+        "whole-person",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://tlverse.org/tmle3",
+      "repo_url": "https://github.com/tlverse/tmle3",
+      "maturity": "active",
+      "summary_ja": "targeted minimum loss-based estimation を用いた因果推論・疫学推定を構成する tlverse の R パッケージです。"
+    },
+    {
+      "id": "dcmjs",
+      "name": "dcmjs",
+      "artifact_type": "library",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "interoperability"
+      ],
+      "modalities": [
+        "DICOM",
+        "DICOM-SR",
+        "DICOMweb"
+      ],
+      "tasks": [
+        "parsing",
+        "format-conversion",
+        "structured-reporting",
+        "visualization-support"
+      ],
+      "ecosystems": [
+        "JavaScript"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://dcmjs.netlify.com/",
+      "repo_url": "https://github.com/dcmjs-org/dcmjs",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "DICOM、DICOM Structured Report、DICOMweb 周辺の読み書きや変換を JavaScript で扱うライブラリです。"
+    },
+    {
+      "id": "fo-dicom",
+      "name": "fo-dicom",
+      "artifact_type": "library",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "interoperability"
+      ],
+      "modalities": [
+        "DICOM",
+        "DICOMweb",
+        "PACS"
+      ],
+      "tasks": [
+        "parsing",
+        "networking",
+        "storage",
+        "format-support"
+      ],
+      "ecosystems": [
+        ".NET",
+        "C#"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://fo-dicom.github.io/stable/v5/index.html",
+      "repo_url": "https://github.com/fo-dicom/fo-dicom",
+      "maturity": "active",
+      "summary_ja": ".NET / C# で DICOM の読み書き、networking、storage、PACS 連携を扱うライブラリです。"
+    },
+    {
+      "id": "flamby",
+      "name": "FLamby",
+      "artifact_type": "library",
+      "domains": [
+        "federated-learning",
+        "privacy",
+        "clinical-data"
+      ],
+      "modalities": [
+        "medical-data",
+        "tabular",
+        "imaging",
+        "federated-datasets"
+      ],
+      "tasks": [
+        "federated-learning",
+        "benchmarking",
+        "model-evaluation"
+      ],
+      "ecosystems": [
+        "Python",
+        "PyTorch"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://owkin.github.io/FLamby/",
+      "repo_url": "https://github.com/owkin/FLamby",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "臨床・医用画像データを想定した federated learning benchmark と評価用 dataset loader を提供する Python ライブラリです。"
+    },
+    {
+      "id": "pydp",
+      "name": "PyDP",
+      "artifact_type": "library",
+      "domains": [
+        "privacy",
+        "differential-privacy",
+        "statistics"
+      ],
+      "modalities": [
+        "tabular",
+        "aggregates"
+      ],
+      "tasks": [
+        "differential-privacy",
+        "aggregation",
+        "statistics"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OpenMined/PyDP",
+      "repo_url": "https://github.com/OpenMined/PyDP",
+      "license": "Apache-2.0",
+      "maturity": "established",
+      "summary_ja": "Python から差分プライバシー付き集計や統計処理を利用するための OpenMined のライブラリです。"
+    },
+    {
+      "id": "sfnetworks",
+      "name": "sfnetworks",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "mobility",
+        "built-environment"
+      ],
+      "modalities": [
+        "spatial-network",
+        "street-network",
+        "transport-network"
+      ],
+      "tasks": [
+        "network-analysis",
+        "routing",
+        "preprocessing",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "sf",
+        "tidygraph"
+      ],
+      "scales": [
+        "population",
+        "environmental",
+        "infrastructure"
+      ],
+      "official_url": "https://luukvdmeer.github.io/sfnetworks/",
+      "repo_url": "https://github.com/luukvdmeer/sfnetworks",
+      "maturity": "active",
+      "summary_ja": "sf と tidygraph を接続し、道路・交通などの空間ネットワーク解析を R で行うライブラリです。"
+    },
+    {
+      "id": "tidytransit",
+      "name": "tidytransit",
+      "artifact_type": "library",
+      "domains": [
+        "mobility",
+        "geospatial",
+        "transportation"
+      ],
+      "modalities": [
+        "GTFS",
+        "transit-schedule"
+      ],
+      "tasks": [
+        "parsing",
+        "accessibility",
+        "transit-analysis",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "behavioral",
+        "population",
+        "environmental"
+      ],
+      "official_url": "https://r-transit.github.io/tidytransit/",
+      "repo_url": "https://github.com/r-transit/tidytransit",
+      "maturity": "active",
+      "summary_ja": "GTFS 形式の公共交通スケジュールを読み込み、前処理、分析、accessibility 評価につなげる R パッケージです。"
+    },
+    {
+      "id": "gtfs2gps",
+      "name": "gtfs2gps",
+      "artifact_type": "library",
+      "domains": [
+        "mobility",
+        "geospatial",
+        "transportation"
+      ],
+      "modalities": [
+        "GTFS",
+        "GPS-like-records",
+        "trajectory"
+      ],
+      "tasks": [
+        "format-conversion",
+        "preprocessing",
+        "trajectory-generation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "behavioral",
+        "population",
+        "environmental"
+      ],
+      "official_url": "https://ipea.github.io/gtfs2gps/",
+      "repo_url": "https://github.com/ipea/gtfs2gps",
+      "maturity": "active",
+      "summary_ja": "GTFS の時刻表・経路情報から GPS 風の軌跡レコードを生成し、交通・移動解析へ接続する R パッケージです。"
     }
   ]
 }
