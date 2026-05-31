@@ -14,7 +14,7 @@
 
 ## まず見る場所
 
-- [全件カタログ](catalog.md): 収録している 741 件をページ上で一覧できます。
+- [全件カタログ](catalog.md): 収録している 848 件をページ上で一覧できます。
 - [分類と運用方針](docs/catalog-policy.md): 何を収録し、何を除外するかを確認できます。
 - [スキーマ説明](docs/schema.md): 各項目に入っている情報の意味を確認できます。
 - [領域別の見取り図](docs/landscape.md): ミクロからマクロまでの対象領域を俯瞰できます。
@@ -22,7 +22,7 @@
 
 ## このサイトで見られるもの
 
-- 全 741 件の公開 OSS / 公開リポジトリ付きカタログ
+- 全 848 件の公開 OSS / 公開リポジトリ付きカタログ
 - 解析スケール別の件数と分類
 - 分野、データ種別、処理タスク、実行環境、公式ページ、repo へのリンク
 - 日本語の 1 文要約
@@ -32,7 +32,7 @@
 
 ## 収録状況
 
-2026-05-31 時点の継続更新カタログは 741 件です。代表的な収録軸は以下です。
+2026-06-01 時点の継続更新カタログは 848 件です。代表的な収録軸は以下です。
 
 - ミクロ: ゲノム、変異、RNA-seq、single-cell、spatial omics、プロテオミクス、メタボロミクス、マイクロバイオーム
 - 細胞・組織: cytometry、細胞画像、病理画像、空間トランスクリプトミクス
@@ -50,6 +50,8 @@
 2026-05-27 の更新では、pangenome graph、genome QC、genome browser、SRA/sequence utility、OpenCB genomic platform、single-cell/spatial/pathology imaging、OpenNeuro/BIDS/neurophysiology/medical imaging/wearables、FHIR/openEHR/OMOP/DARWIN/OBiBa/public-health/HIS、psychometrics/eye tracking/survey/mobility/workflow/privacy standard 周辺を再確認し、公式または準公式の公開 repo と OSS 条件を確認できる 105 件を追加しました。Manta、Strelka2、ExpansionHunter、pyPPG、SCENIC+、OpenFace、OpenPose などは利用条件が非 OSS または制限付きのため採録しませんでした。
 
 2026-05-31 の更新では、nf-core の ChIP-seq / CUT&RUN / small RNA-seq / rare disease / HLA typing / spatial transcriptomics workflow、tandem repeat と genomic interval、genetic mixed model、因果推論・欠測補完、DICOM JavaScript / .NET、federated learning / differential privacy、交通・地理空間ネットワーク解析の公開 repo を再確認し、公式または準公式の公開 repo を確認できる 22 件を追加しました。nf-core/quantms と nf-core/proteomicslfq は公開 repo は確認できましたが archived 状態のため、この run では採録しませんでした。
+
+2026-06-01 の更新では、nf-core の AIRR / taxonomic profiling / viral recon / Hi-C / Nanopore / CLIP-seq / circRNA などの workflow、Rsubread / GffRead / Exomiser / scGLUE などの omics 実装、single-cell / spatial omics benchmark と spatial statistics、cytometry、digital pathology / microscopy、神経画像・DICOM・放射線治療・生理信号、睡眠・ウェアラブル・行動実験、OHDSI HADES、SMART on FHIR、clinical NLP、心理統計・質問紙・eye tracking、集団遺伝、感染症・合成人口、環境曝露・routing・STAC、workflow / metadata standard、record linkage / privacy-preserving computation の公開 repo を再確認し、公式または準公式の公開 repo と OSS 条件を確認できる 107 件を追加しました。BANKSY、stepcount、SearchGUI / PeptideShaker、OpenClinica は公開 repo は確認できましたが、利用条件または license file の確認条件を満たさないため、この run では採録しませんでした。
 
 ## 対象領域
 
