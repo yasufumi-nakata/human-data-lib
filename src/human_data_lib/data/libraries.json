@@ -27888,6 +27888,1517 @@
       "license": "GNU GPL",
       "maturity": "established",
       "summary_ja": "EEG、ECoG、ECG、EOG、EMG などの biomedical signal の I/O、処理、特徴抽出を行う open-source library です。"
+    },
+    {
+      "id": "hap-py",
+      "name": "hap.py",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "quality-control"
+      ],
+      "modalities": [
+        "VCF",
+        "variants",
+        "benchmark-sets"
+      ],
+      "tasks": [
+        "benchmarking",
+        "variant-comparison",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line",
+        "Illumina"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://github.com/Illumina/hap.py",
+      "repo_url": "https://github.com/Illumina/hap.py",
+      "license": "BSD-2-Clause",
+      "maturity": "established",
+      "summary_ja": "truth set と VCF を比較し、small variant calling の性能評価と品質確認を行う Illumina 公開ツールです。"
+    },
+    {
+      "id": "truvari",
+      "name": "Truvari",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "structural-variation"
+      ],
+      "modalities": [
+        "VCF",
+        "structural-variants",
+        "genomic-intervals"
+      ],
+      "tasks": [
+        "benchmarking",
+        "variant-comparison",
+        "annotation",
+        "merging"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://truvari.readthedocs.io/",
+      "repo_url": "https://github.com/ACEnglish/truvari",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "structural variant の VCF を比較、統合、注釈し、ベンチマークや cohort 整理に使う Python ツールです。"
+    },
+    {
+      "id": "pbsv",
+      "name": "pbsv",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "structural-variation"
+      ],
+      "modalities": [
+        "long-read-sequencing",
+        "BAM",
+        "VCF",
+        "structural-variants"
+      ],
+      "tasks": [
+        "variant-calling",
+        "genotyping",
+        "annotation"
+      ],
+      "ecosystems": [
+        "C++",
+        "command-line",
+        "PacBio"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/PacificBiosciences/pbsv",
+      "repo_url": "https://github.com/PacificBiosciences/pbsv",
+      "license": "BSD-3-Clause-Clear",
+      "maturity": "active",
+      "summary_ja": "PacBio long-read sequencing から structural variant の検出、genotyping、VCF 出力を行う公式ツールです。"
+    },
+    {
+      "id": "cutesv",
+      "name": "cuteSV",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "structural-variation"
+      ],
+      "modalities": [
+        "long-read-sequencing",
+        "BAM",
+        "VCF",
+        "structural-variants"
+      ],
+      "tasks": [
+        "variant-calling",
+        "genotyping",
+        "filtering"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/tjiangHIT/cuteSV",
+      "repo_url": "https://github.com/tjiangHIT/cuteSV",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "long-read の split read や depth 情報からヒトゲノム structural variant を検出するコマンドラインツールです。"
+    },
+    {
+      "id": "svim",
+      "name": "SVIM",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "structural-variation"
+      ],
+      "modalities": [
+        "long-read-sequencing",
+        "BAM",
+        "VCF",
+        "structural-variants"
+      ],
+      "tasks": [
+        "variant-calling",
+        "clustering",
+        "classification"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/eldariont/svim",
+      "repo_url": "https://github.com/eldariont/svim",
+      "license": "GPL-3.0",
+      "maturity": "established",
+      "summary_ja": "long-read alignment から deletion、insertion、inversion などの structural variant を同定する Python ツールです。"
+    },
+    {
+      "id": "gatk-sv",
+      "name": "GATK-SV",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "workflow"
+      ],
+      "modalities": [
+        "WGS",
+        "CRAM",
+        "VCF",
+        "structural-variants"
+      ],
+      "tasks": [
+        "workflow",
+        "variant-calling",
+        "genotyping",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "WDL",
+        "Cromwell",
+        "GATK"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://broadinstitute.github.io/gatk-sv/",
+      "repo_url": "https://github.com/broadinstitute/gatk-sv",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "short-read WGS から structural variant を検出、統合、genotyping する Broad Institute の WDL ワークフローです。"
+    },
+    {
+      "id": "nf-core-oncoanalyser",
+      "name": "nf-core/oncoanalyser",
+      "artifact_type": "workflow",
+      "domains": [
+        "cancer-genomics",
+        "clinical-genomics",
+        "workflow"
+      ],
+      "modalities": [
+        "WGS",
+        "WES",
+        "RNA-seq",
+        "somatic-variants"
+      ],
+      "tasks": [
+        "workflow",
+        "variant-calling",
+        "annotation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker",
+        "Singularity"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/oncoanalyser",
+      "repo_url": "https://github.com/nf-core/oncoanalyser",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "がん DNA/RNA sequencing の解析とレポート生成を Nextflow で実行する nf-core 公式ワークフローです。"
+    },
+    {
+      "id": "nf-core-pangenome",
+      "name": "nf-core/pangenome",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "pangenome",
+        "workflow"
+      ],
+      "modalities": [
+        "FASTA",
+        "pangenome-graph",
+        "sequence"
+      ],
+      "tasks": [
+        "graph-construction",
+        "workflow",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker",
+        "Singularity"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/pangenome",
+      "repo_url": "https://github.com/nf-core/pangenome",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "複数ゲノム配列から pangenome graph を構築し、再現可能な Nextflow 解析として実行する nf-core ワークフローです。"
+    },
+    {
+      "id": "nf-core-imcyto",
+      "name": "nf-core/imcyto",
+      "artifact_type": "workflow",
+      "domains": [
+        "cytometry",
+        "bioimaging",
+        "spatial-omics"
+      ],
+      "modalities": [
+        "imaging-mass-cytometry",
+        "multiplexed-tissue-imaging",
+        "cell-features"
+      ],
+      "tasks": [
+        "segmentation",
+        "quantification",
+        "workflow",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker",
+        "Singularity"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/imcyto",
+      "repo_url": "https://github.com/nf-core/imcyto",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "imaging mass cytometry 画像の segmentation、定量、QC を Nextflow で実行する nf-core 公式ワークフローです。"
+    },
+    {
+      "id": "methyldackel",
+      "name": "MethylDackel",
+      "artifact_type": "tool",
+      "domains": [
+        "epigenomics",
+        "genomics"
+      ],
+      "modalities": [
+        "bisulfite-sequencing",
+        "BAM",
+        "methylation"
+      ],
+      "tasks": [
+        "methylation-extraction",
+        "quality-control",
+        "coverage"
+      ],
+      "ecosystems": [
+        "C",
+        "command-line"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/dpryan79/MethylDackel",
+      "repo_url": "https://github.com/dpryan79/MethylDackel",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "bisulfite sequencing alignment から methylation calls と coverage 指標を抽出するコマンドラインツールです。"
+    },
+    {
+      "id": "maftools",
+      "name": "maftools",
+      "artifact_type": "library",
+      "domains": [
+        "cancer-genomics",
+        "variant-analysis",
+        "statistics"
+      ],
+      "modalities": [
+        "MAF",
+        "somatic-variants",
+        "clinical-data"
+      ],
+      "tasks": [
+        "visualization",
+        "summarization",
+        "survival-analysis",
+        "annotation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/maftools/",
+      "repo_url": "https://git.bioconductor.org/packages/maftools",
+      "license": "MIT + file LICENSE",
+      "maturity": "established",
+      "summary_ja": "Mutation Annotation Format 形式のがん変異データを要約、可視化し、臨床情報と合わせて解析する Bioconductor パッケージです。"
+    },
+    {
+      "id": "mutationalpatterns",
+      "name": "MutationalPatterns",
+      "artifact_type": "library",
+      "domains": [
+        "cancer-genomics",
+        "variant-analysis",
+        "statistics"
+      ],
+      "modalities": [
+        "SNV",
+        "indels",
+        "mutational-signatures"
+      ],
+      "tasks": [
+        "mutational-signature-analysis",
+        "visualization",
+        "annotation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/MutationalPatterns/",
+      "repo_url": "https://git.bioconductor.org/packages/MutationalPatterns",
+      "license": "MIT + file LICENSE",
+      "maturity": "established",
+      "summary_ja": "SNV、indel、DBS などから mutational signature や strand bias を評価・可視化する Bioconductor パッケージです。"
+    },
+    {
+      "id": "purecn",
+      "name": "PureCN",
+      "artifact_type": "library",
+      "domains": [
+        "cancer-genomics",
+        "copy-number",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "targeted-sequencing",
+        "copy-number",
+        "SNV"
+      ],
+      "tasks": [
+        "purity-estimation",
+        "copy-number-analysis",
+        "variant-classification"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://bioconductor.org/packages/PureCN/",
+      "repo_url": "https://git.bioconductor.org/packages/PureCN",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "targeted sequencing から腫瘍 purity、copy number、LOH、SNV clonality を推定する Bioconductor パッケージです。"
+    },
+    {
+      "id": "facets",
+      "name": "FACETS",
+      "artifact_type": "library",
+      "domains": [
+        "cancer-genomics",
+        "copy-number",
+        "statistics"
+      ],
+      "modalities": [
+        "tumor-normal-sequencing",
+        "copy-number",
+        "SNV"
+      ],
+      "tasks": [
+        "purity-estimation",
+        "copy-number-analysis",
+        "segmentation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://github.com/mskcc/facets",
+      "repo_url": "https://github.com/mskcc/facets",
+      "license": "GPL (>= 2)",
+      "maturity": "established",
+      "summary_ja": "tumor/normal sequencing から cellular fraction と allele-specific copy number を推定する R パッケージです。"
+    },
+    {
+      "id": "ipumsr",
+      "name": "ipumsr",
+      "artifact_type": "library",
+      "domains": [
+        "population-data",
+        "survey",
+        "epidemiology"
+      ],
+      "modalities": [
+        "census",
+        "survey",
+        "microdata",
+        "metadata"
+      ],
+      "tasks": [
+        "data-access",
+        "parsing",
+        "metadata",
+        "harmonization"
+      ],
+      "ecosystems": [
+        "R",
+        "IPUMS"
+      ],
+      "scales": [
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://tech.popdata.org/ipumsr/",
+      "repo_url": "https://github.com/ipums/ipumsr",
+      "license": "MPL-2.0",
+      "maturity": "active",
+      "summary_ja": "IPUMS の census、survey、geographic microdata を R から取得・読み込み・メタデータ付きで処理するライブラリです。"
+    },
+    {
+      "id": "tigris",
+      "name": "tigris",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "population-data",
+        "environmental-data"
+      ],
+      "modalities": [
+        "TIGER-Line",
+        "census-geography",
+        "shapefiles"
+      ],
+      "tasks": [
+        "data-access",
+        "boundary-data",
+        "mapping"
+      ],
+      "ecosystems": [
+        "R",
+        "sf",
+        "US Census"
+      ],
+      "scales": [
+        "population",
+        "environmental"
+      ],
+      "official_url": "https://github.com/walkerke/tigris",
+      "repo_url": "https://github.com/walkerke/tigris",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "米国 Census TIGER/Line の境界データを R に読み込み、人口・環境・地理空間解析の基盤にするパッケージです。"
+    },
+    {
+      "id": "rgee",
+      "name": "rgee",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "environmental-data",
+        "remote-sensing"
+      ],
+      "modalities": [
+        "satellite-imagery",
+        "raster",
+        "vector"
+      ],
+      "tasks": [
+        "data-access",
+        "exposure-covariates",
+        "remote-sensing",
+        "export"
+      ],
+      "ecosystems": [
+        "R",
+        "Google Earth Engine",
+        "sf"
+      ],
+      "scales": [
+        "environmental",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://r-spatial.github.io/rgee/",
+      "repo_url": "https://github.com/r-spatial/rgee",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "Google Earth Engine API を R から扱い、衛星・環境データを cohort や曝露解析へ接続するライブラリです。"
+    },
+    {
+      "id": "osmdata",
+      "name": "osmdata",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "built-environment",
+        "environmental-data"
+      ],
+      "modalities": [
+        "OpenStreetMap",
+        "vector",
+        "street-network"
+      ],
+      "tasks": [
+        "data-access",
+        "parsing",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "R",
+        "sf",
+        "OpenStreetMap"
+      ],
+      "scales": [
+        "environmental",
+        "behavioral",
+        "population"
+      ],
+      "official_url": "https://docs.ropensci.org/osmdata/",
+      "repo_url": "https://github.com/ropensci/osmdata",
+      "license": "GPL-3.0",
+      "maturity": "active",
+      "summary_ja": "OpenStreetMap の地物を Overpass API から取得し、sf/sp オブジェクトとして建成環境や移動文脈の解析に使う R パッケージです。"
+    },
+    {
+      "id": "spdep",
+      "name": "spdep",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "epidemiology",
+        "statistics"
+      ],
+      "modalities": [
+        "areal-data",
+        "spatial-neighbors",
+        "tabular"
+      ],
+      "tasks": [
+        "spatial-autocorrelation",
+        "spatial-weights",
+        "statistics"
+      ],
+      "ecosystems": [
+        "R",
+        "spatial"
+      ],
+      "scales": [
+        "population",
+        "environmental"
+      ],
+      "official_url": "https://r-spatial.github.io/spdep/",
+      "repo_url": "https://github.com/r-spatial/spdep",
+      "license": "GPL (>= 2)",
+      "maturity": "established",
+      "summary_ja": "隣接行列や距離に基づく spatial weights と空間自己相関統計を構築し、地域疫学や曝露解析を支援する R パッケージです。"
+    },
+    {
+      "id": "spatialreg",
+      "name": "spatialreg",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "epidemiology",
+        "statistics"
+      ],
+      "modalities": [
+        "areal-data",
+        "spatial-weights",
+        "tabular"
+      ],
+      "tasks": [
+        "spatial-regression",
+        "modeling",
+        "inference"
+      ],
+      "ecosystems": [
+        "R",
+        "spatial"
+      ],
+      "scales": [
+        "population",
+        "environmental"
+      ],
+      "official_url": "https://r-spatial.github.io/spatialreg/",
+      "repo_url": "https://github.com/r-spatial/spatialreg",
+      "license": "GPL-2.0",
+      "maturity": "established",
+      "summary_ja": "空間ラグ、空間誤差、空間 Durbin などの cross-sectional spatial regression model を推定する R パッケージです。"
+    },
+    {
+      "id": "gstat",
+      "name": "gstat",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "environmental-data",
+        "statistics"
+      ],
+      "modalities": [
+        "point-observations",
+        "spatiotemporal-data",
+        "raster"
+      ],
+      "tasks": [
+        "geostatistics",
+        "interpolation",
+        "kriging",
+        "simulation"
+      ],
+      "ecosystems": [
+        "R",
+        "spatial"
+      ],
+      "scales": [
+        "environmental",
+        "population"
+      ],
+      "official_url": "http://r-spatial.github.io/gstat/",
+      "repo_url": "https://github.com/r-spatial/gstat",
+      "license": "GPL-2.0",
+      "maturity": "established",
+      "summary_ja": "点観測や時空間データに対する variogram、kriging、geostatistical simulation を行う R パッケージです。"
+    },
+    {
+      "id": "bpcells",
+      "name": "BPCells",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "bioinformatics",
+        "data-management"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "scATAC-seq",
+        "count-matrix"
+      ],
+      "tasks": [
+        "storage",
+        "scaling",
+        "preprocessing",
+        "query"
+      ],
+      "ecosystems": [
+        "R",
+        "C++",
+        "Seurat"
+      ],
+      "scales": [
+        "cellular",
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bnprks.github.io/BPCells",
+      "repo_url": "https://github.com/bnprks/BPCells",
+      "license": "MIT OR Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "大規模 single-cell RNA/ATAC count matrix を disk-backed に処理し、Seurat などと連携して解析をスケールさせるライブラリです。"
+    },
+    {
+      "id": "sctransform",
+      "name": "sctransform",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "statistics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "UMI-counts",
+        "count-matrix"
+      ],
+      "tasks": [
+        "normalization",
+        "variance-stabilization",
+        "modeling"
+      ],
+      "ecosystems": [
+        "R",
+        "Seurat"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/satijalab/sctransform",
+      "repo_url": "https://github.com/satijalab/sctransform",
+      "license": "GPL-3.0",
+      "maturity": "established",
+      "summary_ja": "single-cell UMI count data を regularized negative binomial regression で正規化・分散安定化する Seurat 系 R パッケージです。"
+    },
+    {
+      "id": "zellkonverter",
+      "name": "zellkonverter",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "data-model",
+        "interoperability"
+      ],
+      "modalities": [
+        "AnnData",
+        "SingleCellExperiment",
+        "H5AD"
+      ],
+      "tasks": [
+        "format-conversion",
+        "io",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/zellkonverter/",
+      "repo_url": "https://git.bioconductor.org/packages/zellkonverter",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "AnnData/H5AD と SingleCellExperiment を相互変換し、Python と Bioconductor の single-cell workflow を接続するパッケージです。"
+    },
+    {
+      "id": "isee",
+      "name": "iSEE",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "visualization",
+        "data-model"
+      ],
+      "modalities": [
+        "SingleCellExperiment",
+        "SummarizedExperiment",
+        "count-matrix"
+      ],
+      "tasks": [
+        "visualization",
+        "exploratory-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "Shiny"
+      ],
+      "scales": [
+        "cellular",
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/iSEE/",
+      "repo_url": "https://git.bioconductor.org/packages/iSEE",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "SingleCellExperiment や SummarizedExperiment を Shiny ベースで探索・可視化する Bioconductor パッケージです。"
+    },
+    {
+      "id": "dreamlet",
+      "name": "dreamlet",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "statistics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "pseudobulk",
+        "cohort"
+      ],
+      "tasks": [
+        "differential-expression",
+        "mixed-model",
+        "cohort-analysis"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "cellular",
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/dreamlet/",
+      "repo_url": "https://git.bioconductor.org/packages/dreamlet",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "cohort-scale single-cell / single-nucleus データを pseudobulk と mixed model で細胞型別に差次発現解析する Bioconductor パッケージです。"
+    },
+    {
+      "id": "muscat",
+      "name": "muscat",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "statistics",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "multi-sample",
+        "cell-type-counts"
+      ],
+      "tasks": [
+        "differential-state",
+        "differential-abundance",
+        "simulation",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "cellular",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/muscat/",
+      "repo_url": "https://git.bioconductor.org/packages/muscat",
+      "license": "GPL-3",
+      "maturity": "established",
+      "summary_ja": "multi-sample single-cell RNA-seq で細胞集団ごとの differential state / abundance と simulation を扱う Bioconductor パッケージです。"
+    },
+    {
+      "id": "glmgampoi",
+      "name": "glmGamPoi",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "statistics"
+      ],
+      "modalities": [
+        "count-matrix",
+        "single-cell RNA-seq",
+        "RNA-seq"
+      ],
+      "tasks": [
+        "modeling",
+        "differential-expression",
+        "scaling"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/glmGamPoi/",
+      "repo_url": "https://git.bioconductor.org/packages/glmGamPoi",
+      "license": "GPL-3",
+      "maturity": "active",
+      "summary_ja": "single-cell RNA-seq などの overdispersed count data に Gamma-Poisson GLM を高速に当てる Bioconductor パッケージです。"
+    },
+    {
+      "id": "dittoseq",
+      "name": "dittoSeq",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "visualization"
+      ],
+      "modalities": [
+        "SingleCellExperiment",
+        "Seurat",
+        "RNA-seq"
+      ],
+      "tasks": [
+        "visualization",
+        "reporting",
+        "exploratory-analysis"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "ggplot2"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/dittoSeq/",
+      "repo_url": "https://git.bioconductor.org/packages/dittoSeq",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "SingleCellExperiment、Seurat、bulk RNA-seq object から publication-quality な single-cell 図を作る可視化パッケージです。"
+    },
+    {
+      "id": "nnsvg",
+      "name": "nnSVG",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "statistics",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics",
+        "gene-expression",
+        "spatial-coordinates"
+      ],
+      "tasks": [
+        "spatial-analysis",
+        "feature-detection",
+        "ranking"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "tissue",
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://bioconductor.org/packages/nnSVG/",
+      "repo_url": "https://git.bioconductor.org/packages/nnSVG",
+      "license": "MIT + file LICENSE",
+      "maturity": "active",
+      "summary_ja": "nearest-neighbor Gaussian process により spatial transcriptomics の空間変動遺伝子をスケーラブルに検出する Bioconductor パッケージです。"
+    },
+    {
+      "id": "spatialfeatureexperiment",
+      "name": "SpatialFeatureExperiment",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "data-model",
+        "geospatial"
+      ],
+      "modalities": [
+        "spatial-transcriptomics",
+        "geometry",
+        "SingleCellExperiment"
+      ],
+      "tasks": [
+        "data-model",
+        "spatial-analysis",
+        "geometry-operations"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor",
+        "sf"
+      ],
+      "scales": [
+        "tissue",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/SpatialFeatureExperiment/",
+      "repo_url": "https://git.bioconductor.org/packages/SpatialFeatureExperiment",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "spatial transcriptomics の geometry、neighborhood graph、feature metadata を sf と Bioconductor object として統合するデータ構造です。"
+    },
+    {
+      "id": "mixomics",
+      "name": "mixOmics",
+      "artifact_type": "library",
+      "domains": [
+        "multiomics",
+        "statistics",
+        "machine-learning"
+      ],
+      "modalities": [
+        "multi-omics",
+        "transcriptomics",
+        "proteomics",
+        "metabolomics"
+      ],
+      "tasks": [
+        "integration",
+        "dimension-reduction",
+        "feature-selection",
+        "classification"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://bioconductor.org/packages/mixOmics/",
+      "repo_url": "https://git.bioconductor.org/packages/mixOmics",
+      "license": "GPL (>= 2)",
+      "maturity": "established",
+      "summary_ja": "複数 omics レイヤーを sparse multivariate model で統合し、特徴選択、分類、可視化を行う Bioconductor パッケージです。"
+    },
+    {
+      "id": "treesummarizedexperiment",
+      "name": "TreeSummarizedExperiment",
+      "artifact_type": "library",
+      "domains": [
+        "data-model",
+        "microbiome",
+        "single-cell"
+      ],
+      "modalities": [
+        "assay-matrix",
+        "hierarchical-features",
+        "taxonomic-tree"
+      ],
+      "tasks": [
+        "data-model",
+        "metadata",
+        "integration"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/TreeSummarizedExperiment/",
+      "repo_url": "https://git.bioconductor.org/packages/TreeSummarizedExperiment",
+      "license": "GPL (>=2)",
+      "maturity": "established",
+      "summary_ja": "行または列に階層構造を持つ assay data を扱い、microbiome や single-cell の tree-aware 解析を支える Bioconductor コンテナです。"
+    },
+    {
+      "id": "imcrtools",
+      "name": "imcRtools",
+      "artifact_type": "library",
+      "domains": [
+        "cytometry",
+        "bioimaging",
+        "spatial-omics"
+      ],
+      "modalities": [
+        "imaging-mass-cytometry",
+        "multiplexed-tissue-imaging",
+        "cell-features"
+      ],
+      "tasks": [
+        "spatial-analysis",
+        "spillover-correction",
+        "cell-cell-interaction",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://bioconductor.org/packages/imcRtools/",
+      "repo_url": "https://git.bioconductor.org/packages/imcRtools",
+      "license": "GPL-3",
+      "maturity": "active",
+      "summary_ja": "imaging mass cytometry や multiplexed imaging の single-cell data を整形し、空間近傍や細胞間相互作用を解析する Bioconductor パッケージです。"
+    },
+    {
+      "id": "peacoqc",
+      "name": "PeacoQC",
+      "artifact_type": "library",
+      "domains": [
+        "cytometry",
+        "quality-control",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "flow-cytometry",
+        "mass-cytometry",
+        "FCS"
+      ],
+      "tasks": [
+        "quality-control",
+        "preprocessing",
+        "outlier-detection"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "cellular"
+      ],
+      "official_url": "https://bioconductor.org/packages/PeacoQC/",
+      "repo_url": "https://git.bioconductor.org/packages/PeacoQC",
+      "license": "GPL (>=3)",
+      "maturity": "active",
+      "summary_ja": "flow / mass cytometry の channel signal stability を評価し、異常イベントを除去する QC パッケージです。"
+    },
+    {
+      "id": "steinbock",
+      "name": "steinbock",
+      "artifact_type": "tool",
+      "domains": [
+        "bioimaging",
+        "digital-pathology",
+        "cytometry"
+      ],
+      "modalities": [
+        "imaging-mass-cytometry",
+        "multiplexed-tissue-imaging",
+        "cell-features"
+      ],
+      "tasks": [
+        "segmentation",
+        "preprocessing",
+        "feature-extraction",
+        "workflow"
+      ],
+      "ecosystems": [
+        "Python",
+        "Docker",
+        "command-line"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://bodenmillergroup.github.io/steinbock",
+      "repo_url": "https://github.com/BodenmillerGroup/steinbock",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "multiplexed tissue image を前処理、segmentation、feature extraction へつなぐ Bodenmiller group の画像処理 toolkit です。"
+    },
+    {
+      "id": "scimap",
+      "name": "scimap",
+      "artifact_type": "library",
+      "domains": [
+        "digital-pathology",
+        "spatial-omics",
+        "single-cell"
+      ],
+      "modalities": [
+        "multiplexed-tissue-imaging",
+        "cell-features",
+        "spatial-coordinates"
+      ],
+      "tasks": [
+        "spatial-analysis",
+        "phenotyping",
+        "visualization",
+        "clustering"
+      ],
+      "ecosystems": [
+        "Python",
+        "AnnData"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://scimap.xyz/",
+      "repo_url": "https://github.com/labsyspharm/scimap",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "multiplexed imaging から得た single-cell spatial feature を phenotyping、近傍解析、可視化する Python toolkit です。"
+    },
+    {
+      "id": "ark-analysis",
+      "name": "ark-analysis",
+      "artifact_type": "workflow",
+      "domains": [
+        "digital-pathology",
+        "bioimaging",
+        "cytometry"
+      ],
+      "modalities": [
+        "multiplexed-tissue-imaging",
+        "cell-features",
+        "segmentation-masks"
+      ],
+      "tasks": [
+        "workflow",
+        "preprocessing",
+        "segmentation",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "Python",
+        "notebooks"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://ark-analysis.readthedocs.io/en/latest/",
+      "repo_url": "https://github.com/angelolab/ark-analysis",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "multiplexed image analysis の前処理、segmentation、feature extraction を notebook / pipeline としてまとめる Angelolab の公開 workflow です。"
+    },
+    {
+      "id": "instanseg",
+      "name": "InstanSeg",
+      "artifact_type": "library",
+      "domains": [
+        "bioimaging",
+        "cell-biology",
+        "machine-learning"
+      ],
+      "modalities": [
+        "microscopy",
+        "cell-images",
+        "nuclei"
+      ],
+      "tasks": [
+        "segmentation",
+        "deep-learning",
+        "annotation"
+      ],
+      "ecosystems": [
+        "Python",
+        "PyTorch"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/instanseg/instanseg",
+      "repo_url": "https://github.com/instanseg/instanseg",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "microscopy image の細胞・核 segmentation を deep learning model で実行する Python ライブラリです。"
+    },
+    {
+      "id": "deepprofiler",
+      "name": "DeepProfiler",
+      "artifact_type": "library",
+      "domains": [
+        "cell-profiling",
+        "bioimaging",
+        "machine-learning"
+      ],
+      "modalities": [
+        "cell-painting",
+        "microscopy",
+        "morphology-profiles"
+      ],
+      "tasks": [
+        "feature-extraction",
+        "deep-learning",
+        "profiling"
+      ],
+      "ecosystems": [
+        "Python",
+        "TensorFlow"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/cytomining/DeepProfiler",
+      "repo_url": "https://github.com/cytomining/DeepProfiler",
+      "license": "BSD-style",
+      "maturity": "active",
+      "summary_ja": "Cell Painting などの microscopy image から deep learning による morphology profile を抽出する Cytomining 系ツールです。"
+    },
+    {
+      "id": "bioio",
+      "name": "BioIO",
+      "artifact_type": "library",
+      "domains": [
+        "bioimaging",
+        "cell-biology",
+        "interoperability"
+      ],
+      "modalities": [
+        "microscopy",
+        "OME-TIFF",
+        "CZI",
+        "ND2"
+      ],
+      "tasks": [
+        "io",
+        "metadata",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Python",
+        "OME"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://bioio-devs.github.io/bioio/OVERVIEW.html",
+      "repo_url": "https://github.com/bioio-devs/bioio",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "多様な microscopy image の読み込み、metadata 管理、書き出しを行う Python image I/O ライブラリです。"
+    },
+    {
+      "id": "nd2",
+      "name": "nd2",
+      "artifact_type": "library",
+      "domains": [
+        "bioimaging",
+        "cell-biology",
+        "interoperability"
+      ],
+      "modalities": [
+        "ND2",
+        "microscopy",
+        "image-stack"
+      ],
+      "tasks": [
+        "io",
+        "metadata",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Python",
+        "Dask",
+        "xarray"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "http://tlambert03.github.io/nd2",
+      "repo_url": "https://github.com/tlambert03/nd2",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "Nikon NIS-Elements の ND2 microscopy file を Python で読み込み、metadata、NumPy、Dask、xarray へ展開するライブラリです。"
+    },
+    {
+      "id": "spatialdata-io",
+      "name": "spatialdata-io",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "bioimaging",
+        "interoperability"
+      ],
+      "modalities": [
+        "spatial-transcriptomics",
+        "multiplexed-tissue-imaging",
+        "SpatialData"
+      ],
+      "tasks": [
+        "io",
+        "format-conversion",
+        "metadata"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse",
+        "SpatialData"
+      ],
+      "scales": [
+        "tissue",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/scverse/spatialdata-io",
+      "repo_url": "https://github.com/scverse/spatialdata-io",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "Visium、Xenium、MERSCOPE などの spatial omics / imaging データを SpatialData へ読み込む scverse 公式 I/O パッケージです。"
+    },
+    {
+      "id": "napari-spatialdata",
+      "name": "napari-spatialdata",
+      "artifact_type": "tool",
+      "domains": [
+        "spatial-omics",
+        "bioimaging",
+        "visualization"
+      ],
+      "modalities": [
+        "spatial-transcriptomics",
+        "multiplexed-tissue-imaging",
+        "SpatialData"
+      ],
+      "tasks": [
+        "visualization",
+        "annotation",
+        "exploratory-analysis"
+      ],
+      "ecosystems": [
+        "Python",
+        "napari",
+        "SpatialData"
+      ],
+      "scales": [
+        "tissue",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://spatialdata.scverse.org/projects/napari/en/latest/",
+      "repo_url": "https://github.com/scverse/napari-spatialdata",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "SpatialData object を napari 上で対話的に可視化・注釈し、spatial omics の探索を支援する scverse plugin です。"
     }
   ]
 }
