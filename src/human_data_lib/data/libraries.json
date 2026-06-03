@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-06-02",
+  "generated_at": "2026-06-03",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -32172,6 +32172,2889 @@
       "repo_url": "https://github.com/seek4science/seek",
       "summary_ja": "研究データ、モデル、workflow、sample metadata を FAIR に管理・共有する web platform です。",
       "license": "BSD-3-Clause",
+      "maturity": "established"
+    },
+    {
+      "id": "nf-core-abotyper",
+      "name": "nf-core/abotyper",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "clinical-genomics",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "Oxford Nanopore",
+        "blood-group-antigens",
+        "FASTQ"
+      ],
+      "tasks": [
+        "genotyping",
+        "variant-calling",
+        "annotation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/abotyper",
+      "repo_url": "https://github.com/nf-core/abotyper",
+      "summary_ja": "Oxford Nanopore データからヒト血液型・赤血球抗原を characterise する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-alleleexpression",
+      "name": "nf-core/alleleexpression",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "genomics",
+        "statistics"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "BAM",
+        "allele-specific-expression"
+      ],
+      "tasks": [
+        "alignment",
+        "phasing",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/alleleexpression",
+      "repo_url": "https://github.com/nf-core/alleleexpression",
+      "summary_ja": "RNA-seq から allele-specific expression を検出・定量する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-cageseq",
+      "name": "nf-core/cageseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "CAGE-seq",
+        "FASTQ",
+        "count-matrix"
+      ],
+      "tasks": [
+        "preprocessing",
+        "alignment",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/cageseq",
+      "repo_url": "https://github.com/nf-core/cageseq",
+      "summary_ja": "CAGE-seq の trimming、alignment、tag counting をまとめて実行する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-cellpainting",
+      "name": "nf-core/cellpainting",
+      "artifact_type": "workflow",
+      "domains": [
+        "bioimaging",
+        "cell-biology",
+        "machine-learning"
+      ],
+      "modalities": [
+        "high-content-microscopy",
+        "Cell-Painting",
+        "image-features"
+      ],
+      "tasks": [
+        "illumination-correction",
+        "feature-extraction",
+        "quality-control",
+        "workflow"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/cellpainting",
+      "repo_url": "https://github.com/nf-core/cellpainting",
+      "summary_ja": "Cell Painting assay の高コンテンツ画像を補正し、形態特徴抽出と Parquet 変換まで行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-circdna",
+      "name": "nf-core/circdna",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "cancer-genomics",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "Circle-seq",
+        "WGS",
+        "ATAC-seq",
+        "ecDNA"
+      ],
+      "tasks": [
+        "detection",
+        "annotation",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/circdna",
+      "repo_url": "https://github.com/nf-core/circdna",
+      "summary_ja": "Circle-seq、WGS、ATAC-seq などから extrachromosomal circular DNA を検出する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-crisprseq",
+      "name": "nf-core/crisprseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "statistics",
+        "quality-control"
+      ],
+      "modalities": [
+        "CRISPR-screen",
+        "targeted-sequencing",
+        "FASTQ"
+      ],
+      "tasks": [
+        "quality-control",
+        "variant-analysis",
+        "screening-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://nf-co.re/crisprseq",
+      "repo_url": "https://github.com/nf-core/crisprseq",
+      "summary_ja": "CRISPR editing の targeted sequencing 評価と pooled screen 解析を扱う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-deepmutscan",
+      "name": "nf-core/deepmutscan",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "statistics"
+      ],
+      "modalities": [
+        "deep-mutational-scanning",
+        "FASTQ",
+        "variant-counts"
+      ],
+      "tasks": [
+        "variant-analysis",
+        "quality-control",
+        "modeling",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/deepmutscan",
+      "repo_url": "https://github.com/nf-core/deepmutscan",
+      "summary_ja": "deep mutational scanning の shotgun DNA sequencing データを再現可能に解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-diaproteomics",
+      "name": "nf-core/diaproteomics",
+      "artifact_type": "workflow",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "DIA-MS",
+        "peptides",
+        "proteins"
+      ],
+      "tasks": [
+        "quantification",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/diaproteomics",
+      "repo_url": "https://github.com/nf-core/diaproteomics",
+      "summary_ja": "DIA proteomics の定量解析を自動化する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-diseasemodulediscovery",
+      "name": "nf-core/diseasemodulediscovery",
+      "artifact_type": "workflow",
+      "domains": [
+        "network-medicine",
+        "statistics",
+        "genomics"
+      ],
+      "modalities": [
+        "gene-network",
+        "omics-features",
+        "phenotypes"
+      ],
+      "tasks": [
+        "network-modeling",
+        "feature-selection",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/diseasemodulediscovery",
+      "repo_url": "https://github.com/nf-core/diseasemodulediscovery",
+      "summary_ja": "omics や疾患関連特徴から network-based disease module を探索する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-drop",
+      "name": "nf-core/drop",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "clinical-genomics",
+        "rare-disease"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "count-matrix",
+        "splice-events"
+      ],
+      "tasks": [
+        "quality-control",
+        "outlier-detection",
+        "differential-expression",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/drop",
+      "repo_url": "https://github.com/nf-core/drop",
+      "summary_ja": "希少疾患診断で RNA-seq の aberrant expression、splicing、mono-allelic expression を検出する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-drugresponseeval",
+      "name": "nf-core/drugresponseeval",
+      "artifact_type": "workflow",
+      "domains": [
+        "cancer",
+        "machine-learning",
+        "statistics"
+      ],
+      "modalities": [
+        "drug-response",
+        "omics-features",
+        "models"
+      ],
+      "tasks": [
+        "model-evaluation",
+        "prediction-modeling",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/drugresponseeval",
+      "repo_url": "https://github.com/nf-core/drugresponseeval",
+      "summary_ja": "薬剤応答予測モデルを統計的・生物学的に評価する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-dualrnaseq",
+      "name": "nf-core/dualrnaseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "RNA-seq",
+        "transcriptomics",
+        "microbiome"
+      ],
+      "modalities": [
+        "dual-RNA-seq",
+        "host-pathogen",
+        "FASTQ"
+      ],
+      "tasks": [
+        "quality-control",
+        "alignment",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/dualrnaseq",
+      "repo_url": "https://github.com/nf-core/dualrnaseq",
+      "summary_ja": "宿主と病原体を同時に読む dual RNA-seq データを解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-epigenomesegmentation",
+      "name": "nf-core/epigenomesegmentation",
+      "artifact_type": "workflow",
+      "domains": [
+        "epigenomics",
+        "genomics",
+        "statistics"
+      ],
+      "modalities": [
+        "ChIP-seq",
+        "ATAC-seq",
+        "methylation",
+        "genomic-tracks"
+      ],
+      "tasks": [
+        "segmentation",
+        "statistical-modeling",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/epigenomesegmentation",
+      "repo_url": "https://github.com/nf-core/epigenomesegmentation",
+      "summary_ja": "histone、open chromatin、methylation signal から epigenome segmentation を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-evexplorer",
+      "name": "nf-core/evexplorer",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "extracellular-vesicle-RNA",
+        "RNA-seq",
+        "FASTQ"
+      ],
+      "tasks": [
+        "quality-control",
+        "quantification",
+        "differential-expression",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/evexplorer",
+      "repo_url": "https://github.com/nf-core/evexplorer",
+      "summary_ja": "extracellular vesicle RNA データの QC、発現領域検出、差次的 RNA 発現解析を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-funcprofiler",
+      "name": "nf-core/funcprofiler",
+      "artifact_type": "workflow",
+      "domains": [
+        "microbiome",
+        "metagenomics"
+      ],
+      "modalities": [
+        "shotgun-metagenomics",
+        "functional-profiles",
+        "FASTQ"
+      ],
+      "tasks": [
+        "functional-profiling",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/funcprofiler",
+      "repo_url": "https://github.com/nf-core/funcprofiler",
+      "summary_ja": "shotgun microbiome reads から機能 profile を推定する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-funcscan",
+      "name": "nf-core/funcscan",
+      "artifact_type": "workflow",
+      "domains": [
+        "metagenomics",
+        "microbiome",
+        "annotation"
+      ],
+      "modalities": [
+        "MAG",
+        "metagenome",
+        "protein-sequences"
+      ],
+      "tasks": [
+        "functional-annotation",
+        "screening-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/funcscan",
+      "repo_url": "https://github.com/nf-core/funcscan",
+      "summary_ja": "(meta-)genome から機能遺伝子や natural product gene sequence を探索する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-genomicrelatedness",
+      "name": "nf-core/genomicrelatedness",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "population-genetics",
+        "statistics"
+      ],
+      "modalities": [
+        "low-coverage-WGS",
+        "genotypes",
+        "relatedness"
+      ],
+      "tasks": [
+        "genotyping",
+        "relatedness-estimation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/genomicrelatedness",
+      "repo_url": "https://github.com/nf-core/genomicrelatedness",
+      "summary_ja": "low-coverage whole genome sequencing から遺伝的 relatedness を推定する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-hadge",
+      "name": "nf-core/hadge",
+      "artifact_type": "workflow",
+      "domains": [
+        "single-cell",
+        "genomics",
+        "quality-control"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "genotypes",
+        "donor-demultiplexing"
+      ],
+      "tasks": [
+        "demultiplexing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/hadge",
+      "repo_url": "https://github.com/nf-core/hadge",
+      "summary_ja": "single-cell データの donor demultiplexing を包括的に実行する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-hicar",
+      "name": "nf-core/hicar",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "epigenomics",
+        "3d-genomics"
+      ],
+      "modalities": [
+        "HiCAR",
+        "RNA-seq",
+        "chromatin-accessibility"
+      ],
+      "tasks": [
+        "quality-control",
+        "alignment",
+        "chromatin-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://nf-co.re/hicar",
+      "repo_url": "https://github.com/nf-core/hicar",
+      "summary_ja": "HiCAR co-assay で transcriptome、chromatin accessibility、cis-regulatory contact を解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-isoseq",
+      "name": "nf-core/isoseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "genomics"
+      ],
+      "modalities": [
+        "PacBio-Iso-Seq",
+        "long-read",
+        "transcripts"
+      ],
+      "tasks": [
+        "preprocessing",
+        "transcript-annotation",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/isoseq",
+      "repo_url": "https://github.com/nf-core/isoseq",
+      "summary_ja": "PacBio Iso-Seq の full-length transcript sequence 生成と genome annotation を支援する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-longraredisease",
+      "name": "nf-core/longraredisease",
+      "artifact_type": "workflow",
+      "domains": [
+        "clinical-genomics",
+        "rare-disease",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "long-read-sequencing",
+        "WGS",
+        "VCF"
+      ],
+      "tasks": [
+        "variant-calling",
+        "variant-prioritization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/longraredisease",
+      "repo_url": "https://github.com/nf-core/longraredisease",
+      "summary_ja": "神経発達症などの希少疾患患者 long-read sequencing から variant を同定する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-lsmquant",
+      "name": "nf-core/lsmquant",
+      "artifact_type": "workflow",
+      "domains": [
+        "bioimaging",
+        "digital-pathology"
+      ],
+      "modalities": [
+        "light-sheet-microscopy",
+        "images"
+      ],
+      "tasks": [
+        "image-processing",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "tissue",
+        "cellular"
+      ],
+      "official_url": "https://nf-co.re/lsmquant",
+      "repo_url": "https://github.com/nf-core/lsmquant",
+      "summary_ja": "light-sheet microscopy 画像の処理と定量解析を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-metaboigniter",
+      "name": "nf-core/metaboigniter",
+      "artifact_type": "workflow",
+      "domains": [
+        "metabolomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "LC-MS",
+        "MS1",
+        "MS2",
+        "metabolites"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quantification",
+        "compound-annotation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/metaboigniter",
+      "repo_url": "https://github.com/nf-core/metaboigniter",
+      "summary_ja": "MS1 / MS2 ベースの mass spectrometry metabolomics を前処理・定量・同定する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-methylarray",
+      "name": "nf-core/methylarray",
+      "artifact_type": "workflow",
+      "domains": [
+        "epigenomics",
+        "genomics"
+      ],
+      "modalities": [
+        "methylation-array",
+        "Illumina-array",
+        "beta-values"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "differential-methylation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/methylarray",
+      "repo_url": "https://github.com/nf-core/methylarray",
+      "summary_ja": "Illumina methylation array の前処理、QC、DMP / DMR 解析を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-methylong",
+      "name": "nf-core/methylong",
+      "artifact_type": "workflow",
+      "domains": [
+        "epigenomics",
+        "genomics"
+      ],
+      "modalities": [
+        "long-read-methylation",
+        "ONT",
+        "PacBio"
+      ],
+      "tasks": [
+        "methylation-calling",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/methylong",
+      "repo_url": "https://github.com/nf-core/methylong",
+      "summary_ja": "ONT / PacBio long-read から methylation call を抽出する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-mhcquant",
+      "name": "nf-core/mhcquant",
+      "artifact_type": "workflow",
+      "domains": [
+        "proteomics",
+        "immunology",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "immunopeptidomics",
+        "MHC-peptides",
+        "MS"
+      ],
+      "tasks": [
+        "peptide-identification",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/mhcquant",
+      "repo_url": "https://github.com/nf-core/mhcquant",
+      "summary_ja": "MHC eluted peptide の同定と定量を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-mitodetect",
+      "name": "nf-core/mitodetect",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "mitochondrial-DNA",
+        "NGS",
+        "VCF"
+      ],
+      "tasks": [
+        "variant-calling",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/mitodetect",
+      "repo_url": "https://github.com/nf-core/mitodetect",
+      "summary_ja": "mitochondrial NGS データの QC、variant calling、レポートを行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-mnaseseq",
+      "name": "nf-core/mnaseseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "epigenomics",
+        "genomics"
+      ],
+      "modalities": [
+        "MNase-seq",
+        "FASTQ",
+        "chromatin"
+      ],
+      "tasks": [
+        "alignment",
+        "peak-calling",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/mnaseseq",
+      "repo_url": "https://github.com/nf-core/mnaseseq",
+      "summary_ja": "MNase-seq から nucleosome / chromatin accessibility signal を解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-molkart",
+      "name": "nf-core/molkart",
+      "artifact_type": "workflow",
+      "domains": [
+        "spatial-omics",
+        "transcriptomics",
+        "bioimaging"
+      ],
+      "modalities": [
+        "Molecular-Cartography",
+        "FISH",
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "preprocessing",
+        "segmentation",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "tissue",
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/molkart",
+      "repo_url": "https://github.com/nf-core/molkart",
+      "summary_ja": "Molecular Cartography の combinatorial FISH データを処理する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-mspepid",
+      "name": "nf-core/mspepid",
+      "artifact_type": "workflow",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "MS2-spectra",
+        "peptides"
+      ],
+      "tasks": [
+        "peptide-identification",
+        "rescoring",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/mspepid",
+      "repo_url": "https://github.com/nf-core/mspepid",
+      "summary_ja": "MS2 spectra から peptide identification と rescoring を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-nascent",
+      "name": "nf-core/nascent",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "nascent-transcription",
+        "RNA-seq",
+        "FASTQ"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quantification",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/nascent",
+      "repo_url": "https://github.com/nf-core/nascent",
+      "summary_ja": "nascent transcription データの処理と定量を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-omicsgenetraitassociation",
+      "name": "nf-core/omicsgenetraitassociation",
+      "artifact_type": "workflow",
+      "domains": [
+        "multiomics",
+        "genetic-statistics",
+        "statistics"
+      ],
+      "modalities": [
+        "multi-omics",
+        "genotypes",
+        "traits"
+      ],
+      "tasks": [
+        "association-testing",
+        "integration",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/omicsgenetraitassociation",
+      "repo_url": "https://github.com/nf-core/omicsgenetraitassociation",
+      "summary_ja": "複数 omics と genetic trait の association を統合解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-pacsomatic",
+      "name": "nf-core/pacsomatic",
+      "artifact_type": "workflow",
+      "domains": [
+        "cancer-genomics",
+        "variant-analysis",
+        "clinical-genomics"
+      ],
+      "modalities": [
+        "PacBio-HiFi",
+        "tumor-normal",
+        "VCF"
+      ],
+      "tasks": [
+        "somatic-variant-calling",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/pacsomatic",
+      "repo_url": "https://github.com/nf-core/pacsomatic",
+      "summary_ja": "PacBio HiFi tumor/normal somatic genomics を処理する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-pacvar",
+      "name": "nf-core/pacvar",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "PacBio",
+        "long-read-WGS",
+        "VCF"
+      ],
+      "tasks": [
+        "preprocessing",
+        "variant-calling",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/pacvar",
+      "repo_url": "https://github.com/nf-core/pacvar",
+      "summary_ja": "PacBio long-read WGS / PureTarget データを処理して variant 解析につなげる nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-panoramaseq",
+      "name": "nf-core/panoramaseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "spatial-omics",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics",
+        "in-situ-arrays",
+        "FASTQ"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "tissue",
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/panoramaseq",
+      "repo_url": "https://github.com/nf-core/panoramaseq",
+      "summary_ja": "in-situ array 型の sequencing-based spatial transcriptomics データを処理する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-phaseimpute",
+      "name": "nf-core/phaseimpute",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "population-genetics",
+        "genetic-statistics"
+      ],
+      "modalities": [
+        "genotypes",
+        "VCF",
+        "WGS"
+      ],
+      "tasks": [
+        "phasing",
+        "imputation",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/phaseimpute",
+      "repo_url": "https://github.com/nf-core/phaseimpute",
+      "summary_ja": "遺伝型データの phasing と imputation を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-pixelator",
+      "name": "nf-core/pixelator",
+      "artifact_type": "workflow",
+      "domains": [
+        "single-cell",
+        "proteomics",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "proximity-network-assay",
+        "single-cell",
+        "protein"
+      ],
+      "tasks": [
+        "preprocessing",
+        "network-modeling",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/pixelator",
+      "repo_url": "https://github.com/nf-core/pixelator",
+      "summary_ja": "Pixelator による Proximity Network Assay データ生成を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-rarevariantburden",
+      "name": "nf-core/rarevariantburden",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "genetic-statistics",
+        "rare-disease"
+      ],
+      "modalities": [
+        "sequencing-counts",
+        "rare-variants",
+        "summary-counts"
+      ],
+      "tasks": [
+        "rare-variant-analysis",
+        "association-testing",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/rarevariantburden",
+      "repo_url": "https://github.com/nf-core/rarevariantburden",
+      "summary_ja": "sequenced cases と public summary count などを使った rare variant burden test を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-riboseq",
+      "name": "nf-core/riboseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "Ribo-seq",
+        "FASTQ",
+        "ribosome-footprints"
+      ],
+      "tasks": [
+        "preprocessing",
+        "alignment",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/riboseq",
+      "repo_url": "https://github.com/nf-core/riboseq",
+      "summary_ja": "ribosome profiling / Ribo-seq データを解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-rnadnavar",
+      "name": "nf-core/rnadnavar",
+      "artifact_type": "workflow",
+      "domains": [
+        "cancer-genomics",
+        "variant-analysis",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "DNA-seq",
+        "VCF"
+      ],
+      "tasks": [
+        "somatic-variant-calling",
+        "integration",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/rnadnavar",
+      "repo_url": "https://github.com/nf-core/rnadnavar",
+      "summary_ja": "RNA と DNA の統合データから somatic mutation detection を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-rnasplice",
+      "name": "nf-core/rnasplice",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "splice-events",
+        "count-matrix"
+      ],
+      "tasks": [
+        "differential-splicing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/rnasplice",
+      "repo_url": "https://github.com/nf-core/rnasplice",
+      "summary_ja": "RNA-seq alternative splicing 解析を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-sammyseq",
+      "name": "nf-core/sammyseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "epigenomics",
+        "genomics"
+      ],
+      "modalities": [
+        "SAMMY-seq",
+        "chromatin-state",
+        "FASTQ"
+      ],
+      "tasks": [
+        "preprocessing",
+        "chromatin-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/sammyseq",
+      "repo_url": "https://github.com/nf-core/sammyseq",
+      "summary_ja": "SAMMY-seq から chromatin state を解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-scdownstream",
+      "name": "nf-core/scdownstream",
+      "artifact_type": "workflow",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "count-matrix",
+        "metadata"
+      ],
+      "tasks": [
+        "quality-control",
+        "integration",
+        "visualization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/scdownstream",
+      "repo_url": "https://github.com/nf-core/scdownstream",
+      "summary_ja": "single-cell transcriptomics の QC、integration、結果提示を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-scnanoseq",
+      "name": "nf-core/scnanoseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "genomics"
+      ],
+      "modalities": [
+        "single-cell-nanopore",
+        "single-nucleus",
+        "ONT"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/scnanoseq",
+      "repo_url": "https://github.com/nf-core/scnanoseq",
+      "summary_ja": "Oxford Nanopore と 10x Genomics 由来の single-cell / nuclei データを処理する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-seqinspector",
+      "name": "nf-core/seqinspector",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "quality-control",
+        "workflow"
+      ],
+      "modalities": [
+        "sequencing-QC",
+        "FASTQ",
+        "BAM"
+      ],
+      "tasks": [
+        "quality-control",
+        "reporting",
+        "workflow"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/seqinspector",
+      "repo_url": "https://github.com/nf-core/seqinspector",
+      "summary_ja": "大規模 sequencing throughput を想定し、多数の QC tool と MultiQC report を実行する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-slamseq",
+      "name": "nf-core/slamseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "SLAM-seq",
+        "FASTQ",
+        "nascent-RNA"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quantification",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/slamseq",
+      "repo_url": "https://github.com/nf-core/slamseq",
+      "summary_ja": "SLAM-seq データの処理と解析を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-spatialaxe",
+      "name": "nf-core/spatialaxe",
+      "artifact_type": "workflow",
+      "domains": [
+        "spatial-omics",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "Xenium",
+        "Artera",
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "tissue",
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/spatialaxe",
+      "repo_url": "https://github.com/nf-core/spatialaxe",
+      "summary_ja": "Xenium や Artera spatial transcriptomics データの processing と QC を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-stableexpression",
+      "name": "nf-core/stableexpression",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "statistics"
+      ],
+      "modalities": [
+        "gene-expression",
+        "RT-qPCR",
+        "count-matrix"
+      ],
+      "tasks": [
+        "feature-selection",
+        "statistical-modeling",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/stableexpression",
+      "repo_url": "https://github.com/nf-core/stableexpression",
+      "summary_ja": "単一または複数の発現 dataset から安定発現遺伝子を同定する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-tfactivity",
+      "name": "nf-core/tfactivity",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "epigenomics",
+        "statistics"
+      ],
+      "modalities": [
+        "gene-expression",
+        "open-chromatin",
+        "TF-activity"
+      ],
+      "tasks": [
+        "differential-analysis",
+        "regulatory-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://nf-co.re/tfactivity",
+      "repo_url": "https://github.com/nf-core/tfactivity",
+      "summary_ja": "expression と open chromatin data から condition 間の transcription factor activity を推定する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-tumourevo",
+      "name": "nf-core/tumourevo",
+      "artifact_type": "workflow",
+      "domains": [
+        "cancer-genomics",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "WGS",
+        "copy-number",
+        "mutational-signatures"
+      ],
+      "tasks": [
+        "clonal-evolution",
+        "somatic-variant-calling",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/tumourevo",
+      "repo_url": "https://github.com/nf-core/tumourevo",
+      "summary_ja": "WGS から tumour clonal evolution、copy number、subclone、mutational signature を解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-variantbenchmarking",
+      "name": "nf-core/variantbenchmarking",
+      "artifact_type": "workflow",
+      "domains": [
+        "variant-analysis",
+        "genomics",
+        "quality-control"
+      ],
+      "modalities": [
+        "VCF",
+        "benchmark-sets",
+        "WGS"
+      ],
+      "tasks": [
+        "variant-comparison",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/variantbenchmarking",
+      "repo_url": "https://github.com/nf-core/variantbenchmarking",
+      "summary_ja": "variant calling method の正確性を評価・検証する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-variantcatalogue",
+      "name": "nf-core/variantcatalogue",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "population-genetics",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "WGS",
+        "VCF",
+        "variant-frequency"
+      ],
+      "tasks": [
+        "variant-aggregation",
+        "frequency-estimation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/variantcatalogue",
+      "repo_url": "https://github.com/nf-core/variantcatalogue",
+      "summary_ja": "whole genome sequence から variant catalogue と頻度リストを生成する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-variantprioritization",
+      "name": "nf-core/variantprioritization",
+      "artifact_type": "workflow",
+      "domains": [
+        "cancer-genomics",
+        "clinical-genomics",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "somatic-variants",
+        "germline-variants",
+        "VCF"
+      ],
+      "tasks": [
+        "variant-annotation",
+        "variant-prioritization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/variantprioritization",
+      "repo_url": "https://github.com/nf-core/variantprioritization",
+      "summary_ja": "PCGR / CPSR を使った somatic / germline variant の annotation と prioritization を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-viralintegration",
+      "name": "nf-core/viralintegration",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "cancer-genomics",
+        "microbiome"
+      ],
+      "modalities": [
+        "chimeric-reads",
+        "WGS",
+        "viral-integration"
+      ],
+      "tasks": [
+        "detection",
+        "annotation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/viralintegration",
+      "repo_url": "https://github.com/nf-core/viralintegration",
+      "summary_ja": "chimeric read から genome 内の viral integration event を検出する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-viralmetagenome",
+      "name": "nf-core/viralmetagenome",
+      "artifact_type": "workflow",
+      "domains": [
+        "metagenomics",
+        "microbiome",
+        "public-health"
+      ],
+      "modalities": [
+        "viral-metagenomics",
+        "FASTQ",
+        "iSNV"
+      ],
+      "tasks": [
+        "assembly",
+        "variant-calling",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/viralmetagenome",
+      "repo_url": "https://github.com/nf-core/viralmetagenome",
+      "summary_ja": "untargeted viral metagenome から whole genome reconstruction と iSNV detection を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "dmriprep",
+      "name": "dMRIPrep",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging",
+        "medical-imaging"
+      ],
+      "modalities": [
+        "diffusion-MRI",
+        "BIDS",
+        "NIfTI"
+      ],
+      "tasks": [
+        "preprocessing",
+        "BIDS-workflow",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://www.nipreps.org/dmriprep/",
+      "repo_url": "https://github.com/nipreps/dmriprep",
+      "summary_ja": "dMRI データの再現可能な前処理を行う NiPreps 系 BIDS workflow です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "eegprep",
+      "name": "EEGPrep",
+      "artifact_type": "workflow",
+      "domains": [
+        "neurophysiology"
+      ],
+      "modalities": [
+        "EEG",
+        "BIDS"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/nipreps/eegprep",
+      "repo_url": "https://github.com/nipreps/eegprep",
+      "summary_ja": "EEG データの robust preprocessing を目指す NiPreps 系 workflow です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "megprep",
+      "name": "MEGPrep",
+      "artifact_type": "workflow",
+      "domains": [
+        "neurophysiology"
+      ],
+      "modalities": [
+        "MEG",
+        "BIDS"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/nipreps/megprep",
+      "repo_url": "https://github.com/nipreps/megprep",
+      "summary_ja": "MEG データの robust preprocessing を目指す NiPreps 系 workflow です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "molprep",
+      "name": "MolPrep",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging",
+        "medical-imaging"
+      ],
+      "modalities": [
+        "PET",
+        "SPECT",
+        "BIDS"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://github.com/nipreps/molprep",
+      "repo_url": "https://github.com/nipreps/molprep",
+      "summary_ja": "PET / SPECT などの molecular imaging データを前処理する NiPreps 系 workflow です。",
+      "license": "Apache-2.0",
+      "maturity": "established"
+    },
+    {
+      "id": "petprep",
+      "name": "PETPrep",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging",
+        "medical-imaging"
+      ],
+      "modalities": [
+        "PET",
+        "BIDS"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://github.com/nipreps/petprep",
+      "repo_url": "https://github.com/nipreps/petprep",
+      "summary_ja": "PET データの再現可能な前処理を行う NiPreps 系 workflow です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "petqc",
+      "name": "PETQC",
+      "artifact_type": "tool",
+      "domains": [
+        "neuroimaging",
+        "medical-imaging",
+        "quality-control"
+      ],
+      "modalities": [
+        "PET",
+        "image-quality-metrics"
+      ],
+      "tasks": [
+        "quality-control",
+        "quality-measurement",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://github.com/nipreps/petqc",
+      "repo_url": "https://github.com/nipreps/petqc",
+      "summary_ja": "PET 画像の quality metric を計算して品質評価を支援する NiPreps ツールです。",
+      "license": "Apache-2.0",
+      "maturity": "established"
+    },
+    {
+      "id": "fmripost-rapidtide",
+      "name": "fMRIPost-rapidtide",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging",
+        "physiology"
+      ],
+      "modalities": [
+        "fMRI",
+        "BOLD",
+        "BIDS-derivatives"
+      ],
+      "tasks": [
+        "postprocessing",
+        "physiology-modeling",
+        "BIDS-workflow",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://github.com/nipreps/fmripost-rapidtide",
+      "repo_url": "https://github.com/nipreps/fmripost-rapidtide",
+      "summary_ja": "fMRIPrep derivatives に rapidtide を適用する BIDS App workflow です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "fmripost-tedana",
+      "name": "fMRIPost-tedana",
+      "artifact_type": "workflow",
+      "domains": [
+        "neuroimaging"
+      ],
+      "modalities": [
+        "multi-echo-fMRI",
+        "BIDS-derivatives"
+      ],
+      "tasks": [
+        "postprocessing",
+        "denoising",
+        "BIDS-workflow",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://github.com/nipreps/fmripost-tedana",
+      "repo_url": "https://github.com/nipreps/fmripost-tedana",
+      "summary_ja": "multi-echo fMRI に tedana workflow を適用する NiPreps 系 BIDS App です。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nondefaced-detector",
+      "name": "nondefaced-detector",
+      "artifact_type": "tool",
+      "domains": [
+        "neuroimaging",
+        "privacy",
+        "quality-control"
+      ],
+      "modalities": [
+        "MRI",
+        "BIDS",
+        "NIfTI"
+      ],
+      "tasks": [
+        "privacy-risk-evaluation",
+        "quality-control",
+        "data-validation"
+      ],
+      "ecosystems": [
+        "Python",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/nipreps/nondefaced-detector",
+      "repo_url": "https://github.com/nipreps/nondefaced-detector",
+      "summary_ja": "neuroimaging dataset 公開前に non-defaced image を検出する NiPreps ツールです。",
+      "license": "Apache-2.0",
+      "maturity": "established"
+    },
+    {
+      "id": "niquery",
+      "name": "niquery",
+      "artifact_type": "tool",
+      "domains": [
+        "neuroimaging",
+        "data-access"
+      ],
+      "modalities": [
+        "open-neuroimaging-datasets",
+        "metadata"
+      ],
+      "tasks": [
+        "dataset-query",
+        "metadata",
+        "cohort-extraction"
+      ],
+      "ecosystems": [
+        "Python",
+        "NiPreps"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/nipreps/niquery",
+      "repo_url": "https://github.com/nipreps/niquery",
+      "summary_ja": "open neuroimaging dataset を query し、研究用 dataset 作成に必要な情報を抽出する Python tool です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "pydeseq2",
+      "name": "PyDESeq2",
+      "artifact_type": "library",
+      "domains": [
+        "RNA-seq",
+        "transcriptomics",
+        "statistics"
+      ],
+      "modalities": [
+        "count-matrix",
+        "bulk-RNA-seq"
+      ],
+      "tasks": [
+        "differential-expression",
+        "statistical-modeling",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://pydeseq2.readthedocs.io/",
+      "repo_url": "https://github.com/scverse/PyDESeq2",
+      "summary_ja": "bulk RNA-seq count matrix に DESeq2 型の差次的発現解析を行う Python / scverse ライブラリです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "pertpy",
+      "name": "pertpy",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "statistics",
+        "machine-learning"
+      ],
+      "modalities": [
+        "single-cell",
+        "perturbation-data",
+        "AnnData"
+      ],
+      "tasks": [
+        "perturbation-analysis",
+        "statistical-modeling",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://pertpy.readthedocs.io/",
+      "repo_url": "https://github.com/scverse/pertpy",
+      "summary_ja": "single-cell perturbation data の解析、モデリング、可視化を行う scverse ecosystem の Python ライブラリです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "pytometry",
+      "name": "pytometry",
+      "artifact_type": "library",
+      "domains": [
+        "cytometry",
+        "single-cell"
+      ],
+      "modalities": [
+        "flow-cytometry",
+        "mass-cytometry",
+        "AnnData"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse"
+      ],
+      "scales": [
+        "cellular"
+      ],
+      "official_url": "https://pytometry.readthedocs.io/",
+      "repo_url": "https://github.com/scverse/pytometry",
+      "summary_ja": "flow cytometry / mass cytometry データを AnnData と接続して解析する scverse 系 Python ライブラリです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "genomic-features-py",
+      "name": "genomic-features",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "annotation"
+      ],
+      "modalities": [
+        "genomic-features",
+        "AnnotationHub",
+        "genome-annotation"
+      ],
+      "tasks": [
+        "annotation-query",
+        "feature-extraction",
+        "metadata"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://genomic-features.readthedocs.io/",
+      "repo_url": "https://github.com/scverse/genomic-features",
+      "summary_ja": "Bioconductor AnnotationHub 由来の genomic feature を Python / scverse 側で扱うためのライブラリです。",
+      "license": "BSD-3-Clause",
+      "maturity": "active"
+    },
+    {
+      "id": "spatialdata-plot",
+      "name": "spatialdata-plot",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "bioimaging",
+        "visualization"
+      ],
+      "modalities": [
+        "SpatialData",
+        "spatial-transcriptomics",
+        "images"
+      ],
+      "tasks": [
+        "visualization",
+        "spatial-geometry",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse"
+      ],
+      "scales": [
+        "tissue",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://spatialdata.scverse.org/projects/plot/en/latest/",
+      "repo_url": "https://github.com/scverse/spatialdata-plot",
+      "summary_ja": "SpatialData object の static plotting と spatial omics 可視化を行う scverse 系 Python ライブラリです。",
+      "license": "BSD-3-Clause",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-casecontrol",
+      "name": "CaseControl",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "statistics"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "case-control-analysis",
+        "cohort-analysis",
+        "effect-estimation"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://ohdsi.github.io/CaseControl/",
+      "repo_url": "https://github.com/OHDSI/CaseControl",
+      "summary_ja": "OMOP CDM 上で nested matched case-control analysis を行う OHDSI R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "established"
+    },
+    {
+      "id": "ohdsi-cohortincidence",
+      "name": "CohortIncidence",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "epidemiology"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "incidence-estimation",
+        "cohort-analysis",
+        "query-generation"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://ohdsi.github.io/CohortIncidence/",
+      "repo_url": "https://github.com/OHDSI/CohortIncidence",
+      "summary_ja": "OMOP CDM 上で cohort incidence analysis を実行する SQL / R assets を生成する OHDSI パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-cohortpathways",
+      "name": "CohortPathways",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "pathway-analysis",
+        "cohort-analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/OHDSI/CohortPathways",
+      "repo_url": "https://github.com/OHDSI/CohortPathways",
+      "summary_ja": "target cohort から event cohort までの temporal pathway を OMOP CDM 上で計算する OHDSI ツールです。",
+      "license": "Apache License",
+      "maturity": "established"
+    },
+    {
+      "id": "ohdsi-cohortprevalence",
+      "name": "CohortPrevalence",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "epidemiology"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "prevalence-estimation",
+        "cohort-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://ohdsi.github.io/CohortPrevalence/",
+      "repo_url": "https://github.com/OHDSI/CohortPrevalence",
+      "summary_ja": "OMOP CDM 上で cohort prevalence を計算する OHDSI R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-cohortexplorer",
+      "name": "CohortExplorer",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "visualization"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "cohort-characterization",
+        "visualization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "Shiny",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://ohdsi.github.io/CohortExplorer/",
+      "repo_url": "https://github.com/OHDSI/CohortExplorer",
+      "summary_ja": "cohort 内患者 profile を抽出・可視化する OHDSI の Shiny / R ツールです。",
+      "license": "Apache License",
+      "maturity": "established"
+    },
+    {
+      "id": "ohdsi-conceptsetdiagnostics",
+      "name": "ConceptSetDiagnostics",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "phenotyping",
+        "quality-control"
+      ],
+      "modalities": [
+        "OMOP",
+        "concept-sets",
+        "vocabularies"
+      ],
+      "tasks": [
+        "concept-set-diagnostics",
+        "phenotyping",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/OHDSI/ConceptSetDiagnostics",
+      "repo_url": "https://github.com/OHDSI/ConceptSetDiagnostics",
+      "summary_ja": "OMOP concept set の設計診断と phenotype 定義確認を支援する OHDSI パッケージです。",
+      "license": "Apache License (>= 2)",
+      "maturity": "active"
+    },
+    {
+      "id": "criteria2query",
+      "name": "Criteria2Query",
+      "artifact_type": "tool",
+      "domains": [
+        "clinical-data",
+        "clinical-nlp",
+        "phenotyping"
+      ],
+      "modalities": [
+        "eligibility-criteria",
+        "free-text",
+        "OMOP"
+      ],
+      "tasks": [
+        "text-parsing",
+        "cohort-definition",
+        "query-generation"
+      ],
+      "ecosystems": [
+        "Python",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/OHDSI/Criteria2Query",
+      "repo_url": "https://github.com/OHDSI/Criteria2Query",
+      "summary_ja": "free-text の組入・除外基準を構造化 cohort definition に変換し、OMOP CDM で実行できる query 作成を支援する OHDSI ツールです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-fhirtocdm",
+      "name": "FhirToCdm",
+      "artifact_type": "tool",
+      "domains": [
+        "clinical-data",
+        "FHIR",
+        "OMOP"
+      ],
+      "modalities": [
+        "FHIR",
+        "OMOP",
+        "EHR"
+      ],
+      "tasks": [
+        "data-conversion",
+        "ETL",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "OHDSI",
+        "FHIR",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OHDSI/FhirToCdm",
+      "repo_url": "https://github.com/OHDSI/FhirToCdm",
+      "summary_ja": "HL7 FHIR データを OMOP CDM に変換する OHDSI の公開 ETL 実装です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "inspectomop",
+      "name": "InspectOMOP",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "OMOP"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "relational-database"
+      ],
+      "tasks": [
+        "data-extraction",
+        "cohort-extraction",
+        "exploration"
+      ],
+      "ecosystems": [
+        "Python",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/OHDSI/InspectOMOP",
+      "repo_url": "https://github.com/OHDSI/InspectOMOP",
+      "summary_ja": "OMOP CDM v5 以降の relational database から EHR データ抽出を支援する Python package です。",
+      "license": "AGPL-3.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-drugadherence",
+      "name": "DrugAdherence",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "epidemiology"
+      ],
+      "modalities": [
+        "OMOP",
+        "drug-exposure",
+        "claims"
+      ],
+      "tasks": [
+        "adherence-analysis",
+        "cohort-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/OHDSI/DrugAdherence",
+      "repo_url": "https://github.com/OHDSI/DrugAdherence",
+      "summary_ja": "OMOP CDM 上で drug exposure、服薬 adherence、persistence 指標を解析する OHDSI R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-aegis",
+      "name": "Aegis",
+      "artifact_type": "platform",
+      "domains": [
+        "clinical-data",
+        "geospatial",
+        "epidemiology"
+      ],
+      "modalities": [
+        "OMOP",
+        "geospatial-data",
+        "EHR"
+      ],
+      "tasks": [
+        "geospatial-analysis",
+        "visualization",
+        "cohort-characterization"
+      ],
+      "ecosystems": [
+        "OHDSI",
+        "web"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "environmental"
+      ],
+      "official_url": "https://github.com/OHDSI/Aegis",
+      "repo_url": "https://github.com/OHDSI/Aegis",
+      "summary_ja": "OMOP CDM に基づく疫学 GIS 可視化と解析を支援する OHDSI platform です。",
+      "license": "Apache-2.0",
+      "maturity": "established"
+    },
+    {
+      "id": "ohdsi-koios",
+      "name": "Koios",
+      "artifact_type": "tool",
+      "domains": [
+        "clinical-genomics",
+        "OMOP",
+        "variant-analysis"
+      ],
+      "modalities": [
+        "VCF",
+        "HGVS",
+        "OMOP-vocabulary"
+      ],
+      "tasks": [
+        "variant-annotation",
+        "concept-mapping",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "OHDSI",
+        "OMOP"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OHDSI/Koios",
+      "repo_url": "https://github.com/OHDSI/Koios",
+      "summary_ja": "VCF や HGVS notation から OMOP Genomic vocabulary concept を同定する OHDSI ツールです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-nostos",
+      "name": "Nostos",
+      "artifact_type": "tool",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "clinical-nlp"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "natural-language-query"
+      ],
+      "tasks": [
+        "text-to-SQL",
+        "query-generation",
+        "cohort-discovery"
+      ],
+      "ecosystems": [
+        "OHDSI",
+        "web"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/OHDSI/Nostos",
+      "repo_url": "https://github.com/OHDSI/Nostos",
+      "summary_ja": "OMOP 構造化データを text-to-SQL 的に探索する OHDSI の公開ツールです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "gdal",
+      "name": "GDAL",
+      "artifact_type": "library",
+      "domains": [
+        "geospatial",
+        "environmental-data",
+        "data-standard"
+      ],
+      "modalities": [
+        "raster",
+        "vector",
+        "remote-sensing"
+      ],
+      "tasks": [
+        "geospatial-preprocessing",
+        "data-conversion",
+        "spatial-analysis"
+      ],
+      "ecosystems": [
+        "C++",
+        "Python",
+        "OSGeo"
+      ],
+      "scales": [
+        "environmental",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://gdal.org/",
+      "repo_url": "https://github.com/OSGeo/gdal",
+      "summary_ja": "raster / vector geospatial data format の変換・読み書きを支える OSGeo の基盤ライブラリです。",
+      "license": "MIT-style",
+      "maturity": "established"
+    },
+    {
+      "id": "postgis",
+      "name": "PostGIS",
+      "artifact_type": "platform",
+      "domains": [
+        "geospatial",
+        "environmental-data",
+        "data-management"
+      ],
+      "modalities": [
+        "spatial-database",
+        "vector",
+        "raster"
+      ],
+      "tasks": [
+        "spatial-indexing",
+        "spatial-query",
+        "geospatial-analysis"
+      ],
+      "ecosystems": [
+        "PostgreSQL",
+        "SQL",
+        "OSGeo"
+      ],
+      "scales": [
+        "environmental",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://postgis.net/",
+      "repo_url": "https://gitea.osgeo.org/postgis/postgis",
+      "summary_ja": "PostgreSQL 上で空間 index、geometry / geography、raster query を扱う geospatial database extension です。",
+      "license": "GPL-2.0",
+      "maturity": "established"
+    },
+    {
+      "id": "qgis",
+      "name": "QGIS",
+      "artifact_type": "platform",
+      "domains": [
+        "geospatial",
+        "environmental-data",
+        "visualization"
+      ],
+      "modalities": [
+        "raster",
+        "vector",
+        "maps"
+      ],
+      "tasks": [
+        "geospatial-analysis",
+        "visualization",
+        "spatial-overlay"
+      ],
+      "ecosystems": [
+        "desktop",
+        "Python",
+        "OSGeo"
+      ],
+      "scales": [
+        "environmental",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://qgis.org/",
+      "repo_url": "https://github.com/qgis/QGIS",
+      "summary_ja": "環境曝露、人口、移動、地理空間データの地図化と解析に使う OSS GIS platform です。",
+      "license": "GPL-2.0",
       "maturity": "established"
     }
   ]

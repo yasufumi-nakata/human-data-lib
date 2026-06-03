@@ -14,7 +14,7 @@
 
 ## まず見る場所
 
-- [全件カタログ](catalog.md): 収録している 974 件をページ上で一覧できます。
+- [全件カタログ](catalog.md): 収録している 1060 件をページ上で一覧できます。
 - [分類と運用方針](docs/catalog-policy.md): 何を収録し、何を除外するかを確認できます。
 - [スキーマ説明](docs/schema.md): 各項目に入っている情報の意味を確認できます。
 - [領域別の見取り図](docs/landscape.md): ミクロからマクロまでの対象領域を俯瞰できます。
@@ -22,7 +22,7 @@
 
 ## このサイトで見られるもの
 
-- 全 974 件の公開 OSS / 公開リポジトリ付きカタログ
+- 全 1060 件の公開 OSS / 公開リポジトリ付きカタログ
 - 解析スケール別の件数と分類
 - 分野、データ種別、処理タスク、実行環境、公式ページ、repo へのリンク
 - 日本語の 1 文要約
@@ -32,7 +32,7 @@
 
 ## 収録状況
 
-2026-06-02 時点の継続更新カタログは 974 件です。代表的な収録軸は以下です。
+2026-06-03 時点の継続更新カタログは 1060 件です。代表的な収録軸は以下です。
 
 - ミクロ: ゲノム、変異、RNA-seq、single-cell、spatial omics、プロテオミクス、メタボロミクス、マイクロバイオーム
 - 細胞・組織: cytometry、細胞画像、病理画像、空間トランスクリプトミクス
@@ -54,6 +54,8 @@
 2026-06-01 の更新では、nf-core の AIRR / taxonomic profiling / viral recon / Hi-C / Nanopore / CLIP-seq / circRNA などの workflow、Rsubread / GffRead / Exomiser / scGLUE などの omics 実装、single-cell / spatial omics benchmark と spatial statistics、cytometry、digital pathology / microscopy、神経画像・DICOM・放射線治療・生理信号、睡眠・ウェアラブル・行動実験、OHDSI HADES、SMART on FHIR、clinical NLP、心理統計・質問紙・eye tracking、集団遺伝、感染症・合成人口、環境曝露・routing・STAC、workflow / metadata standard、record linkage / privacy-preserving computation の公開 repo を再確認し、公式または準公式の公開 repo と OSS 条件を確認できる 107 件を追加しました。BANKSY、stepcount、SearchGUI / PeptideShaker、OpenClinica は公開 repo は確認できましたが、利用条件または license file の確認条件を満たさないため、この run では採録しませんでした。同日の追補更新では、long-read / structural variant benchmarking、がん MAF / copy-number、single-cell / spatial omics / cytometry / microscopy I/O、nf-core onco/pangenome/imaging-cytometry、IPUMS / Census / OpenStreetMap / Earth Engine、R spatial epidemiology 周辺の公開 repo を再確認し、44 件を追加しました。
 
 2026-06-02 の更新では、metagenomics / microbial genomics、QTL / fine mapping、proteomics、ISA / EDAM metadata、single-cell trajectory / spatial omics / digital pathology / cytometry、EEG/fNIRS/MEG、MRI/CT reconstruction、wearable mobility、FHIR / OMOP utilities、psychometrics、public-health simulation、geospatial exposure、privacy / anonymization、workflow / FAIR data platform 周辺の公開 repo を再確認し、公式または準公式の公開 repo と OSS 条件を確認できる 82 件を追加しました。PHATE、CellOracle、KielMAT、rMATS-turbo、Cytomine-core、RSEM、MetaBAT2 などは、利用条件、archived 状態、既存重複、または license / 公式性の確認不足により採録しませんでした。
+
+2026-06-03 の更新では、nf-core の blood group / allele expression / CAGE / CRISPR / proteomics / metabolomics / rare disease / spatial / variant / viral integration 系 workflow、NiPreps の dMRI / EEG / MEG / PET preprocessing と neuroimaging privacy / query tools、scverse の PyDESeq2 / pertpy / cytometry / genomic feature / SpatialData plotting、OHDSI の case-control / incidence / pathway / prevalence / concept-set / FHIR-to-OMOP / OMOP geospatial / text-to-SQL 周辺、GDAL / PostGIS / QGIS などの geospatial exposure 基盤を再確認し、公式または準公式の公開 repo と OSS 条件を確認できる 86 件を追加しました。nf-core/quantms と nf-core/proteomicslfq は archived 状態のままのため引き続き採録していません。
 
 ## 対象領域
 
