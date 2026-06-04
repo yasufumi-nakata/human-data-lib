@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-06-03",
+  "generated_at": "2026-06-04",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -35056,6 +35056,2145 @@
       "summary_ja": "環境曝露、人口、移動、地理空間データの地図化と解析に使う OSS GIS platform です。",
       "license": "GPL-2.0",
       "maturity": "established"
+    },
+    {
+      "id": "nf-core-callingcards",
+      "name": "nf-core/callingcards",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "epigenomics",
+        "regulatory-genomics"
+      ],
+      "modalities": [
+        "calling-cards",
+        "FASTQ",
+        "insertion-sites"
+      ],
+      "tasks": [
+        "preprocessing",
+        "alignment",
+        "regulatory-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/callingcards",
+      "repo_url": "https://github.com/nf-core/callingcards",
+      "summary_ja": "Calling Cards assay の sequencing data から insertion site と regulatory signal を解析する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-createpanelrefs",
+      "name": "nf-core/createpanelrefs",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "clinical-genomics"
+      ],
+      "modalities": [
+        "VCF",
+        "BAM",
+        "reference-panels"
+      ],
+      "tasks": [
+        "reference-building",
+        "variant-filtering",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/createpanelrefs",
+      "repo_url": "https://github.com/nf-core/createpanelrefs",
+      "summary_ja": "多数サンプルから panel of normals や参照モデルを生成する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-createtaxdb",
+      "name": "nf-core/createtaxdb",
+      "artifact_type": "workflow",
+      "domains": [
+        "metagenomics",
+        "microbiome",
+        "data-management"
+      ],
+      "modalities": [
+        "taxonomy-database",
+        "metagenomics",
+        "reference-data"
+      ],
+      "tasks": [
+        "database-construction",
+        "taxonomy",
+        "workflow",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/createtaxdb",
+      "repo_url": "https://github.com/nf-core/createtaxdb",
+      "summary_ja": "metagenomic classifier 用の taxonomy database を並列構築する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-dartseq",
+      "name": "nf-core/dartseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "epitranscriptomics",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "m6A",
+        "FASTQ"
+      ],
+      "tasks": [
+        "preprocessing",
+        "detection",
+        "differential-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/dartseq",
+      "repo_url": "https://github.com/nf-core/dartseq",
+      "summary_ja": "DART-seq / RNA-seq data から m6A 修飾候補を検出する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-demultiplex",
+      "name": "nf-core/demultiplex",
+      "artifact_type": "workflow",
+      "domains": [
+        "bioinformatics",
+        "genomics",
+        "workflow"
+      ],
+      "modalities": [
+        "BCL",
+        "FASTQ",
+        "sample-sheet"
+      ],
+      "tasks": [
+        "demultiplexing",
+        "quality-control",
+        "format-conversion",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/demultiplex",
+      "repo_url": "https://github.com/nf-core/demultiplex",
+      "summary_ja": "sequencing run data を sample ごとの FASTQ に demultiplex する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-denovotranscript",
+      "name": "nf-core/denovotranscript",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "RNA-seq",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "RNA-seq",
+        "FASTQ",
+        "transcripts"
+      ],
+      "tasks": [
+        "assembly",
+        "annotation",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://nf-co.re/denovotranscript/",
+      "repo_url": "https://github.com/nf-core/denovotranscript",
+      "summary_ja": "paired-end bulk RNA-seq から de novo transcriptome assembly を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-detaxizer",
+      "name": "nf-core/detaxizer",
+      "artifact_type": "workflow",
+      "domains": [
+        "metagenomics",
+        "microbiome",
+        "privacy"
+      ],
+      "modalities": [
+        "FASTQ",
+        "host-reads",
+        "metagenomics"
+      ],
+      "tasks": [
+        "host-depletion",
+        "quality-control",
+        "privacy-risk-reduction",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/detaxizer",
+      "repo_url": "https://github.com/nf-core/detaxizer",
+      "summary_ja": "raw genomic data から Homo sapiens など指定 taxon の sequence を同定・除去できる nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-epitopeprediction",
+      "name": "nf-core/epitopeprediction",
+      "artifact_type": "workflow",
+      "domains": [
+        "immunology",
+        "clinical-genomics",
+        "cancer-genomics"
+      ],
+      "modalities": [
+        "variants",
+        "peptides",
+        "HLA"
+      ],
+      "tasks": [
+        "epitope-prediction",
+        "annotation",
+        "prioritization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/epitopeprediction",
+      "repo_url": "https://github.com/nf-core/epitopeprediction",
+      "summary_ja": "変異や peptide 情報から epitope prediction と annotation を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-fastqrepair",
+      "name": "nf-core/fastqrepair",
+      "artifact_type": "workflow",
+      "domains": [
+        "bioinformatics",
+        "quality-control",
+        "workflow"
+      ],
+      "modalities": [
+        "FASTQ",
+        "sequence"
+      ],
+      "tasks": [
+        "quality-control",
+        "file-repair",
+        "filtering",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/fastqrepair",
+      "repo_url": "https://github.com/nf-core/fastqrepair",
+      "summary_ja": "壊れた FASTQ.gz、非準拠 read、不対 read、順序崩れを検出・修復する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-fastquorum",
+      "name": "nf-core/fastquorum",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "bioinformatics",
+        "quality-control"
+      ],
+      "modalities": [
+        "FASTQ",
+        "UMI",
+        "consensus-reads"
+      ],
+      "tasks": [
+        "consensus-calling",
+        "preprocessing",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/fastquorum",
+      "repo_url": "https://github.com/nf-core/fastquorum",
+      "summary_ja": "UMI / barcode 付き reads から consensus reads を生成する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-marsseq",
+      "name": "nf-core/marsseq",
+      "artifact_type": "workflow",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "RNA-seq"
+      ],
+      "modalities": [
+        "MARS-seq",
+        "single-cell RNA-seq",
+        "RNA-velocity"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "velocity-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://nf-co.re/marsseq",
+      "repo_url": "https://github.com/nf-core/marsseq",
+      "summary_ja": "MARS-seq v2 single-cell data の preprocessing と velocity 解析を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-mcmicro",
+      "name": "nf-core/mcmicro",
+      "artifact_type": "workflow",
+      "domains": [
+        "bioimaging",
+        "digital-pathology",
+        "spatial-omics"
+      ],
+      "modalities": [
+        "multiplexed-imaging",
+        "whole-slide-imaging",
+        "single-cell-features"
+      ],
+      "tasks": [
+        "image-processing",
+        "segmentation",
+        "feature-extraction",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/mcmicro",
+      "repo_url": "https://github.com/nf-core/mcmicro",
+      "summary_ja": "multi-channel whole-slide image を single-cell feature data に変換する MCMICRO 系 nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-metapep",
+      "name": "nf-core/metapep",
+      "artifact_type": "workflow",
+      "domains": [
+        "metagenomics",
+        "immunology",
+        "public-health"
+      ],
+      "modalities": [
+        "metagenomics",
+        "peptides",
+        "HLA"
+      ],
+      "tasks": [
+        "epitope-prediction",
+        "functional-profiling",
+        "annotation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/metapep",
+      "repo_url": "https://github.com/nf-core/metapep",
+      "summary_ja": "metagenome 由来 sequence から peptide / epitope 解析へつなぐ nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-metatdenovo",
+      "name": "nf-core/metatdenovo",
+      "artifact_type": "workflow",
+      "domains": [
+        "metagenomics",
+        "metatranscriptomics",
+        "microbiome"
+      ],
+      "modalities": [
+        "metagenomics",
+        "metatranscriptomics",
+        "FASTQ"
+      ],
+      "tasks": [
+        "assembly",
+        "annotation",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/metatdenovo",
+      "repo_url": "https://github.com/nf-core/metatdenovo",
+      "summary_ja": "metatranscriptomic / metagenomic data の de novo assembly と annotation を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-nanostring",
+      "name": "nf-core/nanostring",
+      "artifact_type": "workflow",
+      "domains": [
+        "transcriptomics",
+        "clinical-data",
+        "statistics"
+      ],
+      "modalities": [
+        "Nanostring-nCounter",
+        "gene-expression",
+        "count-matrix"
+      ],
+      "tasks": [
+        "quality-control",
+        "normalization",
+        "differential-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "tissue"
+      ],
+      "official_url": "https://nf-co.re/nanostring",
+      "repo_url": "https://github.com/nf-core/nanostring",
+      "summary_ja": "Nanostring nCounter gene expression data の QC、正規化、解析を行う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-pathogensurveillance",
+      "name": "nf-core/pathogensurveillance",
+      "artifact_type": "workflow",
+      "domains": [
+        "public-health",
+        "genomics",
+        "microbial-genomics"
+      ],
+      "modalities": [
+        "pathogen-genomes",
+        "FASTQ",
+        "variants"
+      ],
+      "tasks": [
+        "surveillance",
+        "population-genomics",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "clinical"
+      ],
+      "official_url": "https://nf-co.re/pathogensurveillance",
+      "repo_url": "https://github.com/nf-core/pathogensurveillance",
+      "summary_ja": "pathogen sequencing data を population genomics と surveillance に使う nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-proteogenomicsdb",
+      "name": "nf-core/proteogenomicsdb",
+      "artifact_type": "workflow",
+      "domains": [
+        "proteomics",
+        "clinical-genomics",
+        "cancer-genomics"
+      ],
+      "modalities": [
+        "protein-database",
+        "proteogenomics",
+        "variants"
+      ],
+      "tasks": [
+        "database-construction",
+        "annotation",
+        "workflow",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/pgdb",
+      "repo_url": "https://github.com/nf-core/proteogenomicsdb",
+      "summary_ja": "proteogenomics 解析用の protein database を生成する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-readsimulator",
+      "name": "nf-core/readsimulator",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "metagenomics",
+        "benchmarking"
+      ],
+      "modalities": [
+        "simulated-reads",
+        "FASTQ",
+        "amplicon"
+      ],
+      "tasks": [
+        "simulation",
+        "benchmarking",
+        "quality-control",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/readsimulator",
+      "repo_url": "https://github.com/nf-core/readsimulator",
+      "summary_ja": "amplicon、target capture、metagenome、WGS などの sequencing reads を simulation する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-references",
+      "name": "nf-core/references",
+      "artifact_type": "workflow",
+      "domains": [
+        "genomics",
+        "data-management",
+        "workflow"
+      ],
+      "modalities": [
+        "reference-genome",
+        "annotation",
+        "index"
+      ],
+      "tasks": [
+        "reference-building",
+        "indexing",
+        "metadata",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/references",
+      "repo_url": "https://github.com/nf-core/references",
+      "summary_ja": "複数用途に対応する genome reference、annotation、index を構築する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-ribomsqc",
+      "name": "nf-core/ribomsqc",
+      "artifact_type": "workflow",
+      "domains": [
+        "metabolomics",
+        "mass-spectrometry",
+        "quality-control"
+      ],
+      "modalities": [
+        "ribonucleosides",
+        "LC-MS",
+        "QC-metrics"
+      ],
+      "tasks": [
+        "quality-control",
+        "instrument-monitoring",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/ribomsqc",
+      "repo_url": "https://github.com/nf-core/ribomsqc",
+      "summary_ja": "ribonucleoside mass spectrometry の instrument performance と QC を監視する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-seqsubmit",
+      "name": "nf-core/seqsubmit",
+      "artifact_type": "workflow",
+      "domains": [
+        "bioinformatics",
+        "data-management",
+        "reproducibility"
+      ],
+      "modalities": [
+        "FASTQ",
+        "metadata",
+        "ENA-submission"
+      ],
+      "tasks": [
+        "metadata",
+        "submission",
+        "validation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/seqsubmit",
+      "repo_url": "https://github.com/nf-core/seqsubmit",
+      "summary_ja": "sequencing data と metadata の ENA submission を支援する nf-core 公式ワークフローです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "nf-core-tbanalyzer",
+      "name": "nf-core/tbanalyzer",
+      "artifact_type": "workflow",
+      "domains": [
+        "public-health",
+        "microbial-genomics",
+        "clinical-genomics"
+      ],
+      "modalities": [
+        "Mycobacterium-tuberculosis",
+        "FASTQ",
+        "variants"
+      ],
+      "tasks": [
+        "genotyping",
+        "surveillance",
+        "variant-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://nf-co.re/tbanalyzer",
+      "repo_url": "https://github.com/nf-core/tbanalyzer",
+      "summary_ja": "Mycobacterium tuberculosis complex の sequencing data を解析する nf-core 公式メタパイプラインです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "drugexposurediagnostics",
+      "name": "DrugExposureDiagnostics",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "quality-control"
+      ],
+      "modalities": [
+        "OMOP",
+        "drug-exposure",
+        "EHR"
+      ],
+      "tasks": [
+        "data-diagnostics",
+        "quality-control",
+        "visualization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OMOP",
+        "DARWIN-EU"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/darwin-eu/DrugExposureDiagnostics",
+      "repo_url": "https://github.com/darwin-eu/DrugExposureDiagnostics",
+      "summary_ja": "OMOP CDM の drug exposure table を診断し、薬剤曝露データの品質確認を支援する R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "cdmonboarding",
+      "name": "CdmOnboarding",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "data-quality"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "metadata"
+      ],
+      "tasks": [
+        "onboarding",
+        "data-quality",
+        "validation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OMOP",
+        "DARWIN-EU"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/darwin-eu/CdmOnboarding",
+      "repo_url": "https://github.com/darwin-eu/CdmOnboarding",
+      "summary_ja": "DARWIN EU Data Network で新規 OMOP CDM を onboarding するための確認と reporting を支援する R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "cohortsurvival",
+      "name": "CohortSurvival",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "statistics"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "survival-analysis",
+        "cohort-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OMOP",
+        "DARWIN-EU"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/darwin-eu/CohortSurvival",
+      "repo_url": "https://github.com/darwin-eu/CohortSurvival",
+      "summary_ja": "OMOP CDM 上の cohort data に survival analysis を適用する DARWIN-EU 系 R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "darwin-testgenerator",
+      "name": "TestGenerator",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "reproducibility"
+      ],
+      "modalities": [
+        "OMOP",
+        "study-package",
+        "tests"
+      ],
+      "tasks": [
+        "test-generation",
+        "validation",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "R",
+        "OMOP",
+        "DARWIN-EU"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/darwin-eu/TestGenerator",
+      "repo_url": "https://github.com/darwin-eu/TestGenerator",
+      "summary_ja": "OMOP CDM 上の study package 向け integration unit test を生成する DARWIN-EU 系 R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "omopgenerics",
+      "name": "omopgenerics",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "data-model"
+      ],
+      "modalities": [
+        "OMOP",
+        "CDM",
+        "R-objects"
+      ],
+      "tasks": [
+        "data-model",
+        "interoperability",
+        "metadata"
+      ],
+      "ecosystems": [
+        "R",
+        "OMOP",
+        "DARWIN-EU"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/darwin-eu/omopgenerics",
+      "repo_url": "https://github.com/darwin-eu/omopgenerics",
+      "summary_ja": "R で OMOP CDM object と共通 generic 関数を扱うための DARWIN-EU 基盤パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "drugutilisation",
+      "name": "DrugUtilisation",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "epidemiology"
+      ],
+      "modalities": [
+        "OMOP",
+        "drug-exposure",
+        "EHR"
+      ],
+      "tasks": [
+        "drug-utilization",
+        "cohort-analysis",
+        "summary-statistics",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OMOP",
+        "DARWIN-EU"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/darwin-eu/DrugUtilisation",
+      "repo_url": "https://github.com/darwin-eu/DrugUtilisation",
+      "summary_ja": "OMOP CDM 上で薬剤利用、曝露期間、drug cohort の記述統計を計算する R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "visomopresults",
+      "name": "visOmopResults",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "visualization"
+      ],
+      "modalities": [
+        "OMOP",
+        "study-results",
+        "tabular"
+      ],
+      "tasks": [
+        "visualization",
+        "reporting",
+        "result-exploration"
+      ],
+      "ecosystems": [
+        "R",
+        "Shiny",
+        "OMOP",
+        "DARWIN-EU"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/darwin-eu/visOmopResults",
+      "repo_url": "https://github.com/darwin-eu/visOmopResults",
+      "summary_ja": "OMOP 解析結果を R / Shiny で可視化し、study result の探索を支援する DARWIN-EU 系パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "cohortcharacteristics",
+      "name": "CohortCharacteristics",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "statistics"
+      ],
+      "modalities": [
+        "OMOP",
+        "cohort",
+        "EHR"
+      ],
+      "tasks": [
+        "cohort-characterization",
+        "summary-statistics",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OMOP",
+        "DARWIN-EU"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/darwin-eu/CohortCharacteristics",
+      "repo_url": "https://github.com/darwin-eu/CohortCharacteristics",
+      "summary_ja": "OMOP CDM 上の cohort baseline characteristics と summary table を作成する R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "selfcontrolledcohort",
+      "name": "SelfControlledCohort",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "epidemiology"
+      ],
+      "modalities": [
+        "OMOP",
+        "EHR",
+        "claims"
+      ],
+      "tasks": [
+        "self-controlled-design",
+        "effect-estimation",
+        "cohort-analysis"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/OHDSI/SelfControlledCohort",
+      "repo_url": "https://github.com/OHDSI/SelfControlledCohort",
+      "summary_ja": "曝露者内の曝露期間と非曝露期間を比較する self-controlled cohort analysis を行う OHDSI R パッケージです。",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-standardizedanalysisapi",
+      "name": "StandardizedAnalysisAPI",
+      "artifact_type": "standard",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "interoperability"
+      ],
+      "modalities": [
+        "OMOP",
+        "analysis-specification",
+        "JSON"
+      ],
+      "tasks": [
+        "api",
+        "standardized-analysis",
+        "interoperability",
+        "validation"
+      ],
+      "ecosystems": [
+        "OHDSI",
+        "JSON",
+        "web"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OHDSI/StandardizedAnalysisAPI",
+      "repo_url": "https://github.com/OHDSI/StandardizedAnalysisAPI",
+      "summary_ja": "OHDSI の cohort characterization、incidence、treatment pathway などの標準解析 API / exchange model です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-cdmddlbase",
+      "name": "CdmDdlBase",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "data-model"
+      ],
+      "modalities": [
+        "OMOP",
+        "DDL",
+        "SQL"
+      ],
+      "tasks": [
+        "schema-generation",
+        "documentation",
+        "database-support"
+      ],
+      "ecosystems": [
+        "R",
+        "SQL",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OHDSI/CdmDdlBase",
+      "repo_url": "https://github.com/OHDSI/CdmDdlBase",
+      "summary_ja": "OMOP Common Data Model の documentation と database dialect 別 DDL を生成する OHDSI R パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ohdsi-cohortcharacterization",
+      "name": "CohortCharacterization",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "statistics"
+      ],
+      "modalities": [
+        "OMOP",
+        "cohort",
+        "EHR"
+      ],
+      "tasks": [
+        "cohort-characterization",
+        "feature-extraction",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/OHDSI/CohortCharacterization",
+      "repo_url": "https://github.com/OHDSI/CohortCharacterization",
+      "summary_ja": "OMOP CDM 上で target / outcome cohort の特徴量と記述統計を作成する OHDSI 解析パッケージです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ga4gh-data-connect",
+      "name": "GA4GH Data Connect",
+      "artifact_type": "standard",
+      "domains": [
+        "genomics",
+        "data-standard",
+        "interoperability"
+      ],
+      "modalities": [
+        "metadata",
+        "tables",
+        "genomic-data"
+      ],
+      "tasks": [
+        "data-discovery",
+        "metadata",
+        "api",
+        "query"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "web",
+        "JSON"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/data-connect",
+      "repo_url": "https://github.com/ga4gh/data-connect",
+      "summary_ja": "biomedical data を記述・検索するための GA4GH Data Connect 仕様と公開実装資産です。",
+      "maturity": "active"
+    },
+    {
+      "id": "ga4gh-drs-client",
+      "name": "GA4GH DRS Client",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "data-access",
+        "interoperability"
+      ],
+      "modalities": [
+        "DRS",
+        "omics-data",
+        "metadata"
+      ],
+      "tasks": [
+        "data-access",
+        "api-client",
+        "metadata"
+      ],
+      "ecosystems": [
+        "Python",
+        "GA4GH",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/ga4gh-drs-client",
+      "repo_url": "https://github.com/ga4gh/ga4gh-drs-client",
+      "summary_ja": "DRS compliant web service から omics data と metadata を取得する GA4GH の公開 client です。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "ga4gh-starter-kit-drs",
+      "name": "GA4GH Starter Kit DRS",
+      "artifact_type": "platform",
+      "domains": [
+        "genomics",
+        "data-standard",
+        "interoperability"
+      ],
+      "modalities": [
+        "DRS",
+        "omics-data",
+        "metadata"
+      ],
+      "tasks": [
+        "reference-implementation",
+        "api",
+        "data-access"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "web",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/ga4gh-starter-kit-drs",
+      "repo_url": "https://github.com/ga4gh/ga4gh-starter-kit-drs",
+      "summary_ja": "GA4GH Data Repository Service specification の open source reference server 実装です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ga4gh-starter-kit-wes",
+      "name": "GA4GH Starter Kit WES",
+      "artifact_type": "platform",
+      "domains": [
+        "workflow",
+        "genomics",
+        "interoperability"
+      ],
+      "modalities": [
+        "WES",
+        "workflow",
+        "omics-data"
+      ],
+      "tasks": [
+        "reference-implementation",
+        "workflow-execution",
+        "api"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "web",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/ga4gh-starter-kit-wes",
+      "repo_url": "https://github.com/ga4gh/ga4gh-starter-kit-wes",
+      "summary_ja": "GA4GH Workflow Execution Service specification の starter kit server 実装です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ga4gh-starter-kit-beacon",
+      "name": "GA4GH Starter Kit Beacon",
+      "artifact_type": "platform",
+      "domains": [
+        "genomics",
+        "data-standard",
+        "interoperability"
+      ],
+      "modalities": [
+        "Beacon",
+        "variants",
+        "metadata"
+      ],
+      "tasks": [
+        "reference-implementation",
+        "data-discovery",
+        "api"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "web",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/ga4gh-starter-kit-beacon",
+      "repo_url": "https://github.com/ga4gh/ga4gh-starter-kit-beacon",
+      "summary_ja": "GA4GH Beacon v2 specification の open source reference implementation です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ga4gh-drs-compliance-suite",
+      "name": "GA4GH DRS Compliance Suite",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "data-standard",
+        "quality-control"
+      ],
+      "modalities": [
+        "DRS",
+        "API",
+        "metadata"
+      ],
+      "tasks": [
+        "compliance-testing",
+        "validation",
+        "api"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/drs-compliance-suite",
+      "repo_url": "https://github.com/ga4gh/drs-compliance-suite",
+      "summary_ja": "DRS implementation が GA4GH specification に準拠しているかを検証する compliance test suite です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ga4gh-wes-compliance-tests",
+      "name": "GA4GH WES Compliance Tests",
+      "artifact_type": "tool",
+      "domains": [
+        "workflow",
+        "genomics",
+        "quality-control"
+      ],
+      "modalities": [
+        "WES",
+        "workflow",
+        "API"
+      ],
+      "tasks": [
+        "compliance-testing",
+        "validation",
+        "workflow-execution"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/compliance-tests-ga4gh-wes",
+      "repo_url": "https://github.com/ga4gh/compliance-tests-ga4gh-wes",
+      "summary_ja": "GA4GH Workflow Execution Service implementation の compliance を検証する公開 test suite です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "ga4gh-cat-vrs",
+      "name": "GA4GH Cat-VRS",
+      "artifact_type": "standard",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "data-standard"
+      ],
+      "modalities": [
+        "variants",
+        "VRS",
+        "terminology"
+      ],
+      "tasks": [
+        "data-model",
+        "standardization",
+        "annotation"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python",
+        "JSON"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/cat-vrs",
+      "repo_url": "https://github.com/ga4gh/cat-vrs",
+      "summary_ja": "categorical variation concept を記述するための GA4GH Genomic Knowledge Standards 系 terminology / data model です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "anndatar",
+      "name": "anndataR",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "data-model",
+        "interoperability"
+      ],
+      "modalities": [
+        "AnnData",
+        "h5ad",
+        "single-cell RNA-seq"
+      ],
+      "tasks": [
+        "data-model",
+        "io",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "R",
+        "scverse",
+        "AnnData"
+      ],
+      "scales": [
+        "cellular",
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/scverse/anndataR",
+      "repo_url": "https://github.com/scverse/anndataR",
+      "summary_ja": "R から AnnData / h5ad を扱うための scverse 公式 interoperability package です。",
+      "maturity": "active"
+    },
+    {
+      "id": "scverse-io",
+      "name": "scverse-io",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "multiomics",
+        "data-model"
+      ],
+      "modalities": [
+        "AnnData",
+        "MuData",
+        "h5ad"
+      ],
+      "tasks": [
+        "io",
+        "format-conversion",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse"
+      ],
+      "scales": [
+        "cellular",
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/scverse/scverse-io",
+      "repo_url": "https://github.com/scverse/scverse-io",
+      "summary_ja": "各種 format を AnnData や MuData に読み込む scverse 公式 I/O library です。",
+      "maturity": "active"
+    },
+    {
+      "id": "annbatch",
+      "name": "annbatch",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "machine-learning",
+        "data-model"
+      ],
+      "modalities": [
+        "AnnData",
+        "h5ad",
+        "single-cell RNA-seq"
+      ],
+      "tasks": [
+        "minibatch-loading",
+        "io",
+        "deep-learning"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse"
+      ],
+      "scales": [
+        "cellular",
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/scverse/annbatch",
+      "repo_url": "https://github.com/scverse/annbatch",
+      "summary_ja": "on-disk AnnData file から machine learning 用 minibatch loading を行う scverse 関連ライブラリです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "muon-jl",
+      "name": "Muon.jl",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "multiomics",
+        "data-model"
+      ],
+      "modalities": [
+        "MuData",
+        "AnnData",
+        "multiome"
+      ],
+      "tasks": [
+        "data-model",
+        "io",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Julia",
+        "scverse"
+      ],
+      "scales": [
+        "cellular",
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/scverse/Muon.jl",
+      "repo_url": "https://github.com/scverse/Muon.jl",
+      "summary_ja": "Julia で MuData / multimodal omics data を扱う scverse 関連ライブラリです。",
+      "license": "BSD-3-Clause",
+      "maturity": "active"
+    },
+    {
+      "id": "deres",
+      "name": "deres",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "visualization"
+      ],
+      "modalities": [
+        "differential-expression-results",
+        "tabular",
+        "AnnData"
+      ],
+      "tasks": [
+        "result-container",
+        "visualization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/scverse/deres",
+      "repo_url": "https://github.com/scverse/deres",
+      "summary_ja": "differential expression などの結果 table を保持・可視化する scverse 関連 container library です。",
+      "license": "BSD-3-Clause",
+      "maturity": "active"
+    },
+    {
+      "id": "bioimageio-model-zoo",
+      "name": "BioImage.IO Model Zoo",
+      "artifact_type": "platform",
+      "domains": [
+        "bioimaging",
+        "machine-learning",
+        "data-standard"
+      ],
+      "modalities": [
+        "microscopy",
+        "deep-learning-models",
+        "metadata"
+      ],
+      "tasks": [
+        "model-sharing",
+        "metadata",
+        "inference",
+        "validation"
+      ],
+      "ecosystems": [
+        "Python",
+        "web",
+        "bioimage-io"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://bioimage.io/",
+      "repo_url": "https://github.com/bioimage-io/bioimage.io",
+      "summary_ja": "bioimage analysis 向け deep learning model と metadata を共有する BioImage.IO の公式 model zoo platform です。",
+      "maturity": "active"
+    },
+    {
+      "id": "bioimageio-spec",
+      "name": "BioImage.IO Model Resource Specification",
+      "artifact_type": "standard",
+      "domains": [
+        "bioimaging",
+        "machine-learning",
+        "data-standard"
+      ],
+      "modalities": [
+        "microscopy",
+        "model-metadata",
+        "RDF"
+      ],
+      "tasks": [
+        "metadata",
+        "validation",
+        "standardization"
+      ],
+      "ecosystems": [
+        "Python",
+        "YAML",
+        "bioimage-io"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/bioimage-io/spec-bioimage-io",
+      "repo_url": "https://github.com/bioimage-io/spec-bioimage-io",
+      "summary_ja": "BioImage.IO model description file の形式と検証ルールを定める公式 specification repo です。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "bioimageio-core",
+      "name": "bioimageio.core",
+      "artifact_type": "library",
+      "domains": [
+        "bioimaging",
+        "machine-learning",
+        "data-standard"
+      ],
+      "modalities": [
+        "microscopy",
+        "deep-learning-models",
+        "metadata"
+      ],
+      "tasks": [
+        "model-loading",
+        "inference",
+        "packaging",
+        "validation"
+      ],
+      "ecosystems": [
+        "Python",
+        "bioimage-io"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/bioimage-io/core-bioimage-io-python",
+      "repo_url": "https://github.com/bioimage-io/core-bioimage-io-python",
+      "summary_ja": "BioImage.IO model を読み込み、実行し、package 化する Python core library です。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "napari-bioimageio",
+      "name": "napari-bioimageio",
+      "artifact_type": "library",
+      "domains": [
+        "bioimaging",
+        "machine-learning",
+        "visualization"
+      ],
+      "modalities": [
+        "microscopy",
+        "deep-learning-models",
+        "napari"
+      ],
+      "tasks": [
+        "model-inference",
+        "visualization",
+        "interactive-analysis"
+      ],
+      "ecosystems": [
+        "Python",
+        "napari",
+        "bioimage-io"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/bioimage-io/napari-bioimageio",
+      "repo_url": "https://github.com/bioimage-io/napari-bioimageio",
+      "summary_ja": "napari から BioImage.IO model zoo の model を利用するための plugin / integration です。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "bioimageio-jdll",
+      "name": "JDLL",
+      "artifact_type": "library",
+      "domains": [
+        "bioimaging",
+        "machine-learning",
+        "software-infrastructure"
+      ],
+      "modalities": [
+        "deep-learning-models",
+        "microscopy",
+        "Java"
+      ],
+      "tasks": [
+        "model-inference",
+        "runtime-integration",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Java",
+        "bioimage-io"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/bioimage-io/JDLL",
+      "repo_url": "https://github.com/bioimage-io/JDLL",
+      "summary_ja": "Java application から deep learning model を実行するための BioImage.IO 関連ライブラリです。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "dicom-validator",
+      "name": "dicom-validator",
+      "artifact_type": "tool",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "quality-control"
+      ],
+      "modalities": [
+        "DICOM",
+        "DICOM-SR",
+        "metadata"
+      ],
+      "tasks": [
+        "validation",
+        "quality-control",
+        "metadata"
+      ],
+      "ecosystems": [
+        "Python",
+        "pydicom",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/pydicom/dicom-validator",
+      "repo_url": "https://github.com/pydicom/dicom-validator",
+      "summary_ja": "DICOM file と metadata の dictionary / standard 適合性を検証する pydicom organization の公開ツールです。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "monai-deploy-app-sdk",
+      "name": "MONAI Deploy App SDK",
+      "artifact_type": "framework",
+      "domains": [
+        "medical-imaging",
+        "machine-learning",
+        "clinical-data"
+      ],
+      "modalities": [
+        "DICOM",
+        "medical-imaging",
+        "AI-models"
+      ],
+      "tasks": [
+        "deployment",
+        "inference-workflow",
+        "packaging"
+      ],
+      "ecosystems": [
+        "Python",
+        "MONAI",
+        "Docker"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/Project-MONAI/monai-deploy-app-sdk",
+      "repo_url": "https://github.com/Project-MONAI/monai-deploy-app-sdk",
+      "summary_ja": "医用画像 AI application を workflow として package 化・deploy するための MONAI Deploy SDK です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "monai-deploy-informatics-gateway",
+      "name": "MONAI Deploy Informatics Gateway",
+      "artifact_type": "platform",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "clinical-data"
+      ],
+      "modalities": [
+        "DICOM",
+        "DICOMweb",
+        "medical-imaging"
+      ],
+      "tasks": [
+        "routing",
+        "workflow-integration",
+        "deployment"
+      ],
+      "ecosystems": [
+        "Python",
+        "MONAI",
+        "Docker"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/Project-MONAI/monai-deploy-informatics-gateway",
+      "repo_url": "https://github.com/Project-MONAI/monai-deploy-informatics-gateway",
+      "summary_ja": "DICOM / imaging informatics workflow と MONAI Deploy application を接続する gateway platform です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "openneuro-miniqc",
+      "name": "OpenNeuro miniqc",
+      "artifact_type": "tool",
+      "domains": [
+        "neuroimaging",
+        "quality-control",
+        "data-sharing"
+      ],
+      "modalities": [
+        "BIDS",
+        "NIfTI",
+        "metadata"
+      ],
+      "tasks": [
+        "quality-control",
+        "BIDS-app",
+        "validation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "OpenNeuro"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OpenNeuroOrg/miniqc",
+      "repo_url": "https://github.com/OpenNeuroOrg/miniqc",
+      "summary_ja": "BIDS validation を超えた最小限の neuroimaging dataset QC を行う OpenNeuro の BIDS App です。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "ohif-static-wado-js",
+      "name": "OHIF static-wado-js",
+      "artifact_type": "tool",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "interoperability"
+      ],
+      "modalities": [
+        "DICOM",
+        "DICOMweb",
+        "metadata"
+      ],
+      "tasks": [
+        "format-conversion",
+        "metadata",
+        "web-delivery"
+      ],
+      "ecosystems": [
+        "JavaScript",
+        "OHIF"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OHIF/static-wado-js",
+      "repo_url": "https://github.com/OHIF/static-wado-js",
+      "summary_ja": "DICOM P10 file から static DICOMweb metadata / frames / bulkdata を生成する OHIF の JavaScript tool です。",
+      "license": "MIT",
+      "maturity": "active"
+    },
+    {
+      "id": "openehr-reference-models",
+      "name": "openEHR Reference Models",
+      "artifact_type": "standard",
+      "domains": [
+        "clinical-data",
+        "openEHR",
+        "data-model"
+      ],
+      "modalities": [
+        "openEHR",
+        "clinical-record",
+        "UML"
+      ],
+      "tasks": [
+        "data-model",
+        "standardization",
+        "metadata"
+      ],
+      "ecosystems": [
+        "openEHR",
+        "UML"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/openEHR/reference-models",
+      "repo_url": "https://github.com/openEHR/reference-models",
+      "summary_ja": "openEHR reference model を UML、XMI、BMM、Ecore などの computable form で管理する公式 repo です。",
+      "maturity": "active"
+    },
+    {
+      "id": "openehr-java-model-stack",
+      "name": "openEHR Java Model Stack",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "openEHR",
+        "data-model"
+      ],
+      "modalities": [
+        "openEHR",
+        "archetypes",
+        "clinical-record"
+      ],
+      "tasks": [
+        "data-model",
+        "archetype-processing",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Java",
+        "openEHR"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/openEHR/java-model-stack",
+      "repo_url": "https://github.com/openEHR/java-model-stack",
+      "summary_ja": "ODIN、BMM、AOM、ADL などの openEHR modelling formalism を Java で扱う公式 library stack です。",
+      "license": "Apache-2.0",
+      "maturity": "active"
+    },
+    {
+      "id": "serofoi",
+      "name": "serofoi",
+      "artifact_type": "library",
+      "domains": [
+        "public-health",
+        "epidemiology",
+        "statistics"
+      ],
+      "modalities": [
+        "serology",
+        "population-survey",
+        "antibody-data"
+      ],
+      "tasks": [
+        "force-of-infection",
+        "statistical-modeling",
+        "inference"
+      ],
+      "ecosystems": [
+        "R",
+        "Epiverse-TRACE"
+      ],
+      "scales": [
+        "population"
+      ],
+      "official_url": "https://github.com/epiverse-trace/serofoi",
+      "repo_url": "https://github.com/epiverse-trace/serofoi",
+      "summary_ja": "serological survey data から force of infection を推定する Epiverse-TRACE R パッケージです。",
+      "maturity": "active"
+    },
+    {
+      "id": "sivirep",
+      "name": "sivirep",
+      "artifact_type": "library",
+      "domains": [
+        "public-health",
+        "surveillance",
+        "epidemiology"
+      ],
+      "modalities": [
+        "respiratory-surveillance",
+        "case-data",
+        "tabular"
+      ],
+      "tasks": [
+        "surveillance-reporting",
+        "data-processing",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "Epiverse-TRACE"
+      ],
+      "scales": [
+        "population",
+        "clinical"
+      ],
+      "official_url": "https://github.com/epiverse-trace/sivirep",
+      "repo_url": "https://github.com/epiverse-trace/sivirep",
+      "summary_ja": "respiratory infection surveillance data の処理と reporting を支援する Epiverse-TRACE R パッケージです。",
+      "maturity": "active"
+    },
+    {
+      "id": "epiversedashboard",
+      "name": "epiversedashboard",
+      "artifact_type": "platform",
+      "domains": [
+        "public-health",
+        "epidemiology",
+        "visualization"
+      ],
+      "modalities": [
+        "surveillance-data",
+        "line-list",
+        "tabular"
+      ],
+      "tasks": [
+        "dashboard",
+        "visualization",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "Shiny",
+        "Epiverse-TRACE"
+      ],
+      "scales": [
+        "population"
+      ],
+      "official_url": "https://github.com/epiverse-trace/epiversedashboard",
+      "repo_url": "https://github.com/epiverse-trace/epiversedashboard",
+      "summary_ja": "public-health / outbreak data の探索と可視化を行う Epiverse-TRACE 系 dashboard 実装です。",
+      "maturity": "active"
     }
   ]
 }
