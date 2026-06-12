@@ -14,7 +14,7 @@
 
 ## まず見る場所
 
-- [全件カタログ](catalog.md): 収録している 1161 件をページ上で一覧できます。
+- [全件カタログ](catalog.md): 収録している 1200 件をページ上で一覧できます。
 - [分類と運用方針](docs/catalog-policy.md): 何を収録し、何を除外するかを確認できます。
 - [スキーマ説明](docs/schema.md): 各項目に入っている情報の意味を確認できます。
 - [領域別の見取り図](docs/landscape.md): ミクロからマクロまでの対象領域を俯瞰できます。
@@ -22,7 +22,7 @@
 
 ## このサイトで見られるもの
 
-- 全 1161 件の公開 OSS / 公開リポジトリ付きカタログ
+- 全 1200 件の公開 OSS / 公開リポジトリ付きカタログ
 - 解析スケール別の件数と分類
 - 分野、データ種別、処理タスク、実行環境、公式ページ、repo へのリンク
 - 日本語の 1 文要約
@@ -32,7 +32,7 @@
 
 ## 収録状況
 
-2026-06-06 時点の継続更新カタログは 1161 件です。代表的な収録軸は以下です。
+2026-06-13 時点の継続更新カタログは 1200 件です。代表的な収録軸は以下です。
 
 - ミクロ: ゲノム、変異、RNA-seq、single-cell、spatial omics、プロテオミクス、メタボロミクス、マイクロバイオーム
 - 細胞・組織: cytometry、細胞画像、病理画像、空間トランスクリプトミクス
@@ -60,6 +60,8 @@
 2026-06-04 の更新では、nf-core の Calling Cards / panel references / taxonomy DB / DART-seq / demultiplex / de novo transcriptome / host-read detaxizing / epitope / FASTQ repair / UMI consensus / MARS-seq / MCMICRO / metapep / metatranscriptome / Nanostring / pathogen surveillance / proteogenomics DB / read simulation / references / ribonucleoside MS QC / ENA submission / TB analysis workflow、DARWIN-EU / OHDSI の OMOP drug exposure diagnostics、CDM onboarding、survival、test generation、generics、drug utilisation、result visualization、cohort characterization、self-controlled cohort、standardized analysis API、CDM DDL、GA4GH Data Connect / DRS / WES / Beacon starter kit と compliance、scverse の AnnData / MuData I/O、BioImage.IO、DICOM / MONAI Deploy / OpenNeuro miniQC、openEHR、Epiverse-TRACE の公開 repo を再確認し、公式または準公式の公開 repo と OSS 条件を確認できる 62 件を追加しました。Epiverse-TRACE linelist / epiparameter は既存収録済み、nf-core/gwas は under construction 表記、OpenClinica は今回もライセンス条件を十分に確認できないため採録しませんでした。
 
 2026-06-06 の更新では、Bioconductor の GEO / TCGA data access、annotation、DNA methylation、single-cell、CNV、RNA-seq 統計、CRAN の疫学・心理測定、FHIR flattening、R / Python neuroimaging I/O、Nipype 系 workflow engine、synthetic tabular data privacy の公開 source を再確認し、公式または準公式の公開 repo と OSS 条件を確認できる 39 件を追加しました。neuromaps は公開 repo は確認できましたが non-commercial 条件の license file であったため採録しませんでした。
+
+2026-06-13 の更新では、Bioconductor の基盤データ構造 / I/O / cache、GA4GH の htsget / refget / Crypt4GH / GKS 実装、BIDS schema / Stats Models / metadata conversion、pydicom の JPEG/DICOM plugin、DARWIN EU / OHDSI の OMOP 結果管理・可視化・phenotyping、nf-core/msproteomics の公開 repo を再確認し、公式または準公式の公開 repo を確認できる 39 件を追加しました。nf-core の未収録 repo には training、設定、under construction、非ヒト中心のものが多いため、今回の採録は human-derived bio-data analysis に直接関係するものへ絞りました。
 
 ## 対象領域
 

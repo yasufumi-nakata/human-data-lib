@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-06-06",
+  "generated_at": "2026-06-13",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -38483,6 +38483,1319 @@
       "license": "MIT",
       "maturity": "active",
       "summary_ja": "sensitive tabular data の共有を想定し、差分プライバシーを使った synthetic dataset generation を行う Python ライブラリです。"
+    },
+    {
+      "id": "biocgenerics",
+      "name": "BiocGenerics",
+      "artifact_type": "library",
+      "domains": [
+        "bioinformatics",
+        "software-infrastructure",
+        "data-standard"
+      ],
+      "modalities": [
+        "Bioconductor objects",
+        "S4"
+      ],
+      "tasks": [
+        "api",
+        "interoperability",
+        "software-infrastructure"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/BiocGenerics/",
+      "repo_url": "https://git.bioconductor.org/packages/BiocGenerics",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "Bioconductor パッケージ間で共有する S4 generic functions を定義する R / Bioconductor 基盤パッケージです。"
+    },
+    {
+      "id": "s4vectors",
+      "name": "S4Vectors",
+      "artifact_type": "library",
+      "domains": [
+        "bioinformatics",
+        "data-model",
+        "software-infrastructure"
+      ],
+      "modalities": [
+        "vector-like data",
+        "S4"
+      ],
+      "tasks": [
+        "data-structure",
+        "container",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/S4Vectors/",
+      "repo_url": "https://git.bioconductor.org/packages/S4Vectors",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "Bioconductor の vector-like / list-like container を提供し、ゲノム・オミクス系 S4 データ構造の土台になる R パッケージです。"
+    },
+    {
+      "id": "iranges",
+      "name": "IRanges",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "bioinformatics",
+        "data-model"
+      ],
+      "modalities": [
+        "integer ranges",
+        "genomic intervals"
+      ],
+      "tasks": [
+        "data-structure",
+        "interval-operations",
+        "annotation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/IRanges/",
+      "repo_url": "https://git.bioconductor.org/packages/IRanges",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "integer range と interval 操作を扱い、GenomicRanges などのゲノム区間解析を支える Bioconductor 基盤パッケージです。"
+    },
+    {
+      "id": "xvector",
+      "name": "XVector",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "bioinformatics",
+        "data-model"
+      ],
+      "modalities": [
+        "sequences",
+        "external-memory vectors"
+      ],
+      "tasks": [
+        "data-structure",
+        "sequence-handling",
+        "io"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/XVector/",
+      "repo_url": "https://git.bioconductor.org/packages/XVector",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "DNA/RNA 配列などの大きな vector-like データを外部表現で扱う Bioconductor の配列データ基盤です。"
+    },
+    {
+      "id": "genomeinfodb",
+      "name": "GenomeInfoDb",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "annotation",
+        "data-standard"
+      ],
+      "modalities": [
+        "genome annotations",
+        "chromosome names"
+      ],
+      "tasks": [
+        "metadata",
+        "identifier-normalization",
+        "annotation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/GenomeInfoDb/",
+      "repo_url": "https://git.bioconductor.org/packages/GenomeInfoDb",
+      "license": "Artistic-2.0",
+      "maturity": "established",
+      "summary_ja": "ゲノム build や chromosome naming style を扱い、Bioconductor でゲノム注釈の整合を取るための R パッケージです。"
+    },
+    {
+      "id": "biocparallel",
+      "name": "BiocParallel",
+      "artifact_type": "library",
+      "domains": [
+        "bioinformatics",
+        "workflow",
+        "software-infrastructure"
+      ],
+      "modalities": [
+        "Bioconductor workflows",
+        "parallel tasks"
+      ],
+      "tasks": [
+        "parallel-computing",
+        "workflow",
+        "execution"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/BiocParallel/",
+      "repo_url": "https://git.bioconductor.org/packages/BiocParallel",
+      "license": "GPL-2 | GPL-3 | BSL-1.0",
+      "maturity": "established",
+      "summary_ja": "Bioconductor 解析で共通に使う parallel evaluation backend を提供する R パッケージです。"
+    },
+    {
+      "id": "biocfilecache",
+      "name": "BiocFileCache",
+      "artifact_type": "library",
+      "domains": [
+        "data-management",
+        "reproducibility",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "remote files",
+        "local cache"
+      ],
+      "tasks": [
+        "data-access",
+        "caching",
+        "reproducibility"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/BiocFileCache/",
+      "repo_url": "https://git.bioconductor.org/packages/BiocFileCache",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "remote file や解析資産をローカルで管理し、Bioconductor workflow の再取得・再利用を支える cache パッケージです。"
+    },
+    {
+      "id": "biocio",
+      "name": "BiocIO",
+      "artifact_type": "library",
+      "domains": [
+        "bioinformatics",
+        "io",
+        "software-infrastructure"
+      ],
+      "modalities": [
+        "biomedical files",
+        "Bioconductor objects"
+      ],
+      "tasks": [
+        "io",
+        "import",
+        "export",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/BiocIO/",
+      "repo_url": "https://git.bioconductor.org/packages/BiocIO",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "Bioconductor パッケージで共通に使う import / export interface を定義する R I/O 基盤です。"
+    },
+    {
+      "id": "annotationfilter",
+      "name": "AnnotationFilter",
+      "artifact_type": "library",
+      "domains": [
+        "annotation",
+        "genomics",
+        "data-access"
+      ],
+      "modalities": [
+        "annotation resources",
+        "genomic metadata"
+      ],
+      "tasks": [
+        "query",
+        "filtering",
+        "annotation"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/AnnotationFilter/",
+      "repo_url": "https://git.bioconductor.org/packages/AnnotationFilter",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "Bioconductor の注釈リソースを条件式で絞り込むための filter abstraction を提供する R パッケージです。"
+    },
+    {
+      "id": "genomicdatacommons",
+      "name": "GenomicDataCommons",
+      "artifact_type": "library",
+      "domains": [
+        "cancer-genomics",
+        "clinical-genomics",
+        "data-access"
+      ],
+      "modalities": [
+        "NCI GDC",
+        "TCGA",
+        "genomic-data"
+      ],
+      "tasks": [
+        "data-access",
+        "query",
+        "metadata"
+      ],
+      "ecosystems": [
+        "R",
+        "Bioconductor"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://bioconductor.org/packages/GenomicDataCommons/",
+      "repo_url": "https://git.bioconductor.org/packages/GenomicDataCommons",
+      "license": "Artistic-2.0",
+      "maturity": "active",
+      "summary_ja": "NCI Genomic Data Commons の症例・ファイル・分子データ metadata を R から検索、取得する Bioconductor パッケージです。"
+    },
+    {
+      "id": "ga4gh-htsget",
+      "name": "GA4GH htsget",
+      "artifact_type": "standard",
+      "domains": [
+        "genomics",
+        "data-access",
+        "data-standard"
+      ],
+      "modalities": [
+        "HTS",
+        "BAM",
+        "CRAM",
+        "VCF"
+      ],
+      "tasks": [
+        "data-access",
+        "api",
+        "streaming",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python",
+        "OpenAPI"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/htsget",
+      "repo_url": "https://github.com/ga4gh/htsget",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "BAM/CRAM/VCF などの high-throughput sequencing data を部分取得するための GA4GH API 仕様と Python client 実装です。"
+    },
+    {
+      "id": "ga4gh-refget",
+      "name": "GA4GH Refget",
+      "artifact_type": "standard",
+      "domains": [
+        "genomics",
+        "data-standard",
+        "data-access"
+      ],
+      "modalities": [
+        "reference sequences",
+        "API"
+      ],
+      "tasks": [
+        "data-access",
+        "identifier-resolution",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "OpenAPI"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://ga4gh.github.io/refget/",
+      "repo_url": "https://github.com/ga4gh/refget",
+      "maturity": "active",
+      "summary_ja": "sequence checksum などから参照配列を一貫して取得するための GA4GH Reference Retrieval API 仕様です。"
+    },
+    {
+      "id": "ga4gh-crypt4gh",
+      "name": "GA4GH Crypt4GH",
+      "artifact_type": "standard",
+      "domains": [
+        "genomics",
+        "privacy",
+        "data-standard"
+      ],
+      "modalities": [
+        "encrypted files",
+        "genomic-data"
+      ],
+      "tasks": [
+        "encryption",
+        "secure-data-sharing",
+        "data-standard"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/ga4gh-crypt4gh",
+      "repo_url": "https://github.com/ga4gh/ga4gh-crypt4gh",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "genomic data file を streaming 可能な形で暗号化・共有するための GA4GH ファイル形式と実装です。"
+    },
+    {
+      "id": "ga4gh-sdk",
+      "name": "GA4GH SDK",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "data-access",
+        "interoperability"
+      ],
+      "modalities": [
+        "GA4GH APIs",
+        "cloud-data"
+      ],
+      "tasks": [
+        "api-client",
+        "cli",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/ga4gh-sdk",
+      "repo_url": "https://github.com/ga4gh/ga4gh-sdk",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "複数の GA4GH API service を Python SDK と CLI から扱うための汎用実装です。"
+    },
+    {
+      "id": "ga4gh-gks-core",
+      "name": "GA4GH GKS Core",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "data-standard"
+      ],
+      "modalities": [
+        "GKS",
+        "variants",
+        "schemas"
+      ],
+      "tasks": [
+        "data-model",
+        "schema",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python",
+        "JSON Schema"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/gks-core",
+      "repo_url": "https://github.com/ga4gh/gks-core",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "GA4GH Genomic Knowledge Standards の各仕様で共有する core classes と schema を提供する Python パッケージです。"
+    },
+    {
+      "id": "ga4gh-gks-validator",
+      "name": "GA4GH GKS Validator",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "data-standard"
+      ],
+      "modalities": [
+        "GKS",
+        "variants",
+        "JSON"
+      ],
+      "tasks": [
+        "validation",
+        "schema",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/gks-validator",
+      "repo_url": "https://github.com/ga4gh/gks-validator",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "GA4GH Genomic Knowledge Standards に沿った variation knowledge object を検証する Python validator です。"
+    },
+    {
+      "id": "ga4gh-cat-vrs-python",
+      "name": "GA4GH Cat-VRS Python",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "data-standard"
+      ],
+      "modalities": [
+        "categorical variation",
+        "VRS",
+        "Python objects"
+      ],
+      "tasks": [
+        "data-model",
+        "annotation",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/cat-vrs/",
+      "repo_url": "https://github.com/ga4gh/cat-vrs-python",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "Cat-VRS の categorical variation concept を Python object として扱うための GA4GH 実装です。"
+    },
+    {
+      "id": "ga4gh-va-spec-python",
+      "name": "GA4GH VA Spec Python",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "annotation"
+      ],
+      "modalities": [
+        "variant annotations",
+        "Python objects"
+      ],
+      "tasks": [
+        "annotation",
+        "data-model",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/va-spec/",
+      "repo_url": "https://github.com/ga4gh/va-spec-python",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "GA4GH Variation Annotation specification の data model を Python で扱うための実装です。"
+    },
+    {
+      "id": "bids-schema",
+      "name": "BIDS Schema",
+      "artifact_type": "standard",
+      "domains": [
+        "neuroimaging",
+        "neurophysiology",
+        "data-standard"
+      ],
+      "modalities": [
+        "BIDS",
+        "schema",
+        "metadata"
+      ],
+      "tasks": [
+        "schema",
+        "validation",
+        "metadata"
+      ],
+      "ecosystems": [
+        "BIDS",
+        "JSON"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/bids-standard/bids-schema",
+      "repo_url": "https://github.com/bids-standard/bids-schema",
+      "license": "CC-BY-4.0",
+      "maturity": "active",
+      "summary_ja": "BIDS specification を機械可読 schema として管理し、validator や周辺ツールから利用できる形にする公式リポジトリです。"
+    },
+    {
+      "id": "bids-stats-models",
+      "name": "BIDS Stats Models",
+      "artifact_type": "standard",
+      "domains": [
+        "neuroimaging",
+        "statistics",
+        "data-standard"
+      ],
+      "modalities": [
+        "BIDS",
+        "statistical models",
+        "JSON"
+      ],
+      "tasks": [
+        "model-specification",
+        "statistics",
+        "reproducibility"
+      ],
+      "ecosystems": [
+        "BIDS",
+        "JSON"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person",
+        "infrastructure"
+      ],
+      "official_url": "https://bids-standard.github.io/stats-models",
+      "repo_url": "https://github.com/bids-standard/stats-models",
+      "maturity": "active",
+      "summary_ja": "BIDS dataset に対する統計モデルを JSON で記述し、neuroimaging 解析の再現性を高める仕様です。"
+    },
+    {
+      "id": "pybids-reports",
+      "name": "PyBIDS Reports",
+      "artifact_type": "library",
+      "domains": [
+        "neuroimaging",
+        "data-standard",
+        "reporting"
+      ],
+      "modalities": [
+        "BIDS",
+        "MRI",
+        "metadata"
+      ],
+      "tasks": [
+        "reporting",
+        "metadata",
+        "documentation"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://pybids-reports.readthedocs.io/",
+      "repo_url": "https://github.com/bids-standard/pybids-reports",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "BIDS dataset の metadata から methods/report text を自動生成する PyBIDS 系 Python パッケージです。"
+    },
+    {
+      "id": "bids2nda",
+      "name": "bids2nda",
+      "artifact_type": "tool",
+      "domains": [
+        "neuroimaging",
+        "data-sharing",
+        "data-standard"
+      ],
+      "modalities": [
+        "BIDS",
+        "NDA metadata"
+      ],
+      "tasks": [
+        "metadata-conversion",
+        "data-sharing",
+        "submission"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/bids-standard/bids2nda",
+      "repo_url": "https://github.com/bids-standard/bids2nda",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "BIDS dataset から National Data Archive 向け metadata representation を作成する変換ツールです。"
+    },
+    {
+      "id": "bids2isatab",
+      "name": "bids2isatab",
+      "artifact_type": "tool",
+      "domains": [
+        "neuroimaging",
+        "metadata",
+        "data-standard"
+      ],
+      "modalities": [
+        "BIDS",
+        "ISA-Tab"
+      ],
+      "tasks": [
+        "metadata-conversion",
+        "interoperability",
+        "data-sharing"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/bids-standard/bids2isatab",
+      "repo_url": "https://github.com/bids-standard/bids2isatab",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "BIDS dataset の metadata を ISA-Tab 互換形式へ抽出する公式変換ツールです。"
+    },
+    {
+      "id": "eye2bids",
+      "name": "eye2bids",
+      "artifact_type": "tool",
+      "domains": [
+        "eye-tracking",
+        "behavior",
+        "data-standard"
+      ],
+      "modalities": [
+        "eye-tracking",
+        "BIDS"
+      ],
+      "tasks": [
+        "data-conversion",
+        "metadata",
+        "standardization"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS"
+      ],
+      "scales": [
+        "behavioral",
+        "whole-person",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/bids-standard/eye2bids",
+      "repo_url": "https://github.com/bids-standard/eye2bids",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "eye-tracking data を BIDS BEP20 互換の構成へ変換する Python ツールです。"
+    },
+    {
+      "id": "pybidsprov",
+      "name": "pybidsprov",
+      "artifact_type": "library",
+      "domains": [
+        "neuroimaging",
+        "provenance",
+        "data-standard"
+      ],
+      "modalities": [
+        "BIDS",
+        "BIDS-Prov"
+      ],
+      "tasks": [
+        "provenance",
+        "metadata",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/bids-standard/pybidsprov",
+      "repo_url": "https://github.com/bids-standard/pybidsprov",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "BIDS-Prov provenance 情報を Python から扱うための BIDS 標準周辺ライブラリです。"
+    },
+    {
+      "id": "pylibjpeg",
+      "name": "pylibjpeg",
+      "artifact_type": "library",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "io"
+      ],
+      "modalities": [
+        "DICOM",
+        "JPEG",
+        "compressed pixel data"
+      ],
+      "tasks": [
+        "decoding",
+        "io",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "DICOM",
+        "pydicom"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/pydicom/pylibjpeg",
+      "repo_url": "https://github.com/pydicom/pylibjpeg",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "pydicom と連携して JPEG 系の DICOM pixel data を復号するための Python plugin framework です。"
+    },
+    {
+      "id": "pylibjpeg-openjpeg",
+      "name": "pylibjpeg-openjpeg",
+      "artifact_type": "library",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "io"
+      ],
+      "modalities": [
+        "DICOM",
+        "JPEG 2000",
+        "HTJ2K"
+      ],
+      "tasks": [
+        "decoding",
+        "io",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "DICOM",
+        "pydicom"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/pydicom/pylibjpeg-openjpeg",
+      "repo_url": "https://github.com/pydicom/pylibjpeg-openjpeg",
+      "maturity": "active",
+      "summary_ja": "pylibjpeg から OpenJPEG を使い、DICOM の JPEG 2000 / HTJ2K pixel data を扱う Python plugin です。"
+    },
+    {
+      "id": "pylibjpeg-libjpeg",
+      "name": "pylibjpeg-libjpeg",
+      "artifact_type": "library",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "io"
+      ],
+      "modalities": [
+        "DICOM",
+        "JPEG",
+        "JPEG-LS"
+      ],
+      "tasks": [
+        "decoding",
+        "io",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "DICOM",
+        "pydicom"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/pydicom/pylibjpeg-libjpeg",
+      "repo_url": "https://github.com/pydicom/pylibjpeg-libjpeg",
+      "maturity": "active",
+      "summary_ja": "pylibjpeg から libjpeg 系 codec を使い、DICOM の JPEG / JPEG-LS pixel data を扱う Python plugin です。"
+    },
+    {
+      "id": "pylibjpeg-rle",
+      "name": "pylibjpeg-rle",
+      "artifact_type": "library",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "io"
+      ],
+      "modalities": [
+        "DICOM",
+        "RLE",
+        "compressed pixel data"
+      ],
+      "tasks": [
+        "decoding",
+        "io",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "DICOM",
+        "pydicom"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/pydicom/pylibjpeg-rle",
+      "repo_url": "https://github.com/pydicom/pylibjpeg-rle",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "pydicom/pylibjpeg と連携して DICOM RLE compressed pixel data を高速に復号する Python plugin です。"
+    },
+    {
+      "id": "pyjpegls",
+      "name": "pyjpegls",
+      "artifact_type": "library",
+      "domains": [
+        "medical-imaging",
+        "DICOM",
+        "io"
+      ],
+      "modalities": [
+        "JPEG-LS",
+        "DICOM",
+        "pixel data"
+      ],
+      "tasks": [
+        "decoding",
+        "encoding",
+        "io"
+      ],
+      "ecosystems": [
+        "Python",
+        "DICOM"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/pydicom/pyjpegls",
+      "repo_url": "https://github.com/pydicom/pyjpegls",
+      "maturity": "active",
+      "summary_ja": "CharLS を Python から利用し、JPEG-LS 画像データの encode / decode を行う pydicom organization のライブラリです。"
+    },
+    {
+      "id": "treatmentpatterns",
+      "name": "TreatmentPatterns",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "OMOP"
+      ],
+      "modalities": [
+        "OMOP CDM",
+        "drug exposure",
+        "cohorts"
+      ],
+      "tasks": [
+        "treatment-pattern-analysis",
+        "cohort-analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "R",
+        "DARWIN-EU",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://darwin-eu.github.io/TreatmentPatterns/",
+      "repo_url": "https://github.com/darwin-eu/TreatmentPatterns",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "OMOP CDM 上の対象集団について治療シーケンスや treatment pattern を集計・可視化する DARWIN EU R パッケージです。"
+    },
+    {
+      "id": "pregnancyidentifier",
+      "name": "PregnancyIdentifier",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "phenotyping"
+      ],
+      "modalities": [
+        "OMOP CDM",
+        "pregnancy records"
+      ],
+      "tasks": [
+        "phenotype-identification",
+        "episode-construction",
+        "cohort-analysis"
+      ],
+      "ecosystems": [
+        "R",
+        "DARWIN-EU",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://darwin-eu-dev.github.io/PregnancyIdentifier/",
+      "repo_url": "https://github.com/darwin-eu/PregnancyIdentifier",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "OMOP CDM data から HIPPS algorithm に基づいて pregnancy episode を同定する DARWIN EU R パッケージです。"
+    },
+    {
+      "id": "dashboardexport",
+      "name": "DashboardExport",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "data-quality",
+        "OMOP"
+      ],
+      "modalities": [
+        "OMOP CDM",
+        "Achilles results"
+      ],
+      "tasks": [
+        "dashboard-export",
+        "descriptive-statistics",
+        "data-quality"
+      ],
+      "ecosystems": [
+        "R",
+        "DARWIN-EU",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/darwin-eu/DashboardExport",
+      "repo_url": "https://github.com/darwin-eu/DashboardExport",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "Achilles results の一部から DARWIN EU Database Dashboard 向けの descriptive statistics を export する R パッケージです。"
+    },
+    {
+      "id": "omopsketch",
+      "name": "OmopSketch",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "data-quality",
+        "OMOP"
+      ],
+      "modalities": [
+        "OMOP CDM",
+        "cohorts",
+        "database metadata"
+      ],
+      "tasks": [
+        "characterization",
+        "visualization",
+        "feasibility-assessment"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://OHDSI.github.io/OmopSketch/",
+      "repo_url": "https://github.com/OHDSI/OmopSketch",
+      "license": "Apache-2.0",
+      "maturity": "stable",
+      "summary_ja": "OMOP CDM instance を特徴づけ、特定の clinical question や study に使えるかを可視化・評価する R パッケージです。"
+    },
+    {
+      "id": "omopviewer",
+      "name": "OmopViewer",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "visualization",
+        "OMOP"
+      ],
+      "modalities": [
+        "OMOP results",
+        "summarised_result"
+      ],
+      "tasks": [
+        "result-visualization",
+        "shiny-app",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI",
+        "OMOP",
+        "Shiny"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://ohdsi.github.io/OmopViewer/",
+      "repo_url": "https://github.com/OHDSI/OmopViewer",
+      "license": "Apache-2.0",
+      "maturity": "experimental",
+      "summary_ja": "OMOP analysis の summarised_result 形式から Shiny app を作り、study results を可視化する R パッケージです。"
+    },
+    {
+      "id": "resultmodelmanager",
+      "name": "ResultModelManager",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "data-management",
+        "OMOP"
+      ],
+      "modalities": [
+        "OHDSI results",
+        "SQL databases"
+      ],
+      "tasks": [
+        "result-model-management",
+        "migration",
+        "export"
+      ],
+      "ecosystems": [
+        "R",
+        "OHDSI",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://ohdsi.github.io/ResultModelManager/",
+      "repo_url": "https://github.com/OHDSI/ResultModelManager",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "OHDSI 解析結果の SQL data model migration、export/import、結果管理を支援する R パッケージです。"
+    },
+    {
+      "id": "ohdsi-common-evidence-model",
+      "name": "OHDSI CommonEvidenceModel",
+      "artifact_type": "standard",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "data-model"
+      ],
+      "modalities": [
+        "evidence",
+        "drug-outcome relationships"
+      ],
+      "tasks": [
+        "data-model",
+        "standardization",
+        "evidence-synthesis"
+      ],
+      "ecosystems": [
+        "OHDSI",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/OHDSI/CommonEvidenceModel",
+      "repo_url": "https://github.com/OHDSI/CommonEvidenceModel",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "drug-outcome relationship などの evidence を複数ソース間で標準化するための OHDSI data model です。"
+    },
+    {
+      "id": "pycdmconnector",
+      "name": "pyCDMConnector",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "OMOP",
+        "data-access"
+      ],
+      "modalities": [
+        "OMOP CDM",
+        "cohort tables",
+        "Ibis tables"
+      ],
+      "tasks": [
+        "query",
+        "data-access",
+        "cohort-table"
+      ],
+      "ecosystems": [
+        "Python",
+        "OHDSI",
+        "OMOP"
+      ],
+      "scales": [
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://ohdsi.github.io/pyCDMConnector/",
+      "repo_url": "https://github.com/OHDSI/pyCDMConnector",
+      "maturity": "active",
+      "notes": "README notes early development and not production-ready status.",
+      "summary_ja": "OMOP CDM tables を Python / Ibis から lazy query し、cohort table や metadata を扱う OHDSI の Python 実装です。"
+    },
+    {
+      "id": "nf-core-msproteomics",
+      "name": "nf-core/msproteomics",
+      "artifact_type": "workflow",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry",
+        "workflow"
+      ],
+      "modalities": [
+        "LC-MS/MS",
+        "proteomics",
+        "sample sheet"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quantification",
+        "workflow"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker",
+        "conda"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/nf-core/msproteomics",
+      "repo_url": "https://github.com/nf-core/msproteomics",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "mass spectrometry based proteomics の raw instrument data から peptide / protein / ion matrix を作る nf-core Nextflow workflow です。"
     }
   ]
 }
