@@ -30,6 +30,8 @@
 
 2026-06-06 の更新では、GEOquery、TCGAbiolinks、AnnotationDbi、ensembldb、ExperimentHub、ChAMP、missMethyl、DMRcate、dmrseq、wateRmelon、CNVRanger、Gviz、DEGreport、apeglm、IHW、RUVSeq を追加し、GEO / TCGA data access、Bioconductor annotation database、DNA methylation array / bisulfite sequencing、CNV、RNA-seq 統計・可視化の抜けを補いました。
 
+2026-06-13 の更新では、BiocGenerics、S4Vectors、IRanges、XVector、GenomeInfoDb、BiocParallel、BiocFileCache、BiocIO、AnnotationFilter、GenomicDataCommons を追加し、Bioconductor の S4 container、range / sequence data model、parallel execution、file cache、I/O、annotation filter、NCI GDC access を molecular / cellular / infrastructure の基盤として検索できるようにしました。さらに GA4GH htsget、Refget、Crypt4GH、GA4GH SDK、GKS Core / Validator、Cat-VRS Python、VA Spec Python、nf-core/msproteomics を追加し、sequencing data access、reference retrieval、secure genomic file sharing、genomic knowledge standard 実装、mass-spectrometry proteomics workflow の抜けを補いました。
+
 ## cellular and tissue
 
 single-cell、spatial omics、cytometry、細胞画像、病理画像は、分子特徴と細胞/組織構造を接続する中間尺度です。Scanpy、Seurat、SpatialData、Cellpose、StarDist、FlowKit、pycytominer などを同じ尺度タグで横断検索できるようにしています。
@@ -88,6 +90,8 @@ Neo、odML、Braindecode、Plastimatch、Connectome Workbench を追加し、神
 
 2026-06-06 の更新では、ANTsPy、RNifti、oro.nifti、tractor、Pydra を追加し、Python ANTs registration、R / C++ NIfTI I/O、MRI / tractography data manipulation、Nipype 2.0 系 dataflow engine を organ-system / clinical / infrastructure で検索できるようにしました。neuromaps は公開 repo を確認しましたが non-commercial 条件の license file であったため採録しませんでした。
 
+2026-06-13 の更新では、BIDS Schema、BIDS Stats Models、PyBIDS Reports、bids2nda、bids2isatab、eye2bids、pybidsprov を追加し、BIDS の machine-readable schema、statistical model specification、methods/report generation、NDA / ISA-Tab metadata conversion、eye-tracking BIDS conversion、BIDS-Prov provenance を organ-system / behavioral / infrastructure で検索できるようにしました。加えて pylibjpeg、pylibjpeg-openjpeg、pylibjpeg-libjpeg、pylibjpeg-rle、pyjpegls を追加し、pydicom 周辺の DICOM JPEG / JPEG 2000 / JPEG-LS / RLE pixel data I/O を clinical imaging 側から拾えるようにしました。
+
 ## whole-person and clinical
 
 臨床データは EHR そのもの、FHIR/OMOP の標準、phenotyping、clinical NLP、survival analysis が分かれます。生データを扱う前に、同意、匿名化、アクセス権、監査証跡を明確にする必要があります。
@@ -115,6 +119,8 @@ Inferno Framework と Archie も追加し、FHIR conformance testing と openEHR
 2026-06-04 の更新では、DARWIN-EU / OHDSI の DrugExposureDiagnostics、CdmOnboarding、CohortSurvival、TestGenerator、omopgenerics、DrugUtilisation、visOmopResults、CohortCharacteristics、SelfControlledCohort、StandardizedAnalysisAPI、CdmDdlBase、CohortCharacterization を追加し、OMOP drug exposure diagnostics、CDM onboarding、survival analysis、study testing、R object generics、drug utilisation、study result visualization、cohort characterization、self-controlled cohort、standardized analysis exchange、CDM DDL generation を clinical / population / infrastructure で検索できるようにしました。openEHR Reference Models と Java Model Stack も追加し、FHIR / OMOP に加えて openEHR data model の公式 repo coverage を補いました。
 
 2026-06-06 の更新では、fhircrackr、epiR、epitools、Epi を追加し、FHIR XML bundle の R data.frame 化、疫学指標・association measure、cohort / registry follow-up の Lexis / rate / survival analysis を clinical / population 側から補いました。
+
+2026-06-13 の更新では、TreatmentPatterns、PregnancyIdentifier、DashboardExport、OmopSketch、OmopViewer、ResultModelManager、OHDSI CommonEvidenceModel、pyCDMConnector を追加し、OMOP CDM 上の treatment pattern、pregnancy episode phenotyping、Achilles result export、database characterization、summarised_result visualization、result model migration、evidence data model、Python からの CDM query を clinical / population / infrastructure で検索できるようにしました。
 
 ## behavior and psychometrics
 
@@ -191,3 +197,5 @@ Synthcity、Substra、Toil、miniwdl を追加し、synthetic data、federated a
 2026-06-04 の更新では、nf-core/detaxizer、GA4GH DRS / WES / Beacon starter kit と compliance suite、BioImage.IO specification、openEHR computable reference model を追加し、host sequence reduction、standard implementation testing、model metadata validation、clinical record model governance の infrastructure coverage を補いました。
 
 2026-06-06 の更新では、DataSynthesizer を追加し、sensitive tabular data に対する differential privacy based synthetic data generation を clinical / population / infrastructure の privacy-preserving data sharing として検索できるようにしました。
+
+2026-06-13 の更新では、GA4GH Crypt4GH、htsget、refget、SDK、GKS 関連実装を追加し、privacy-preserving genomic file sharing、distributed sequencing data access、reference sequence retrieval、genomic knowledge standard validation を governance / infrastructure 側からも追跡できるようにしました。

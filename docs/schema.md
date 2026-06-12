@@ -7,7 +7,7 @@
 ```json
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-06-06",
+  "generated_at": "2026-06-13",
   "scope_note": "説明",
   "entries": []
 }
