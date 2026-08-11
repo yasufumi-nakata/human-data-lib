@@ -2,24 +2,24 @@
 
 このページは `libraries.json` から生成した、人間由来バイオデータ解析カタログの全件表示です。JSON を直接読まなくても、公開ページ上で全項目を確認できます。
 
-- 項目数: 1200
-- カタログ生成日: 2026-06-13
+- 項目数: 1211
+- カタログ生成日: 2026-08-12
 - スキーマ: 0.1.0
 
 ## 解析スケール別件数
 
 | Scale | Count |
 | --- | ---: |
-| `molecular` | 480 |
-| `cellular` | 211 |
-| `tissue` | 104 |
-| `organ-system` | 210 |
-| `whole-person` | 176 |
-| `behavioral` | 86 |
+| `molecular` | 483 |
+| `cellular` | 214 |
+| `tissue` | 106 |
+| `organ-system` | 215 |
+| `whole-person` | 179 |
+| `behavioral` | 89 |
 | `clinical` | 379 |
 | `population` | 399 |
 | `environmental` | 75 |
-| `infrastructure` | 462 |
+| `infrastructure` | 468 |
 
 ## 全項目
 
@@ -652,7 +652,7 @@
 | `seqtk` | [seqtk](https://github.com/lh3/seqtk) | `tool` | `molecular` | `bioinformatics`<br>`genomics` | `FASTA`<br>`FASTQ`<br>`sequence` | `filtering`<br>`subsampling`<br>`format-conversion` | `C`<br>`command-line` | [公式](https://github.com/lh3/seqtk) | [repo](https://github.com/lh3/seqtk) | FASTA/FASTQ の subsampling、trimming、変換を軽量に行う sequencing utility です。 |
 | `opencga` | [OpenCGA](https://opencga.readthedocs.io/) | `platform` | `molecular`<br>`clinical`<br>`infrastructure` | `genomics`<br>`clinical-genomics`<br>`data-management` | `variants`<br>`alignments`<br>`phenotypes` | `storage`<br>`query`<br>`analysis`<br>`data-management` | `Java`<br>`REST`<br>`Docker` | [公式](https://opencga.readthedocs.io/) | [repo](https://github.com/opencb/opencga) | 大規模 genomic data の保存、索引、sample metadata 管理、query、解析実行をまとめる open-source platform です。 |
 | `cellbase` | [CellBase](https://docs.cellbase.opencb.org/) | `platform` | `molecular`<br>`clinical`<br>`infrastructure` | `genomics`<br>`annotation`<br>`variant-analysis` | `variants`<br>`genome-annotation`<br>`sequence` | `annotation`<br>`query`<br>`api` | `Java`<br>`REST` | [公式](https://docs.cellbase.opencb.org/) | [repo](https://github.com/opencb/cellbase) | genomic annotation と clinical variant prioritization に使う情報を統合し、REST API で検索できる OpenCB の annotation database です。 |
-| `rapids-singlecell` | [RAPIDS-SingleCell](https://rapids-singlecell.readthedocs.io/) | `library` | `cellular`<br>`molecular` | `single-cell`<br>`machine-learning` | `single-cell RNA-seq`<br>`AnnData` | `quality-control`<br>`clustering`<br>`visualization`<br>`scaling` | `Python`<br>`RAPIDS`<br>`scverse` | [公式](https://rapids-singlecell.readthedocs.io/) | [repo](https://github.com/scverse/rapids_singlecell) | AnnData ベースの single-cell 解析を GPU 上で高速化する scverse/RAPIDS 連携 library です。 |
+| `rapids-singlecell` | [RAPIDS-SingleCell](https://rapids-singlecell.readthedocs.io/) | `library` | `cellular`<br>`molecular` | `single-cell`<br>`machine-learning` | `single-cell RNA-seq`<br>`AnnData` | `quality-control`<br>`clustering`<br>`visualization`<br>`scaling` | `Python`<br>`RAPIDS`<br>`scverse` | [公式](https://rapids-singlecell.readthedocs.io/) | [repo](https://github.com/scverse/rapids-singlecell) | AnnData ベースの single-cell 解析を GPU 上で高速化する scverse/RAPIDS 連携 library です。 |
 | `scarches` | [scArches](https://docs.scarches.org/) | `library` | `cellular`<br>`molecular` | `single-cell`<br>`machine-learning` | `single-cell RNA-seq`<br>`AnnData` | `reference-mapping`<br>`integration`<br>`transfer-learning` | `Python`<br>`PyTorch`<br>`scverse` | [公式](https://docs.scarches.org/) | [repo](https://github.com/theislab/scarches) | single-cell atlas への query mapping や transfer learning を行う deep generative model library です。 |
 | `pegasus` | [Pegasus](https://pegasus.readthedocs.io/) | `platform` | `cellular`<br>`molecular` | `single-cell`<br>`transcriptomics` | `single-cell RNA-seq`<br>`count-matrix` | `quality-control`<br>`clustering`<br>`differential-expression`<br>`visualization` | `Python` | [公式](https://pegasus.readthedocs.io/) | [repo](https://github.com/lilab-bcb/pegasus) | large-scale single-cell RNA-seq の QC、clustering、差次的発現、可視化を行う Python platform です。 |
 | `liana-py` | [LIANA+](https://liana-py.readthedocs.io/) | `library` | `cellular`<br>`tissue`<br>`molecular` | `single-cell`<br>`spatial-omics`<br>`systems-biology` | `single-cell RNA-seq`<br>`spatial-transcriptomics` | `cell-cell-communication`<br>`ligand-receptor-analysis`<br>`integration` | `Python` | [公式](https://liana-py.readthedocs.io/) | [repo](https://github.com/saezlab/liana-py) | single-cell と spatial data から ligand-receptor などの cell-cell communication を統合解析する Python library です。 |
@@ -1225,6 +1225,17 @@
 | `ohdsi-common-evidence-model` | [OHDSI CommonEvidenceModel](https://github.com/OHDSI/CommonEvidenceModel) | `standard` | `clinical`<br>`population`<br>`infrastructure` | `clinical-data`<br>`observational-health`<br>`data-model` | `evidence`<br>`drug-outcome relationships` | `data-model`<br>`standardization`<br>`evidence-synthesis` | `OHDSI`<br>`OMOP` | [公式](https://github.com/OHDSI/CommonEvidenceModel) | [repo](https://github.com/OHDSI/CommonEvidenceModel) | drug-outcome relationship などの evidence を複数ソース間で標準化するための OHDSI data model です。 |
 | `pycdmconnector` | [pyCDMConnector](https://ohdsi.github.io/pyCDMConnector/) | `library` | `clinical`<br>`population`<br>`infrastructure` | `clinical-data`<br>`OMOP`<br>`data-access` | `OMOP CDM`<br>`cohort tables`<br>`Ibis tables` | `query`<br>`data-access`<br>`cohort-table` | `Python`<br>`OHDSI`<br>`OMOP` | [公式](https://ohdsi.github.io/pyCDMConnector/) | [repo](https://github.com/OHDSI/pyCDMConnector) | OMOP CDM tables を Python / Ibis から lazy query し、cohort table や metadata を扱う OHDSI の Python 実装です。 |
 | `nf-core-msproteomics` | [nf-core/msproteomics](https://github.com/nf-core/msproteomics) | `workflow` | `molecular`<br>`infrastructure` | `proteomics`<br>`mass-spectrometry`<br>`workflow` | `LC-MS/MS`<br>`proteomics`<br>`sample sheet` | `preprocessing`<br>`quantification`<br>`workflow` | `Nextflow`<br>`nf-core`<br>`Docker`<br>`conda` | [公式](https://github.com/nf-core/msproteomics) | [repo](https://github.com/nf-core/msproteomics) | mass spectrometry based proteomics の raw instrument data から peptide / protein / ion matrix を作る nf-core Nextflow workflow です。 |
+| `gget` | [gget](https://scverse.org/gget/) | `library` | `molecular`<br>`cellular`<br>`infrastructure` | `genomics`<br>`annotation`<br>`data-access` | `gene`<br>`sequence`<br>`reference-genome`<br>`single-cell RNA-seq` | `query`<br>`annotation`<br>`data-access`<br>`sequence-analysis` | `Python`<br>`command-line`<br>`scverse` | [公式](https://scverse.org/gget/) | [repo](https://github.com/scverse/gget) | ゲノム参照データベースを検索し、遺伝子・配列・注釈・発現データを取得する Python/CLI ライブラリです。 |
+| `moscot` | [moscot](https://moscot.readthedocs.io/en/stable/) | `library` | `molecular`<br>`cellular`<br>`tissue` | `single-cell`<br>`spatial-omics`<br>`multiomics` | `single-cell RNA-seq`<br>`spatial transcriptomics`<br>`multi-omics` | `trajectory`<br>`spatial-mapping`<br>`integration`<br>`optimal-transport` | `Python`<br>`scverse`<br>`JAX` | [公式](https://moscot.readthedocs.io/en/stable/) | [repo](https://github.com/theislab/moscot) | single-cell の時間・空間・複数モダリティを optimal transport で統合する Python framework です。 |
+| `mne-denoise` | [mne-denoise](https://pypi.org/project/mne-denoise/) | `library` | `organ-system` | `neurophysiology`<br>`signal-processing` | `EEG`<br>`MEG`<br>`M/EEG` | `denoising`<br>`preprocessing`<br>`artifact-correction`<br>`feature-extraction` | `Python`<br>`MNE` | [公式](https://pypi.org/project/mne-denoise/) | [repo](https://github.com/mne-tools/mne-denoise) | MNE-Python の EEG/MEG データに対して DSS や ZapLine などの denoising を行う library です。 |
+| `mne-rsa` | [MNE-RSA](https://mne.tools/mne-rsa/) | `library` | `organ-system` | `neurophysiology`<br>`neuroimaging`<br>`statistics` | `EEG`<br>`MEG`<br>`fMRI`<br>`source-estimates` | `representational-similarity`<br>`searchlight`<br>`statistics`<br>`visualization` | `Python`<br>`MNE` | [公式](https://mne.tools/mne-rsa/) | [repo](https://github.com/mne-tools/mne-rsa) | MNE-Python の EEG/MEG や fMRI データに representational similarity analysis を適用する library です。 |
+| `nireports` | [NiReports](https://nireports.readthedocs.io/) | `library` | `organ-system`<br>`infrastructure` | `neuroimaging`<br>`bioimaging`<br>`quality-control` | `MRI`<br>`fMRI`<br>`BIDS` | `reporting`<br>`quality-control`<br>`visualization` | `Python`<br>`NiPreps`<br>`PyBIDS` | [公式](https://nireports.readthedocs.io/) | [repo](https://github.com/nipreps/nireports) | NiPreps の neuroimaging 処理結果から reportlet と統合 HTML レポートを生成する Python library です。 |
+| `phys2denoise` | [phys2denoise](https://phys2denoise.readthedocs.io/) | `tool` | `organ-system`<br>`infrastructure` | `physiology`<br>`neuroimaging`<br>`signal-processing` | `physiological-recordings`<br>`fMRI`<br>`cardiac`<br>`respiration` | `preprocessing`<br>`denoising`<br>`format-conversion` | `Python`<br>`BIDS` | [公式](https://phys2denoise.readthedocs.io/) | [repo](https://github.com/physiopy/phys2denoise) | fMRI denoising のために cardiac/respiratory などの physiology data を準備する Python toolbox です。 |
+| `nf-core-sopa` | [nf-core/sopa](https://nf-co.re/sopa/) | `workflow` | `cellular`<br>`tissue`<br>`infrastructure` | `spatial-omics`<br>`bioimaging`<br>`workflow` | `spatial transcriptomics`<br>`spatial proteomics`<br>`multiplex imaging` | `preprocessing`<br>`segmentation`<br>`cell-annotation`<br>`workflow` | `Nextflow`<br>`nf-core`<br>`Docker`<br>`conda` | [公式](https://nf-co.re/sopa/) | [repo](https://github.com/nf-core/sopa) | SpatialData を出力する spatial transcriptomics / multiplex imaging 向け nf-core Nextflow workflow です。 |
+| `nf-core-daamicrobiome` | [nf-core/daamicrobiome](https://github.com/nf-core/daamicrobiome) | `workflow` | `molecular`<br>`infrastructure` | `microbiome`<br>`metagenomics`<br>`workflow` | `amplicon sequencing`<br>`microbiome count table`<br>`phyloseq` | `differential-abundance`<br>`simulation`<br>`benchmarking`<br>`workflow` | `Nextflow`<br>`nf-core`<br>`R`<br>`Docker` | [公式](https://github.com/nf-core/daamicrobiome) | [repo](https://github.com/nf-core/daamicrobiome) | 複数の differential-abundance 手法を比較して microbiome の consensus 結果を作る nf-core workflow です。 |
+| `opensim-core` | [OpenSim](https://opensim.stanford.edu/) | `tool` | `organ-system`<br>`whole-person`<br>`behavioral` | `biomechanics`<br>`behavior`<br>`physiology` | `motion-capture`<br>`kinematics`<br>`EMG`<br>`musculoskeletal-models` | `modeling`<br>`simulation`<br>`inverse-kinematics`<br>`dynamics` | `C++`<br>`Python`<br>`Java`<br>`MATLAB` | [公式](https://opensim.stanford.edu/) | [repo](https://github.com/opensim-org/opensim-core) | motion capture や EMG から人の筋骨格モデルを用いた運動学・動力学シミュレーションを行う tool です。 |
+| `opencap-core` | [OpenCap Core](https://opencap.ai/) | `workflow` | `whole-person`<br>`behavioral`<br>`infrastructure` | `biomechanics`<br>`behavior`<br>`computer-vision` | `video`<br>`motion-capture`<br>`kinematics`<br>`OpenSim` | `pose-estimation`<br>`motion-reconstruction`<br>`kinematics`<br>`format-conversion` | `Python`<br>`OpenSim`<br>`OpenPose`<br>`Docker` | [公式](https://opencap.ai/) | [repo](https://github.com/opencap-org/opencap-core) | 複数の動画から 3D marker と OpenSim 形式の人の運動学を推定する OpenCap processing workflow です。 |
+| `opencap-processing` | [OpenCap Processing](https://opencap.ai/) | `library` | `whole-person`<br>`behavioral` | `biomechanics`<br>`behavior`<br>`computer-vision` | `kinematics`<br>`kinetics`<br>`motion-capture`<br>`OpenSim` | `preprocessing`<br>`kinematics`<br>`kinetics`<br>`simulation`<br>`analysis` | `Python`<br>`OpenSim` | [公式](https://opencap.ai/) | [repo](https://github.com/opencap-org/opencap-processing) | OpenCap で取得した人の movement kinematics を解析し、OpenSim による kinetics simulation へつなぐ Python toolset です。 |
 
 ## 更新方法
 

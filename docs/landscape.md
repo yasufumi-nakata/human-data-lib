@@ -32,6 +32,8 @@
 
 2026-06-13 の更新では、BiocGenerics、S4Vectors、IRanges、XVector、GenomeInfoDb、BiocParallel、BiocFileCache、BiocIO、AnnotationFilter、GenomicDataCommons を追加し、Bioconductor の S4 container、range / sequence data model、parallel execution、file cache、I/O、annotation filter、NCI GDC access を molecular / cellular / infrastructure の基盤として検索できるようにしました。さらに GA4GH htsget、Refget、Crypt4GH、GA4GH SDK、GKS Core / Validator、Cat-VRS Python、VA Spec Python、nf-core/msproteomics を追加し、sequencing data access、reference retrieval、secure genomic file sharing、genomic knowledge standard 実装、mass-spectrometry proteomics workflow の抜けを補いました。
 
+2026-08-12 の更新では、gget と moscot を追加し、genomic reference database access、single-cell の spatial / temporal / multi-omic integration を molecular / cellular / tissue / infrastructure の横断軸から検索できるようにしました。nf-core/daamicrobiome も追加し、microbiome differential-abundance consensus workflow を補いました。
+
 ## cellular and tissue
 
 single-cell、spatial omics、cytometry、細胞画像、病理画像は、分子特徴と細胞/組織構造を接続する中間尺度です。Scanpy、Seurat、SpatialData、Cellpose、StarDist、FlowKit、pycytominer などを同じ尺度タグで横断検索できるようにしています。
@@ -92,6 +94,8 @@ Neo、odML、Braindecode、Plastimatch、Connectome Workbench を追加し、神
 
 2026-06-13 の更新では、BIDS Schema、BIDS Stats Models、PyBIDS Reports、bids2nda、bids2isatab、eye2bids、pybidsprov を追加し、BIDS の machine-readable schema、statistical model specification、methods/report generation、NDA / ISA-Tab metadata conversion、eye-tracking BIDS conversion、BIDS-Prov provenance を organ-system / behavioral / infrastructure で検索できるようにしました。加えて pylibjpeg、pylibjpeg-openjpeg、pylibjpeg-libjpeg、pylibjpeg-rle、pyjpegls を追加し、pydicom 周辺の DICOM JPEG / JPEG 2000 / JPEG-LS / RLE pixel data I/O を clinical imaging 側から拾えるようにしました。
 
+2026-08-12 の更新では、mne-denoise、MNE-RSA、NiReports、phys2denoise を追加し、M/EEG artifact suppression、representational similarity analysis、neuroimaging QC report、physiology-based fMRI denoising を organ-system / infrastructure から検索できるようにしました。mne-realtime は公式 docs が mne-lsl への移行と discontinued 状態を示すため追加していません。
+
 ## whole-person and clinical
 
 臨床データは EHR そのもの、FHIR/OMOP の標準、phenotyping、clinical NLP、survival analysis が分かれます。生データを扱う前に、同意、匿名化、アクセス権、監査証跡を明確にする必要があります。
@@ -141,6 +145,8 @@ Expyriment、JATOS、PsychoJS、Psychtoolbox-3、lavaan、OpenMx、mirt、Systol
 2026-06-02 の更新では、semTools と psychonetrics を追加し、lavaan 周辺の SEM 補助、測定不変性、psychological network model、confirmatory network analysis を whole-person / behavioral / population で検索できるようにしました。
 
 2026-06-06 の更新では、catR、lordif、ltm、mokken、sirt、eRm、WrightMap、difR を追加し、computerized adaptive testing、IRT、DIF、Mokken scale analysis、Rasch modeling、item-person map などの心理測定パッケージを whole-person / behavioral / population で検索できるようにしました。
+
+2026-08-12 の更新では、OpenSim、OpenCap Core、OpenCap Processing を追加し、motion capture、video-based pose reconstruction、human movement kinematics / kinetics を whole-person / behavioral / organ-system の対象として補いました。
 
 ## population and environmental
 

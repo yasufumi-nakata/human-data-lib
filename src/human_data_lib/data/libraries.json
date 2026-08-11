@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-06-13",
+  "generated_at": "2026-08-12",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -20479,7 +20479,7 @@
         "molecular"
       ],
       "official_url": "https://rapids-singlecell.readthedocs.io/",
-      "repo_url": "https://github.com/scverse/rapids_singlecell",
+      "repo_url": "https://github.com/scverse/rapids-singlecell",
       "license": "MIT",
       "maturity": "active",
       "summary_ja": "AnnData ベースの single-cell 解析を GPU 上で高速化する scverse/RAPIDS 連携 library です。"
@@ -39796,6 +39796,401 @@
       "license": "MIT",
       "maturity": "active",
       "summary_ja": "mass spectrometry based proteomics の raw instrument data から peptide / protein / ion matrix を作る nf-core Nextflow workflow です。"
+    },
+    {
+      "id": "gget",
+      "name": "gget",
+      "artifact_type": "library",
+      "domains": [
+        "genomics",
+        "annotation",
+        "data-access"
+      ],
+      "modalities": [
+        "gene",
+        "sequence",
+        "reference-genome",
+        "single-cell RNA-seq"
+      ],
+      "tasks": [
+        "query",
+        "annotation",
+        "data-access",
+        "sequence-analysis"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line",
+        "scverse"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://scverse.org/gget/",
+      "repo_url": "https://github.com/scverse/gget",
+      "license": "BSD-2-Clause",
+      "maturity": "active",
+      "summary_ja": "ゲノム参照データベースを検索し、遺伝子・配列・注釈・発現データを取得する Python/CLI ライブラリです。"
+    },
+    {
+      "id": "moscot",
+      "name": "moscot",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "spatial-omics",
+        "multiomics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "spatial transcriptomics",
+        "multi-omics"
+      ],
+      "tasks": [
+        "trajectory",
+        "spatial-mapping",
+        "integration",
+        "optimal-transport"
+      ],
+      "ecosystems": [
+        "Python",
+        "scverse",
+        "JAX"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://moscot.readthedocs.io/en/stable/",
+      "repo_url": "https://github.com/theislab/moscot",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "single-cell の時間・空間・複数モダリティを optimal transport で統合する Python framework です。"
+    },
+    {
+      "id": "mne-denoise",
+      "name": "mne-denoise",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "signal-processing"
+      ],
+      "modalities": [
+        "EEG",
+        "MEG",
+        "M/EEG"
+      ],
+      "tasks": [
+        "denoising",
+        "preprocessing",
+        "artifact-correction",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://pypi.org/project/mne-denoise/",
+      "repo_url": "https://github.com/mne-tools/mne-denoise",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "MNE-Python の EEG/MEG データに対して DSS や ZapLine などの denoising を行う library です。"
+    },
+    {
+      "id": "mne-rsa",
+      "name": "MNE-RSA",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "neuroimaging",
+        "statistics"
+      ],
+      "modalities": [
+        "EEG",
+        "MEG",
+        "fMRI",
+        "source-estimates"
+      ],
+      "tasks": [
+        "representational-similarity",
+        "searchlight",
+        "statistics",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://mne.tools/mne-rsa/",
+      "repo_url": "https://github.com/mne-tools/mne-rsa",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "MNE-Python の EEG/MEG や fMRI データに representational similarity analysis を適用する library です。"
+    },
+    {
+      "id": "nireports",
+      "name": "NiReports",
+      "artifact_type": "library",
+      "domains": [
+        "neuroimaging",
+        "bioimaging",
+        "quality-control"
+      ],
+      "modalities": [
+        "MRI",
+        "fMRI",
+        "BIDS"
+      ],
+      "tasks": [
+        "reporting",
+        "quality-control",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "NiPreps",
+        "PyBIDS"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://nireports.readthedocs.io/",
+      "repo_url": "https://github.com/nipreps/nireports",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "NiPreps の neuroimaging 処理結果から reportlet と統合 HTML レポートを生成する Python library です。"
+    },
+    {
+      "id": "phys2denoise",
+      "name": "phys2denoise",
+      "artifact_type": "tool",
+      "domains": [
+        "physiology",
+        "neuroimaging",
+        "signal-processing"
+      ],
+      "modalities": [
+        "physiological-recordings",
+        "fMRI",
+        "cardiac",
+        "respiration"
+      ],
+      "tasks": [
+        "preprocessing",
+        "denoising",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Python",
+        "BIDS"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://phys2denoise.readthedocs.io/",
+      "repo_url": "https://github.com/physiopy/phys2denoise",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "notes": "Repository README は開発中の project と説明しています。",
+      "summary_ja": "fMRI denoising のために cardiac/respiratory などの physiology data を準備する Python toolbox です。"
+    },
+    {
+      "id": "nf-core-sopa",
+      "name": "nf-core/sopa",
+      "artifact_type": "workflow",
+      "domains": [
+        "spatial-omics",
+        "bioimaging",
+        "workflow"
+      ],
+      "modalities": [
+        "spatial transcriptomics",
+        "spatial proteomics",
+        "multiplex imaging"
+      ],
+      "tasks": [
+        "preprocessing",
+        "segmentation",
+        "cell-annotation",
+        "workflow"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "Docker",
+        "conda"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "infrastructure"
+      ],
+      "official_url": "https://nf-co.re/sopa/",
+      "repo_url": "https://github.com/nf-core/sopa",
+      "license": "MIT",
+      "maturity": "active",
+      "notes": "nf-core の development version として公開されており、Sopa Python package とは別の Nextflow workflow です。",
+      "summary_ja": "SpatialData を出力する spatial transcriptomics / multiplex imaging 向け nf-core Nextflow workflow です。"
+    },
+    {
+      "id": "nf-core-daamicrobiome",
+      "name": "nf-core/daamicrobiome",
+      "artifact_type": "workflow",
+      "domains": [
+        "microbiome",
+        "metagenomics",
+        "workflow"
+      ],
+      "modalities": [
+        "amplicon sequencing",
+        "microbiome count table",
+        "phyloseq"
+      ],
+      "tasks": [
+        "differential-abundance",
+        "simulation",
+        "benchmarking",
+        "workflow"
+      ],
+      "ecosystems": [
+        "Nextflow",
+        "nf-core",
+        "R",
+        "Docker"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/nf-core/daamicrobiome",
+      "repo_url": "https://github.com/nf-core/daamicrobiome",
+      "license": "MIT",
+      "maturity": "active",
+      "notes": "nf-core の dev branch で公開されている microbiome differential-abundance workflow です。",
+      "summary_ja": "複数の differential-abundance 手法を比較して microbiome の consensus 結果を作る nf-core workflow です。"
+    },
+    {
+      "id": "opensim-core",
+      "name": "OpenSim",
+      "artifact_type": "tool",
+      "domains": [
+        "biomechanics",
+        "behavior",
+        "physiology"
+      ],
+      "modalities": [
+        "motion-capture",
+        "kinematics",
+        "EMG",
+        "musculoskeletal-models"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation",
+        "inverse-kinematics",
+        "dynamics"
+      ],
+      "ecosystems": [
+        "C++",
+        "Python",
+        "Java",
+        "MATLAB"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://opensim.stanford.edu/",
+      "repo_url": "https://github.com/opensim-org/opensim-core",
+      "license": "Apache-2.0",
+      "maturity": "established",
+      "summary_ja": "motion capture や EMG から人の筋骨格モデルを用いた運動学・動力学シミュレーションを行う tool です。"
+    },
+    {
+      "id": "opencap-core",
+      "name": "OpenCap Core",
+      "artifact_type": "workflow",
+      "domains": [
+        "biomechanics",
+        "behavior",
+        "computer-vision"
+      ],
+      "modalities": [
+        "video",
+        "motion-capture",
+        "kinematics",
+        "OpenSim"
+      ],
+      "tasks": [
+        "pose-estimation",
+        "motion-reconstruction",
+        "kinematics",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Python",
+        "OpenSim",
+        "OpenPose",
+        "Docker"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral",
+        "infrastructure"
+      ],
+      "official_url": "https://opencap.ai/",
+      "repo_url": "https://github.com/opencap-org/opencap-core",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "複数の動画から 3D marker と OpenSim 形式の人の運動学を推定する OpenCap processing workflow です。"
+    },
+    {
+      "id": "opencap-processing",
+      "name": "OpenCap Processing",
+      "artifact_type": "library",
+      "domains": [
+        "biomechanics",
+        "behavior",
+        "computer-vision"
+      ],
+      "modalities": [
+        "kinematics",
+        "kinetics",
+        "motion-capture",
+        "OpenSim"
+      ],
+      "tasks": [
+        "preprocessing",
+        "kinematics",
+        "kinetics",
+        "simulation",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python",
+        "OpenSim"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://opencap.ai/",
+      "repo_url": "https://github.com/opencap-org/opencap-processing",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "OpenCap で取得した人の movement kinematics を解析し、OpenSim による kinetics simulation へつなぐ Python toolset です。"
     }
   ]
 }
