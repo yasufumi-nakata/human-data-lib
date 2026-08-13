@@ -2,24 +2,24 @@
 
 このページは `libraries.json` から生成した、人間由来バイオデータ解析カタログの全件表示です。JSON を直接読まなくても、公開ページ上で全項目を確認できます。
 
-- 項目数: 1211
-- カタログ生成日: 2026-08-12
+- 項目数: 1224
+- カタログ生成日: 2026-08-13
 - スキーマ: 0.1.0
 
 ## 解析スケール別件数
 
 | Scale | Count |
 | --- | ---: |
-| `molecular` | 483 |
-| `cellular` | 214 |
-| `tissue` | 106 |
-| `organ-system` | 215 |
-| `whole-person` | 179 |
+| `molecular` | 491 |
+| `cellular` | 216 |
+| `tissue` | 107 |
+| `organ-system` | 218 |
+| `whole-person` | 181 |
 | `behavioral` | 89 |
-| `clinical` | 379 |
-| `population` | 399 |
+| `clinical` | 386 |
+| `population` | 404 |
 | `environmental` | 75 |
-| `infrastructure` | 468 |
+| `infrastructure` | 477 |
 
 ## 全項目
 
@@ -1236,6 +1236,19 @@
 | `opensim-core` | [OpenSim](https://opensim.stanford.edu/) | `tool` | `organ-system`<br>`whole-person`<br>`behavioral` | `biomechanics`<br>`behavior`<br>`physiology` | `motion-capture`<br>`kinematics`<br>`EMG`<br>`musculoskeletal-models` | `modeling`<br>`simulation`<br>`inverse-kinematics`<br>`dynamics` | `C++`<br>`Python`<br>`Java`<br>`MATLAB` | [公式](https://opensim.stanford.edu/) | [repo](https://github.com/opensim-org/opensim-core) | motion capture や EMG から人の筋骨格モデルを用いた運動学・動力学シミュレーションを行う tool です。 |
 | `opencap-core` | [OpenCap Core](https://opencap.ai/) | `workflow` | `whole-person`<br>`behavioral`<br>`infrastructure` | `biomechanics`<br>`behavior`<br>`computer-vision` | `video`<br>`motion-capture`<br>`kinematics`<br>`OpenSim` | `pose-estimation`<br>`motion-reconstruction`<br>`kinematics`<br>`format-conversion` | `Python`<br>`OpenSim`<br>`OpenPose`<br>`Docker` | [公式](https://opencap.ai/) | [repo](https://github.com/opencap-org/opencap-core) | 複数の動画から 3D marker と OpenSim 形式の人の運動学を推定する OpenCap processing workflow です。 |
 | `opencap-processing` | [OpenCap Processing](https://opencap.ai/) | `library` | `whole-person`<br>`behavioral` | `biomechanics`<br>`behavior`<br>`computer-vision` | `kinematics`<br>`kinetics`<br>`motion-capture`<br>`OpenSim` | `preprocessing`<br>`kinematics`<br>`kinetics`<br>`simulation`<br>`analysis` | `Python`<br>`OpenSim` | [公式](https://opencap.ai/) | [repo](https://github.com/opencap-org/opencap-processing) | OpenCap で取得した人の movement kinematics を解析し、OpenSim による kinetics simulation へつなぐ Python toolset です。 |
+| `ehrapy` | [ehrapy](https://ehrapy.readthedocs.io/en/stable/) | `library` | `whole-person`<br>`clinical`<br>`population`<br>`infrastructure` | `clinical-data`<br>`observational-health`<br>`statistics`<br>`data-model` | `EHR`<br>`clinical tabular data`<br>`cohort data` | `preprocessing`<br>`quality-control`<br>`imputation`<br>`statistics`<br>`cohort-analysis`<br>`visualization` | `Python`<br>`AnnData`<br>`scverse` | [公式](https://ehrapy.readthedocs.io/en/stable/) | [repo](https://github.com/theislab/ehrapy) | EHR の表形式コホートデータを AnnData ベースで前処理し、品質管理、欠測処理、統計解析、可視化まで行う Python framework です。 |
+| `fibertools-rs` | [fibertools-rs](https://fiberseq.github.io/fibertools/fibertools.html) | `tool` | `molecular`<br>`infrastructure` | `genomics`<br>`epigenomics`<br>`long-read-sequencing` | `Fiber-seq BAM`<br>`long-read sequencing` | `preprocessing`<br>`annotation`<br>`feature-extraction`<br>`visualization`<br>`quality-control` | `Rust`<br>`command-line` | [公式](https://fiberseq.github.io/fibertools/fibertools.html) | [repo](https://github.com/fiberseq/fibertools-rs) | Fiber-seq データの BAM を処理し、クロマチン関連特徴を抽出・可視化する Rust CLI tool です。 |
+| `dysgu` | [dysgu](https://kcleal.github.io/dysgu/) | `tool` | `molecular`<br>`population` | `genomics`<br>`variant-analysis`<br>`structural-variation`<br>`long-read-sequencing` | `BAM`<br>`CRAM`<br>`short-read sequencing`<br>`long-read sequencing`<br>`structural variants` | `structural-variant-calling`<br>`variant-calling`<br>`filtering`<br>`merging` | `Python`<br>`C++`<br>`command-line` | [公式](https://kcleal.github.io/dysgu/) | [repo](https://github.com/kcleal/dysgu) | short-read と long-read の alignment から structural variant を検出する Python/C++ tool です。 |
+| `pymzml` | [pymzML](https://pymzml.github.io/pymzML/) | `library` | `molecular`<br>`infrastructure` | `proteomics`<br>`mass-spectrometry`<br>`metabolomics` | `mzML`<br>`mass spectrometry`<br>`MS/MS` | `io`<br>`parsing`<br>`format-conversion`<br>`visualization` | `Python` | [公式](https://pymzml.github.io/pymzML/) | [repo](https://github.com/pymzml/pymzML) | 質量分析の mzML ファイルを Python から読み込み、スペクトルとメタデータを扱う parser library です。 |
+| `microbiomestat` | [MicrobiomeStat](https://www.microbiomestat.wiki/) | `library` | `molecular`<br>`population` | `microbiome`<br>`statistics`<br>`multi-omics` | `microbiome profiles`<br>`amplicon sequencing`<br>`metagenomics`<br>`multi-omics tables` | `differential-abundance`<br>`statistics`<br>`visualization`<br>`longitudinal-analysis`<br>`reporting` | `R` | [公式](https://www.microbiomestat.wiki/) | [repo](https://github.com/cafferychen777/MicrobiomeStat) | microbiome と multi-omics の横断研究、paired data、longitudinal data を統計解析する R package です。 |
+| `hover-net` | [HoVer-Net](https://github.com/vqdang/hover_net) | `tool` | `cellular`<br>`tissue`<br>`clinical` | `digital-pathology`<br>`bioimaging`<br>`cell-biology`<br>`machine-learning` | `H&E histology images`<br>`whole-slide images`<br>`cell nuclei` | `segmentation`<br>`classification`<br>`feature-extraction`<br>`quality-control` | `Python`<br>`PyTorch` | [公式](https://github.com/vqdang/hover_net) | [repo](https://github.com/vqdang/hover_net) | H&E 病理画像で細胞核の instance segmentation と classification を同時に行う deep-learning tool です。 |
+| `scfates` | [scFates](https://scfates.readthedocs.io/en/latest/) | `library` | `molecular`<br>`cellular` | `single-cell`<br>`trajectory-analysis`<br>`transcriptomics`<br>`statistics` | `single-cell RNA-seq`<br>`AnnData` | `trajectory`<br>`pseudotime`<br>`branching`<br>`differential-expression`<br>`visualization` | `Python`<br>`Scanpy`<br>`scverse` | [公式](https://scfates.readthedocs.io/en/latest/) | [repo](https://github.com/LouisFaure/scFates) | single-cell RNA-seq の細胞状態から trajectory、pseudotime、分岐構造を推定する Python library です。 |
+| `survivor` | [SURVIVOR](https://github.com/fritzsedlazeck/SURVIVOR/wiki) | `tool` | `molecular`<br>`population`<br>`infrastructure` | `genomics`<br>`variant-analysis`<br>`structural-variation`<br>`benchmarking` | `VCF`<br>`structural variants`<br>`short-read sequencing`<br>`long-read sequencing` | `simulation`<br>`benchmarking`<br>`merging`<br>`variant-comparison`<br>`format-conversion` | `C++`<br>`command-line` | [公式](https://github.com/fritzsedlazeck/SURVIVOR/wiki) | [repo](https://github.com/fritzsedlazeck/SURVIVOR) | structural variant の simulation、比較、統合、benchmarking を行う C++ CLI tool です。 |
+| `openvital` | [OpenVital](https://vitaldb.net/) | `library` | `organ-system`<br>`whole-person`<br>`clinical`<br>`infrastructure` | `physiology`<br>`cardiology`<br>`neurophysiology`<br>`clinical-data`<br>`wearables` | `ECG`<br>`PPG`<br>`ABP`<br>`EEG`<br>`NIRS`<br>`capnography` | `preprocessing`<br>`feature-extraction`<br>`quality-control`<br>`annotation`<br>`api`<br>`interoperability` | `Python`<br>`VitalDB` | [公式](https://vitaldb.net/) | [repo](https://github.com/vitaldb/openvital) | VitalDB の ECG、PPG、血圧、EEG、NIRS、capnography などの生体信号を Python で扱う open-source library です。 |
+| `vitalutils` | [vitalutils](https://vitaldb.github.io/vitalutils/) | `library` | `organ-system`<br>`clinical`<br>`infrastructure` | `physiology`<br>`clinical-data`<br>`data-access`<br>`data-standard` | `VITAL files`<br>`waveforms`<br>`ECG`<br>`PPG`<br>`ABP`<br>`clinical data` | `io`<br>`data-access`<br>`format-conversion`<br>`visualization`<br>`data-model` | `Python`<br>`VitalDB` | [公式](https://vitaldb.github.io/vitalutils/) | [repo](https://github.com/vitaldb/vitalutils) | VitalDB の VITAL ファイル、波形、臨床・検査データを読み書きして扱う utility library です。 |
+| `openecg` | [OpenECG](https://github.com/vitaldb/openecg) | `library` | `organ-system`<br>`clinical`<br>`infrastructure` | `physiology`<br>`cardiology`<br>`signal-processing`<br>`machine-learning` | `ECG waveforms` | `preprocessing`<br>`annotation`<br>`segmentation`<br>`quality-control`<br>`feature-extraction` | `Python`<br>`command-line` | [公式](https://github.com/vitaldb/openecg) | [repo](https://github.com/vitaldb/openecg) | ECG waveform の読み込み、前処理、波形 segmentation、beat・rhythm annotation を行う OpenECG library です。 |
+| `ga4gh-quality-control-wgs` | [GA4GH Quality Control of WGS](https://ga4gh.github.io/quality-control-wgs/) | `standard` | `molecular`<br>`clinical`<br>`population`<br>`infrastructure` | `genomics`<br>`quality-control`<br>`data-standard`<br>`benchmarking` | `whole-genome sequencing`<br>`germline variant calls`<br>`BAM/CRAM`<br>`VCF` | `quality-control`<br>`benchmarking`<br>`validation`<br>`reporting` | `GA4GH`<br>`JSON` | [公式](https://ga4gh.github.io/quality-control-wgs/) | [repo](https://github.com/ga4gh/quality-control-wgs) | human WGS germline dataset の品質管理指標と報告方法を定義する GA4GH standard です。 |
+| `ga4gh-htsget-refserver` | [GA4GH htsget Reference Server](https://github.com/ga4gh/htsget-refserver) | `platform` | `molecular`<br>`clinical`<br>`infrastructure` | `genomics`<br>`data-access`<br>`interoperability`<br>`data-standard` | `BAM`<br>`CRAM`<br>`VCF`<br>`HTS data` | `data-access`<br>`streaming`<br>`api`<br>`interoperability` | `GA4GH`<br>`Go`<br>`Docker`<br>`OpenAPI` | [公式](https://github.com/ga4gh/htsget-refserver) | [repo](https://github.com/ga4gh/htsget-refserver) | GA4GH htsget protocol でゲノムの reference data を安全に streaming 配信する server implementation です。 |
 
 ## 更新方法
 

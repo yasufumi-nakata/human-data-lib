@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-08-12",
+  "generated_at": "2026-08-13",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -40191,6 +40191,491 @@
       "license": "Apache-2.0",
       "maturity": "active",
       "summary_ja": "OpenCap で取得した人の movement kinematics を解析し、OpenSim による kinetics simulation へつなぐ Python toolset です。"
+    },
+    {
+      "id": "ehrapy",
+      "name": "ehrapy",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "observational-health",
+        "statistics",
+        "data-model"
+      ],
+      "modalities": [
+        "EHR",
+        "clinical tabular data",
+        "cohort data"
+      ],
+      "tasks": [
+        "preprocessing",
+        "quality-control",
+        "imputation",
+        "statistics",
+        "cohort-analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "AnnData",
+        "scverse"
+      ],
+      "scales": [
+        "whole-person",
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://ehrapy.readthedocs.io/en/stable/",
+      "repo_url": "https://github.com/theislab/ehrapy",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "EHR の表形式コホートデータを AnnData ベースで前処理し、品質管理、欠測処理、統計解析、可視化まで行う Python framework です。"
+    },
+    {
+      "id": "fibertools-rs",
+      "name": "fibertools-rs",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "epigenomics",
+        "long-read-sequencing"
+      ],
+      "modalities": [
+        "Fiber-seq BAM",
+        "long-read sequencing"
+      ],
+      "tasks": [
+        "preprocessing",
+        "annotation",
+        "feature-extraction",
+        "visualization",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "Rust",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://fiberseq.github.io/fibertools/fibertools.html",
+      "repo_url": "https://github.com/fiberseq/fibertools-rs",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "Fiber-seq データの BAM を処理し、クロマチン関連特徴を抽出・可視化する Rust CLI tool です。"
+    },
+    {
+      "id": "dysgu",
+      "name": "dysgu",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "structural-variation",
+        "long-read-sequencing"
+      ],
+      "modalities": [
+        "BAM",
+        "CRAM",
+        "short-read sequencing",
+        "long-read sequencing",
+        "structural variants"
+      ],
+      "tasks": [
+        "structural-variant-calling",
+        "variant-calling",
+        "filtering",
+        "merging"
+      ],
+      "ecosystems": [
+        "Python",
+        "C++",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://kcleal.github.io/dysgu/",
+      "repo_url": "https://github.com/kcleal/dysgu",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "short-read と long-read の alignment から structural variant を検出する Python/C++ tool です。"
+    },
+    {
+      "id": "pymzml",
+      "name": "pymzML",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry",
+        "metabolomics"
+      ],
+      "modalities": [
+        "mzML",
+        "mass spectrometry",
+        "MS/MS"
+      ],
+      "tasks": [
+        "io",
+        "parsing",
+        "format-conversion",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://pymzml.github.io/pymzML/",
+      "repo_url": "https://github.com/pymzml/pymzML",
+      "license": "MIT",
+      "maturity": "established",
+      "summary_ja": "質量分析の mzML ファイルを Python から読み込み、スペクトルとメタデータを扱う parser library です。"
+    },
+    {
+      "id": "microbiomestat",
+      "name": "MicrobiomeStat",
+      "artifact_type": "library",
+      "domains": [
+        "microbiome",
+        "statistics",
+        "multi-omics"
+      ],
+      "modalities": [
+        "microbiome profiles",
+        "amplicon sequencing",
+        "metagenomics",
+        "multi-omics tables"
+      ],
+      "tasks": [
+        "differential-abundance",
+        "statistics",
+        "visualization",
+        "longitudinal-analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "molecular",
+        "population"
+      ],
+      "official_url": "https://www.microbiomestat.wiki/",
+      "repo_url": "https://github.com/cafferychen777/MicrobiomeStat",
+      "license": "GPL-3.0",
+      "maturity": "active",
+      "summary_ja": "microbiome と multi-omics の横断研究、paired data、longitudinal data を統計解析する R package です。"
+    },
+    {
+      "id": "hover-net",
+      "name": "HoVer-Net",
+      "artifact_type": "tool",
+      "domains": [
+        "digital-pathology",
+        "bioimaging",
+        "cell-biology",
+        "machine-learning"
+      ],
+      "modalities": [
+        "H&E histology images",
+        "whole-slide images",
+        "cell nuclei"
+      ],
+      "tasks": [
+        "segmentation",
+        "classification",
+        "feature-extraction",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "Python",
+        "PyTorch"
+      ],
+      "scales": [
+        "cellular",
+        "tissue",
+        "clinical"
+      ],
+      "official_url": "https://github.com/vqdang/hover_net",
+      "repo_url": "https://github.com/vqdang/hover_net",
+      "license": "MIT",
+      "maturity": "established",
+      "summary_ja": "H&E 病理画像で細胞核の instance segmentation と classification を同時に行う deep-learning tool です。"
+    },
+    {
+      "id": "scfates",
+      "name": "scFates",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "trajectory-analysis",
+        "transcriptomics",
+        "statistics"
+      ],
+      "modalities": [
+        "single-cell RNA-seq",
+        "AnnData"
+      ],
+      "tasks": [
+        "trajectory",
+        "pseudotime",
+        "branching",
+        "differential-expression",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python",
+        "Scanpy",
+        "scverse"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://scfates.readthedocs.io/en/latest/",
+      "repo_url": "https://github.com/LouisFaure/scFates",
+      "license": "BSD-3-Clause",
+      "maturity": "active",
+      "summary_ja": "single-cell RNA-seq の細胞状態から trajectory、pseudotime、分岐構造を推定する Python library です。"
+    },
+    {
+      "id": "survivor",
+      "name": "SURVIVOR",
+      "artifact_type": "tool",
+      "domains": [
+        "genomics",
+        "variant-analysis",
+        "structural-variation",
+        "benchmarking"
+      ],
+      "modalities": [
+        "VCF",
+        "structural variants",
+        "short-read sequencing",
+        "long-read sequencing"
+      ],
+      "tasks": [
+        "simulation",
+        "benchmarking",
+        "merging",
+        "variant-comparison",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "C++",
+        "command-line"
+      ],
+      "scales": [
+        "molecular",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/fritzsedlazeck/SURVIVOR/wiki",
+      "repo_url": "https://github.com/fritzsedlazeck/SURVIVOR",
+      "license": "MIT",
+      "maturity": "established",
+      "summary_ja": "structural variant の simulation、比較、統合、benchmarking を行う C++ CLI tool です。"
+    },
+    {
+      "id": "openvital",
+      "name": "OpenVital",
+      "artifact_type": "library",
+      "domains": [
+        "physiology",
+        "cardiology",
+        "neurophysiology",
+        "clinical-data",
+        "wearables"
+      ],
+      "modalities": [
+        "ECG",
+        "PPG",
+        "ABP",
+        "EEG",
+        "NIRS",
+        "capnography"
+      ],
+      "tasks": [
+        "preprocessing",
+        "feature-extraction",
+        "quality-control",
+        "annotation",
+        "api",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "Python",
+        "VitalDB"
+      ],
+      "scales": [
+        "organ-system",
+        "whole-person",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://vitaldb.net/",
+      "repo_url": "https://github.com/vitaldb/openvital",
+      "license": "MIT",
+      "maturity": "active",
+      "summary_ja": "VitalDB の ECG、PPG、血圧、EEG、NIRS、capnography などの生体信号を Python で扱う open-source library です。"
+    },
+    {
+      "id": "vitalutils",
+      "name": "vitalutils",
+      "artifact_type": "library",
+      "domains": [
+        "physiology",
+        "clinical-data",
+        "data-access",
+        "data-standard"
+      ],
+      "modalities": [
+        "VITAL files",
+        "waveforms",
+        "ECG",
+        "PPG",
+        "ABP",
+        "clinical data"
+      ],
+      "tasks": [
+        "io",
+        "data-access",
+        "format-conversion",
+        "visualization",
+        "data-model"
+      ],
+      "ecosystems": [
+        "Python",
+        "VitalDB"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://vitaldb.github.io/vitalutils/",
+      "repo_url": "https://github.com/vitaldb/vitalutils",
+      "license": "BSD-3-Clause",
+      "maturity": "established",
+      "summary_ja": "VitalDB の VITAL ファイル、波形、臨床・検査データを読み書きして扱う utility library です。"
+    },
+    {
+      "id": "openecg",
+      "name": "OpenECG",
+      "artifact_type": "library",
+      "domains": [
+        "physiology",
+        "cardiology",
+        "signal-processing",
+        "machine-learning"
+      ],
+      "modalities": [
+        "ECG waveforms"
+      ],
+      "tasks": [
+        "preprocessing",
+        "annotation",
+        "segmentation",
+        "quality-control",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/vitaldb/openecg",
+      "repo_url": "https://github.com/vitaldb/openecg",
+      "license": "Apache-2.0",
+      "maturity": "established",
+      "summary_ja": "ECG waveform の読み込み、前処理、波形 segmentation、beat・rhythm annotation を行う OpenECG library です。"
+    },
+    {
+      "id": "ga4gh-quality-control-wgs",
+      "name": "GA4GH Quality Control of WGS",
+      "artifact_type": "standard",
+      "domains": [
+        "genomics",
+        "quality-control",
+        "data-standard",
+        "benchmarking"
+      ],
+      "modalities": [
+        "whole-genome sequencing",
+        "germline variant calls",
+        "BAM/CRAM",
+        "VCF"
+      ],
+      "tasks": [
+        "quality-control",
+        "benchmarking",
+        "validation",
+        "reporting"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "JSON"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "population",
+        "infrastructure"
+      ],
+      "official_url": "https://ga4gh.github.io/quality-control-wgs/",
+      "repo_url": "https://github.com/ga4gh/quality-control-wgs",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "human WGS germline dataset の品質管理指標と報告方法を定義する GA4GH standard です。"
+    },
+    {
+      "id": "ga4gh-htsget-refserver",
+      "name": "GA4GH htsget Reference Server",
+      "artifact_type": "platform",
+      "domains": [
+        "genomics",
+        "data-access",
+        "interoperability",
+        "data-standard"
+      ],
+      "modalities": [
+        "BAM",
+        "CRAM",
+        "VCF",
+        "HTS data"
+      ],
+      "tasks": [
+        "data-access",
+        "streaming",
+        "api",
+        "interoperability"
+      ],
+      "ecosystems": [
+        "GA4GH",
+        "Go",
+        "Docker",
+        "OpenAPI"
+      ],
+      "scales": [
+        "molecular",
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/htsget-refserver",
+      "repo_url": "https://github.com/ga4gh/htsget-refserver",
+      "license": "Apache-2.0",
+      "maturity": "active",
+      "summary_ja": "GA4GH htsget protocol でゲノムの reference data を安全に streaming 配信する server implementation です。"
     }
   ]
 }

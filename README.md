@@ -14,7 +14,7 @@
 
 ## まず見る場所
 
-- [全件カタログ](catalog.md): 収録している 1211 件をページ上で一覧できます。
+- [全件カタログ](catalog.md): 収録している 1224 件をページ上で一覧できます。
 - [分類と運用方針](docs/catalog-policy.md): 何を収録し、何を除外するかを確認できます。
 - [スキーマ説明](docs/schema.md): 各項目に入っている情報の意味を確認できます。
 - [領域別の見取り図](docs/landscape.md): ミクロからマクロまでの対象領域を俯瞰できます。
@@ -22,7 +22,7 @@
 
 ## このサイトで見られるもの
 
-- 全 1211 件の公開 OSS / 公開リポジトリ付きカタログ
+- 全 1224 件の公開 OSS / 公開リポジトリ付きカタログ
 - 解析スケール別の件数と分類
 - 分野、データ種別、処理タスク、実行環境、公式ページ、repo へのリンク
 - 日本語の 1 文要約
@@ -32,7 +32,7 @@
 
 ## 収録状況
 
-2026-08-12 時点の継続更新カタログは 1211 件です。代表的な収録軸は以下です。
+2026-08-13 時点の継続更新カタログは 1224 件です。代表的な収録軸は以下です。
 
 - ミクロ: ゲノム、変異、RNA-seq、single-cell、spatial omics、プロテオミクス、メタボロミクス、マイクロバイオーム
 - 細胞・組織: cytometry、細胞画像、病理画像、空間トランスクリプトミクス
@@ -64,6 +64,8 @@
 2026-06-13 の更新では、Bioconductor の基盤データ構造 / I/O / cache、GA4GH の htsget / refget / Crypt4GH / GKS 実装、BIDS schema / Stats Models / metadata conversion、pydicom の JPEG/DICOM plugin、DARWIN EU / OHDSI の OMOP 結果管理・可視化・phenotyping、nf-core/msproteomics の公開 repo を再確認し、公式または準公式の公開 repo を確認できる 39 件を追加しました。nf-core の未収録 repo には training、設定、under construction、非ヒト中心のものが多いため、今回の採録は human-derived bio-data analysis に直接関係するものへ絞りました。
 
 2026-08-12 の更新では、gget、moscot、MNE denoising / RSA、NiPreps reporting、physiology denoising、nf-core の spatial omics / microbiome workflow、OpenSim / OpenCap の human movement processing を追加し、公式 docs・公開 repo・ライセンスを確認しました。RAPIDS-SingleCell は同一 repo の canonical URL 表記へ修正しました。archived、under construction、discontinued、ライセンス確認不足、テンプレート状態の候補は採録していません。
+
+2026-08-13 の更新では、ehrapy、fibertools-rs、dysgu、pymzML、MicrobiomeStat、HoVer-Net、scFates、SURVIVOR、VitalDB の openvital / vitalutils / openecg、GA4GH Quality Control of WGS / htsget Reference Server を追加しました。EHR、long-read / structural variant、質量分析、microbiome、病理画像、single-cell trajectory、ECG / PPG、生体波形、WGS QC、genomic streaming の公開実装を補っています。pyPPG は公式 repo の academic research only 条件、nf-core/rnastructurome は development version、openeeg は early alpha、opendsp は汎用 DSP、旧 pyvital と mirror は採録条件外のため追加していません。
 
 ## 対象領域
 

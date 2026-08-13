@@ -34,6 +34,8 @@
 
 2026-08-12 の更新では、gget と moscot を追加し、genomic reference database access、single-cell の spatial / temporal / multi-omic integration を molecular / cellular / tissue / infrastructure の横断軸から検索できるようにしました。nf-core/daamicrobiome も追加し、microbiome differential-abundance consensus workflow を補いました。
 
+2026-08-13 の更新では、fibertools-rs、dysgu、pymzML、MicrobiomeStat、SURVIVOR、GA4GH Quality Control of WGS、htsget Reference Server を追加し、Fiber-seq、structural variant、質量分析、microbiome 統計、variant benchmarking、WGS QC、genomic streaming の抜けを molecular / population / infrastructure から補いました。
+
 ## cellular and tissue
 
 single-cell、spatial omics、cytometry、細胞画像、病理画像は、分子特徴と細胞/組織構造を接続する中間尺度です。Scanpy、Seurat、SpatialData、Cellpose、StarDist、FlowKit、pycytominer などを同じ尺度タグで横断検索できるようにしています。
@@ -63,6 +65,8 @@ TIAToolbox も追加し、whole-slide pathology 画像の読み込み、前処�
 2026-06-04 の更新では、nf-core/marsseq と nf-core/mcmicro、scverse の anndataR / scverse-io / annbatch / Muon.jl / deres、BioImage.IO model zoo / specification / core / napari integration / JDLL を追加し、MARS-seq、multiplex whole-slide imaging、AnnData / MuData interoperability、on-disk AnnData minibatch、single-cell result table、bioimage deep-learning model sharing / validation / inference の抜けを cellular / tissue / infrastructure で補いました。
 
 2026-06-06 の更新では、destiny と celda を追加し、single-cell diffusion map / pseudotime と Bayesian clustering / decontamination の R / Bioconductor 実装を cellular / molecular で検索できるようにしました。ExperimentHub も cellular resource access の infrastructure として扱えるようにしました。
+
+2026-08-13 の更新では、scFates と HoVer-Net を追加し、single-cell trajectory / pseudotime と H&E 病理画像の細胞核 segmentation / classification を cellular / tissue / clinical の横断軸から検索できるようにしました。
 
 ## organ-system
 
@@ -96,6 +100,8 @@ Neo、odML、Braindecode、Plastimatch、Connectome Workbench を追加し、神
 
 2026-08-12 の更新では、mne-denoise、MNE-RSA、NiReports、phys2denoise を追加し、M/EEG artifact suppression、representational similarity analysis、neuroimaging QC report、physiology-based fMRI denoising を organ-system / infrastructure から検索できるようにしました。mne-realtime は公式 docs が mne-lsl への移行と discontinued 状態を示すため追加していません。
 
+2026-08-13 の更新では、VitalDB の openvital、vitalutils、openecg を追加し、ECG、PPG、血圧、EEG、NIRS、capnography、生体波形の解析・I/O・annotation を organ-system / clinical / infrastructure から検索できるようにしました。
+
 ## whole-person and clinical
 
 臨床データは EHR そのもの、FHIR/OMOP の標準、phenotyping、clinical NLP、survival analysis が分かれます。生データを扱う前に、同意、匿名化、アクセス権、監査証跡を明確にする必要があります。
@@ -125,6 +131,8 @@ Inferno Framework と Archie も追加し、FHIR conformance testing と openEHR
 2026-06-06 の更新では、fhircrackr、epiR、epitools、Epi を追加し、FHIR XML bundle の R data.frame 化、疫学指標・association measure、cohort / registry follow-up の Lexis / rate / survival analysis を clinical / population 側から補いました。
 
 2026-06-13 の更新では、TreatmentPatterns、PregnancyIdentifier、DashboardExport、OmopSketch、OmopViewer、ResultModelManager、OHDSI CommonEvidenceModel、pyCDMConnector を追加し、OMOP CDM 上の treatment pattern、pregnancy episode phenotyping、Achilles result export、database characterization、summarised_result visualization、result model migration、evidence data model、Python からの CDM query を clinical / population / infrastructure で検索できるようにしました。
+
+2026-08-13 の更新では、ehrapy を追加し、EHR の表形式コホートデータに対する前処理、品質管理、欠測処理、統計解析、可視化を whole-person / clinical / population / infrastructure の入口から検索できるようにしました。
 
 ## behavior and psychometrics
 
@@ -205,3 +213,5 @@ Synthcity、Substra、Toil、miniwdl を追加し、synthetic data、federated a
 2026-06-06 の更新では、DataSynthesizer を追加し、sensitive tabular data に対する differential privacy based synthetic data generation を clinical / population / infrastructure の privacy-preserving data sharing として検索できるようにしました。
 
 2026-06-13 の更新では、GA4GH Crypt4GH、htsget、refget、SDK、GKS 関連実装を追加し、privacy-preserving genomic file sharing、distributed sequencing data access、reference sequence retrieval、genomic knowledge standard validation を governance / infrastructure 側からも追跡できるようにしました。
+
+2026-08-13 の更新では、GA4GH Quality Control of WGS と htsget Reference Server を追加し、human WGS の QC 指標・報告と genomic data streaming の標準 / reference implementation を infrastructure 側から確認できるようにしました。
