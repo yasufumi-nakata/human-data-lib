@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-08-13",
+  "generated_at": "2026-11-06",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -40676,6 +40676,63 @@
       "license": "Apache-2.0",
       "maturity": "active",
       "summary_ja": "GA4GH htsget protocol でゲノムの reference data を安全に streaming 配信する server implementation です。"
+    },
+    {
+      "id": "pylsl",
+      "name": "pylsl",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology"
+      ],
+      "modalities": [
+        "EEG",
+        "time-series"
+      ],
+      "tasks": [
+        "data-acquisition",
+        "streaming",
+        "synchronization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/labstreaminglayer/pylsl",
+      "repo_url": "https://github.com/labstreaminglayer/pylsl",
+      "license": "MIT",
+      "summary_ja": "Lab Streaming Layerの公式Pythonバインディングとして，EEGなどの時系列ストリームの送受信と時刻同期を支援します．",
+      "notes": "2026-11-06に公式READMEとLICENSEを確認．LSL/liblsl本体とは別のPythonパッケージであり，ネイティブliblslが必要．カタログ収録は実行環境の互換性検証を意味しない．"
+    },
+    {
+      "id": "tensorpac",
+      "name": "Tensorpac",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology"
+      ],
+      "modalities": [
+        "EEG",
+        "MEG",
+        "iEEG"
+      ],
+      "tasks": [
+        "signal-processing",
+        "phase-amplitude-coupling"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://etiennecmb.github.io/tensorpac/",
+      "repo_url": "https://github.com/EtienneCmb/tensorpac",
+      "license": "BSD-3-Clause",
+      "summary_ja": "EEGやMEGなどの電気生理信号について，位相・振幅結合をテンソル計算で評価するPythonライブラリです．",
+      "notes": "2026-11-06に公式READMEとLICENSEを確認．関連論文DOI: 10.1371/journal.pcbi.1008302．現行Python依存との互換性や保守頻度は導入前に別途確認が必要．"
     }
   ]
 }

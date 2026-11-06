@@ -2,8 +2,8 @@
 
 このページは `libraries.json` から生成した、人間由来バイオデータ解析カタログの全件表示です。JSON を直接読まなくても、公開ページ上で全項目を確認できます。
 
-- 項目数: 1224
-- カタログ生成日: 2026-08-13
+- 項目数: 1226
+- カタログ生成日: 2026-11-06
 - スキーマ: 0.1.0
 
 ## 解析スケール別件数
@@ -13,13 +13,13 @@
 | `molecular` | 491 |
 | `cellular` | 216 |
 | `tissue` | 107 |
-| `organ-system` | 218 |
+| `organ-system` | 220 |
 | `whole-person` | 181 |
 | `behavioral` | 89 |
 | `clinical` | 386 |
 | `population` | 404 |
 | `environmental` | 75 |
-| `infrastructure` | 477 |
+| `infrastructure` | 478 |
 
 ## 全項目
 
@@ -1249,6 +1249,8 @@
 | `openecg` | [OpenECG](https://github.com/vitaldb/openecg) | `library` | `organ-system`<br>`clinical`<br>`infrastructure` | `physiology`<br>`cardiology`<br>`signal-processing`<br>`machine-learning` | `ECG waveforms` | `preprocessing`<br>`annotation`<br>`segmentation`<br>`quality-control`<br>`feature-extraction` | `Python`<br>`command-line` | [公式](https://github.com/vitaldb/openecg) | [repo](https://github.com/vitaldb/openecg) | ECG waveform の読み込み、前処理、波形 segmentation、beat・rhythm annotation を行う OpenECG library です。 |
 | `ga4gh-quality-control-wgs` | [GA4GH Quality Control of WGS](https://ga4gh.github.io/quality-control-wgs/) | `standard` | `molecular`<br>`clinical`<br>`population`<br>`infrastructure` | `genomics`<br>`quality-control`<br>`data-standard`<br>`benchmarking` | `whole-genome sequencing`<br>`germline variant calls`<br>`BAM/CRAM`<br>`VCF` | `quality-control`<br>`benchmarking`<br>`validation`<br>`reporting` | `GA4GH`<br>`JSON` | [公式](https://ga4gh.github.io/quality-control-wgs/) | [repo](https://github.com/ga4gh/quality-control-wgs) | human WGS germline dataset の品質管理指標と報告方法を定義する GA4GH standard です。 |
 | `ga4gh-htsget-refserver` | [GA4GH htsget Reference Server](https://github.com/ga4gh/htsget-refserver) | `platform` | `molecular`<br>`clinical`<br>`infrastructure` | `genomics`<br>`data-access`<br>`interoperability`<br>`data-standard` | `BAM`<br>`CRAM`<br>`VCF`<br>`HTS data` | `data-access`<br>`streaming`<br>`api`<br>`interoperability` | `GA4GH`<br>`Go`<br>`Docker`<br>`OpenAPI` | [公式](https://github.com/ga4gh/htsget-refserver) | [repo](https://github.com/ga4gh/htsget-refserver) | GA4GH htsget protocol でゲノムの reference data を安全に streaming 配信する server implementation です。 |
+| `pylsl` | [pylsl](https://github.com/labstreaminglayer/pylsl) | `library` | `organ-system`<br>`infrastructure` | `neurophysiology` | `EEG`<br>`time-series` | `data-acquisition`<br>`streaming`<br>`synchronization` | `Python` | [公式](https://github.com/labstreaminglayer/pylsl) | [repo](https://github.com/labstreaminglayer/pylsl) | Lab Streaming Layerの公式Pythonバインディングとして，EEGなどの時系列ストリームの送受信と時刻同期を支援します． |
+| `tensorpac` | [Tensorpac](https://etiennecmb.github.io/tensorpac/) | `library` | `organ-system` | `neurophysiology` | `EEG`<br>`MEG`<br>`iEEG` | `signal-processing`<br>`phase-amplitude-coupling` | `Python` | [公式](https://etiennecmb.github.io/tensorpac/) | [repo](https://github.com/EtienneCmb/tensorpac) | EEGやMEGなどの電気生理信号について，位相・振幅結合をテンソル計算で評価するPythonライブラリです． |
 
 ## 更新方法
 
