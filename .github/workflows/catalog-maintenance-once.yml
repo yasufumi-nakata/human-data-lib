@@ -1,0 +1,105 @@
+name: Catalog maintenance once
+on:
+  push:
+    branches: [automation/catalog-candidates-20261106]
+    paths: [.github/workflows/catalog-maintenance-once.yml]
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Update canonical metadata without duplicate repositories
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('src/human_data_lib/data/libraries.json')
+          obj = json.loads(path.read_text(encoding='utf-8'))
+          entries = obj['entries']
+          old_count = len(entries)
+          additions = [
+              {'id': 'pylsl', 'name': 'pylsl', 'artifact_type': 'library',
+               'domains': ['neurophysiology'], 'modalities': ['EEG', 'time-series'],
+               'tasks': ['data-acquisition', 'streaming', 'synchronization'],
+               'ecosystems': ['Python'], 'scales': ['organ-system', 'infrastructure'],
+               'official_url': 'https://github.com/labstreaminglayer/pylsl',
+               'repo_url': 'https://github.com/labstreaminglayer/pylsl', 'license': 'MIT',
+               'summary_ja': 'Lab Streaming Layerの公式Pythonバインディングとして，EEGなどの時系列ストリームの送受信と時刻同期を支援します．',
+               'notes': '2026-11-06に公式READMEとLICENSEを確認．LSL/liblsl本体とは別のPythonパッケージであり，ネイティブliblslが必要．カタログ収録は実行環境の互換性検証を意味しない．'},
+              {'id': 'tensorpac', 'name': 'Tensorpac', 'artifact_type': 'library',
+               'domains': ['neurophysiology'], 'modalities': ['EEG', 'MEG', 'iEEG'],
+               'tasks': ['signal-processing', 'phase-amplitude-coupling'],
+               'ecosystems': ['Python'], 'scales': ['organ-system'],
+               'official_url': 'https://etiennecmb.github.io/tensorpac/',
+               'repo_url': 'https://github.com/EtienneCmb/tensorpac', 'license': 'BSD-3-Clause',
+               'summary_ja': 'EEGやMEGなどの電気生理信号について，位相・振幅結合をテンソル計算で評価するPythonライブラリです．',
+               'notes': '2026-11-06に公式READMEとLICENSEを確認．関連論文DOI: 10.1371/journal.pcbi.1008302．現行Python依存との互換性や保守頻度は導入前に別途確認が必要．'}
+          ]
+          def normalize(url):
+              return str(url).lower().rstrip('/').removesuffix('.git')
+          for item in additions:
+              matches = [e for e in entries if str(e['id']).lower() == item['id'] or str(e['name']).lower() == item['name'].lower() or normalize(e.get('repo_url', '')) == normalize(item['repo_url'])]
+              if matches:
+                  raise SystemExit('Existing candidate found; manual reconciliation required: ' + item['id'])
+          entries.extend(additions)
+          obj['generated_at'] = '2026-11-06'
+          path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          readme = Path('README.md')
+          text = readme.read_text(encoding='utf-8')
+          text = text.replace(f'{old_count} 件', f'{len(entries)} 件')
+          text = text.replace('2026-08-13 時点の継続更新カタログ', '2026-11-06 時点の継続更新カタログ')
+          readme.write_text(text, encoding='utf-8')
+          Path('docs/catalog-review-2026-11-06.md').write_text('''# Catalog review: 2026-11-06
+
+Issue #3 was reviewed against the canonical JSON by stable ID, case-insensitive package name and normalized repository URL. Both additions have distinct repositories; pylsl is the official Python binding rather than a duplicate of the liblsl native library.
+
+| Entry | Primary source | License |
+| --- | --- | --- |
+| pylsl | https://github.com/labstreaminglayer/pylsl | MIT |
+| Tensorpac | https://github.com/EtienneCmb/tensorpac | BSD-3-Clause |
+
+Tensorpac project documentation: https://etiennecmb.github.io/tensorpac/
+Related paper: https://doi.org/10.1371/journal.pcbi.1008302
+
+No upstream package was added as a runtime dependency. Catalog validation and unit tests do not certify upstream runtime compatibility, security, or active maintenance. Review these separately before adopting either package.
+''', encoding='utf-8')
+          Path('tests/test_reviewed_candidates.py').write_text('''import json
+import unittest
+from pathlib import Path
+
+
+class ReviewedCandidatesTests(unittest.TestCase):
+    def test_distinct_official_candidates_and_licenses(self):
+        root = Path(__file__).resolve().parents[1]
+        entries = json.loads((root / "src/human_data_lib/data/libraries.json").read_text(encoding="utf-8"))["entries"]
+        expected = {"pylsl": ("https://github.com/labstreaminglayer/pylsl", "MIT"), "tensorpac": ("https://github.com/EtienneCmb/tensorpac", "BSD-3-Clause")}
+        for identity, (url, license_name) in expected.items():
+            matches = [entry for entry in entries if entry["id"] == identity]
+            self.assertEqual(len(matches), 1, identity)
+            self.assertEqual(matches[0]["repo_url"], url)
+            self.assertEqual(matches[0]["license"], license_name)
+            self.assertEqual(sum(e.get("repo_url", "").lower().rstrip("/").removesuffix(".git") == url.lower() for e in entries), 1)
+''', encoding='utf-8')
+          print(f'Catalog entries: {old_count} -> {len(entries)}')
+          PY
+      - name: Render and verify
+        run: |
+          make catalog-page
+          make validate
+          make test
+          git diff --check
+      - name: Commit only verified generated changes to this branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/human_data_lib/data/libraries.json catalog.md README.md docs/catalog-review-2026-11-06.md tests/test_reviewed_candidates.py
+          git commit -m 'catalog: add verified pylsl and Tensorpac entries with regression coverage'
+          git push origin HEAD:automation/catalog-candidates-20261106
