@@ -16,7 +16,7 @@
   <main class="document-shell" id="content">
     <div class="document-nav"><a href="{{ '/' | relative_url }}">← カタログ検索に戻る</a></div>
     {% if page.path == 'catalog.md' %}<aside class="document-callout"><strong>名前や分野から探すなら</strong> <a href="{{ '/' | relative_url }}">検索・絞り込み付きカタログ</a>をご利用ください。この全件表は横にスクロールできます。</aside>{% endif %}
-    <article class="document-body">{{ content }}</article>
+    <article class="document-body{% if page.path == 'catalog.md' %} catalog-document{% endif %}">{{ content }}</article>
   </main>
   <footer class="site-footer"><p>human-data-lib <span>ミクロからマクロまで、生体データ解析の入口。</span></p><a href="https://github.com/yasufumi-nakata/human-data-lib">ソース・CLI・更新履歴 ↗</a></footer>
   <script>

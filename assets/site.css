@@ -765,3 +765,9 @@ h3 {
 
 .table-scroll { overflow-x: auto; max-width: 100%; margin: 24px 0; }
 .table-scroll table { display: table; margin: 0; overflow: visible; }
+
+/* Keep technical tags readable in the optional wide catalog table. */
+.catalog-document table code { white-space: nowrap; }
+.catalog-document table td:nth-child(n+3) { min-width: 150px; }
+.catalog-document table td:nth-child(12),
+.catalog-document table td:nth-child(13) { min-width: 320px; }
