@@ -35,7 +35,7 @@ class SiteInterfaceTests(unittest.TestCase):
         for label in parser.labels:
             self.assertIn(label, parser.ids)
         for asset in parser.local_assets:
-            self.assertTrue((ROOT / asset).is_file(), asset)
+            self.assertTrue((ROOT / asset.split("?", 1)[0]).is_file(), asset)
 
     def test_fallback_and_single_source_of_truth(self):
         html = (ROOT / "index.html").read_text()
