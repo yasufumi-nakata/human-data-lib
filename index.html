@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="生体データ解析のOSS・ツール・標準を、日本語の要約と分野・解析スケール・実行環境から探せるカタログ。">
+  <title>生体データ解析の道具を探す | human-data-lib</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="module" src="assets/catalog.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">カタログへ移動</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">h</span>human-data-lib</a>
+    <nav aria-label="メインナビゲーション"><a href="#catalog" aria-current="page">探す</a><a href="docs/landscape.html">領域ガイド</a><a href="docs/catalog-policy.html">収録方針</a><a href="https://github.com/yasufumi-nakata/human-data-lib">GitHub ↗</a></nav>
+  </div></header>
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">HUMAN BIODATA · OPEN SOURCE DIRECTORY</p><h1 id="page-title">生体データ解析の<br>次の道具を、ここから。</h1><p class="intro-copy">ゲノムから脳・身体、臨床、環境まで。<br>公開ソフトウェア・標準・ワークフローを横断して探せます。</p></div>
+      <div class="catalog-stats" aria-label="カタログ情報"><p><strong id="total-count">—</strong><span>収録項目</span></p><p><strong id="domain-count">—</strong><span>分野タグ</span></p><div class="update-date">データ更新 <time id="updated-at">読み込み中</time></div></div>
+    </section>
+    <section id="catalog" aria-labelledby="catalog-heading">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORE THE CATALOG</p><h2 id="catalog-heading">カタログを探す</h2></div><a class="text-link" href="catalog.html">全件を表で読む ↗</a></div>
+      <form id="search-form" class="search-panel" role="search" aria-label="カタログ検索">
+        <fieldset id="search-controls" disabled>
+          <label class="search-label" for="query">キーワード</label>
+          <div class="search-row"><div class="search-input-wrap"><span aria-hidden="true" class="search-icon">⌕</span><input id="query" name="q" type="search" autocomplete="off" placeholder="例：EEG、single-cell、MRI、睡眠" aria-describedby="search-help"></div><button class="primary-button" type="submit">検索する</button></div>
+          <p id="search-help" class="helper-text">名前・日本語の要約・分類・ライセンスを検索。スペースで区切ると、すべての語を含む項目を表示します。</p>
+          <div class="primary-filters">
+            <div class="filter-field"><label for="scale">解析スケール</label><select id="scale" name="scale"><option value="">すべてのスケール</option></select></div>
+            <div class="filter-field"><label for="domain">分野</label><select id="domain" name="domain"><option value="">すべての分野</option></select></div>
+            <div class="filter-field"><label for="ecosystem">言語・実行環境</label><select id="ecosystem" name="ecosystem"><option value="">すべての環境</option></select></div>
+          </div>
+          <details class="advanced-filters" id="advanced-filters"><summary>さらに条件を指定 <span class="helper-text">種類・データ・処理・状態</span></summary><div class="advanced-grid">
+            <div class="filter-field"><label for="type">種類</label><select id="type" name="type"><option value="">すべての種類</option></select></div>
+            <div class="filter-field"><label for="modality">データ種別</label><select id="modality" name="modality"><option value="">すべてのデータ種別</option></select></div>
+            <div class="filter-field"><label for="task">処理タスク</label><select id="task" name="task"><option value="">すべてのタスク</option></select></div>
+            <div class="filter-field"><label for="status">開発・利用状況</label><select id="status" name="status"><option value="">すべての状態</option></select></div>
+          </div><label class="checkbox-field"><input type="checkbox" id="hide-archived" name="hideArchived">アーカイブ済みの項目を除外する</label></details>
+          <div class="quick-searches"><span>検索のヒント</span><button type="button" data-query="EEG">EEG / 脳波</button><button type="button" data-query="single-cell">Single-cell</button><button type="button" data-query="DICOM">医用画像</button><button type="button" data-query="FHIR">臨床データ</button><button type="button" data-query="wearable">ウェアラブル</button></div>
+        </fieldset>
+      </form>
+      <div class="result-toolbar"><div><p id="result-count" role="status" aria-live="polite" aria-atomic="true">カタログを読み込んでいます…</p><p id="active-filters" class="helper-text"></p></div><div class="result-actions"><button id="reset" type="button" class="text-button" disabled>条件をクリア</button><label class="sort-label" for="sort">並び順 <select id="sort" disabled><option value="name">名前 A–Z</option><option value="source">収録順</option></select></label></div></div>
+      <div id="load-error" class="notice error-notice" role="alert" hidden><h3>カタログを読み込めませんでした</h3><p>通信状態をご確認ください。<a href="catalog.html">全件カタログ（表）</a>からも項目を確認できます。</p><button id="retry" type="button" class="secondary-button">もう一度読み込む</button></div>
+      <noscript><div class="notice">検索には JavaScript が必要です。<a href="catalog.html">全件カタログ（表）</a>は JavaScript なしで読めます。</div></noscript>
+      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3>条件に合う項目がありません</h3><p>キーワードを短くするか、絞り込み条件を減らしてお試しください。</p><button id="empty-reset" type="button" class="secondary-button">すべての条件をクリア</button></div>
+      <div id="results" class="catalog-grid" aria-label="検索結果" aria-busy="true"></div>
+      <nav id="pagination" class="pagination" aria-label="検索結果のページ" hidden><button id="previous" type="button" class="secondary-button">← 前へ</button><span id="page-label"></span><button id="next" type="button" class="secondary-button">次へ →</button></nav>
+    </section>
+    <section class="guide-strip" aria-labelledby="guide-heading"><div><p class="eyebrow">ABOUT THIS DIRECTORY</p><h2 id="guide-heading">選ぶ前に、確かめる。</h2><p>収録は推奨・性能保証・医療用途の承認を意味しません。利用条件や保守状況は、各項目の公式情報でご確認ください。</p></div><ul><li><a href="docs/catalog-policy.html">何を収録しているか <span>収録・除外の方針 →</span></a></li><li><a href="docs/schema.html">分類の意味を知る <span>各フィールドの説明 →</span></a></li><li><a href="docs/add-entry-checklist.html">カタログに貢献する <span>追加時の確認手順 →</span></a></li></ul></section>
+  </main>
+  <footer class="site-footer"><p>human-data-lib <span>ミクロからマクロまで、生体データ解析の入口。</span></p><a href="https://github.com/yasufumi-nakata/human-data-lib">ソース・CLI・更新履歴 ↗</a></footer>
+</body>
+</html>
