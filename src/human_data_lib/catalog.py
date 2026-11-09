@@ -3,8 +3,10 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import date
 import csv
 import json
+import re
 from importlib import resources
 from io import StringIO
 from pathlib import Path
@@ -133,10 +135,17 @@ class Catalog:
         entries = tuple(LibraryEntry.from_dict(entry) for entry in entries_raw)
         _validate_unique_ids(entries)
         _validate_repo_urls(entries)
+        generated_at = _root_string(raw, "generated_at")
+        try:
+            date.fromisoformat(generated_at)
+        except ValueError as error:
+            raise CatalogError("generated_at must be an ISO calendar date") from error
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", generated_at):
+            raise CatalogError("generated_at must use YYYY-MM-DD")
 
         return cls(
             schema_version=_root_string(raw, "schema_version"),
-            generated_at=_root_string(raw, "generated_at"),
+            generated_at=generated_at,
             scope_note=_root_string(raw, "scope_note"),
             entries=entries,
         )
@@ -291,6 +300,8 @@ def _as_tuple(raw: dict[str, Any], key: str) -> tuple[str, ...]:
     result = tuple(item.strip() for item in value if isinstance(item, str) and item.strip())
     if len(result) != len(value):
         raise CatalogError(f"{raw.get('id', '<unknown>')}.{key} must contain only strings")
+    if len(set(result)) != len(result):
+        raise CatalogError(f"{raw.get('id', '<unknown>')}.{key} contains duplicate tags")
     return result
 
 
@@ -300,6 +311,10 @@ def _as_nonempty_string(raw: dict[str, Any], key: str) -> str:
         raise CatalogError(f"{raw.get('id', '<unknown>')}.{key} must be a non-empty string")
     if key.endswith("_url") and not value.startswith(("https://", "http://")):
         raise CatalogError(f"{raw.get('id', '<unknown>')}.{key} must be an HTTP URL")
+    if key.endswith("_url") and not urlparse(value).hostname:
+        raise CatalogError(f"{raw.get('id', '<unknown>')}.{key} must have a hostname")
+    if key == "id" and not re.fullmatch(r"[a-z0-9][a-z0-9-]*", value):
+        raise CatalogError("id must use lowercase letters, digits, and hyphens")
     return value.strip()
 
 
@@ -328,11 +343,32 @@ def _validate_unique_ids(entries: Iterable[LibraryEntry]) -> None:
 
 
 def _validate_repo_urls(entries: Iterable[LibraryEntry]) -> None:
+    # The only intentional shared repo: native OpenMS and its Python API.
+    allowed_shared = {
+        "https://github.com/openms/openms": {"openms", "pyopenms"},
+    }
+    seen: dict[str, set[str]] = {}
     for entry in entries:
         parsed = urlparse(entry.repo_url)
         path_parts = [part for part in parsed.path.split("/") if part]
-        if parsed.netloc in {"github.com", "gitlab.com"} and len(path_parts) < 2:
+        if parsed.hostname in {"github.com", "gitlab.com"} and len(path_parts) < 2:
             raise CatalogError(f"{entry.id}.repo_url must point to a repository, not an org")
+        key = canonical_repo_url(entry.repo_url)
+        seen.setdefault(key, set()).add(entry.id)
+    for key, identities in seen.items():
+        if len(identities) > 1 and not identities <= allowed_shared.get(key, set()):
+            raise CatalogError(f"duplicate repository: {key}: {', '.join(sorted(identities))}")
+
+
+def canonical_repo_url(url: str) -> str:
+    """Normalize repository spelling, without collapsing distinct subprojects."""
+    parsed = urlparse(url)
+    path = parsed.path.rstrip("/")
+    host = parsed.netloc.casefold()
+    if host == "github.com":
+        path = path.casefold()
+    path = path.removesuffix(".git")
+    return f"{parsed.scheme.casefold()}://{host}{path}"
 
 
 def _contains(values: Iterable[str], needle: str) -> bool:

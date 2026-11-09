@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-11-06",
+  "generated_at": "2026-11-09",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -855,7 +855,7 @@
         "cellular"
       ],
       "official_url": "https://cellrank.readthedocs.io/",
-      "repo_url": "https://github.com/theislab/cellrank",
+      "repo_url": "https://github.com/scverse/cellrank",
       "license": "BSD-3-Clause",
       "maturity": "active",
       "summary_ja": "single-cell の細胞運命、遷移確率、trajectory を推定する解析ライブラリです。"
@@ -886,7 +886,7 @@
         "cellular"
       ],
       "official_url": "https://decoupler-py.readthedocs.io/",
-      "repo_url": "https://github.com/saezlab/decoupler-py",
+      "repo_url": "https://github.com/scverse/decoupler",
       "license": "GPL-3.0",
       "maturity": "active",
       "summary_ja": "発現データからパスウェイや転写因子活性を推定する統計メソッド群を提供します。"
@@ -1102,7 +1102,7 @@
         "infrastructure"
       ],
       "official_url": "https://qiime2.org/",
-      "repo_url": "https://github.com/qiime2/qiime2",
+      "repo_url": "https://github.com/rachis-org/rachis",
       "license": "BSD-3-Clause",
       "maturity": "widely-used",
       "summary_ja": "マイクロバイオーム解析のデータ管理、系統分類、多様性解析、可視化を統合するプラットフォームです。"
@@ -1351,7 +1351,8 @@
       "repo_url": "https://github.com/OpenMS/OpenMS",
       "license": "BSD-3-Clause",
       "maturity": "widely-used",
-      "summary_ja": "質量分析データの前処理、特徴抽出、同定、定量を行う C++/Python 対応の基盤です。"
+      "summary_ja": "質量分析データの前処理、特徴抽出、同定、定量を行う C++/Python 対応の基盤です。",
+      "notes": "OpenMS と pyOpenMS は同一ソースリポジトリを共有しますが、C++/CLI 本体と Python API の利用単位を区別して収録しています。"
     },
     {
       "id": "pyopenms",
@@ -1383,7 +1384,8 @@
       "repo_url": "https://github.com/OpenMS/OpenMS",
       "license": "BSD-3-Clause",
       "maturity": "widely-used",
-      "summary_ja": "OpenMS の質量分析処理機能を Python から呼び出すためのバインディングです。"
+      "summary_ja": "OpenMS の質量分析処理機能を Python から呼び出すためのバインディングです。",
+      "notes": "OpenMS と pyOpenMS は同一ソースリポジトリを共有しますが、C++/CLI 本体と Python API の利用単位を区別して収録しています。"
     },
     {
       "id": "mzmine",
@@ -1862,8 +1864,9 @@
       "official_url": "https://biosppy.readthedocs.io/",
       "repo_url": "https://github.com/PIA-Group/BioSPPy",
       "license": "BSD-3-Clause",
-      "maturity": "established",
-      "summary_ja": "複数の生体信号を対象に基本的な処理パイプラインを提供する Python ライブラリです。"
+      "maturity": "archived",
+      "summary_ja": "複数の生体信号を対象に基本的な処理パイプラインを提供する Python ライブラリです。",
+      "notes": "2026-11-09 の公式 GitHub 確認で archived。既存解析の再現用に保持し、新規採用時は後継と保守状況を確認してください。"
     },
     {
       "id": "heartpy",
@@ -2818,8 +2821,9 @@
       "official_url": "https://medcat.readthedocs.io/",
       "repo_url": "https://github.com/CogStack/MedCAT",
       "license": "Apache-2.0",
-      "maturity": "active",
-      "summary_ja": "臨床テキストから医学概念を抽出・リンクし、注釈や phenotyping を支援します。"
+      "maturity": "archived",
+      "summary_ja": "臨床テキストから医学概念を抽出・リンクし、注釈や phenotyping を支援します。",
+      "notes": "2026-11-09 の公式 GitHub 確認で archived。既存解析の再現用に保持し、新規採用時は後継と保守状況を確認してください。"
     },
     {
       "id": "psychopy",
@@ -3137,7 +3141,7 @@
         "infrastructure"
       ],
       "official_url": "https://microsoft.github.io/presidio/",
-      "repo_url": "https://github.com/microsoft/presidio",
+      "repo_url": "https://github.com/data-privacy-stack/presidio",
       "license": "MIT",
       "maturity": "widely-used",
       "summary_ja": "テキスト中の個人情報検出、匿名化、マスキングを行う PII 処理フレームワークです。"
@@ -3754,7 +3758,7 @@
         "molecular"
       ],
       "official_url": "https://bio.informatik.uni-jena.de/software/sirius/",
-      "repo_url": "https://github.com/boecker-lab/sirius",
+      "repo_url": "https://github.com/sirius-ms/sirius",
       "license": "AGPL-3.0",
       "maturity": "widely-used",
       "summary_ja": "MS/MS から分子式や候補構造を推定する計算メタボロミクスツールです。"
@@ -4948,8 +4952,9 @@
       "official_url": "https://allencellmodeling.github.io/aicsimageio/",
       "repo_url": "https://github.com/AllenCellModeling/aicsimageio",
       "license": "BSD-3-Clause",
-      "maturity": "active",
-      "summary_ja": "顕微鏡画像の多様な形式を Python で読み込み、メタデータと多次元配列へ変換します。"
+      "maturity": "archived",
+      "summary_ja": "顕微鏡画像の多様な形式を Python で読み込み、メタデータと多次元配列へ変換します。",
+      "notes": "2026-11-09 の公式 GitHub 確認で archived。既存解析の再現用に保持し、新規採用時は後継と保守状況を確認してください。"
     },
     {
       "id": "ome-zarr-py",
@@ -7118,7 +7123,7 @@
         "population"
       ],
       "official_url": "https://package.epinowcast.org/",
-      "repo_url": "https://github.com/epiforecasts/epinowcast",
+      "repo_url": "https://github.com/epinowcast/epinowcast",
       "license": "MIT",
       "maturity": "active",
       "summary_ja": "報告遅れを含むサーベイランスデータの nowcasting を行う R パッケージです。"
@@ -7403,7 +7408,7 @@
         "infrastructure"
       ],
       "official_url": "https://flower.ai/",
-      "repo_url": "https://github.com/adap/flower",
+      "repo_url": "https://github.com/flwrlabs/flower",
       "license": "Apache-2.0",
       "maturity": "widely-used",
       "summary_ja": "データを各拠点に残したまま機械学習を行う federated learning フレームワークです。"
@@ -7501,7 +7506,7 @@
         "infrastructure"
       ],
       "official_url": "https://www.tensorflow.org/federated",
-      "repo_url": "https://github.com/tensorflow/federated",
+      "repo_url": "https://github.com/google-parfait/tensorflow-federated",
       "license": "Apache-2.0",
       "maturity": "active",
       "summary_ja": "TensorFlow 上で federated learning アルゴリズムを表現・シミュレーションするライブラリです。"
@@ -7532,7 +7537,7 @@
         "population"
       ],
       "official_url": "https://opacus.ai/",
-      "repo_url": "https://github.com/pytorch/opacus",
+      "repo_url": "https://github.com/meta-pytorch/opacus",
       "license": "Apache-2.0",
       "maturity": "widely-used",
       "summary_ja": "PyTorch モデルを差分プライバシー付きで学習するためのライブラリです。"
@@ -7898,7 +7903,7 @@
         "population"
       ],
       "official_url": "https://pyrosm.readthedocs.io/",
-      "repo_url": "https://github.com/HTenkanen/pyrosm",
+      "repo_url": "https://github.com/pyrosm/pyrosm",
       "license": "MIT",
       "maturity": "active",
       "summary_ja": "OpenStreetMap の道路、POI、土地利用などを高速に読み込み、地域曝露特徴量を作成できます。"
@@ -7963,7 +7968,7 @@
         "population"
       ],
       "official_url": "https://earthaccess.readthedocs.io/",
-      "repo_url": "https://github.com/nsidc/earthaccess",
+      "repo_url": "https://github.com/earthaccess-dev/earthaccess",
       "license": "MIT",
       "maturity": "active",
       "summary_ja": "NASA Earthdata などの衛星・地球観測データを Python から検索・取得するライブラリです。"
@@ -9145,7 +9150,7 @@
         "tissue"
       ],
       "official_url": "http://www.cardinalmsi.org/",
-      "repo_url": "https://github.com/kuwisdelu/Cardinal",
+      "repo_url": "https://github.com/Cardinalverse/Cardinal",
       "license": "Artistic-2.0",
       "maturity": "widely-used",
       "summary_ja": "イメージング質量分析データの処理、統計解析、可視化を行う R パッケージです。"
@@ -13875,7 +13880,7 @@
         "behavioral"
       ],
       "official_url": "https://scikit-digital-health.readthedocs.io/",
-      "repo_url": "https://github.com/PfizerRD/scikit-digital-health",
+      "repo_url": "https://github.com/pfizer-opensource/scikit-digital-health",
       "license": "MIT",
       "maturity": "active",
       "summary_ja": "ウェアラブル IMU/加速度データの読み込み、gait、sleep、activity 解析を行う digital health 向け Python toolkit です。"
@@ -17159,8 +17164,8 @@
       "scales": [
         "infrastructure"
       ],
-      "official_url": "https://github.com/ga4gh-discovery/ga4gh-service-registry",
-      "repo_url": "https://github.com/ga4gh-discovery/ga4gh-service-registry",
+      "official_url": "https://github.com/ga4gh/ga4gh-service-registry",
+      "repo_url": "https://github.com/ga4gh/ga4gh-service-registry",
       "license": "Apache-2.0",
       "maturity": "established",
       "summary_ja": "GA4GH 準拠サービスの種類、URL、メタデータを発見するための Service Registry 仕様です。"
@@ -20212,8 +20217,9 @@
       "official_url": "https://github.com/AstraZeneca-NGS/VarDictJava",
       "repo_url": "https://github.com/AstraZeneca-NGS/VarDictJava",
       "license": "MIT",
-      "maturity": "established",
-      "summary_ja": "amplicon、targeted sequencing、WGS などから SNV/indel/SV を検出する Java 実装の variant caller です。"
+      "maturity": "archived",
+      "summary_ja": "amplicon、targeted sequencing、WGS などから SNV/indel/SV を検出する Java 実装の variant caller です。",
+      "notes": "2026-11-09 の公式 GitHub 確認で archived。既存解析の再現用に保持し、新規採用時は後継と保守状況を確認してください。"
     },
     {
       "id": "igv",
@@ -20574,7 +20580,7 @@
         "molecular"
       ],
       "official_url": "https://liana-py.readthedocs.io/",
-      "repo_url": "https://github.com/saezlab/liana-py",
+      "repo_url": "https://github.com/scverse/liana",
       "license": "BSD-3-Clause",
       "maturity": "active",
       "summary_ja": "single-cell と spatial data から ligand-receptor などの cell-cell communication を統合解析する Python library です。"
@@ -20607,7 +20613,7 @@
         "tissue"
       ],
       "official_url": "https://gustaveroussy.github.io/sopa/",
-      "repo_url": "https://github.com/gustaveroussy/sopa",
+      "repo_url": "https://github.com/prism-oncology/sopa",
       "license": "BSD-3-Clause",
       "maturity": "active",
       "summary_ja": "spatial omics 画像の segmentation、cell annotation、transcript assignment を SpatialData と連携して行う workflow/tool です。"
@@ -21210,7 +21216,7 @@
         "population"
       ],
       "official_url": "https://ipeagit.github.io/r5r/",
-      "repo_url": "https://github.com/ipeaGIT/r5r",
+      "repo_url": "https://github.com/ipea/r5r",
       "license": "MIT + file LICENSE",
       "maturity": "active",
       "summary_ja": "GTFS と OpenStreetMap を用いて R から multimodal travel time、routing、accessibility を計算する package です。"
@@ -21914,7 +21920,7 @@
       "license": "MIT",
       "maturity": "archived",
       "summary_ja": "resource-constrained setting 向けの offline-first EHR/HIS frontend platform です。",
-      "notes": "公式 frontend repository は archived ですが、MIT license の公開実装として確認できます。"
+      "notes": "公式 frontend repository は archived ですが、MIT license の公開実装として確認できます。 2026-11-09 の公式 GitHub 確認で archived。既存解析の再現用に保持し、新規採用時は後継と保守状況を確認してください。"
     },
     {
       "id": "open-pedigree",
@@ -22971,7 +22977,7 @@
         "behavioral"
       ],
       "official_url": "https://pymovements.readthedocs.io/",
-      "repo_url": "https://github.com/aeye-lab/pymovements",
+      "repo_url": "https://github.com/pymovements/pymovements",
       "license": "MIT",
       "maturity": "active",
       "summary_ja": "eye movement data の読み込み、前処理、event detection、quality metric 計算を行う Python package です。"
@@ -31554,7 +31560,7 @@
         "infrastructure"
       ],
       "official_url": "https://corteva.github.io/rioxarray/",
-      "repo_url": "https://github.com/corteva/rioxarray",
+      "repo_url": "https://github.com/vylor/rioxarray",
       "summary_ja": "xarray に geospatial raster の CRS、再投影、clipping、GeoTIFF I/O を追加する Python extension です。",
       "license": "Apache-2.0",
       "maturity": "active"
@@ -35091,7 +35097,8 @@
       "repo_url": "https://github.com/nf-core/callingcards",
       "summary_ja": "Calling Cards assay の sequencing data から insertion site と regulatory signal を解析する nf-core 公式ワークフローです。",
       "license": "MIT",
-      "maturity": "active"
+      "maturity": "archived",
+      "notes": "2026-11-09 の公式 GitHub 確認で archived。既存解析の再現用に保持し、新規採用時は後継と保守状況を確認してください。"
     },
     {
       "id": "nf-core-createpanelrefs",
@@ -38978,8 +38985,8 @@
         "clinical",
         "infrastructure"
       ],
-      "official_url": "https://github.com/ga4gh/gks-core",
-      "repo_url": "https://github.com/ga4gh/gks-core",
+      "official_url": "https://github.com/ga4gh/gkm-core",
+      "repo_url": "https://github.com/ga4gh/gkm-core",
       "license": "Apache-2.0",
       "maturity": "active",
       "summary_ja": "GA4GH Genomic Knowledge Standards の各仕様で共有する core classes と schema を提供する Python パッケージです。"
@@ -40733,6 +40740,3864 @@
       "license": "BSD-3-Clause",
       "summary_ja": "EEGやMEGなどの電気生理信号について，位相・振幅結合をテンソル計算で評価するPythonライブラリです．",
       "notes": "2026-11-06に公式READMEとLICENSEを確認．関連論文DOI: 10.1371/journal.pcbi.1008302．現行Python依存との互換性や保守頻度は導入前に別途確認が必要．"
+    },
+    {
+      "id": "admiral",
+      "name": "admiral",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "SDTM",
+        "ADaM"
+      ],
+      "tasks": [
+        "data-transformation",
+        "derivation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/admiral/blob/main/README.md",
+      "repo_url": "https://github.com/pharmaverse/admiral",
+      "license": "Apache-2.0",
+      "summary_ja": "臨床試験の SDTM データなどから CDISC ADaM 解析データを構築する R パッケージです。"
+    },
+    {
+      "id": "admiralonco",
+      "name": "admiralonco",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "SDTM",
+        "ADaM"
+      ],
+      "tasks": [
+        "data-transformation",
+        "derivation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/admiralonco/blob/main/README.md",
+      "repo_url": "https://github.com/pharmaverse/admiralonco",
+      "license": "Apache-2.0",
+      "summary_ja": "admiral を拡張し、がん臨床試験の腫瘍応答や生存時間の解析データを導出する R パッケージです。"
+    },
+    {
+      "id": "admiralvaccine",
+      "name": "admiralvaccine",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "SDTM",
+        "ADaM"
+      ],
+      "tasks": [
+        "data-transformation",
+        "derivation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/admiralvaccine/blob/main/README.md",
+      "repo_url": "https://github.com/pharmaverse/admiralvaccine",
+      "license": "Apache-2.0",
+      "summary_ja": "admiral を拡張し、ワクチン臨床試験の解析データを導出する R パッケージです。"
+    },
+    {
+      "id": "aestetik",
+      "name": "AESTETIK",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/ratschlab/aestetik/blob/main/README.md",
+      "repo_url": "https://github.com/ratschlab/aestetik",
+      "license": "MIT",
+      "summary_ja": "空間トランスクリプトームと組織像を統合し、局所構造を反映した表現学習を行うツールです。"
+    },
+    {
+      "id": "alphabase",
+      "name": "alphabase",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/MannLabs/alphabase/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/alphabase",
+      "license": "Apache-2.0",
+      "summary_ja": "ペプチド、修飾、スペクトルライブラリなどを AlphaPept 系ツールで共通に扱うライブラリです。"
+    },
+    {
+      "id": "alphadia",
+      "name": "alphadia",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/MannLabs/alphadia/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/alphadia",
+      "license": "Apache-2.0",
+      "summary_ja": "DIA 質量分析データをスペクトルライブラリと転移学習により同定・定量するツールです。",
+      "notes": "ここでのライセンスは本体コードのものです。モデル重み、機器 vendor reader、SDK、依存物の条件は別途確認してください。"
+    },
+    {
+      "id": "alphamap",
+      "name": "alphamap",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/MannLabs/alphamap/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/alphamap",
+      "license": "Apache-2.0",
+      "summary_ja": "質量分析で同定したペプチドをタンパク質配列上に注釈・可視化するツールです。"
+    },
+    {
+      "id": "alphapeptdeep",
+      "name": "alphapeptdeep",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/MannLabs/alphapeptdeep/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/alphapeptdeep",
+      "license": "Apache-2.0",
+      "summary_ja": "ペプチドの質量スペクトルや保持時間などを深層学習で予測するツールです。",
+      "notes": "ここでのライセンスは本体コードのものです。モデル重み、機器 vendor reader、SDK、依存物の条件は別途確認してください。"
+    },
+    {
+      "id": "alphapeptstats",
+      "name": "alphapeptstats",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/MannLabs/alphapeptstats/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/alphapeptstats",
+      "license": "Apache-2.0",
+      "summary_ja": "質量分析によるタンパク質定量結果に前処理、統計解析、可視化を適用するツールです。"
+    },
+    {
+      "id": "alphaquant",
+      "name": "alphaquant",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/MannLabs/alphaquant/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/alphaquant",
+      "license": "Apache-2.0",
+      "summary_ja": "質量分析によるペプチドとタンパク質の定量解析を行うツールです。"
+    },
+    {
+      "id": "alphatims",
+      "name": "alphatims",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/MannLabs/alphatims/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/alphatims",
+      "license": "Apache-2.0",
+      "summary_ja": "timsTOF 質量分析データの多次元信号を読み込み、抽出・可視化するライブラリです。",
+      "notes": "ここでのライセンスは本体コードのものです。モデル重み、機器 vendor reader、SDK、依存物の条件は別途確認してください。"
+    },
+    {
+      "id": "ambidose",
+      "name": "AmbiDose",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/leelieber2025/AmbiDose/blob/main/README.md",
+      "repo_url": "https://github.com/leelieber2025/AmbiDose",
+      "license": "Apache-2.0",
+      "summary_ja": "液滴型 single-cell RNA-seq の環境 RNA 混入を推定し、発現カウントを補正するツールです。"
+    },
+    {
+      "id": "amici",
+      "name": "AMICI",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/AMICI-dev/AMICI/blob/main/README.md",
+      "repo_url": "https://github.com/AMICI-dev/AMICI",
+      "license": "BSD-3-Clause",
+      "summary_ja": "生物学の常微分方程式モデルに感度解析とパラメータ推定向け計算を提供するライブラリです。"
+    },
+    {
+      "id": "annsel",
+      "name": "annsel",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "data-model"
+      ],
+      "modalities": [
+        "AnnData"
+      ],
+      "tasks": [
+        "ingest",
+        "data-management"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/srivarra/annsel/blob/main/README.md",
+      "repo_url": "https://github.com/srivarra/annsel",
+      "license": "MIT",
+      "summary_ja": "AnnData に対して選択、フィルタリング、グループ化などの表形式操作を提供するライブラリです。"
+    },
+    {
+      "id": "annzarro",
+      "name": "AnnZarro",
+      "artifact_type": "tool",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/settylab/annzarro/blob/main/README.md",
+      "repo_url": "https://github.com/settylab/annzarro",
+      "license": "MIT",
+      "summary_ja": "AnnData の細胞・遺伝子行列をブラウザ上で連動表示する読み取り専用ビューアです。"
+    },
+    {
+      "id": "atlas-single-cell",
+      "name": "ATLAS single-cell",
+      "artifact_type": "library",
+      "domains": [
+        "multiomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scRNA-seq",
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "integration",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/smilies-polito/atlas-smilies/blob/public/README.md",
+      "repo_url": "https://github.com/smilies-polito/atlas-smilies",
+      "license": "BSD-3-Clause",
+      "summary_ja": "単一細胞の RNA と ATAC データを統合し、調節動態を考慮した細胞軌道を推定するツールです。"
+    },
+    {
+      "id": "bengrn",
+      "name": "benGRN",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology",
+        "single-cell"
+      ],
+      "modalities": [
+        "gene-expression",
+        "network"
+      ],
+      "tasks": [
+        "network-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/jkobject/benGRN/blob/main/README.md",
+      "repo_url": "https://github.com/jkobject/benGRN",
+      "license": "MIT",
+      "summary_ja": "単一細胞データから推定した遺伝子ネットワークを参照ネットワークと比較評価するツールです。"
+    },
+    {
+      "id": "bento-tools",
+      "name": "bento-tools",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/YeoLab/bento-tools/blob/master/README.md",
+      "repo_url": "https://github.com/YeoLab/bento-tools",
+      "license": "BSD-2-Clause",
+      "summary_ja": "空間トランスクリプトームの分子位置を細胞内スケールで解析するツールです。"
+    },
+    {
+      "id": "biolord",
+      "name": "biolord",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/nitzanlab/biolord/blob/main/README.md",
+      "repo_url": "https://github.com/nitzanlab/biolord",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell データの既知属性と未知変動を分離した潜在表現を学習するツールです。"
+    },
+    {
+      "id": "biorbd",
+      "name": "biorbd",
+      "artifact_type": "library",
+      "domains": [
+        "biomechanics",
+        "behavior"
+      ],
+      "modalities": [
+        "motion-capture",
+        "kinematics"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "C++",
+        "Python",
+        "MATLAB"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/pyomeca/biorbd/blob/master/README.md",
+      "repo_url": "https://github.com/pyomeca/biorbd",
+      "license": "MIT",
+      "summary_ja": "人体の剛体・筋骨格モデルを用いて運動学と動力学を計算するライブラリです。"
+    },
+    {
+      "id": "biosimulators-utils",
+      "name": "BioSimulators Utils",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/biosimulators/Biosimulators_utils/blob/dev/README.md",
+      "repo_url": "https://github.com/biosimulators/Biosimulators_utils",
+      "license": "MIT",
+      "summary_ja": "生体モデルのシミュレータに共通 CLI、COMBINE archive、SED-ML 入出力を実装するためのライブラリです。"
+    },
+    {
+      "id": "cdisc-core",
+      "name": "CDISC CORE",
+      "artifact_type": "tool",
+      "domains": [
+        "data-standard",
+        "clinical-data"
+      ],
+      "modalities": [
+        "SDTM",
+        "ADaM"
+      ],
+      "tasks": [
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Python",
+        "command-line"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/cdisc-org/cdisc-rules-engine/blob/main/README.md",
+      "repo_url": "https://github.com/cdisc-org/cdisc-rules-engine",
+      "license": "MIT",
+      "summary_ja": "CDISC の適合性規則に基づいて臨床データを検証する CORE エンジンです。"
+    },
+    {
+      "id": "cell-blast",
+      "name": "Cell_BLAST",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/gao-lab/Cell_BLAST/blob/master/README.md",
+      "repo_url": "https://github.com/gao-lab/Cell_BLAST",
+      "license": "MIT",
+      "summary_ja": "単一細胞発現プロファイルを参照データに照会し、対応する細胞集団を探索するツールです。"
+    },
+    {
+      "id": "cellannotator",
+      "name": "CellAnnotator",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/quadbio/cell-annotator/blob/main/README.md",
+      "repo_url": "https://github.com/quadbio/cell-annotator",
+      "license": "MIT",
+      "summary_ja": "大規模言語モデルと事前知識を使い、single-cell RNA-seq の細胞型ラベル付けを支援するツールです。",
+      "notes": "外部 LLM/API を利用する構成では入力データの送信先、同意、機密性、モデル利用条件を別途確認してください。医療判断用ではありません。"
+    },
+    {
+      "id": "cellmapper",
+      "name": "CellMapper",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/quadbio/cellmapper/blob/main/README.md",
+      "repo_url": "https://github.com/quadbio/cellmapper",
+      "license": "MIT",
+      "summary_ja": "参照 single-cell データから近傍探索によって細胞ラベルや発現量を転写するツールです。"
+    },
+    {
+      "id": "cirrocumulus",
+      "name": "Cirrocumulus",
+      "artifact_type": "tool",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/lilab-bcb/cirrocumulus/blob/main/README.rst",
+      "repo_url": "https://github.com/lilab-bcb/cirrocumulus",
+      "license": "BSD-3-Clause",
+      "summary_ja": "大規模な single-cell genomics データを対話的に可視化するブラウザ型ツールです。"
+    },
+    {
+      "id": "cobrapy",
+      "name": "cobrapy",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/opencobra/cobrapy/blob/devel/README.rst",
+      "repo_url": "https://github.com/opencobra/cobrapy",
+      "license": "GPL-2.0",
+      "summary_ja": "代謝ネットワークにフラックスバランス解析などの制約ベース解析を適用する Python ライブラリです。"
+    },
+    {
+      "id": "cobratoolbox",
+      "name": "cobratoolbox",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "MATLAB"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/opencobra/cobratoolbox/blob/master/README.rst",
+      "repo_url": "https://github.com/opencobra/cobratoolbox",
+      "license": "GPL-3.0",
+      "summary_ja": "代謝ネットワークの再構築と制約ベース解析を MATLAB で行うツールボックスです。"
+    },
+    {
+      "id": "copasi",
+      "name": "COPASI",
+      "artifact_type": "tool",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "C++",
+        "desktop"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/copasi/COPASI/blob/develop/README.md",
+      "repo_url": "https://github.com/copasi/COPASI",
+      "license": "Artistic-2.0",
+      "summary_ja": "生化学反応ネットワークを決定論的・確率的モデルでシミュレーションし、パラメータを推定するツールです。"
+    },
+    {
+      "id": "corneto",
+      "name": "corneto",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/saezlab/corneto/blob/main/README.md",
+      "repo_url": "https://github.com/saezlab/corneto",
+      "license": "GPL-3.0",
+      "summary_ja": "事前知識ネットワークとオミクス観測から制約付き最適化で生物学的ネットワークを推定するライブラリです。"
+    },
+    {
+      "id": "cuspa",
+      "name": "cuspa",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/NVIDIA/cuspa/blob/main/README.md",
+      "repo_url": "https://github.com/NVIDIA/cuspa",
+      "license": "Apache-2.0",
+      "summary_ja": "空間オミクスの点と領域の対応付けや細胞単位集約を GPU 上で処理するライブラリです。"
+    },
+    {
+      "id": "dandelion",
+      "name": "dandelion",
+      "artifact_type": "library",
+      "domains": [
+        "immunology",
+        "single-cell"
+      ],
+      "modalities": [
+        "scRNA-seq",
+        "immune-repertoire"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/zktuong/dandelion/blob/master/README.md",
+      "repo_url": "https://github.com/zktuong/dandelion",
+      "license": "AGPL-3.0",
+      "summary_ja": "単一細胞 BCR・TCR 配列の前処理、クローン構造、発現データとの統合解析を行うツールです。"
+    },
+    {
+      "id": "delnx",
+      "name": "delnx",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/mlbelab/delnx/blob/main/README.md",
+      "repo_url": "https://github.com/mlbelab/delnx",
+      "license": "MIT",
+      "summary_ja": "大規模 single-cell データの差次的発現を GPU を用いた回帰モデルで解析するツールです。"
+    },
+    {
+      "id": "directlfq",
+      "name": "directlfq",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/MannLabs/directlfq/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/directlfq",
+      "license": "Apache-2.0",
+      "summary_ja": "質量分析のペプチド・タンパク質シグナルからラベルフリー定量を行うツールです。"
+    },
+    {
+      "id": "disvoice",
+      "name": "DisVoice",
+      "artifact_type": "library",
+      "domains": [
+        "behavior",
+        "signal-processing"
+      ],
+      "modalities": [
+        "speech",
+        "audio"
+      ],
+      "tasks": [
+        "feature-extraction",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/jcvasquezc/DisVoice/blob/master/README.md",
+      "repo_url": "https://github.com/jcvasquezc/DisVoice",
+      "license": "MIT",
+      "summary_ja": "音声から発声、構音、韻律などの特徴を抽出する研究用ツールです。"
+    },
+    {
+      "id": "dotools-py",
+      "name": "DOTools_py",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/davidrm-bio/DOTools_py/blob/main/README.md",
+      "repo_url": "https://github.com/davidrm-bio/DOTools_py",
+      "license": "MIT",
+      "summary_ja": "single-cell RNA-seq の代表的な解析工程と可視化を Python からまとめて扱うツールです。"
+    },
+    {
+      "id": "drvi",
+      "name": "DRVI",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/theislab/DRVI/blob/main/README.md",
+      "repo_url": "https://github.com/theislab/DRVI",
+      "license": "BSD-3-Clause",
+      "summary_ja": "単一細胞オミクスの潜在表現を分離し、細胞の異質性とデータ統合を解析するツールです。"
+    },
+    {
+      "id": "dvp-io",
+      "name": "dvp-io",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "spatial-proteomics",
+        "SpatialData"
+      ],
+      "tasks": [
+        "ingest",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/MannLabs/dvp-io/blob/main/README.md",
+      "repo_url": "https://github.com/MannLabs/dvp-io",
+      "license": "Apache-2.0",
+      "summary_ja": "Deep Visual Proteomics のデータを SpatialData と相互変換する入出力ライブラリです。"
+    },
+    {
+      "id": "eschr",
+      "name": "eschr",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/zunderlab/eschr/blob/main/README.md",
+      "repo_url": "https://github.com/zunderlab/eschr",
+      "license": "MIT",
+      "summary_ja": "単一細胞データのクラスタリングを複数結果の統合と不確実性評価によって行うツールです。"
+    },
+    {
+      "id": "ezc3d",
+      "name": "ezc3d",
+      "artifact_type": "library",
+      "domains": [
+        "biomechanics",
+        "behavior"
+      ],
+      "modalities": [
+        "C3D",
+        "motion-capture"
+      ],
+      "tasks": [
+        "ingest",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "C++",
+        "Python",
+        "MATLAB"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/pyomeca/ezc3d/blob/dev/README.md",
+      "repo_url": "https://github.com/pyomeca/ezc3d",
+      "license": "MIT",
+      "summary_ja": "モーションキャプチャの C3D ファイルを C++・Python・MATLAB で読み書きするライブラリです。"
+    },
+    {
+      "id": "fava",
+      "name": "fava",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology",
+        "single-cell"
+      ],
+      "modalities": [
+        "gene-expression",
+        "network"
+      ],
+      "tasks": [
+        "network-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/mikelkou/fava/blob/main/README.md",
+      "repo_url": "https://github.com/mikelkou/fava",
+      "license": "MIT",
+      "summary_ja": "single-cell 発現やプロテオミクスから変分オートエンコーダで機能的関連を推定するツールです。"
+    },
+    {
+      "id": "flashdeconv",
+      "name": "flashdeconv",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/cafferychen777/flashdeconv/blob/main/README.md",
+      "repo_url": "https://github.com/cafferychen777/flashdeconv",
+      "license": "BSD-3-Clause",
+      "summary_ja": "大規模な空間トランスクリプトームに対して細胞型デコンボリューションを行うツールです。"
+    },
+    {
+      "id": "flowsom-python",
+      "name": "FlowSOM Python",
+      "artifact_type": "library",
+      "domains": [
+        "cytometry"
+      ],
+      "modalities": [
+        "flow-cytometry",
+        "mass-cytometry"
+      ],
+      "tasks": [
+        "clustering",
+        "annotation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular"
+      ],
+      "official_url": "https://github.com/saeyslab/FlowSOM_Python/blob/main/README.md",
+      "repo_url": "https://github.com/saeyslab/FlowSOM_Python",
+      "license": "GPL-3.0",
+      "summary_ja": "高次元サイトメトリーデータを自己組織化マップで分類・可視化する FlowSOM の Python 実装です。"
+    },
+    {
+      "id": "ga4gh-vrs-python",
+      "name": "GA4GH VRS Python",
+      "artifact_type": "library",
+      "domains": [
+        "data-standard",
+        "genomics"
+      ],
+      "modalities": [
+        "genetic-variation"
+      ],
+      "tasks": [
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ga4gh/vrs-python/blob/main/README.md",
+      "repo_url": "https://github.com/ga4gh/vrs-python",
+      "license": "Apache-2.0",
+      "summary_ja": "GA4GH Variation Representation Specification の変異表現と識別子計算を実装する Python ライブラリです。"
+    },
+    {
+      "id": "gptbioinsightor",
+      "name": "GPTBioInsightor",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/huang-sh/GPTBioInsightor/blob/main/README.md",
+      "repo_url": "https://github.com/huang-sh/GPTBioInsightor",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell の細胞型注釈や機能解釈を大規模言語モデルで補助するツールです。",
+      "notes": "外部 LLM/API を利用する構成では入力データの送信先、同意、機密性、モデル利用条件を別途確認してください。医療判断用ではありません。"
+    },
+    {
+      "id": "grassp",
+      "name": "grassp",
+      "artifact_type": "library",
+      "domains": [
+        "proteomics",
+        "mass-spectrometry"
+      ],
+      "modalities": [
+        "mass-spectrometry"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/czbiohub-sf/grassp/blob/main/README.md",
+      "repo_url": "https://github.com/czbiohub-sf/grassp",
+      "license": "BSD-3-Clause",
+      "summary_ja": "細胞内局在プロテオミクスをグラフに基づいて解析する Python ツールです。"
+    },
+    {
+      "id": "grnndata",
+      "name": "GRnnData",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology",
+        "single-cell"
+      ],
+      "modalities": [
+        "gene-expression",
+        "network"
+      ],
+      "tasks": [
+        "network-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/cantinilab/GRnnData/blob/main/README.md",
+      "repo_url": "https://github.com/cantinilab/GRnnData",
+      "license": "MIT",
+      "summary_ja": "遺伝子調節ネットワークを AnnData と対応付けて保存・操作するデータ構造です。"
+    },
+    {
+      "id": "gsdesign",
+      "name": "gsDesign",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "clinical-trial"
+      ],
+      "tasks": [
+        "analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/keaven/gsDesign/blob/master/README.md",
+      "repo_url": "https://github.com/keaven/gsDesign",
+      "license": "GPL-3.0",
+      "summary_ja": "群逐次臨床試験の境界、必要症例数、検出力を計算する R パッケージです。"
+    },
+    {
+      "id": "gssnng",
+      "name": "gssnng",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/IlyaLab/gssnng/blob/main/README.md",
+      "repo_url": "https://github.com/IlyaLab/gssnng",
+      "license": "MIT",
+      "summary_ja": "近傍グラフで平滑化した single-cell 発現データから遺伝子セットスコアを計算するツールです。"
+    },
+    {
+      "id": "gtsummary",
+      "name": "gtsummary",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "clinical-trial"
+      ],
+      "tasks": [
+        "analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/ddsjoberg/gtsummary/blob/main/README.md",
+      "repo_url": "https://github.com/ddsjoberg/gtsummary",
+      "license": "MIT",
+      "summary_ja": "患者背景、解析結果、回帰モデルを報告用の統計表にまとめる R パッケージです。"
+    },
+    {
+      "id": "harpy",
+      "name": "harpy",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/saeyslab/harpy/blob/main/README.md",
+      "repo_url": "https://github.com/saeyslab/harpy",
+      "license": "BSD-3-Clause",
+      "summary_ja": "空間 multi-omics の画像前処理から分割、SpatialData・AnnData による解析までを扱うツールです。"
+    },
+    {
+      "id": "hed-python",
+      "name": "HED Python",
+      "artifact_type": "library",
+      "domains": [
+        "data-standard",
+        "neurophysiology",
+        "behavior"
+      ],
+      "modalities": [
+        "HED",
+        "BIDS",
+        "events"
+      ],
+      "tasks": [
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "behavioral",
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/hed-standard/hed-python/blob/main/README.md",
+      "repo_url": "https://github.com/hed-standard/hed-python",
+      "license": "MIT",
+      "summary_ja": "BIDS などの HED 注釈を検証、要約、変換する Python ライブラリです。"
+    },
+    {
+      "id": "hed-specification",
+      "name": "HED Specification",
+      "artifact_type": "standard",
+      "domains": [
+        "data-standard",
+        "neurophysiology",
+        "behavior"
+      ],
+      "modalities": [
+        "HED",
+        "BIDS",
+        "events"
+      ],
+      "tasks": [
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "language-agnostic"
+      ],
+      "scales": [
+        "behavioral",
+        "organ-system",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/hed-standard/hed-specification/blob/main/README.md",
+      "repo_url": "https://github.com/hed-standard/hed-specification",
+      "license": "CC-BY-4.0",
+      "summary_ja": "ヒト神経・行動実験のイベントや条件を階層語彙で注釈する HED の仕様です。"
+    },
+    {
+      "id": "hotspot",
+      "name": "hotspot",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/YosefLab/Hotspot/blob/master/README.md",
+      "repo_url": "https://github.com/YosefLab/Hotspot",
+      "license": "MIT",
+      "summary_ja": "single-cell データの局所相関から情報を持つ遺伝子と遺伝子モジュールを抽出するツールです。"
+    },
+    {
+      "id": "illico",
+      "name": "illico",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/remydubois/illico/blob/main/README.md",
+      "repo_url": "https://github.com/remydubois/illico",
+      "license": "Apache-2.0",
+      "summary_ja": "single-cell RNA-seq の差次的発現を CPU 上の Wilcoxon 検定で処理するツールです。"
+    },
+    {
+      "id": "infercnvpy",
+      "name": "infercnvpy",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/icbi-lab/infercnvpy/blob/main/README.md",
+      "repo_url": "https://github.com/icbi-lab/infercnvpy",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell RNA-seq の発現パターンからコピー数変化を推定する Scanpy 連携ツールです。"
+    },
+    {
+      "id": "kineticstoolkit",
+      "name": "kineticstoolkit",
+      "artifact_type": "library",
+      "domains": [
+        "biomechanics",
+        "behavior"
+      ],
+      "modalities": [
+        "motion-capture",
+        "kinematics"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/kineticstoolkit/kineticstoolkit/blob/main/README.md",
+      "repo_url": "https://github.com/kineticstoolkit/kineticstoolkit",
+      "license": "Apache-2.0",
+      "summary_ja": "人体運動の計測データに座標変換、時系列処理、可視化を適用するツールキットです。"
+    },
+    {
+      "id": "kompot",
+      "name": "kompot",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/settylab/kompot/blob/main/README.md",
+      "repo_url": "https://github.com/settylab/kompot",
+      "license": "GPL-3.0",
+      "summary_ja": "複数条件の single-cell データを連続的な細胞状態に沿って比較する統計解析ツールです。"
+    },
+    {
+      "id": "lazyslide",
+      "name": "LazySlide",
+      "artifact_type": "library",
+      "domains": [
+        "digital-pathology",
+        "bioimaging"
+      ],
+      "modalities": [
+        "whole-slide-image"
+      ],
+      "tasks": [
+        "ingest",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "tissue",
+        "clinical"
+      ],
+      "official_url": "https://github.com/rendeirolab/LazySlide/blob/main/README.md",
+      "repo_url": "https://github.com/rendeirolab/LazySlide",
+      "license": "MIT",
+      "summary_ja": "病理全スライド画像の読み込み、領域分割、特徴抽出を scverse と連携して行うツールです。"
+    },
+    {
+      "id": "libcellml",
+      "name": "libcellml",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "CellML"
+      ],
+      "tasks": [
+        "ingest",
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "C++",
+        "Python",
+        "JavaScript"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/cellml/libcellml/blob/main/README.rst",
+      "repo_url": "https://github.com/cellml/libcellml",
+      "license": "Apache-2.0",
+      "summary_ja": "生理モデル記述形式 CellML を読み込み、検証、変換するライブラリです。"
+    },
+    {
+      "id": "libopencor",
+      "name": "libOpenCOR",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "CellML",
+        "SED-ML"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "C++",
+        "Python",
+        "JavaScript"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/opencor/libopencor/blob/main/README.md",
+      "repo_url": "https://github.com/opencor/libopencor",
+      "license": "Apache-2.0",
+      "summary_ja": "CellML 生理モデルの編集、検証、シミュレーションを支える OpenCOR のライブラリです。"
+    },
+    {
+      "id": "libsbml",
+      "name": "libsbml",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "SBML"
+      ],
+      "tasks": [
+        "ingest",
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "C++",
+        "Python",
+        "R",
+        "Java"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/sbmlteam/libsbml/blob/development/README.md",
+      "repo_url": "https://github.com/sbmlteam/libsbml",
+      "license": "LGPL-2.1",
+      "summary_ja": "Systems Biology Markup Language のモデルを読み書きし、検証・操作するライブラリです。"
+    },
+    {
+      "id": "mantispy",
+      "name": "mantispy",
+      "artifact_type": "library",
+      "domains": [
+        "bioimaging",
+        "cell-profiling"
+      ],
+      "modalities": [
+        "Cell-Painting"
+      ],
+      "tasks": [
+        "quality-control",
+        "normalization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular"
+      ],
+      "official_url": "https://github.com/scverse/mantispy/blob/main/README.md",
+      "repo_url": "https://github.com/scverse/mantispy",
+      "license": "BSD-3-Clause",
+      "summary_ja": "Cell Painting の画像由来プロファイルに品質管理、正規化、バッチ補正を適用するツールです。"
+    },
+    {
+      "id": "marsilea",
+      "name": "Marsilea",
+      "artifact_type": "library",
+      "domains": [
+        "visualization",
+        "bioinformatics"
+      ],
+      "modalities": [
+        "gene-expression",
+        "mutation"
+      ],
+      "tasks": [
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/Marsilea-viz/marsilea/blob/main/README.md",
+      "repo_url": "https://github.com/Marsilea-viz/marsilea",
+      "license": "MIT",
+      "summary_ja": "オミクスのヒートマップや oncoprint を注釈パネルと整列させて構成する可視化ライブラリです。"
+    },
+    {
+      "id": "maxspin",
+      "name": "maxspin",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/dcjones/maxspin/blob/main/README.md",
+      "repo_url": "https://github.com/dcjones/maxspin",
+      "license": "MIT",
+      "summary_ja": "情報理論に基づいて空間トランスクリプトームの変動遺伝子を検出するツールです。"
+    },
+    {
+      "id": "metatools",
+      "name": "metatools",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "SDTM",
+        "ADaM"
+      ],
+      "tasks": [
+        "format-conversion",
+        "validation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/metatools/blob/main/README.md",
+      "repo_url": "https://github.com/pharmaverse/metatools",
+      "license": "MIT",
+      "summary_ja": "臨床試験のメタデータ定義を使って解析データセットの作成と整合性確認を行う R パッケージです。"
+    },
+    {
+      "id": "mmrm",
+      "name": "mmrm",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "clinical-trial"
+      ],
+      "tasks": [
+        "analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/openpharma/mmrm/blob/main/README.md",
+      "repo_url": "https://github.com/openpharma/mmrm",
+      "license": "Apache-2.0",
+      "summary_ja": "臨床試験の反復測定アウトカムに混合効果モデルを適用する R パッケージです。"
+    },
+    {
+      "id": "mowgli",
+      "name": "Mowgli",
+      "artifact_type": "library",
+      "domains": [
+        "multiomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scRNA-seq",
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "integration",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/cantinilab/Mowgli/blob/main/README.md",
+      "repo_url": "https://github.com/cantinilab/Mowgli",
+      "license": "GPL-3.0",
+      "summary_ja": "対応のある single-cell multi-omics を最適輸送と非負行列分解で統合するツールです。"
+    },
+    {
+      "id": "mrgsolve",
+      "name": "mrgsolve",
+      "artifact_type": "library",
+      "domains": [
+        "physiology",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "pharmacokinetics",
+        "pharmacodynamics"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "R",
+        "C++"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://github.com/metrumresearchgroup/mrgsolve/blob/main/README.md",
+      "repo_url": "https://github.com/metrumresearchgroup/mrgsolve",
+      "license": "GPL-2.0",
+      "summary_ja": "薬物動態・薬力学などの常微分方程式モデルを R と C++ でシミュレーションするツールです。"
+    },
+    {
+      "id": "multivelo",
+      "name": "Multivelo",
+      "artifact_type": "library",
+      "domains": [
+        "multiomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scRNA-seq",
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "integration",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/welch-lab/MultiVelo/blob/main/README.rst",
+      "repo_url": "https://github.com/welch-lab/MultiVelo",
+      "license": "BSD-3-Clause",
+      "summary_ja": "RNA とクロマチンアクセシビリティから細胞状態の時間的変化を推定するツールです。"
+    },
+    {
+      "id": "ncountr",
+      "name": "ncountr",
+      "artifact_type": "library",
+      "domains": [
+        "transcriptomics"
+      ],
+      "modalities": [
+        "NanoString",
+        "RCC"
+      ],
+      "tasks": [
+        "ingest",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/princello/ncountr/blob/main/README.md",
+      "repo_url": "https://github.com/princello/ncountr",
+      "license": "MIT",
+      "summary_ja": "NanoString nCounter の RCC ファイルに品質管理、正規化、差次的発現解析を適用するツールです。"
+    },
+    {
+      "id": "neuroml2",
+      "name": "NeuroML 2",
+      "artifact_type": "standard",
+      "domains": [
+        "data-standard",
+        "neurophysiology",
+        "simulation"
+      ],
+      "modalities": [
+        "NeuroML",
+        "XML"
+      ],
+      "tasks": [
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "language-agnostic"
+      ],
+      "scales": [
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/NeuroML/NeuroML2/blob/master/README.md",
+      "repo_url": "https://github.com/NeuroML/NeuroML2",
+      "license": "LGPL-3.0",
+      "summary_ja": "神経細胞や神経回路の計算モデルを共通形式で記述する NeuroML 2 の仕様です。",
+      "notes": "計算モデル交換仕様であり、実測生体信号の保存形式や医療判断の実装ではありません。"
+    },
+    {
+      "id": "nichenetpy",
+      "name": "NicheNetPy",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology",
+        "single-cell"
+      ],
+      "modalities": [
+        "gene-expression",
+        "network"
+      ],
+      "tasks": [
+        "network-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/saeyslab/nichenetpy/blob/main/README.md",
+      "repo_url": "https://github.com/saeyslab/nichenetpy",
+      "license": "BSD-3-Clause",
+      "summary_ja": "ヒトやマウスの発現データと事前ネットワークから細胞間シグナル伝達を推定するツールです。"
+    },
+    {
+      "id": "nichepca",
+      "name": "nichepca",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/imsb-uke/nichepca/blob/main/README.md",
+      "repo_url": "https://github.com/imsb-uke/nichepca",
+      "license": "MIT",
+      "summary_ja": "空間トランスクリプトームの近傍構成から主成分分析で組織領域を推定するツールです。"
+    },
+    {
+      "id": "nlmixr2",
+      "name": "nlmixr2",
+      "artifact_type": "library",
+      "domains": [
+        "physiology",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "pharmacokinetics",
+        "pharmacodynamics"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "R",
+        "C++"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://github.com/nlmixr2/nlmixr2/blob/main/README.md",
+      "repo_url": "https://github.com/nlmixr2/nlmixr2",
+      "license": "GPL-3.0",
+      "summary_ja": "薬物動態・薬力学データに非線形混合効果モデルを当てはめる R ツールです。"
+    },
+    {
+      "id": "novae",
+      "name": "novae",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/prism-oncology/novae/blob/main/README.md",
+      "repo_url": "https://github.com/prism-oncology/novae",
+      "license": "BSD-3-Clause",
+      "summary_ja": "空間トランスクリプトームのグラフ表現から空間領域推定やバッチ補正を行うモデルです。"
+    },
+    {
+      "id": "omicverse",
+      "name": "omicverse",
+      "artifact_type": "framework",
+      "domains": [
+        "multiomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scRNA-seq",
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "integration",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/omicverse/omicverse/blob/master/README.md",
+      "repo_url": "https://github.com/omicverse/omicverse",
+      "license": "GPL-3.0",
+      "summary_ja": "bulk・single-cell を含むオミクス解析と可視化を統合する Python ツールキットです。"
+    },
+    {
+      "id": "omnipath",
+      "name": "omnipath",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/saezlab/omnipath/blob/main/README.rst",
+      "repo_url": "https://github.com/saezlab/omnipath",
+      "license": "MIT",
+      "summary_ja": "OmniPath のシグナル伝達・相互作用知識を取得し、オミクス解析に利用する Python クライアントです。"
+    },
+    {
+      "id": "openminds",
+      "name": "openMINDS",
+      "artifact_type": "standard",
+      "domains": [
+        "data-standard",
+        "neuroimaging",
+        "metadata"
+      ],
+      "modalities": [
+        "metadata",
+        "JSON-LD"
+      ],
+      "tasks": [
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "language-agnostic"
+      ],
+      "scales": [
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/openMetadataInitiative/openMINDS/blob/main/README.md",
+      "repo_url": "https://github.com/openMetadataInitiative/openMINDS",
+      "license": "MIT",
+      "summary_ja": "神経科学のデータ、モデル、研究成果を関連付けて記述するメタデータスキーマです。"
+    },
+    {
+      "id": "panpipes",
+      "name": "Panpipes",
+      "artifact_type": "workflow",
+      "domains": [
+        "multiomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scRNA-seq",
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "integration",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/DendrouLab/panpipes/blob/main/README.md",
+      "repo_url": "https://github.com/DendrouLab/panpipes",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell multi-omics と空間トランスクリプトームの解析工程を実行するワークフローです。"
+    },
+    {
+      "id": "parselmouth",
+      "name": "Parselmouth",
+      "artifact_type": "library",
+      "domains": [
+        "behavior",
+        "signal-processing"
+      ],
+      "modalities": [
+        "speech",
+        "audio"
+      ],
+      "tasks": [
+        "feature-extraction",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/YannickJadoul/Parselmouth/blob/master/README.md",
+      "repo_url": "https://github.com/YannickJadoul/Parselmouth",
+      "license": "GPL-3.0",
+      "summary_ja": "Praat の音声解析機能を Python から呼び出し、ピッチやフォルマントなどを計測するライブラリです。"
+    },
+    {
+      "id": "partipy",
+      "name": "ParTIpy",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/saezlab/ParTIpy/blob/main/README.md",
+      "repo_url": "https://github.com/saezlab/ParTIpy",
+      "license": "GPL-3.0",
+      "summary_ja": "single-cell や空間オミクスの細胞状態をパレート最適性とアーキタイプ解析で整理するツールです。"
+    },
+    {
+      "id": "peakqc",
+      "name": "PEAKQC",
+      "artifact_type": "library",
+      "domains": [
+        "epigenomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "analysis",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/loosolab/PEAKQC/blob/main/README.md",
+      "repo_url": "https://github.com/loosolab/PEAKQC",
+      "license": "MIT",
+      "summary_ja": "single-cell ATAC-seq の断片長周期性を使ってデータ品質を評価するツールです。"
+    },
+    {
+      "id": "phenopacket-tools",
+      "name": "phenopacket-tools",
+      "artifact_type": "library",
+      "domains": [
+        "data-standard",
+        "clinical-genomics"
+      ],
+      "modalities": [
+        "Phenopackets"
+      ],
+      "tasks": [
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "Java",
+        "command-line"
+      ],
+      "scales": [
+        "clinical",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/phenopackets/phenopacket-tools/blob/main/README.md",
+      "repo_url": "https://github.com/phenopackets/phenopacket-tools",
+      "license": "GPL-3.0",
+      "summary_ja": "GA4GH Phenopackets の作成、形式変換、検証を行う Java ライブラリと CLI です。"
+    },
+    {
+      "id": "pilot",
+      "name": "PILOT",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/CostaLab/PILOT/blob/main/README.md",
+      "repo_url": "https://github.com/CostaLab/PILOT",
+      "license": "MIT",
+      "summary_ja": "single-cell と病理画像の特徴から患者間の距離や変動を最適輸送で解析するツールです。"
+    },
+    {
+      "id": "popv",
+      "name": "popV",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/YosefLab/popV/blob/main/README.md",
+      "repo_url": "https://github.com/YosefLab/popV",
+      "license": "MIT",
+      "summary_ja": "複数の細胞型注釈方法を統合し、参照データからのラベル転写に一致度を付けるツールです。"
+    },
+    {
+      "id": "praat",
+      "name": "Praat",
+      "artifact_type": "tool",
+      "domains": [
+        "behavior",
+        "signal-processing"
+      ],
+      "modalities": [
+        "speech",
+        "audio"
+      ],
+      "tasks": [
+        "feature-extraction",
+        "analysis"
+      ],
+      "ecosystems": [
+        "C++",
+        "desktop"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/praat/praat.github.io/blob/master/README.md",
+      "repo_url": "https://github.com/praat/praat.github.io",
+      "license": "GPL-3.0-or-later",
+      "summary_ja": "音声のピッチ、フォルマント、強度、声質を計測・注釈する音声学ツールです。"
+    },
+    {
+      "id": "pupilmetrics",
+      "name": "PupilMetrics",
+      "artifact_type": "tool",
+      "domains": [
+        "eye-tracking",
+        "psychology"
+      ],
+      "modalities": [
+        "pupillometry",
+        "eye-tracking"
+      ],
+      "tasks": [
+        "preprocessing",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "organ-system",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/JulesGoninRIO/PupilMetrics/blob/main/README.md",
+      "repo_url": "https://github.com/JulesGoninRIO/PupilMetrics",
+      "license": "GPL-3.0",
+      "summary_ja": "瞳孔計測データの前処理とアウトカム指標の抽出を行うツールです。"
+    },
+    {
+      "id": "pycea",
+      "name": "pycea",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/YosefLab/pycea/blob/main/README.md",
+      "repo_url": "https://github.com/YosefLab/pycea",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell lineage tracing の系譜構造を解析・可視化する Python ツールです。"
+    },
+    {
+      "id": "pychromvar",
+      "name": "pychromVAR",
+      "artifact_type": "library",
+      "domains": [
+        "epigenomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "analysis",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/pinellolab/pychromVAR/blob/main/README.md",
+      "repo_url": "https://github.com/pinellolab/pychromVAR",
+      "license": "MIT",
+      "summary_ja": "single-cell ATAC-seq から転写因子モチーフのアクセシビリティ変動を評価する Python 実装です。"
+    },
+    {
+      "id": "pycrosstalker",
+      "name": "pyCrossTalkeR",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology",
+        "single-cell"
+      ],
+      "modalities": [
+        "gene-expression",
+        "network"
+      ],
+      "tasks": [
+        "network-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/CostaLab/pyCrossTalkeR/blob/main/README.md",
+      "repo_url": "https://github.com/CostaLab/pyCrossTalkeR",
+      "license": "MIT",
+      "summary_ja": "リガンド・受容体ネットワークから条件間の細胞間コミュニケーション変化を解析するツールです。"
+    },
+    {
+      "id": "pylemur",
+      "name": "pyLemur",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/const-ae/pyLemur/blob/main/README.md",
+      "repo_url": "https://github.com/const-ae/pyLemur",
+      "license": "MIT",
+      "summary_ja": "複数条件の single-cell RNA-seq に対して LEMUR による潜在表現と比較解析を行う Python 実装です。"
+    },
+    {
+      "id": "pyomeca",
+      "name": "pyomeca",
+      "artifact_type": "library",
+      "domains": [
+        "biomechanics",
+        "behavior"
+      ],
+      "modalities": [
+        "motion-capture",
+        "kinematics"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/pyomeca/pyomeca/blob/master/README.md",
+      "repo_url": "https://github.com/pyomeca/pyomeca",
+      "license": "Apache-2.0",
+      "summary_ja": "筋骨格計測の時系列や座標データを読み込み、信号処理と運動解析を行うライブラリです。"
+    },
+    {
+      "id": "pypath",
+      "name": "pypath",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/saezlab/pypath/blob/master/README.rst",
+      "repo_url": "https://github.com/saezlab/pypath",
+      "license": "GPL-3.0",
+      "summary_ja": "生体分子の相互作用、複合体、注釈などの事前知識を統合する Python ライブラリです。"
+    },
+    {
+      "id": "pypillometry",
+      "name": "pypillometry",
+      "artifact_type": "library",
+      "domains": [
+        "eye-tracking",
+        "psychology"
+      ],
+      "modalities": [
+        "pupillometry",
+        "eye-tracking"
+      ],
+      "tasks": [
+        "preprocessing",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "organ-system",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/ihrke/pypillometry/blob/master/README.md",
+      "repo_url": "https://github.com/ihrke/pypillometry",
+      "license": "MIT",
+      "summary_ja": "瞳孔径と視線の時系列に瞬目処理、イベント関連解析、可視化を適用するツールです。"
+    },
+    {
+      "id": "pysb",
+      "name": "pysb",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/pysb/pysb/blob/master/README.rst",
+      "repo_url": "https://github.com/pysb/pysb",
+      "license": "BSD-2-Clause",
+      "summary_ja": "生化学反応ネットワークを Python の規則で構成し、シミュレーションへつなぐライブラリです。"
+    },
+    {
+      "id": "pytximport",
+      "name": "pytximport",
+      "artifact_type": "library",
+      "domains": [
+        "transcriptomics"
+      ],
+      "modalities": [
+        "gene-expression"
+      ],
+      "tasks": [
+        "ingest",
+        "quantification"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular"
+      ],
+      "official_url": "https://github.com/complextissue/pytximport/blob/main/README.md",
+      "repo_url": "https://github.com/complextissue/pytximport",
+      "license": "GPL-3.0",
+      "summary_ja": "RNA-seq の転写産物定量結果を読み込み、遺伝子単位に集約する tximport の Python 実装です。"
+    },
+    {
+      "id": "pyucell",
+      "name": "pyUCell",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/carmonalab/pyucell/blob/master/README.md",
+      "repo_url": "https://github.com/carmonalab/pyucell",
+      "license": "MIT",
+      "summary_ja": "単一細胞の遺伝子発現順位に基づいて遺伝子シグネチャスコアを計算するツールです。"
+    },
+    {
+      "id": "rbmi",
+      "name": "rbmi",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "clinical-trial"
+      ],
+      "tasks": [
+        "analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/openpharma/rbmi/blob/main/README.md",
+      "repo_url": "https://github.com/openpharma/rbmi",
+      "license": "Apache-2.0",
+      "summary_ja": "臨床試験の欠測アウトカムに参照群ベースの多重代入を適用する R パッケージです。"
+    },
+    {
+      "id": "rectangle",
+      "name": "Rectangle",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/ComputationalBiomedicineGroup/Rectangle/blob/main/README.md",
+      "repo_url": "https://github.com/ComputationalBiomedicineGroup/Rectangle",
+      "license": "BSD-3-Clause",
+      "summary_ja": "混合発現データから細胞型構成を階層的に推定するデコンボリューションツールです。",
+      "notes": "BSD-3-Clause と任意の商用契約の選択制。カタログは BSD 条件のコードを対象にしています。"
+    },
+    {
+      "id": "reproschema",
+      "name": "reproschema",
+      "artifact_type": "standard",
+      "domains": [
+        "data-standard",
+        "psychology",
+        "survey"
+      ],
+      "modalities": [
+        "questionnaire",
+        "assessment"
+      ],
+      "tasks": [
+        "validation",
+        "format-conversion"
+      ],
+      "ecosystems": [
+        "language-agnostic"
+      ],
+      "scales": [
+        "behavioral",
+        "whole-person",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/ReproNim/reproschema/blob/main/README.md",
+      "repo_url": "https://github.com/ReproNim/reproschema",
+      "license": "Apache-2.0 (code); CC-BY-4.0 (documentation)",
+      "summary_ja": "質問紙や行動評価課題の構造と実施条件を再現可能に記述するスキーマです。"
+    },
+    {
+      "id": "resurfemg",
+      "name": "ReSurfEMG",
+      "artifact_type": "library",
+      "domains": [
+        "physiology"
+      ],
+      "modalities": [
+        "EMG",
+        "respiration"
+      ],
+      "tasks": [
+        "preprocessing",
+        "feature-extraction"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://github.com/resurfemg-org/ReSurfEMG/blob/main/README.md",
+      "repo_url": "https://github.com/resurfemg-org/ReSurfEMG",
+      "license": "Apache-2.0",
+      "summary_ja": "呼吸筋の表面筋電図に前処理、品質評価、特徴抽出を適用するライブラリです。"
+    },
+    {
+      "id": "roadrunner",
+      "name": "libRoadRunner",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/sys-bio/roadrunner/blob/develop/README.md",
+      "repo_url": "https://github.com/sys-bio/roadrunner",
+      "license": "Apache-2.0",
+      "summary_ja": "SBML 形式の生化学モデルを数値シミュレーションするライブラリです。"
+    },
+    {
+      "id": "rpact",
+      "name": "rpact",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "clinical-trial"
+      ],
+      "tasks": [
+        "analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/rpact-com/rpact/blob/main/README.md",
+      "repo_url": "https://github.com/rpact-com/rpact",
+      "license": "LGPL-3.0",
+      "summary_ja": "確認的な逐次・適応的臨床試験のデザインと解析を支援する R パッケージです。"
+    },
+    {
+      "id": "rtables",
+      "name": "rtables",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "clinical-trial"
+      ],
+      "tasks": [
+        "analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/rtables/blob/main/README.md",
+      "repo_url": "https://github.com/pharmaverse/rtables",
+      "license": "Apache-2.0",
+      "summary_ja": "臨床試験の集計結果を階層的な報告表として構築する R パッケージです。"
+    },
+    {
+      "id": "rxode2",
+      "name": "rxode2",
+      "artifact_type": "library",
+      "domains": [
+        "physiology",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "pharmacokinetics",
+        "pharmacodynamics"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "R",
+        "C++"
+      ],
+      "scales": [
+        "organ-system",
+        "clinical"
+      ],
+      "official_url": "https://github.com/nlmixr2/rxode2/blob/main/README.md",
+      "repo_url": "https://github.com/nlmixr2/rxode2",
+      "license": "GPL-3.0",
+      "summary_ja": "薬物動態・薬力学などの常微分方程式モデルを R から定義し、シミュレーションするツールです。"
+    },
+    {
+      "id": "sc2spa",
+      "name": "SC2Spa",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/linbuliao/SC2Spa/blob/main/README.md",
+      "repo_url": "https://github.com/linbuliao/SC2Spa",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell と空間発現データを学習し、細胞の空間位置を推定するツールです。"
+    },
+    {
+      "id": "scalex",
+      "name": "SCALEX",
+      "artifact_type": "library",
+      "domains": [
+        "multiomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scRNA-seq",
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "integration",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/jsxlei/SCALEX/blob/main/README.md",
+      "repo_url": "https://github.com/jsxlei/SCALEX",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell RNA-seq や ATAC-seq を統合し、参照アトラスへの投影を行うツールです。"
+    },
+    {
+      "id": "scanpro",
+      "name": "scanpro",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/loosolab/scanpro/blob/main/README.md",
+      "repo_url": "https://github.com/loosolab/scanpro",
+      "license": "MIT",
+      "summary_ja": "single-cell データの細胞型比率を条件間で比較する統計解析ツールです。"
+    },
+    {
+      "id": "scatrans",
+      "name": "scATrans",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/leelieber2025/scATrans/blob/main/README.md",
+      "repo_url": "https://github.com/leelieber2025/scATrans",
+      "license": "Apache-2.0",
+      "summary_ja": "single-cell RNA-seq のスプライシング情報を用いて条件間の発現変化を補助的に解析するツールです。"
+    },
+    {
+      "id": "sccellfie",
+      "name": "scCellFie",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology",
+        "single-cell"
+      ],
+      "modalities": [
+        "gene-expression",
+        "network"
+      ],
+      "tasks": [
+        "network-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/earmingol/scCellFie/blob/main/README.rst",
+      "repo_url": "https://github.com/earmingol/scCellFie",
+      "license": "MIT",
+      "summary_ja": "single-cell と空間発現データから代謝タスクの活動を推定するツールです。"
+    },
+    {
+      "id": "scdataloader",
+      "name": "scDataLoader",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "data-model"
+      ],
+      "modalities": [
+        "AnnData"
+      ],
+      "tasks": [
+        "ingest",
+        "data-management"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/jkobject/scDataLoader/blob/main/README.md",
+      "repo_url": "https://github.com/jkobject/scDataLoader",
+      "license": "MIT",
+      "summary_ja": "大規模な単一細胞データベースからデータ取得、前処理、重み付きサンプリングを行うライブラリです。"
+    },
+    {
+      "id": "scfair",
+      "name": "scFair",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/leelieber2025/scFair/blob/main/README.md",
+      "repo_url": "https://github.com/leelieber2025/scFair",
+      "license": "Apache-2.0",
+      "summary_ja": "single-cell RNA-seq の高変動遺伝子選択にデータ適応的な基準を適用するツールです。"
+    },
+    {
+      "id": "scgen",
+      "name": "scGen",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/theislab/scgen/blob/master/README.md",
+      "repo_url": "https://github.com/theislab/scgen",
+      "license": "GPL-3.0",
+      "summary_ja": "single-cell 発現データから細胞型や研究間の摂動応答を予測する生成モデルです。"
+    },
+    {
+      "id": "schist",
+      "name": "schist",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/dawe/schist/blob/master/README.md",
+      "repo_url": "https://github.com/dawe/schist",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell データの細胞集団を確率的ブロックモデルで推定するツールです。"
+    },
+    {
+      "id": "scib-rapids",
+      "name": "scib-rapids",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/maarten-devries/scib-rapids/blob/main/README.md",
+      "repo_url": "https://github.com/maarten-devries/scib-rapids",
+      "license": "BSD-3-Clause",
+      "summary_ja": "single-cell データ統合の評価指標を RAPIDS により GPU 上で計算するツールです。"
+    },
+    {
+      "id": "scprint",
+      "name": "scPRINT",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology",
+        "single-cell"
+      ],
+      "modalities": [
+        "gene-expression",
+        "network"
+      ],
+      "tasks": [
+        "network-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/cantinilab/scPRINT/blob/main/README.md",
+      "repo_url": "https://github.com/cantinilab/scPRINT",
+      "license": "GPL-3.0",
+      "summary_ja": "single-cell 発現から遺伝子ネットワークを推定する基盤モデルです。"
+    },
+    {
+      "id": "scprint-2",
+      "name": "scPRINT-2",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology",
+        "single-cell"
+      ],
+      "modalities": [
+        "gene-expression",
+        "network"
+      ],
+      "tasks": [
+        "network-analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/cantinilab/scPRINT-2/blob/main/README.md",
+      "repo_url": "https://github.com/cantinilab/scPRINT-2",
+      "license": "GPL-3.0",
+      "summary_ja": "single-cell データの表現学習と遺伝子ネットワーク推定を行う scPRINT 系モデルです。"
+    },
+    {
+      "id": "sctriangulate",
+      "name": "scTriangulate",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/frankligy/scTriangulate/blob/main/README.md",
+      "repo_url": "https://github.com/frankligy/scTriangulate",
+      "license": "MIT",
+      "summary_ja": "異なるクラスタリング結果を照合し、single-cell の細胞集団分類を調整するツールです。"
+    },
+    {
+      "id": "scviva-tools",
+      "name": "scviva-tools",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/YosefLab/scviva-tools/blob/main/README.md",
+      "repo_url": "https://github.com/YosefLab/scviva-tools",
+      "license": "BSD-3-Clause",
+      "summary_ja": "空間トランスクリプトームのニッチ表現学習、デコンボリューション、ノイズ補正を統合するツールです。"
+    },
+    {
+      "id": "scxmatch",
+      "name": "scxmatch",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/bionetslab/scxmatch/blob/master/README.md",
+      "repo_url": "https://github.com/bionetslab/scxmatch",
+      "license": "MIT",
+      "summary_ja": "single-cell データの二群間の分布変化を距離マッチングと cross-match 検定で評価するツールです。"
+    },
+    {
+      "id": "scxpand",
+      "name": "scXpand",
+      "artifact_type": "library",
+      "domains": [
+        "immunology",
+        "single-cell"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/yizhak-lab-ccg/scXpand/blob/main/README.md",
+      "repo_url": "https://github.com/yizhak-lab-ccg/scXpand",
+      "license": "MIT",
+      "summary_ja": "paired TCR データを使わず single-cell RNA-seq から T 細胞クローン増殖を推定するツールです。",
+      "notes": "TCR 配列の直接測定ではなく発現からの推定です。"
+    },
+    {
+      "id": "scyan",
+      "name": "scyan",
+      "artifact_type": "library",
+      "domains": [
+        "cytometry"
+      ],
+      "modalities": [
+        "flow-cytometry",
+        "mass-cytometry"
+      ],
+      "tasks": [
+        "clustering",
+        "annotation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular"
+      ],
+      "official_url": "https://github.com/prism-oncology/scyan/blob/main/README.md",
+      "repo_url": "https://github.com/prism-oncology/scyan",
+      "license": "BSD-3-Clause",
+      "summary_ja": "生物学的知識を組み込んだ生成モデルでサイトメトリーデータの細胞型を注釈するツールです。"
+    },
+    {
+      "id": "sdtm-oak",
+      "name": "sdtm.oak",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "SDTM",
+        "ADaM"
+      ],
+      "tasks": [
+        "format-conversion",
+        "validation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/sdtm.oak/blob/main/README.md",
+      "repo_url": "https://github.com/pharmaverse/sdtm.oak",
+      "license": "Apache-2.0",
+      "summary_ja": "収集した臨床データをマッピング規則に基づいて CDISC SDTM 形式へ変換する R パッケージです。"
+    },
+    {
+      "id": "sdtmchecks",
+      "name": "sdtmchecks",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "SDTM",
+        "ADaM"
+      ],
+      "tasks": [
+        "format-conversion",
+        "validation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/sdtmchecks/blob/devel/README.md",
+      "repo_url": "https://github.com/pharmaverse/sdtmchecks",
+      "license": "Apache-2.0",
+      "summary_ja": "CDISC SDTM データの解析前チェックを実行する R パッケージです。"
+    },
+    {
+      "id": "sensormotion",
+      "name": "sensormotion",
+      "artifact_type": "library",
+      "domains": [
+        "biomechanics",
+        "behavior",
+        "wearables"
+      ],
+      "modalities": [
+        "accelerometry",
+        "IMU"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/thesimonho/sensormotion/blob/master/README.rst",
+      "repo_url": "https://github.com/thesimonho/sensormotion",
+      "license": "MIT",
+      "summary_ja": "加速度センサーから身体活動や歩行の特徴を計算する Python ライブラリです。"
+    },
+    {
+      "id": "sift-sc",
+      "name": "sift-sc",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/nitzanlab/sift-sc/blob/main/README.rst",
+      "repo_url": "https://github.com/nitzanlab/sift-sc",
+      "license": "BSD-3-Clause",
+      "summary_ja": "既知の生物学的変動を除いて single-cell データの残る構造を解析するツールです。"
+    },
+    {
+      "id": "sincei",
+      "name": "sincei",
+      "artifact_type": "library",
+      "domains": [
+        "epigenomics",
+        "single-cell"
+      ],
+      "modalities": [
+        "scATAC-seq"
+      ],
+      "tasks": [
+        "analysis",
+        "quality-control"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular"
+      ],
+      "official_url": "https://github.com/bhardwaj-lab/sincei/blob/master/README.md",
+      "repo_url": "https://github.com/bhardwaj-lab/sincei",
+      "license": "MIT",
+      "summary_ja": "単一細胞エピゲノムの BAM データからシグナル集約や解析を行う CLI・Python ツールです。"
+    },
+    {
+      "id": "sobolev-alignment",
+      "name": "Sobolev Alignment",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/NKI-CCB/sobolev_alignment/blob/main/README.md",
+      "repo_url": "https://github.com/NKI-CCB/sobolev_alignment",
+      "license": "MIT",
+      "summary_ja": "前臨床モデルと患者由来の single-cell プロファイルを確率モデルで比較するツールです。"
+    },
+    {
+      "id": "spatial-eggplant",
+      "name": "spatial-eggplant",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/almaan/eggplant/blob/master/README.md",
+      "repo_url": "https://github.com/almaan/eggplant",
+      "license": "MIT",
+      "summary_ja": "複数の空間トランスクリプトームを共通座標系へ対応付けるツールです。"
+    },
+    {
+      "id": "spatialproteomics",
+      "name": "spatialproteomics",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "proteomics"
+      ],
+      "modalities": [
+        "multiplex-imaging",
+        "spatial-proteomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/sagar87/spatialproteomics/blob/main/README.md",
+      "repo_url": "https://github.com/sagar87/spatialproteomics",
+      "license": "MIT",
+      "summary_ja": "多重蛍光組織画像の領域分割、マーカー定量、空間解析を行うツールです。"
+    },
+    {
+      "id": "spatiomic",
+      "name": "spatiomic",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics",
+        "proteomics"
+      ],
+      "modalities": [
+        "multiplex-imaging",
+        "spatial-proteomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/complextissue/spatiomic/blob/main/README.md",
+      "repo_url": "https://github.com/complextissue/spatiomic",
+      "license": "Apache-2.0",
+      "summary_ja": "空間プロテオミクスを画素クラスタリング、クラスタ量比較、空間統計で解析するライブラリです。"
+    },
+    {
+      "id": "spm1d",
+      "name": "spm1d",
+      "artifact_type": "library",
+      "domains": [
+        "biomechanics",
+        "behavior"
+      ],
+      "modalities": [
+        "motion-capture",
+        "kinematics"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "whole-person",
+        "behavioral"
+      ],
+      "official_url": "https://github.com/spm1d-org/spm1d-v0.4/blob/master/README.md",
+      "repo_url": "https://github.com/spm1d-org/spm1d-v0.4",
+      "license": "GPL-3.0",
+      "summary_ja": "歩行や運動学などの一次元連続波形に統計的パラメトリックマッピングを適用するライブラリです。"
+    },
+    {
+      "id": "stminer",
+      "name": "STMiner",
+      "artifact_type": "library",
+      "domains": [
+        "spatial-omics"
+      ],
+      "modalities": [
+        "spatial-transcriptomics"
+      ],
+      "tasks": [
+        "analysis",
+        "visualization"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "tissue"
+      ],
+      "official_url": "https://github.com/xjtu-omics/STMiner/blob/main/readme.md",
+      "repo_url": "https://github.com/xjtu-omics/STMiner",
+      "license": "GPL-3.0",
+      "summary_ja": "遺伝子ごとの空間発現パターンから空間トランスクリプトームを解析するツールです。"
+    },
+    {
+      "id": "symphonypy",
+      "name": "Symphonypy",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/potulabe/symphonypy/blob/main/README.md",
+      "repo_url": "https://github.com/potulabe/symphonypy",
+      "license": "GPL-3.0",
+      "summary_ja": "参照 single-cell データから Symphony アルゴリズムで細胞型ラベルを転写する Python 実装です。"
+    },
+    {
+      "id": "tau-community-detection",
+      "name": "TAU Community Detection",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "transcriptomics"
+      ],
+      "modalities": [
+        "scRNA-seq"
+      ],
+      "tasks": [
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "molecular"
+      ],
+      "official_url": "https://github.com/HillelCharbit/TAU/blob/master/README.md",
+      "repo_url": "https://github.com/HillelCharbit/TAU",
+      "license": "MIT",
+      "summary_ja": "single-cell の近傍グラフを遺伝的探索と Leiden 法によってクラスタリングするツールです。"
+    },
+    {
+      "id": "teal",
+      "name": "teal",
+      "artifact_type": "framework",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "clinical-trial"
+      ],
+      "tasks": [
+        "analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/teal/blob/main/README.md",
+      "repo_url": "https://github.com/pharmaverse/teal",
+      "license": "Apache-2.0",
+      "summary_ja": "臨床試験データを対話的に探索する Shiny アプリを構築する R フレームワークです。"
+    },
+    {
+      "id": "tellurium",
+      "name": "tellurium",
+      "artifact_type": "library",
+      "domains": [
+        "systems-biology"
+      ],
+      "modalities": [
+        "biochemical-network",
+        "model"
+      ],
+      "tasks": [
+        "modeling",
+        "simulation"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "molecular",
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/sys-bio/tellurium/blob/develop/README.md",
+      "repo_url": "https://github.com/sys-bio/tellurium",
+      "license": "Apache-2.0",
+      "summary_ja": "生化学モデルの記述、シミュレーション、解析を統合した Python 環境です。"
+    },
+    {
+      "id": "tern",
+      "name": "tern",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "clinical-trial"
+      ],
+      "tasks": [
+        "analysis",
+        "reporting"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/pharmaverse/tern/blob/main/README.md",
+      "repo_url": "https://github.com/pharmaverse/tern",
+      "license": "Apache-2.0",
+      "summary_ja": "臨床試験の患者背景、有害事象、生存時間などの表・一覧・図を作成する R パッケージです。"
+    },
+    {
+      "id": "treedata",
+      "name": "TreeData",
+      "artifact_type": "library",
+      "domains": [
+        "single-cell",
+        "data-model"
+      ],
+      "modalities": [
+        "AnnData"
+      ],
+      "tasks": [
+        "ingest",
+        "data-management"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "cellular",
+        "infrastructure"
+      ],
+      "official_url": "https://github.com/YosefLab/treedata/blob/main/README.md",
+      "repo_url": "https://github.com/YosefLab/treedata",
+      "license": "BSD-3-Clause",
+      "summary_ja": "AnnData の細胞・特徴量に対応する木構造を保持し、系譜情報を扱うライブラリです。"
+    },
+    {
+      "id": "wsidata",
+      "name": "wsidata",
+      "artifact_type": "library",
+      "domains": [
+        "digital-pathology",
+        "bioimaging"
+      ],
+      "modalities": [
+        "whole-slide-image"
+      ],
+      "tasks": [
+        "ingest",
+        "analysis"
+      ],
+      "ecosystems": [
+        "Python"
+      ],
+      "scales": [
+        "tissue",
+        "clinical"
+      ],
+      "official_url": "https://github.com/rendeirolab/wsidata/blob/main/README.md",
+      "repo_url": "https://github.com/rendeirolab/wsidata",
+      "license": "MIT",
+      "summary_ja": "病理全スライド画像と組織・タイル形状を SpatialData に基づいて管理するデータ構造です。"
+    },
+    {
+      "id": "xportr",
+      "name": "xportr",
+      "artifact_type": "library",
+      "domains": [
+        "clinical-data",
+        "clinical-research",
+        "statistics"
+      ],
+      "modalities": [
+        "SDTM",
+        "ADaM"
+      ],
+      "tasks": [
+        "format-conversion",
+        "validation"
+      ],
+      "ecosystems": [
+        "R"
+      ],
+      "scales": [
+        "clinical",
+        "population"
+      ],
+      "official_url": "https://github.com/atorus-research/xportr/blob/main/README.md",
+      "repo_url": "https://github.com/atorus-research/xportr",
+      "license": "MIT",
+      "summary_ja": "CDISC SDTM・ADaM データの型や属性を整え、SAS XPT ファイルを書き出す R パッケージです。"
     }
   ]
 }

@@ -14,7 +14,9 @@
 
 ## まず見る場所
 
-- [全件カタログ](catalog.md): 収録している 1226 件をページ上で一覧できます。
+- [全件カタログ](catalog.md): 収録している 1368 件をページ上で一覧できます。
+- [分野・解析スケール別索引](docs/catalog-index.md): 分類から各項目へ直接移動できます。
+- [2026-11-09 調査・品質点検報告](docs/catalog-review-2026-11-09.md): 新規142件、移転20件、archived 6件、未確認範囲、保留理由と出典を確認できます。
 - [分類と運用方針](docs/catalog-policy.md): 何を収録し、何を除外するかを確認できます。
 - [スキーマ説明](docs/schema.md): 各項目に入っている情報の意味を確認できます。
 - [領域別の見取り図](docs/landscape.md): ミクロからマクロまでの対象領域を俯瞰できます。
@@ -22,7 +24,7 @@
 
 ## このサイトで見られるもの
 
-- 全 1226 件の公開 OSS / 公開リポジトリ付きカタログ
+- 全 1368 件の公開 OSS / 公開リポジトリ付きカタログ
 - 解析スケール別の件数と分類
 - 分野、データ種別、処理タスク、実行環境、公式ページ、repo へのリンク
 - 日本語の 1 文要約
@@ -32,7 +34,7 @@
 
 ## 収録状況
 
-2026-11-06 時点の継続更新カタログは 1226 件です。代表的な収録軸は以下です。
+2026-11-09 時点の継続更新カタログは 1368 件です。代表的な収録軸は以下です。
 
 - ミクロ: ゲノム、変異、RNA-seq、single-cell、spatial omics、プロテオミクス、メタボロミクス、マイクロバイオーム
 - 細胞・組織: cytometry、細胞画像、病理画像、空間トランスクリプトミクス
@@ -66,6 +68,8 @@
 2026-08-12 の更新では、gget、moscot、MNE denoising / RSA、NiPreps reporting、physiology denoising、nf-core の spatial omics / microbiome workflow、OpenSim / OpenCap の human movement processing を追加し、公式 docs・公開 repo・ライセンスを確認しました。RAPIDS-SingleCell は同一 repo の canonical URL 表記へ修正しました。archived、under construction、discontinued、ライセンス確認不足、テンプレート状態の候補は採録していません。
 
 2026-08-13 の更新では、ehrapy、fibertools-rs、dysgu、pymzML、MicrobiomeStat、HoVer-Net、scFates、SURVIVOR、VitalDB の openvital / vitalutils / openecg、GA4GH Quality Control of WGS / htsget Reference Server を追加しました。EHR、long-read / structural variant、質量分析、microbiome、病理画像、single-cell trajectory、ECG / PPG、生体波形、WGS QC、genomic streaming の公開実装を補っています。pyPPG は公式 repo の academic research only 条件、nf-core/rnastructurome は development version、openeeg は early alpha、opendsp は汎用 DSP、旧 pyvital と mirror は採録条件外のため追加していません。
+
+2026-11-09 の横断調査では、scverse 公式登録簿の全133項目を既存台帳と照合し、臨床試験の pharmaverse、薬物動態、音声・瞳孔・運動計測、プロテオミクス、システム生物学、神経科学メタデータ標準まで探索して142件を追加しました。追加項目は公式 README とライセンス本文または公式パッケージ宣言を確認し、証拠 URL・blob SHA・確認日を記録しています。既存の GitHub repo 1,105件について存在と移転・archived を全件照合し、移転20件と archived 6件を反映しました。公式登録簿や GitHub のライセンス自動判定だけでは OSS と判断せず、非商用条件、利用条件未確認、旧版保守終了などを保留表へ分離しました。詳細と検証範囲は[調査報告](docs/catalog-review-2026-11-09.md)を参照してください。
 
 ## 対象領域
 
