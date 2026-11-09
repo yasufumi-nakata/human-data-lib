@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ja-JP' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title | escape }} | human-data-lib</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#content">本文へ移動</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">h</span>human-data-lib</a>
+    <nav aria-label="メインナビゲーション"><a href="{{ '/' | relative_url }}">探す</a><a href="{{ '/docs/landscape.html' | relative_url }}">領域ガイド</a><a href="{{ '/docs/catalog-policy.html' | relative_url }}">収録方針</a><a href="https://github.com/yasufumi-nakata/human-data-lib">GitHub ↗</a></nav>
+  </div></header>
+  <main class="document-shell" id="content">
+    <div class="document-nav"><a href="{{ '/' | relative_url }}">← カタログ検索に戻る</a></div>
+    {% if page.path == 'catalog.md' %}<aside class="document-callout"><strong>名前や分野から探すなら</strong> <a href="{{ '/' | relative_url }}">検索・絞り込み付きカタログ</a>をご利用ください。この全件表は横にスクロールできます。</aside>{% endif %}
+    <article class="document-body">{{ content }}</article>
+  </main>
+  <footer class="site-footer"><p>human-data-lib <span>ミクロからマクロまで、生体データ解析の入口。</span></p><a href="https://github.com/yasufumi-nakata/human-data-lib">ソース・CLI・更新履歴 ↗</a></footer>
+  <script>
+    document.querySelectorAll('.document-body table').forEach(function (table, index) {
+      var region = document.createElement('div');
+      region.className = 'table-scroll';
+      region.tabIndex = 0;
+      region.setAttribute('role', 'region');
+      region.setAttribute('aria-label', '表 ' + (index + 1) + '（横にスクロールできます）');
+      table.parentNode.insertBefore(region, table);
+      region.appendChild(table);
+    });
+  </script>
+</body>
+</html>
