@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-11-09",
+  "generated_at": "2026-11-13",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -44598,6 +44598,34 @@
       "repo_url": "https://github.com/atorus-research/xportr",
       "license": "MIT",
       "summary_ja": "CDISC SDTM・ADaM データの型や属性を整え、SAS XPT ファイルを書き出す R パッケージです。"
+    },
+    {
+      "id": "asrpy",
+      "name": "ASRpy",
+      "artifact_type": "library",
+      "domains": [
+        "neurophysiology",
+        "quality-control"
+      ],
+      "modalities": [
+        "EEG"
+      ],
+      "tasks": [
+        "artifact-removal",
+        "preprocessing"
+      ],
+      "ecosystems": [
+        "Python",
+        "MNE"
+      ],
+      "scales": [
+        "organ-system"
+      ],
+      "official_url": "https://digyt.github.io/asrpy/",
+      "repo_url": "https://github.com/DiGyt/asrpy",
+      "license": "BSD-3-Clause",
+      "summary_ja": "EEG の一過性・大振幅アーティファクトを Artifact Subspace Reconstruction（ASR）で低減する Python/MNE 向けライブラリです。",
+      "notes": "2026-11-13に公式READMEとLICENSEを確認。作者が現在は積極的に保守していないと明記。標準ASRを実装するが、改良Riemannian ASRは未実装。実行互換性・性能は未検証。"
     }
   ]
 }
