@@ -2,8 +2,8 @@
 
 このページは `libraries.json` から生成した、人間由来バイオデータ解析カタログの全件表示です。JSON を直接読まなくても、公開ページ上で全項目を確認できます。
 
-- 項目数: 1368
-- カタログ生成日: 2026-11-09
+- 項目数: 1369
+- カタログ生成日: 2026-11-13
 - スキーマ: 0.1.0
 - [分野・解析スケール別索引](docs/catalog-index.md)
 - [出典確認・保留候補・品質点検](docs/catalog-review-2026-11-09.md)
@@ -15,7 +15,7 @@
 | `molecular` | 574 |
 | `cellular` | 306 |
 | `tissue` | 124 |
-| `organ-system` | 228 |
+| `organ-system` | 229 |
 | `whole-person` | 191 |
 | `behavioral` | 103 |
 | `clinical` | 408 |
@@ -1395,6 +1395,7 @@
 | <a id="treedata"></a>`treedata` | [TreeData](https://github.com/YosefLab/treedata/blob/main/README.md) | `library` | `cellular`<br>`infrastructure` | `single-cell`<br>`data-model` | `AnnData` | `ingest`<br>`data-management` | `Python` | [公式](https://github.com/YosefLab/treedata/blob/main/README.md) | [repo](https://github.com/YosefLab/treedata) | BSD-3-Clause |  | AnnData の細胞・特徴量に対応する木構造を保持し、系譜情報を扱うライブラリです。 |
 | <a id="wsidata"></a>`wsidata` | [wsidata](https://github.com/rendeirolab/wsidata/blob/main/README.md) | `library` | `tissue`<br>`clinical` | `digital-pathology`<br>`bioimaging` | `whole-slide-image` | `ingest`<br>`analysis` | `Python` | [公式](https://github.com/rendeirolab/wsidata/blob/main/README.md) | [repo](https://github.com/rendeirolab/wsidata) | MIT |  | 病理全スライド画像と組織・タイル形状を SpatialData に基づいて管理するデータ構造です。 |
 | <a id="xportr"></a>`xportr` | [xportr](https://github.com/atorus-research/xportr/blob/main/README.md) | `library` | `clinical`<br>`population` | `clinical-data`<br>`clinical-research`<br>`statistics` | `SDTM`<br>`ADaM` | `format-conversion`<br>`validation` | `R` | [公式](https://github.com/atorus-research/xportr/blob/main/README.md) | [repo](https://github.com/atorus-research/xportr) | MIT |  | CDISC SDTM・ADaM データの型や属性を整え、SAS XPT ファイルを書き出す R パッケージです。 |
+| <a id="asrpy"></a>`asrpy` | [ASRpy](https://digyt.github.io/asrpy/) | `library` | `organ-system` | `neurophysiology`<br>`quality-control` | `EEG` | `artifact-removal`<br>`preprocessing` | `Python`<br>`MNE` | [公式](https://digyt.github.io/asrpy/) | [repo](https://github.com/DiGyt/asrpy) | BSD-3-Clause | 2026-11-13に公式READMEとLICENSEを確認。作者が現在は積極的に保守していないと明記。標準ASRを実装するが、改良Riemannian ASRは未実装。実行互換性・性能は未検証。 | EEG の一過性・大振幅アーティファクトを Artifact Subspace Reconstruction（ASR）で低減する Python/MNE 向けライブラリです。 |
 
 ## 更新方法
 
