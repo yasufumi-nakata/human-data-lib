@@ -1,6 +1,6 @@
 # 分野・解析スケール別索引
 
-2026-11-13 時点、1369 件。複数タグの項目は複数箇所に現れます。
+2026-11-20 時点、1370 件。複数タグの項目は複数箇所に現れます。
 
 各リンクは全件カタログの該当行に移動します。収録は推奨・性能保証・医療用途の承認を意味しません。
 
@@ -15,7 +15,7 @@
 - [environmental](#scales-environmental) (75)
 - [infrastructure](#scales-infrastructure) (503)
 - [molecular](#scales-molecular) (574)
-- [organ-system](#scales-organ-system) (229)
+- [organ-system](#scales-organ-system) (230)
 - [population](#scales-population) (419)
 - [tissue](#scales-tissue) (124)
 - [whole-person](#scales-whole-person) (191)
@@ -2014,7 +2014,7 @@
 - [XVector](../catalog.md#xvector)
 
 <a id="scales-organ-system"></a>
-### organ-system (229)
+### organ-system (230)
 
 - [3D Slicer](../catalog.md#slicer)
 - [AFNI](../catalog.md#afni)
@@ -2071,6 +2071,7 @@
 - [edfio](../catalog.md#edfio)
 - [EEGDash](../catalog.md#eegdash)
 - [EEGLAB](../catalog.md#eeglab)
+- [eeglabio](../catalog.md#eeglabio)
 - [EEGPrep](../catalog.md#eegprep)
 - [Eelbrain](../catalog.md#eelbrain)
 - [elastix](../catalog.md#elastix)
@@ -3126,7 +3127,7 @@
 - [network-analysis](#domains-network-analysis) (3)
 - [network-medicine](#domains-network-medicine) (1)
 - [neuroimaging](#domains-neuroimaging) (87)
-- [neurophysiology](#domains-neurophysiology) (71)
+- [neurophysiology](#domains-neurophysiology) (72)
 - [observational-health](#domains-observational-health) (43)
 - [openEHR](#domains-openehr) (2)
 - [pangenome](#domains-pangenome) (2)
@@ -5720,7 +5721,7 @@
 - [XNAT](../catalog.md#xnat)
 
 <a id="domains-neurophysiology"></a>
-### neurophysiology (71)
+### neurophysiology (72)
 
 - [AntroPy](../catalog.md#antropy)
 - [ASRpy](../catalog.md#asrpy)
@@ -5736,6 +5737,7 @@
 - [edfio](../catalog.md#edfio)
 - [EEGDash](../catalog.md#eegdash)
 - [EEGLAB](../catalog.md#eeglab)
+- [eeglabio](../catalog.md#eeglabio)
 - [EEGPrep](../catalog.md#eegprep)
 - [Eelbrain](../catalog.md#eelbrain)
 - [Elephant](../catalog.md#elephant)
