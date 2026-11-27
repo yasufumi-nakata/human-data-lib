@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-11-20",
+  "generated_at": "2026-11-27",
   "scope_note": "人間由来バイオデータ解析で参照頻度の高い、公式の公開リポジトリを確認できる OSS / 公開ソースのライブラリ、ツール、標準、ワークフロー、エコシステムの継続更新カタログです。非公開実装や公式公開リポジトリを確認できない項目は対象外とし、molecular から environmental までの尺度、分野、データ種別、処理段階で継続的に拡張できる機械可読な入口として管理します。",
   "entries": [
     {
@@ -10530,7 +10530,8 @@
       "official_url": "https://walker-data.com/tidycensus",
       "repo_url": "https://github.com/walkerke/tidycensus",
       "maturity": "widely-used",
-      "summary_ja": "米国 Census/ACS の属性と境界を R から取得し、人口・地域共変量解析へつなげるライブラリです。"
+      "summary_ja": "米国 Census/ACS の属性と境界を R から取得し、人口・地域共変量解析へつなげるライブラリです。",
+      "license": "MIT + file LICENSE"
     },
     {
       "id": "geemap",
@@ -23968,7 +23969,8 @@
       "official_url": "https://tlverse.org/tmle3",
       "repo_url": "https://github.com/tlverse/tmle3",
       "maturity": "active",
-      "summary_ja": "targeted minimum loss-based estimation を用いた因果推論・疫学推定を構成する tlverse の R パッケージです。"
+      "summary_ja": "targeted minimum loss-based estimation を用いた因果推論・疫学推定を構成する tlverse の R パッケージです。",
+      "license": "GPL-3"
     },
     {
       "id": "dcmjs",
@@ -36287,7 +36289,8 @@
       "official_url": "https://github.com/ga4gh/data-connect",
       "repo_url": "https://github.com/ga4gh/data-connect",
       "summary_ja": "biomedical data を記述・検索するための GA4GH Data Connect 仕様と公開実装資産です。",
-      "maturity": "active"
+      "maturity": "active",
+      "license": "Apache-2.0"
     },
     {
       "id": "ga4gh-drs-client",
@@ -36593,7 +36596,8 @@
       "official_url": "https://github.com/scverse/scverse-io",
       "repo_url": "https://github.com/scverse/scverse-io",
       "summary_ja": "各種 format を AnnData や MuData に読み込む scverse 公式 I/O library です。",
-      "maturity": "active"
+      "maturity": "active",
+      "license": "BSD-3-Clause"
     },
     {
       "id": "annbatch",
